@@ -1,3 +1,11 @@
 {
-  "totals": { "replays": 0, "characters": 40, "players": 0 }
+  "totals": {
+    "replays": 0,
+    "characters": 40,
+    "players": 0,
+    "byPatch": {}
+  },
+  "characterUsage": {},
+  "byPatchUsage": {},
+  "playerCharacters": {}
 }

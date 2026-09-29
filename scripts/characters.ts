@@ -41,8 +41,11 @@
  * recon's titles or catalogue labels (bracket contents that resolved to
  * nothing, 2023-12-11 onward, counts in parentheses): Lanslot (21), ジークフリード
  * (7), Grimnil (4), Caliostro (3), Seigfried, Beatlix, Lowian, Vikal,
- * ヴェルセシア, anira (2 each), Carlotta (fgHighLevel), and the catalogue's own
- * label typos Cgliostro, Lucillius, Meterra, Zoeey. Korean spellings (가레온,
+ * ヴェルセシア, anira (2 each), Carlotta (fgHighLevel), the catalogue's own label
+ * typos Cgliostro, Lucillius, Meterra, Zoeey, and those the rehearsal parse's
+ * rejects surfaced — Metara, Beelezebub, Sandalphone, Chartotta, and on
+ * gbvsReplayChannel Isla (Ilsa, ~12 titles, always the fighter slot), Zoey,
+ * Caglisotro, Anilla. Korean spellings (가레온,
  * 비카라, …) appear in ~9 titles from one uploader and the vendor publishes no
  * Korean roster to anchor them, so they are left to the residue report.
  * Community abbreviations (Kat, Lance, Char, Grim, Sandy, …) are NOT here: none
@@ -108,28 +111,28 @@ export const ROSTER: RosterRow[] = [
   { ...base('gran', 'Gran', 'グラン'), exSince: EX_PATCH },
   { ...base('djeeta', 'Djeeta', 'ジータ'), exSince: EX_PATCH },
   base('katalina', 'Katalina', 'カタリナ'),
-  base('charlotta', 'Charlotta', 'シャルロッテ', ['Carlotta']),
+  base('charlotta', 'Charlotta', 'シャルロッテ', ['Carlotta', 'Chartotta']),
   base('lancelot', 'Lancelot', 'ランスロット', ['Lanslot']),
   base('percival', 'Percival', 'パーシヴァル'),
   base('ladiva', 'Ladiva', 'ファスティバ', ['Fastiva']),
-  base('metera', 'Metera', 'メーテラ', ['Meterra']),
+  base('metera', 'Metera', 'メーテラ', ['Meterra', 'Metara']),
   base('lowain', 'Lowain', 'ローアイン', ['Lowian']),
   base('ferry', 'Ferry', 'フェリ'),
   base('zeta', 'Zeta', 'ゼタ'),
   base('vaseraga', 'Vaseraga', 'バザラガ'),
   { ...base('narmaya', 'Narmaya', 'ナルメア'), exSince: EX_PATCH },
   base('soriz', 'Soriz', 'ソリッズ'),
-  base('zooey', 'Zooey', 'ゾーイ', ['Zoeey']),
-  base('cagliostro', 'Cagliostro', 'カリオストロ', ['Caliostro', 'Cgliostro']),
+  base('zooey', 'Zooey', 'ゾーイ', ['Zoeey', 'Zoey']),
+  base('cagliostro', 'Cagliostro', 'カリオストロ', ['Caliostro', 'Cgliostro', 'Caglisotro']),
   base('yuel', 'Yuel', 'ユエル'),
   base('anre', 'Anre', 'ウーノ', ['Uno']),
   base('eustace', 'Eustace', 'ユーステス'),
   base('seox', 'Seox', 'シス', ['Six']),
   base('vira', 'Vira', 'ヴィーラ'),
-  base('beelzebub', 'Beelzebub', 'ベルゼバブ'),
+  base('beelzebub', 'Beelzebub', 'ベルゼバブ', ['Beelezebub']),
   base('belial', 'Belial', 'ベリアル'),
   base('avatar-belial', 'Avatar Belial', 'アバタール・ベリアル'),
-  base('anila', 'Anila', 'アニラ', ['Anira']),
+  base('anila', 'Anila', 'アニラ', ['Anira', 'Anilla']),
   base('siegfried', 'Siegfried', 'ジークフリート', ['ジークフリード', 'Seigfried']),
   base('grimnir', 'Grimnir', 'グリームニル', ['Grimnil']),
   base('nier', 'Nier', 'ニーア'),
@@ -139,11 +142,11 @@ export const ROSTER: RosterRow[] = [
   dlc('beatrix', 'Beatrix', 'ベアトリクス', 'cp1', '1.40', ['Beatlix']),
   dlc('versusia', 'Versusia', 'ヴェルサシア', 'cp1', '1.50', ['ヴェルセシア']),
   dlc('vikala', 'Vikala', 'ビカラ', 'cp1', '1.60', ['Vikal']),
-  dlc('sandalphon', 'Sandalphon', 'サンダルフォン', 'cp2', '2.00'),
+  dlc('sandalphon', 'Sandalphon', 'サンダルフォン', 'cp2', '2.00', ['Sandalphone']),
   dlc('galleon', 'Galleon', 'ガレヲン', 'cp2', '2.10'),
   dlc('wilnas', 'Wilnas', 'ウィルナス', 'cp2', '2.20'),
   dlc('meg', 'Meg', 'メグ', 'cp2', '2.30'),
-  dlc('ilsa', 'Ilsa', 'イルザ', 'cp2', '2.50'),
+  dlc('ilsa', 'Ilsa', 'イルザ', 'cp2', '2.50', ['Isla']),
   dlc('id', 'Id', 'イド', 'cp2', '2.60'),
 ];
 

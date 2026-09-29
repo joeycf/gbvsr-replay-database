@@ -121,8 +121,12 @@ const RESIDUE_NOISE = new RegExp(
   [
     'gbvs\\s*r?',
     'グラブル\\s*(?:vs|ＶＳ)?|ライジング|グランブルーファンタジー|ヴァーサス|ランクマ(?:ッチ)?|対戦|大会|動画|配信',
+    // yumegiwa's weekly tournament names — the label on its whole-tournament
+    // VODs, which carry no `vs` and are correct rejections.
+    '(?:金曜|日曜|土曜)(?:だから|から|だし)?夜更か?し',
     '\\b(?:granblue|fantasy|versus|rising|vs|ft|feat|and|the|of|match|matches|' +
-      'replay|replays|gameplay|high|level|rank|ranked|masters?|rookies|online|on-line|' +
+      'replay|replays|gameplay|high|level|rank|ranked|masters?|online|on-line|trailer|teaser|' +
+      'reveal|official|restream|' +
       'jpn|tournament|set|sets|round|rounds|season|dlc|patch|update|ver|version|new|full|' +
       'best|top|pro|player|players|final|finals|grand|semi|winners|losers|pools|' +
       'hd|4k|1080p|1440p|60fps|shorts|short|live|stream|clip|clips|highlight|highlights|no)\\b',
@@ -387,6 +391,40 @@ export const CONFIRMED_FIGHTER_NAMED_PLAYERS: ConfirmedFighterNamedPlayer[] = [
     handle: 'Yuel',
     video: 'J95ykXUEg1A',
     note: 'highLevelReplays, 1 title at recon, handle-outside — a player named after the fighter.',
+  },
+  // Adjudicated 2026-09-29 from the first (rehearsal) parse's registry
+  // invariant, each from its own title: the handle sits in the PLAYER slot of
+  // that intake's grammar and plays a DIFFERENT fighter where that is what
+  // settles it.
+  {
+    id: 'djeeta',
+    handle: 'Djeeta',
+    video: 'ihdCPrrDylg',
+    note: 'kakuken "Djeeta (Wilnas) vs Laphroaig (Eustace)" — a player named Djeeta, on Wilnas.',
+  },
+  {
+    id: 'カタリナ',
+    handle: 'カタリナ',
+    video: 'TL1gEukvfHs',
+    note: 'yumegiwa "Revo|カタリナ（Katalina カタリナ）" — the Revo-sponsored player カタリナ, on Katalina.',
+  },
+  {
+    id: 'nier-gojira',
+    handle: 'Nier Gojira',
+    video: 'UiUOrc4IF60@9315',
+    note: 'Replay Theater, Socal Colosseum Clash #21 — "Nier Gojira (Versusia) vs IronGod (Nier)".',
+  },
+  {
+    id: 'metara',
+    handle: 'Metara',
+    video: 'sINgpuTXwn4',
+    note: 'kakuken "Metara (Wilnas) vs Miraias (Six)" — a player named Metara, on Wilnas. "Metara" is ALSO a measured typo for Metera (risingReplays "[Metara]"), so the alias stays and the tie-break files this title correctly.',
+  },
+  {
+    id: 'belial-whatsapp',
+    handle: 'Belial Whatsapp',
+    video: '41yPUN46DJg@486',
+    note: 'Replay Theater — "Belial Whatsapp (Belial)" beside Professor Nekotech; a tournament handle.',
   },
 ];
 

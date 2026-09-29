@@ -3,7 +3,7 @@
   "name": "Granblue Fantasy Versus: Rising",
   "replays": 0,
   "players": 0,
-  "characters": 0,
-  "updated": null,
+  "characters": 40,
+  "updated": "2026-09-15",
   "engine": "v0.16.0"
 }
