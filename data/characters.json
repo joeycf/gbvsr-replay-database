@@ -1,1 +1,662 @@
-[]
+[
+  {
+    "id": "gran",
+    "name": "Gran",
+    "imgPortrait": "/img/char/gran.webp",
+    "imgSplash": "/img/splash/gran.webp",
+    "accent": "#FFB5AB",
+    "extra": {
+      "aliases": [
+        "グラン"
+      ],
+      "siteSlug": "gran",
+      "nameJa": "グラン",
+      "pass": "base",
+      "released": "2023-12-11",
+      "exSince": "2025-08-03"
+    }
+  },
+  {
+    "id": "djeeta",
+    "name": "Djeeta",
+    "imgPortrait": "/img/char/djeeta.webp",
+    "imgSplash": "/img/splash/djeeta.webp",
+    "accent": "#91D4FE",
+    "extra": {
+      "aliases": [
+        "ジータ"
+      ],
+      "siteSlug": "djeeta",
+      "nameJa": "ジータ",
+      "pass": "base",
+      "released": "2023-12-11",
+      "exSince": "2025-08-03"
+    }
+  },
+  {
+    "id": "katalina",
+    "name": "Katalina",
+    "imgPortrait": "/img/char/katalina.webp",
+    "imgSplash": "/img/splash/katalina.webp",
+    "accent": "#4BA5F0",
+    "extra": {
+      "aliases": [
+        "カタリナ"
+      ],
+      "siteSlug": "katalina",
+      "nameJa": "カタリナ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "charlotta",
+    "name": "Charlotta",
+    "imgPortrait": "/img/char/charlotta.webp",
+    "imgSplash": "/img/splash/charlotta.webp",
+    "accent": "#E5E483",
+    "extra": {
+      "aliases": [
+        "シャルロッテ",
+        "Carlotta"
+      ],
+      "siteSlug": "charlotta",
+      "nameJa": "シャルロッテ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "lancelot",
+    "name": "Lancelot",
+    "imgPortrait": "/img/char/lancelot.webp",
+    "imgSplash": "/img/splash/lancelot.webp",
+    "accent": "#05AEDC",
+    "extra": {
+      "aliases": [
+        "ランスロット",
+        "Lanslot"
+      ],
+      "siteSlug": "lancelot",
+      "nameJa": "ランスロット",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "percival",
+    "name": "Percival",
+    "imgPortrait": "/img/char/percival.webp",
+    "imgSplash": "/img/splash/percival.webp",
+    "accent": "#EF656B",
+    "extra": {
+      "aliases": [
+        "パーシヴァル"
+      ],
+      "siteSlug": "percival",
+      "nameJa": "パーシヴァル",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "ladiva",
+    "name": "Ladiva",
+    "imgPortrait": "/img/char/ladiva.webp",
+    "imgSplash": "/img/splash/ladiva.webp",
+    "accent": "#8ADB90",
+    "extra": {
+      "aliases": [
+        "ファスティバ",
+        "Fastiva"
+      ],
+      "siteSlug": "ladiva",
+      "nameJa": "ファスティバ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "metera",
+    "name": "Metera",
+    "imgPortrait": "/img/char/metera.webp",
+    "imgSplash": "/img/splash/metera.webp",
+    "accent": "#14BBC2",
+    "extra": {
+      "aliases": [
+        "メーテラ",
+        "Meterra"
+      ],
+      "siteSlug": "metera",
+      "nameJa": "メーテラ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "lowain",
+    "name": "Lowain",
+    "imgPortrait": "/img/char/lowain.webp",
+    "imgSplash": "/img/splash/lowain.webp",
+    "accent": "#FEB79E",
+    "extra": {
+      "aliases": [
+        "ローアイン",
+        "Lowian"
+      ],
+      "siteSlug": "lowain",
+      "nameJa": "ローアイン",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "ferry",
+    "name": "Ferry",
+    "imgPortrait": "/img/char/ferry.webp",
+    "imgSplash": "/img/splash/ferry.webp",
+    "accent": "#F4DBA9",
+    "extra": {
+      "aliases": [
+        "フェリ"
+      ],
+      "siteSlug": "ferry",
+      "nameJa": "フェリ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "zeta",
+    "name": "Zeta",
+    "imgPortrait": "/img/char/zeta.webp",
+    "imgSplash": "/img/splash/zeta.webp",
+    "accent": "#EE6951",
+    "extra": {
+      "aliases": [
+        "ゼタ"
+      ],
+      "siteSlug": "zeta",
+      "nameJa": "ゼタ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "vaseraga",
+    "name": "Vaseraga",
+    "imgPortrait": "/img/char/vaseraga.webp",
+    "imgSplash": "/img/splash/vaseraga.webp",
+    "accent": "#8B8AF1",
+    "extra": {
+      "aliases": [
+        "バザラガ"
+      ],
+      "siteSlug": "vaseraga",
+      "nameJa": "バザラガ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "narmaya",
+    "name": "Narmaya",
+    "imgPortrait": "/img/char/narmaya.webp",
+    "imgSplash": "/img/splash/narmaya.webp",
+    "accent": "#C9C2FE",
+    "extra": {
+      "aliases": [
+        "ナルメア"
+      ],
+      "siteSlug": "narmaya",
+      "nameJa": "ナルメア",
+      "pass": "base",
+      "released": "2023-12-11",
+      "exSince": "2025-08-03"
+    }
+  },
+  {
+    "id": "soriz",
+    "name": "Soriz",
+    "imgPortrait": "/img/char/soriz.webp",
+    "imgSplash": "/img/splash/soriz.webp",
+    "accent": "#B1CA70",
+    "extra": {
+      "aliases": [
+        "ソリッズ"
+      ],
+      "siteSlug": "soriz",
+      "nameJa": "ソリッズ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "zooey",
+    "name": "Zooey",
+    "imgPortrait": "/img/char/zooey.webp",
+    "imgSplash": "/img/splash/zooey.webp",
+    "accent": "#F6DE7D",
+    "extra": {
+      "aliases": [
+        "ゾーイ",
+        "Zoeey"
+      ],
+      "siteSlug": "zooey",
+      "nameJa": "ゾーイ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "cagliostro",
+    "name": "Cagliostro",
+    "imgPortrait": "/img/char/cagliostro.webp",
+    "imgSplash": "/img/splash/cagliostro.webp",
+    "accent": "#3DB87C",
+    "extra": {
+      "aliases": [
+        "カリオストロ",
+        "Caliostro",
+        "Cgliostro"
+      ],
+      "siteSlug": "cagliostro",
+      "nameJa": "カリオストロ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "yuel",
+    "name": "Yuel",
+    "imgPortrait": "/img/char/yuel.webp",
+    "imgSplash": "/img/splash/yuel.webp",
+    "accent": "#EE7942",
+    "extra": {
+      "aliases": [
+        "ユエル"
+      ],
+      "siteSlug": "yuel",
+      "nameJa": "ユエル",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "anre",
+    "name": "Anre",
+    "imgPortrait": "/img/char/anre.webp",
+    "imgSplash": "/img/splash/anre.webp",
+    "accent": "#ABCDFE",
+    "extra": {
+      "aliases": [
+        "ウーノ",
+        "Uno"
+      ],
+      "siteSlug": "anre",
+      "nameJa": "ウーノ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "eustace",
+    "name": "Eustace",
+    "imgPortrait": "/img/char/eustace.webp",
+    "imgSplash": "/img/splash/eustace.webp",
+    "accent": "#C0C5FF",
+    "extra": {
+      "aliases": [
+        "ユーステス"
+      ],
+      "siteSlug": "eustace",
+      "nameJa": "ユーステス",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "seox",
+    "name": "Seox",
+    "imgPortrait": "/img/char/seox.webp",
+    "imgSplash": "/img/splash/seox.webp",
+    "accent": "#A981E0",
+    "extra": {
+      "aliases": [
+        "シス",
+        "Six"
+      ],
+      "siteSlug": "seox",
+      "nameJa": "シス",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "vira",
+    "name": "Vira",
+    "imgPortrait": "/img/char/vira.webp",
+    "imgSplash": "/img/splash/vira.webp",
+    "accent": "#8097F5",
+    "extra": {
+      "aliases": [
+        "ヴィーラ"
+      ],
+      "siteSlug": "vira",
+      "nameJa": "ヴィーラ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "beelzebub",
+    "name": "Beelzebub",
+    "imgPortrait": "/img/char/beelzebub.webp",
+    "imgSplash": "/img/splash/beelzebub.webp",
+    "accent": "#D96CB4",
+    "extra": {
+      "aliases": [
+        "ベルゼバブ"
+      ],
+      "siteSlug": "beelzebub",
+      "nameJa": "ベルゼバブ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "belial",
+    "name": "Belial",
+    "imgPortrait": "/img/char/belial.webp",
+    "imgSplash": "/img/splash/belial.webp",
+    "accent": "#A287FE",
+    "extra": {
+      "aliases": [
+        "ベリアル"
+      ],
+      "siteSlug": "belial",
+      "nameJa": "ベリアル",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "avatar-belial",
+    "name": "Avatar Belial",
+    "imgPortrait": "/img/char/avatar-belial.webp",
+    "imgSplash": "/img/splash/avatar-belial.webp",
+    "accent": "#FFAAEC",
+    "extra": {
+      "aliases": [
+        "アバタール・ベリアル"
+      ],
+      "siteSlug": "avatarbelial",
+      "nameJa": "アバタール・ベリアル",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "anila",
+    "name": "Anila",
+    "imgPortrait": "/img/char/anila.webp",
+    "imgSplash": "/img/splash/anila.webp",
+    "accent": "#FEB98F",
+    "extra": {
+      "aliases": [
+        "アニラ",
+        "Anira"
+      ],
+      "siteSlug": "anila",
+      "nameJa": "アニラ",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "siegfried",
+    "name": "Siegfried",
+    "imgPortrait": "/img/char/siegfried.webp",
+    "imgSplash": "/img/splash/siegfried.webp",
+    "accent": "#73AB4C",
+    "extra": {
+      "aliases": [
+        "ジークフリート",
+        "ジークフリード",
+        "Seigfried"
+      ],
+      "siteSlug": "siegfried",
+      "nameJa": "ジークフリート",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "grimnir",
+    "name": "Grimnir",
+    "imgPortrait": "/img/char/grimnir.webp",
+    "imgSplash": "/img/splash/grimnir.webp",
+    "accent": "#67E2DA",
+    "extra": {
+      "aliases": [
+        "グリームニル",
+        "Grimnil"
+      ],
+      "siteSlug": "grimnir",
+      "nameJa": "グリームニル",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "nier",
+    "name": "Nier",
+    "imgPortrait": "/img/char/nier.webp",
+    "imgSplash": "/img/splash/nier.webp",
+    "accent": "#BD81E1",
+    "extra": {
+      "aliases": [
+        "ニーア"
+      ],
+      "siteSlug": "nier",
+      "nameJa": "ニーア",
+      "pass": "base",
+      "released": "2023-12-11"
+    }
+  },
+  {
+    "id": "lucilius",
+    "name": "Lucilius",
+    "imgPortrait": "/img/char/lucilius.webp",
+    "imgSplash": "/img/splash/lucilius.webp",
+    "accent": "#DFB9FC",
+    "extra": {
+      "aliases": [
+        "ルシファー",
+        "Lucifer",
+        "Lucillius"
+      ],
+      "siteSlug": "lucilius",
+      "nameJa": "ルシファー",
+      "pass": "cp1",
+      "released": "2024-01-15"
+    }
+  },
+  {
+    "id": "2b",
+    "name": "2B",
+    "imgPortrait": "/img/char/2b.webp",
+    "imgSplash": "/img/splash/2b.webp",
+    "accent": "#D0C2ED",
+    "extra": {
+      "aliases": [],
+      "siteSlug": "2b",
+      "nameJa": "2B",
+      "pass": "cp1",
+      "released": "2024-02-19"
+    }
+  },
+  {
+    "id": "vane",
+    "name": "Vane",
+    "imgPortrait": "/img/char/vane.webp",
+    "imgSplash": "/img/splash/vane.webp",
+    "accent": "#61D7ED",
+    "extra": {
+      "aliases": [
+        "ヴェイン"
+      ],
+      "siteSlug": "vane",
+      "nameJa": "ヴェイン",
+      "pass": "cp1",
+      "released": "2024-03-31"
+    }
+  },
+  {
+    "id": "beatrix",
+    "name": "Beatrix",
+    "imgPortrait": "/img/char/beatrix.webp",
+    "imgSplash": "/img/splash/beatrix.webp",
+    "accent": "#CE76DC",
+    "extra": {
+      "aliases": [
+        "ベアトリクス",
+        "Beatlix"
+      ],
+      "siteSlug": "beatrix",
+      "nameJa": "ベアトリクス",
+      "pass": "cp1",
+      "released": "2024-05-21"
+    }
+  },
+  {
+    "id": "versusia",
+    "name": "Versusia",
+    "imgPortrait": "/img/char/versusia.webp",
+    "imgSplash": "/img/splash/versusia.webp",
+    "accent": "#FFD6A5",
+    "extra": {
+      "aliases": [
+        "ヴェルサシア",
+        "ヴェルセシア"
+      ],
+      "siteSlug": "versusia",
+      "nameJa": "ヴェルサシア",
+      "pass": "cp1",
+      "released": "2024-08-18"
+    }
+  },
+  {
+    "id": "vikala",
+    "name": "Vikala",
+    "imgPortrait": "/img/char/vikala.webp",
+    "imgSplash": "/img/splash/vikala.webp",
+    "accent": "#D378C7",
+    "extra": {
+      "aliases": [
+        "ビカラ",
+        "Vikal"
+      ],
+      "siteSlug": "vikala",
+      "nameJa": "ビカラ",
+      "pass": "cp1",
+      "released": "2024-10-23"
+    }
+  },
+  {
+    "id": "sandalphon",
+    "name": "Sandalphon",
+    "imgPortrait": "/img/char/sandalphon.webp",
+    "imgSplash": "/img/splash/sandalphon.webp",
+    "accent": "#E5B8EF",
+    "extra": {
+      "aliases": [
+        "サンダルフォン"
+      ],
+      "siteSlug": "sandalphon",
+      "nameJa": "サンダルフォン",
+      "pass": "cp2",
+      "released": "2025-02-24"
+    }
+  },
+  {
+    "id": "galleon",
+    "name": "Galleon",
+    "imgPortrait": "/img/char/galleon.webp",
+    "imgSplash": "/img/splash/galleon.webp",
+    "accent": "#79DBB2",
+    "extra": {
+      "aliases": [
+        "ガレヲン"
+      ],
+      "siteSlug": "galleon",
+      "nameJa": "ガレヲン",
+      "pass": "cp2",
+      "released": "2025-05-26"
+    }
+  },
+  {
+    "id": "wilnas",
+    "name": "Wilnas",
+    "imgPortrait": "/img/char/wilnas.webp",
+    "imgSplash": "/img/splash/wilnas.webp",
+    "accent": "#FFA9AF",
+    "extra": {
+      "aliases": [
+        "ウィルナス"
+      ],
+      "siteSlug": "wilnas",
+      "nameJa": "ウィルナス",
+      "pass": "cp2",
+      "released": "2025-08-03"
+    }
+  },
+  {
+    "id": "meg",
+    "name": "Meg",
+    "imgPortrait": "/img/char/meg.webp",
+    "imgSplash": "/img/splash/meg.webp",
+    "accent": "#77D9FF",
+    "extra": {
+      "aliases": [
+        "メグ"
+      ],
+      "siteSlug": "meg",
+      "nameJa": "メグ",
+      "pass": "cp2",
+      "released": "2025-10-13"
+    }
+  },
+  {
+    "id": "ilsa",
+    "name": "Ilsa",
+    "imgPortrait": "/img/char/ilsa.webp",
+    "imgSplash": "/img/splash/ilsa.webp",
+    "accent": "#DC6DA2",
+    "extra": {
+      "aliases": [
+        "イルザ"
+      ],
+      "siteSlug": "ilsa",
+      "nameJa": "イルザ",
+      "pass": "cp2",
+      "released": "2026-02-08"
+    }
+  },
+  {
+    "id": "id",
+    "name": "Id",
+    "imgPortrait": "/img/char/id.webp",
+    "imgSplash": "/img/splash/id.webp",
+    "accent": "#FFAED7",
+    "extra": {
+      "aliases": [
+        "イド"
+      ],
+      "siteSlug": "id",
+      "nameJa": "イド",
+      "pass": "cp2",
+      "released": "2026-09-15"
+    }
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "S1",
+    "label": "Season 1",
+    "note": "Launch roster + Character Pass 1",
+    "children": [
+      {
+        "id": "1.0",
+        "label": "Ver. 1.0",
+        "note": "Launch (early access Dec 11)"
+      },
+      {
+        "id": "1.1",
+        "label": "Ver. 1.1",
+        "note": "Lucilius"
+      },
+      {
+        "id": "1.21",
+        "label": "Ver. 1.21",
+        "note": "2B"
+      },
+      {
+        "id": "1.30",
+        "label": "Ver. 1.30",
+        "note": "Vane"
+      },
+      {
+        "id": "1.40",
+        "label": "Ver. 1.40",
+        "note": "Beatrix"
+      },
+      {
+        "id": "1.41",
+        "label": "Ver. 1.41"
+      },
+      {
+        "id": "1.42",
+        "label": "Ver. 1.42",
+        "note": "Beatrix adjustments"
+      },
+      {
+        "id": "1.50",
+        "label": "Ver. 1.50",
+        "note": "Versusia · roster-wide balance"
+      },
+      {
+        "id": "1.52",
+        "label": "Ver. 1.52"
+      },
+      {
+        "id": "1.60",
+        "label": "Ver. 1.60",
+        "note": "Vikala"
+      },
+      {
+        "id": "1.62",
+        "label": "Ver. 1.62"
+      }
+    ]
+  },
+  {
+    "id": "S2",
+    "label": "Season 2",
+    "note": "Character Pass 2 — opened by Ver. 2.00 in the vendor’s own words",
+    "children": [
+      {
+        "id": "2.00",
+        "label": "Ver. 2.00",
+        "note": "Sandalphon · Season 2"
+      },
+      {
+        "id": "2.02",
+        "label": "Ver. 2.02"
+      },
+      {
+        "id": "2.03",
+        "label": "Ver. 2.03"
+      },
+      {
+        "id": "2.10",
+        "label": "Ver. 2.10",
+        "note": "Galleon"
+      },
+      {
+        "id": "2.12",
+        "label": "Ver. 2.12"
+      },
+      {
+        "id": "2.20",
+        "label": "Ver. 2.20",
+        "note": "Wilnas · EX mode"
+      },
+      {
+        "id": "2.22",
+        "label": "Ver. 2.22"
+      },
+      {
+        "id": "2.30",
+        "label": "Ver. 2.30",
+        "note": "Meg"
+      },
+      {
+        "id": "2.40",
+        "label": "Ver. 2.40"
+      },
+      {
+        "id": "2.50",
+        "label": "Ver. 2.50",
+        "note": "Ilsa"
+      },
+      {
+        "id": "2.51",
+        "label": "Ver. 2.51"
+      },
+      {
+        "id": "2.60",
+        "label": "Ver. 2.60",
+        "note": "Id · new battle system"
+      }
+    ]
+  }
+]

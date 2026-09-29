@@ -1,0 +1,199 @@
+[
+  {
+    "version": "1.0",
+    "start": "2023-12-11",
+    "announcedOn": "launch",
+    "note": "Launch (early access Dec 11)",
+    "end": "2024-01-15",
+    "season": 1
+  },
+  {
+    "version": "1.1",
+    "start": "2024-01-15",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=py5oq6bru",
+    "announcedOn": "rising-news",
+    "note": "Lucilius",
+    "end": "2024-02-19",
+    "season": 1
+  },
+  {
+    "version": "1.21",
+    "start": "2024-02-19",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=82mc1nv3fm",
+    "announcedOn": "rising-news",
+    "note": "2B",
+    "end": "2024-03-31",
+    "season": 1
+  },
+  {
+    "version": "1.30",
+    "start": "2024-03-31",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=u0pszn-y2e",
+    "announcedOn": "rising-news",
+    "note": "Vane",
+    "end": "2024-05-21",
+    "season": 1
+  },
+  {
+    "version": "1.40",
+    "start": "2024-05-21",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=xvsqq1zfz0",
+    "announcedOn": "rising-news",
+    "note": "Beatrix",
+    "end": "2024-06-02",
+    "season": 1
+  },
+  {
+    "version": "1.41",
+    "start": "2024-06-02",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=5wfxfx0lkak1",
+    "announcedOn": "rising-news",
+    "end": "2024-06-20",
+    "season": 1
+  },
+  {
+    "version": "1.42",
+    "start": "2024-06-20",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=9mo4ieqpn6fj",
+    "announcedOn": "rising-news",
+    "note": "Beatrix adjustments",
+    "end": "2024-08-18",
+    "season": 1
+  },
+  {
+    "version": "1.50",
+    "start": "2024-08-18",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=xg9_rosyyop",
+    "announcedOn": "rising-news",
+    "note": "Versusia · roster-wide balance",
+    "end": "2024-09-15",
+    "season": 1
+  },
+  {
+    "version": "1.52",
+    "start": "2024-09-15",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=noj-flng8s",
+    "announcedOn": "rising-news",
+    "end": "2024-10-23",
+    "season": 1
+  },
+  {
+    "version": "1.60",
+    "start": "2024-10-23",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=kvlhfzqpswzx",
+    "announcedOn": "rising-news",
+    "note": "Vikala",
+    "end": "2024-11-20",
+    "season": 1
+  },
+  {
+    "version": "1.62",
+    "start": "2024-11-20",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=5l57ksapsuu1",
+    "announcedOn": "rising-news",
+    "end": "2025-02-24",
+    "season": 1
+  },
+  {
+    "version": "2.00",
+    "start": "2025-02-24",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=91-vxmqh-t1x",
+    "announcedOn": "rising-news",
+    "note": "Sandalphon · Season 2",
+    "end": "2025-03-12",
+    "season": 2
+  },
+  {
+    "version": "2.02",
+    "start": "2025-03-12",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=v_tqimnr21f",
+    "announcedOn": "rising-news",
+    "end": "2025-03-25",
+    "season": 2
+  },
+  {
+    "version": "2.03",
+    "start": "2025-03-25",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=ar7w35yy3b",
+    "announcedOn": "rising-news",
+    "end": "2025-05-26",
+    "season": 2
+  },
+  {
+    "version": "2.10",
+    "start": "2025-05-26",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=xr2dnxjz8",
+    "announcedOn": "rising-news",
+    "note": "Galleon",
+    "end": "2025-06-08",
+    "season": 2
+  },
+  {
+    "version": "2.12",
+    "start": "2025-06-08",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=rdso4drvo",
+    "announcedOn": "rising-news",
+    "end": "2025-08-03",
+    "season": 2
+  },
+  {
+    "version": "2.20",
+    "start": "2025-08-03",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=7k5v0136p_iq",
+    "announcedOn": "rising-news",
+    "note": "Wilnas · EX mode",
+    "end": "2025-08-12",
+    "season": 2
+  },
+  {
+    "version": "2.22",
+    "start": "2025-08-12",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=i4nhzwszcp3",
+    "announcedOn": "rising-news",
+    "end": "2025-10-13",
+    "season": 2
+  },
+  {
+    "version": "2.30",
+    "start": "2025-10-13",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=n9yk6vwrucj9",
+    "announcedOn": "rising-news",
+    "note": "Meg",
+    "end": "2025-11-30",
+    "season": 2
+  },
+  {
+    "version": "2.40",
+    "start": "2025-11-30",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=2-sw3wqtt",
+    "announcedOn": "rising-news",
+    "end": "2026-02-08",
+    "season": 2
+  },
+  {
+    "version": "2.50",
+    "start": "2026-02-08",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=ulceuzl6t",
+    "announcedOn": "rising-news",
+    "note": "Ilsa",
+    "end": "2026-03-16",
+    "season": 2
+  },
+  {
+    "version": "2.51",
+    "start": "2026-03-16",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=dvpi0rxwejpt",
+    "announcedOn": "rising-news",
+    "end": "2026-09-15",
+    "season": 2
+  },
+  {
+    "version": "2.60",
+    "start": "2026-09-15",
+    "url": "https://rising.granbluefantasy.jp/en/news/detail/?id=uykga6t5-h",
+    "announcedOn": "rising-news",
+    "note": "Id · new battle system",
+    "end": null,
+    "season": 2
+  }
+]

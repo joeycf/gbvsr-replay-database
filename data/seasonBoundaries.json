@@ -1,0 +1,20 @@
+[
+  {
+    "season": 1,
+    "start": "2023-12-11",
+    "end": "2025-02-24",
+    "confirmed": true,
+    "versionMajor": 1,
+    "label": "Season 1",
+    "note": "Launch roster + Character Pass 1"
+  },
+  {
+    "season": 2,
+    "start": "2025-02-24",
+    "end": null,
+    "confirmed": true,
+    "versionMajor": 2,
+    "label": "Season 2",
+    "note": "Character Pass 2 — opened by Ver. 2.00 in the vendor’s own words"
+  }
+]
