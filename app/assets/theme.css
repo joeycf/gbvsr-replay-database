@@ -158,8 +158,10 @@
   /* Cinzel Decorative carries all ten digits and every roster glyph in its
      LATIN subset at 700 and 900 — checked against the cmap (211 codepoints),
      not an ASCII proxy, so "2B" draws in the display face. Its latin-ext
-     subset carries none of them (Ō only). Cinzel's lowercase is SMALL CAPS,
-     which is why the OG probe string includes lowercase (checklist 5d). */
+     subset carries none of them (Ō only). It has no small caps: lowercase
+     draws plain capitals, uppercase the swash capitals (measured in
+     scripts/og.ts), which is why the OG probe string includes lowercase
+     (checklist 5d). */
   --font-display: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
   --font-ui: 'Figtree', 'Helvetica Neue', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;

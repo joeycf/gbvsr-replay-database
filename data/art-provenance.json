@@ -1,0 +1,1645 @@
+{
+  "method": "fan-kit",
+  "source": {
+    "page": "https://rising.granbluefantasy.jp/en/extras/fankit/",
+    "bundle": "https://rising.granbluefantasy.jp/assets/js/event_fankit.c37da9d3.js",
+    "cms": {
+      "serviceDomain": "qlxifmpqu1-hxol4yf0hcexr161hneg",
+      "endpoint": "fankit",
+      "query": "limit=1000&fields=title,type,category,download,id",
+      "filter": "type == [\"GBVSR\"] && category == [\"キャラクター\"]",
+      "items": 260,
+      "matched": 41
+    },
+    "note": "Every URL below was read from the CMS response; none was constructed. The public read key is scraped from the bundle at run time and never recorded."
+  },
+  "licence": {
+    "url": "https://rising.granbluefantasy.jp/en/extras/fankit/",
+    "title": "Granblue Fantasy: Versus Fan Kit Terms of Use",
+    "read": "2026-09-29",
+    "revocable": true,
+    "articles": [
+      {
+        "article": "Article 1 (Copyrighted Materials)",
+        "sentences": [
+          "Only copyrighted materials distributed in the fan kit (hereinafter, \"Copyrighted Materials\") may be used.",
+          "Other copyrighted materials relating to the Content may not be posted to or reprinted on external websites."
+        ]
+      },
+      {
+        "article": "Article 2 (Prohibited Acts)",
+        "sentences": [
+          "The following acts are prohibited:",
+          "Using Copyrighted Materials for commercial purposes or profit-making;",
+          "Excessively processing or modifying Copyrighted Materials for use;",
+          "Deleting or modifying trademarks and copyright notices on Copyrighted Materials;"
+        ]
+      },
+      {
+        "article": "Article 3 (Revocation of License)",
+        "sentences": [
+          "We may revoke the user's license to use Copyrighted Materials if we discover use of Copyrighted Materials that we deem violates the prohibitions listed in the preceding Article for any reason.",
+          "In this case, the user must immediately destroy or delete the Copyrighted Materials and all copies thereof."
+        ]
+      }
+    ],
+    "decision": "User decision 2026-09-29: use the Fan Kit, crop + resize only (no recolouring, no compositing onto the figure), and keep a dormant generated-tile fallback buildable behind one command (npm run data:art:revoked), because Article 3 lets Cygames revoke and Article 1 leaves no other permitted source."
+  },
+  "licenceVerified": "2026-09-29",
+  "credit": "Character art © Cygames, Inc. · 2B © SQUARE ENIX",
+  "fetched": "2026-09-29",
+  "processing": "Crop + resize only. Portrait: a 3:4 bust window, resized to 512×683 WebP with the alpha kept. Splash: the visible figure resized onto a transparent 2880×680 canvas. No recolouring, no background composited behind or over the figure; each source scanned for a baked notice before cropping (none found).",
+  "framing": {
+    "portrait": {
+      "width": 512,
+      "height": 683,
+      "bustHeight": 0.38,
+      "faceTop": 0.3
+    },
+    "splash": {
+      "width": 2880,
+      "height": 680,
+      "figureHeight": 0.92,
+      "figureRight": 0.97,
+      "figureBaseline": 20,
+      "figureMaxWidth": 788,
+      "requires": "GameConfig.heroFocus '100% 50%'"
+    },
+    "head": {
+      "table": 40,
+      "estimated": 0,
+      "estimateWouldMiss": [
+        "gran",
+        "katalina",
+        "charlotta",
+        "lancelot",
+        "percival",
+        "ladiva",
+        "metera",
+        "lowain",
+        "ferry",
+        "zeta",
+        "vaseraga",
+        "narmaya",
+        "soriz",
+        "zooey",
+        "cagliostro",
+        "yuel",
+        "anre",
+        "eustace",
+        "seox",
+        "vira",
+        "beelzebub",
+        "belial",
+        "anila",
+        "siegfried",
+        "grimnir",
+        "nier",
+        "lucilius",
+        "2b",
+        "vane",
+        "beatrix",
+        "versusia",
+        "vikala",
+        "sandalphon",
+        "galleon",
+        "wilnas",
+        "ilsa",
+        "id"
+      ],
+      "densityRadius": 65,
+      "densityMin": 0.35
+    }
+  },
+  "knownExtras": [
+    {
+      "title": "Lunalu",
+      "cmsId": "7mikv-7r1o",
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/fe47a34941574a6591a8570ea79e08c0/29_GBVSR_Lunalu.png",
+      "downloaded": false,
+      "reason": "In the kit's GBVSR character set (\"29_GBVSR_Lunalu.png\") but not a fighter: the vendor roster (rising.granbluefantasy.jp/en/characters/) lists 40, and she is not among them; neither title.en \"Lunalu\" nor title.ja resolves to a roster alias. Never downloaded."
+    }
+  ],
+  "files": [
+    {
+      "id": "gran",
+      "name": "Gran",
+      "cmsId": "qj5pnhk75i",
+      "title": {
+        "en": "Gran",
+        "ja": "グラン"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/d91ce41c55dd4a7e99be8a20a7e6c2f1/01_GBVSR_Gran.png",
+      "sourceSha256": "ffbe652b1ed9cf4d459e15a190c909746873a6bc3fcad2e059cf65d79271572f",
+      "sourceBytes": 2692824,
+      "sourceDimensions": "1900×2660",
+      "head": {
+        "x": 0.54,
+        "y": 0.155,
+        "density": 1,
+        "estimate": {
+          "x": 0.616,
+          "y": 0.065,
+          "density": 0.999
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/gran.webp",
+        "dimensions": "512×683",
+        "crop": "bust 734×979 at 659,119 → 512×683; face at 50%,30% of the window",
+        "bytes": 61664,
+        "sha256": "f1d891f6c4432a745994f51fe263a6eaf9f8bf1e68c68f8c31d7f765cbc21f0c"
+      },
+      "splash": {
+        "path": "/img/splash/gran.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1834×2577 at 34,42 → 446×626 at x2348 y34 on a transparent 2880×680 canvas",
+        "bytes": 46426,
+        "sha256": "c664be9544711d4f8aff8d2ebc0dd8c0447f3e24482689a7254f46a1dfed891e"
+      }
+    },
+    {
+      "id": "djeeta",
+      "name": "Djeeta",
+      "cmsId": "cnif0sjocb-u",
+      "title": {
+        "en": "Djeeta",
+        "ja": "ジータ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/d9c0aff010434722b11034fd3dbe86f2/02_GBVSR_Djeeta.png",
+      "sourceSha256": "a614cd1fe766e7b2e89e5ac7176a078d2bba05acd9f4f12d07d53e3127830524",
+      "sourceBytes": 2835726,
+      "sourceDimensions": "1900×3587",
+      "head": {
+        "x": 0.55,
+        "y": 0.175,
+        "density": 1,
+        "estimate": {
+          "x": 0.544,
+          "y": 0.123,
+          "density": 1
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/djeeta.webp",
+        "dimensions": "512×683",
+        "crop": "bust 856×1141 at 617,285 → 512×683; face at 50%,30% of the window",
+        "bytes": 72440,
+        "sha256": "1cc1ab79becf708ca1f2e2f220c5fb025a59656fc815276bde7a04e31d2e3b97"
+      },
+      "splash": {
+        "path": "/img/splash/djeeta.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1570×3007 at 164,291 → 327×626 at x2467 y34 on a transparent 2880×680 canvas",
+        "bytes": 42998,
+        "sha256": "2eb6e940a9b3ba0262ada604ab88d231aafef5dcda6a00c936f7e5b6be0c42cd"
+      }
+    },
+    {
+      "id": "katalina",
+      "name": "Katalina",
+      "cmsId": "ix0n27bz964",
+      "title": {
+        "en": "Katalina",
+        "ja": "カタリナ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/43e2ed03610a4ccbba9fd8884c0f391d/03_GBVSR_Katalina.png",
+      "sourceSha256": "481291abafb7eba8f6dde2c44bcf9e69e56e06eb6454e5cf2d3fb1532be7f1ab",
+      "sourceBytes": 3276700,
+      "sourceDimensions": "1900×2813",
+      "head": {
+        "x": 0.53,
+        "y": 0.32,
+        "density": 1,
+        "estimate": {
+          "x": 0.571,
+          "y": 0.098,
+          "density": 0.081
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/katalina.webp",
+        "dimensions": "512×683",
+        "crop": "bust 716×955 at 649,614 → 512×683; face at 50%,30% of the window",
+        "bytes": 66544,
+        "sha256": "28ad9c7dc7c3370238046538d45a94f36bf6db9e25d710d811629545c241422d"
+      },
+      "splash": {
+        "path": "/img/splash/katalina.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1662×2514 at 119,150 → 414×626 at x2380 y34 on a transparent 2880×680 canvas",
+        "bytes": 55000,
+        "sha256": "01fee88b11de87f0c1ad2dc82a3f0062f92b1afe68a11bd5e637ed2e3074f798"
+      }
+    },
+    {
+      "id": "charlotta",
+      "name": "Charlotta",
+      "cmsId": "nmm9qsnw9",
+      "title": {
+        "en": "Charlotta",
+        "ja": "シャルロッテ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/00fdeef1001849cdbafa54e4822246ed/04_GBVSR_Charlotta.png",
+      "sourceSha256": "9b2f4241660dc073975de26ea833f16ffb61ebd849337b5959edb8439f187b05",
+      "sourceBytes": 2626099,
+      "sourceDimensions": "1900×2345",
+      "head": {
+        "x": 0.55,
+        "y": 0.33,
+        "density": 0.998,
+        "estimate": {
+          "x": 0.453,
+          "y": 0.121,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/charlotta.webp",
+        "dimensions": "512×683",
+        "crop": "bust 563×751 at 764,549 → 512×683; face at 50%,30% of the window",
+        "bytes": 65866,
+        "sha256": "4eeec4fc52c0d216af67c036034ebb70895355d4305b0b5772a780af4da3e0d8"
+      },
+      "splash": {
+        "path": "/img/splash/charlotta.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1208×1980 at 346,183 → 382×627 at x2412 y33 on a transparent 2880×680 canvas",
+        "bytes": 57548,
+        "sha256": "bac5a72c22d4c352562b07b7a3a7a16344ec41c31875bab6cea0fceadd3ed82c"
+      }
+    },
+    {
+      "id": "lancelot",
+      "name": "Lancelot",
+      "cmsId": "hon8sueb8",
+      "title": {
+        "en": "Lancelot",
+        "ja": "ランスロット"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/e95d6b53abdb4fdab27e93f88ed1fe13/05_GBVSR_Lancelot.png",
+      "sourceSha256": "750a3dcebc8ac5ffbfdbe84ad0b64ccc699dcd7a636ff2eefd81f62ebcabdb60",
+      "sourceBytes": 2261363,
+      "sourceDimensions": "1900×2262",
+      "head": {
+        "x": 0.4,
+        "y": 0.25,
+        "density": 0.989,
+        "estimate": {
+          "x": 0.526,
+          "y": 0.106,
+          "density": 0.283
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/lancelot.webp",
+        "dimensions": "512×683",
+        "crop": "bust 572×763 at 474,337 → 512×683; face at 50%,30% of the window",
+        "bytes": 63050,
+        "sha256": "46df8f30dceedcf27e843d0cab9d771a14e726df08a873ab08d8094ba44c9ebd"
+      },
+      "splash": {
+        "path": "/img/splash/lancelot.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1662×2009 at 151,137 → 518×627 at x2276 y33 on a transparent 2880×680 canvas",
+        "bytes": 62588,
+        "sha256": "d83f5fac3717fa1317019e9111031d8b4b54fc5b8cdcd7fd4b091e2c4c5fd426"
+      }
+    },
+    {
+      "id": "percival",
+      "name": "Percival",
+      "cmsId": "kecd5xndtfl",
+      "title": {
+        "en": "Percival",
+        "ja": "パーシヴァル"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/c1654bbb455442ba914fe2bbcfe54cc7/06_GBVSR_Percival.png",
+      "sourceSha256": "bc045473e8eb532ff8d1229c411e4a94854ad69a2af67fe4d423848f890a0975",
+      "sourceBytes": 2663686,
+      "sourceDimensions": "1900×2324",
+      "head": {
+        "x": 0.49,
+        "y": 0.15,
+        "density": 0.999,
+        "estimate": {
+          "x": 0.534,
+          "y": 0.077,
+          "density": 0.059
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/percival.webp",
+        "dimensions": "512×683",
+        "crop": "bust 590×787 at 636,112 → 512×683; face at 50%,30% of the window",
+        "bytes": 82010,
+        "sha256": "476c046a3dd88ce776b0b703688748af5e1ee5f333198426800fca244ef67ee7"
+      },
+      "splash": {
+        "path": "/img/splash/percival.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1727×2072 at 101,75 → 522×626 at x2272 y34 on a transparent 2880×680 canvas",
+        "bytes": 79548,
+        "sha256": "042da27e81c0d613408e7298b5dd5df1e360d745b7dae6fa2389ad4e3fddfcf6"
+      }
+    },
+    {
+      "id": "ladiva",
+      "name": "Ladiva",
+      "cmsId": "cx6mut1yml",
+      "title": {
+        "en": "Ladiva",
+        "ja": "ファスティバ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/15cdd69d3427439cae9bc61dbbfae23d/07_GBVSR_Fastiva.png",
+      "sourceSha256": "ee7b292bc0bcbc28ac45a74e955558e69008b9d17a9e8101a84dbe71732f7e6e",
+      "sourceBytes": 3080935,
+      "sourceDimensions": "1900×1914",
+      "head": {
+        "x": 0.52,
+        "y": 0.22,
+        "density": 1,
+        "estimate": {
+          "x": 0.499,
+          "y": 0.07,
+          "density": 0.989
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/ladiva.webp",
+        "dimensions": "512×683",
+        "crop": "bust 521×695 at 728,213 → 512×683; face at 50%,30% of the window",
+        "bytes": 69568,
+        "sha256": "bb82a803b43ed9954eb023204b0c4185d6dcf30ebb77f6a7a7efb209927f5f2b"
+      },
+      "splash": {
+        "path": "/img/splash/ladiva.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1672×1831 at 114,42 → 572×626 at x2222 y34 on a transparent 2880×680 canvas",
+        "bytes": 79198,
+        "sha256": "73f9df9db0d1c650199e0bce7e5db62054fb4a2e7829ea8d5c1f80320ad384dd"
+      }
+    },
+    {
+      "id": "metera",
+      "name": "Metera",
+      "cmsId": "lt-ms46jm",
+      "title": {
+        "en": "Metera",
+        "ja": "メーテラ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/4332996e8a7e4e4b8335ce17faa98008/08_GBVSR_Metera.png",
+      "sourceSha256": "371ab7dc047ddbf70f1554d8b77aa06b38d2e2b704cb29485cef5c98ebb47124",
+      "sourceBytes": 2796568,
+      "sourceDimensions": "1900×2081",
+      "head": {
+        "x": 0.565,
+        "y": 0.345,
+        "density": 1,
+        "estimate": {
+          "x": 0.415,
+          "y": 0.075,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/metera.webp",
+        "dimensions": "512×683",
+        "crop": "bust 565×753 at 791,492 → 512×683; face at 50%,30% of the window",
+        "bytes": 87636,
+        "sha256": "a4d4163b80f5998b6a7b083c2de9fddafcd6da37936aef28a8e239b10bba80ba"
+      },
+      "splash": {
+        "path": "/img/splash/metera.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1658×1987 at 121,54 → 523×627 at x2271 y33 on a transparent 2880×680 canvas",
+        "bytes": 89524,
+        "sha256": "8c7fb5644bca60b2a8eb55c22389d8334fe59d1c13b7ded1070c6a0f501e5592"
+      }
+    },
+    {
+      "id": "lowain",
+      "name": "Lowain",
+      "cmsId": "7s___p08lsh",
+      "title": {
+        "en": "Lowain",
+        "ja": "ローアイン"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/f59ba11e14b04b69b06b854d249ee59c/09_GBVSR_Lowain_B.png",
+      "sourceSha256": "a2aed914a01711669399bdb81dba6c3a916278ca2d39c27737badd5240b143d2",
+      "sourceBytes": 3753769,
+      "sourceDimensions": "1900×2764",
+      "head": {
+        "x": 0.51,
+        "y": 0.22,
+        "density": 1,
+        "estimate": {
+          "x": 0.544,
+          "y": 0.101,
+          "density": 0.345
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/lowain.webp",
+        "dimensions": "512×683",
+        "crop": "bust 699×932 at 620,328 → 512×683; face at 50%,30% of the window",
+        "bytes": 84718,
+        "sha256": "a72ff02123ec3134e65e5b875988cbe047ac6f8ea028b77e01cb0f79e5608f54"
+      },
+      "splash": {
+        "path": "/img/splash/lowain.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1621×2453 at 83,155 → 414×626 at x2380 y34 on a transparent 2880×680 canvas",
+        "bytes": 68454,
+        "sha256": "2b5b27e812d846d5ee10ea03cf27f37bb93ada2f6fc934ac3c4b64f56304cd3c"
+      }
+    },
+    {
+      "id": "ferry",
+      "name": "Ferry",
+      "cmsId": "sx3ptp0he",
+      "title": {
+        "en": "Ferry",
+        "ja": "フェリ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/0ccfae14230f44a3bed67fd87fdfb2f2/10_GBVSR_Ferry.png",
+      "sourceSha256": "9741b22f505d24d303213cca37dd6a3a6dba09d19dd13758e5d8758a3717495e",
+      "sourceBytes": 2122146,
+      "sourceDimensions": "1900×1835",
+      "head": {
+        "x": 0.535,
+        "y": 0.24,
+        "density": 1,
+        "estimate": {
+          "x": 0.48,
+          "y": 0.08,
+          "density": 0.017
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/ferry.webp",
+        "dimensions": "512×683",
+        "crop": "bust 476×635 at 779,250 → 512×683; face at 50%,30% of the window",
+        "bytes": 66768,
+        "sha256": "8fcc7125305bb3bb682cc21ceb3957cc7bd8599f00a5153fcef9060bfd68942f"
+      },
+      "splash": {
+        "path": "/img/splash/ferry.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1626×1673 at 143,62 → 609×626 at x2185 y34 on a transparent 2880×680 canvas",
+        "bytes": 95214,
+        "sha256": "4111b65d22b2fd22f6f616564f91c942157da11451e22215cd0c1c38a071922e"
+      }
+    },
+    {
+      "id": "zeta",
+      "name": "Zeta",
+      "cmsId": "j4ojovhib5bm",
+      "title": {
+        "en": "Zeta",
+        "ja": "ゼタ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/5cf4cc00506643daad00c3655fd20f87/11_GBVSR_Zeta.png",
+      "sourceSha256": "4af36f392897b35f565ddac465e084f275a023c1d84f339675cf42e57e800600",
+      "sourceBytes": 2715140,
+      "sourceDimensions": "1900×2291",
+      "head": {
+        "x": 0.46,
+        "y": 0.3,
+        "density": 0.858,
+        "estimate": {
+          "x": 0.534,
+          "y": 0.056,
+          "density": 0.686
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/zeta.webp",
+        "dimensions": "512×683",
+        "crop": "bust 642×856 at 553,430 → 512×683; face at 50%,30% of the window",
+        "bytes": 97210,
+        "sha256": "d2c5768e4f143b5cb778cb1f861e66f9b3b46175d9ebf85ae0946ec33b65dd66"
+      },
+      "splash": {
+        "path": "/img/splash/zeta.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1867×2257 at 18,13 → 518×626 at x2276 y34 on a transparent 2880×680 canvas",
+        "bytes": 75814,
+        "sha256": "8f4476a3a62aaa3475b442c764b4648da66fa8bbee4ac04430ea4314452ef0fc"
+      }
+    },
+    {
+      "id": "vaseraga",
+      "name": "Vaseraga",
+      "cmsId": "k84anm50jy",
+      "title": {
+        "en": "Vaseraga",
+        "ja": "バザラガ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/54d10671d5084770b5c0d1f4d59b9194/12_GBVSR_Vaseraga.png",
+      "sourceSha256": "cc2fadf6dfed7292b00a5d3340045afc03187382853c437a7a229f448c107ca3",
+      "sourceBytes": 2290931,
+      "sourceDimensions": "1900×1910",
+      "head": {
+        "x": 0.55,
+        "y": 0.39,
+        "density": 1,
+        "estimate": {
+          "x": 0.562,
+          "y": 0.109,
+          "density": 0.063
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/vaseraga.webp",
+        "dimensions": "512×683",
+        "crop": "bust 473×631 at 809,556 → 512×683; face at 50%,30% of the window",
+        "bytes": 48524,
+        "sha256": "dbdc32e830ae929cd66477e929b44c5067aae659a29b0aaf0f5bd55bf0deebe2"
+      },
+      "splash": {
+        "path": "/img/splash/vaseraga.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1768×1662 at 66,124 → 666×626 at x2128 y34 on a transparent 2880×680 canvas",
+        "bytes": 77400,
+        "sha256": "29bb6b44afe219457f4b7840840c2324a7e8dc546e326db4d2fa2e12bdf7175e"
+      }
+    },
+    {
+      "id": "narmaya",
+      "name": "Narmaya",
+      "cmsId": "suykwyq-1b",
+      "title": {
+        "en": "Narmaya",
+        "ja": "ナルメア"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/dac4a12e77654f3bb43b3adfe3cb29e2/13_GBVSR_Narmaya.png",
+      "sourceSha256": "596e40297eaf90324e1f92a0774be40148bcf43622f0dd7fa4d02f33fb92c48d",
+      "sourceBytes": 2271828,
+      "sourceDimensions": "1900×2077",
+      "head": {
+        "x": 0.48,
+        "y": 0.32,
+        "density": 1,
+        "estimate": {
+          "x": 0.46,
+          "y": 0.083,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/narmaya.webp",
+        "dimensions": "512×683",
+        "crop": "bust 548×731 at 638,445 → 512×683; face at 50%,30% of the window",
+        "bytes": 80638,
+        "sha256": "57ae47aecd215182cdc0df656d208073e291525511419ec06199f5d2112ed4f1"
+      },
+      "splash": {
+        "path": "/img/splash/narmaya.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1747×1927 at 78,75 → 568×627 at x2226 y33 on a transparent 2880×680 canvas",
+        "bytes": 73468,
+        "sha256": "64dd67cfbbfe040cffdc70bc77482204a1c9e3dacb8d7fb9803d2a990328d53f"
+      }
+    },
+    {
+      "id": "soriz",
+      "name": "Soriz",
+      "cmsId": "98ve2q-j44x8",
+      "title": {
+        "en": "Soriz",
+        "ja": "ソリッズ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/5459132ed1c44f50a8ee829cf710eb28/14_GBVSR_Soriz.png",
+      "sourceSha256": "6cf825d76ca1926288565505915ae1275bdc3444322658d9e490f0d052d09d52",
+      "sourceBytes": 3617981,
+      "sourceDimensions": "1900×2475",
+      "head": {
+        "x": 0.49,
+        "y": 0.18,
+        "density": 0.939,
+        "estimate": {
+          "x": 0.413,
+          "y": 0.092,
+          "density": 0.215
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/soriz.webp",
+        "dimensions": "512×683",
+        "crop": "bust 639×852 at 612,190 → 512×683; face at 50%,30% of the window",
+        "bytes": 67982,
+        "sha256": "805de8d70d5c6a92c7ab1046f43638573de10a7aeb6f795308c463a80b31e07a"
+      },
+      "splash": {
+        "path": "/img/splash/soriz.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1596×2245 at 153,115 → 445×626 at x2349 y34 on a transparent 2880×680 canvas",
+        "bytes": 69474,
+        "sha256": "f946adfd3ea39e69125e8880964fc3da4b2a298ba97d8a8e2bd544c3ef6b393e"
+      }
+    },
+    {
+      "id": "zooey",
+      "name": "Zooey",
+      "cmsId": "d5kwgp-tidi4",
+      "title": {
+        "en": "Zooey",
+        "ja": "ゾーイ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/ef33a50b268f4bffac35958d050ddfd8/15_GBVSR_Zooey.png",
+      "sourceSha256": "a2cdbabfbca2a31e131b30f132202c6a262e8e427b8726c328f49bc46925a206",
+      "sourceBytes": 3263976,
+      "sourceDimensions": "1900×2353",
+      "head": {
+        "x": 0.46,
+        "y": 0.365,
+        "density": 1,
+        "estimate": {
+          "x": 0.562,
+          "y": 0.073,
+          "density": 0.035
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/zooey.webp",
+        "dimensions": "512×683",
+        "crop": "bust 636×848 at 556,604 → 512×683; face at 50%,30% of the window",
+        "bytes": 86358,
+        "sha256": "31db5772b5f206714b74feaa09ab8fd91a03d796a06c416e9d51d7e60e0b6255"
+      },
+      "splash": {
+        "path": "/img/splash/zooey.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1813×2236 at 45,59 → 508×627 at x2286 y33 on a transparent 2880×680 canvas",
+        "bytes": 90754,
+        "sha256": "ebfa31ee0aad83c7be6ab3b28a7feea9c74710f33f4d4564fced47ffb8d7130f"
+      }
+    },
+    {
+      "id": "cagliostro",
+      "name": "Cagliostro",
+      "cmsId": "z2qx6cgq87wr",
+      "title": {
+        "en": "Cagliostro",
+        "ja": "カリオストロ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/7f61d58c06e74cbaa817b60c0ad8bd98/16_GBVSR_Cagliostro.png",
+      "sourceSha256": "62b870a6210d5250c531c76f90adb5a4eb0834e157185f110b3429d57a318136",
+      "sourceBytes": 2490363,
+      "sourceDimensions": "1900×2239",
+      "head": {
+        "x": 0.4,
+        "y": 0.32,
+        "density": 1,
+        "estimate": {
+          "x": 0.607,
+          "y": 0.091,
+          "density": 0.059
+        }
+      },
+      "noticeCluster": 3,
+      "portrait": {
+        "path": "/img/char/cagliostro.webp",
+        "dimensions": "512×683",
+        "crop": "bust 580×773 at 470,485 → 512×683; face at 50%,30% of the window",
+        "bytes": 76300,
+        "sha256": "0258fb2b987fb4eacb6a0db7994526513b0e315902ce208c6a93d0f1569dc59c"
+      },
+      "splash": {
+        "path": "/img/splash/cagliostro.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1604×2037 at 148,101 → 493×626 at x2301 y34 on a transparent 2880×680 canvas",
+        "bytes": 71354,
+        "sha256": "adb7a428058bad6821e4c31cce6b8e58a8a28e9cb1088e1cbd3a4a53f5aa1fc5"
+      }
+    },
+    {
+      "id": "yuel",
+      "name": "Yuel",
+      "cmsId": "af7najj_kzr",
+      "title": {
+        "en": "Yuel",
+        "ja": "ユエル"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/654dc4f6001d4364b40110574bab3739/17_GBVSR_Yuel.png",
+      "sourceSha256": "be936653417bfc797ffae9d0e1256e1993a25e55b8278e30fb607221dc28470e",
+      "sourceBytes": 3176434,
+      "sourceDimensions": "1900×2495",
+      "head": {
+        "x": 0.505,
+        "y": 0.35,
+        "density": 1,
+        "estimate": {
+          "x": 0.547,
+          "y": 0.087,
+          "density": 0.843
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/yuel.webp",
+        "dimensions": "512×683",
+        "crop": "bust 653×871 at 633,612 → 512×683; face at 50%,30% of the window",
+        "bytes": 82302,
+        "sha256": "ed5ea61572d03f008f2702c82593b35b4ebf30d62ead7dfe7f813549b77ed41a"
+      },
+      "splash": {
+        "path": "/img/splash/yuel.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1796×2295 at 77,101 → 490×627 at x2304 y33 on a transparent 2880×680 canvas",
+        "bytes": 83126,
+        "sha256": "78bca9163c775c6d37c3b93c146cc9fc9cd9b774d67eadfe9e4e85e224a8ddf5"
+      }
+    },
+    {
+      "id": "anre",
+      "name": "Anre",
+      "cmsId": "l8syf9dfb3s",
+      "title": {
+        "en": "Anre",
+        "ja": "ウーノ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/f4df26f3cf5b41f68f816f9c1c62f36f/18_GBVSR_uno.png",
+      "sourceSha256": "5f831328a1526e8df92ed25c35a80fd439d7e682dfb00c2b6b0940a2a79e0046",
+      "sourceBytes": 3041134,
+      "sourceDimensions": "1900×2522",
+      "head": {
+        "x": 0.49,
+        "y": 0.445,
+        "density": 1,
+        "estimate": {
+          "x": 0.318,
+          "y": 0.1,
+          "density": 0.045
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/anre.webp",
+        "dimensions": "512×683",
+        "crop": "bust 645×860 at 609,864 → 512×683; face at 50%,30% of the window",
+        "bytes": 83254,
+        "sha256": "e6cee6926dc7645a33a32fe84bdca4c922909cf0eb0250f2d81c6b16f49ca55f"
+      },
+      "splash": {
+        "path": "/img/splash/anre.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1734×2269 at 83,135 → 479×627 at x2315 y33 on a transparent 2880×680 canvas",
+        "bytes": 71672,
+        "sha256": "7d7887403f01beefff636f6d1bf50c0a2c759e589961289e8228c9dca2ff61c0"
+      }
+    },
+    {
+      "id": "eustace",
+      "name": "Eustace",
+      "cmsId": "07i17ph3c",
+      "title": {
+        "en": "Eustace",
+        "ja": "ユーステス"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/8040b256575d49768a82e95b5c45d6db/19_GBVSR_Eustace.png",
+      "sourceSha256": "5f121f59acc94b2a6b18a5dd03b6726a28bb3bf5c9a548870e5c5f15145dc612",
+      "sourceBytes": 2007831,
+      "sourceDimensions": "1900×1763",
+      "head": {
+        "x": 0.56,
+        "y": 0.31,
+        "density": 0.702,
+        "estimate": {
+          "x": 0.683,
+          "y": 0.088,
+          "density": 0.526
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/eustace.webp",
+        "dimensions": "512×683",
+        "crop": "bust 461×615 at 834,362 → 512×683; face at 50%,30% of the window",
+        "bytes": 53408,
+        "sha256": "1fedfa6b391a75f353f8c90d23c4d47fc4058f1512d5349782999109e5a0ddae"
+      },
+      "splash": {
+        "path": "/img/splash/eustace.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1734×1619 at 83,72 → 671×627 at x2123 y33 on a transparent 2880×680 canvas",
+        "bytes": 67818,
+        "sha256": "743ba43aa73847753bd547e920214ab04ead11927e681fd20fd1c9d86acf3ab6"
+      }
+    },
+    {
+      "id": "seox",
+      "name": "Seox",
+      "cmsId": "ru_-_vwnn1l",
+      "title": {
+        "en": "Seox",
+        "ja": "シス"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/b672e2f507b24a73a30850d8c3c9413f/20_GBVSR_Six.png",
+      "sourceSha256": "49e719fe891cd61dc51e87254f79745259982eb934408774bea1e4661331b2e6",
+      "sourceBytes": 3578837,
+      "sourceDimensions": "1900×2615",
+      "head": {
+        "x": 0.56,
+        "y": 0.39,
+        "density": 1,
+        "estimate": {
+          "x": 0.451,
+          "y": 0.082,
+          "density": 0.973
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/seox.webp",
+        "dimensions": "512×683",
+        "crop": "bust 693×924 at 718,743 → 512×683; face at 50%,30% of the window",
+        "bytes": 77552,
+        "sha256": "395804a2452ecbd65684d068d2079d5e74983b7d4823d21ed11e337a21121633"
+      },
+      "splash": {
+        "path": "/img/splash/seox.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1634×2434 at 133,91 → 420×626 at x2374 y34 on a transparent 2880×680 canvas",
+        "bytes": 64400,
+        "sha256": "58bc31880df0f4b58fb3c397887d98a5b7a5998dcbd999ec89d0b03f5841e988"
+      }
+    },
+    {
+      "id": "vira",
+      "name": "Vira",
+      "cmsId": "hgjfdf8xfwm",
+      "title": {
+        "en": "Vira",
+        "ja": "ヴィーラ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/876cd91e2b894de6a8254d2e165b4cfc/21_GBVSR_vira.png",
+      "sourceSha256": "edc157d4762873fa45d59c91a6a660ac290146216e9f620a6602cd84d0533f67",
+      "sourceBytes": 2608889,
+      "sourceDimensions": "1900×2255",
+      "head": {
+        "x": 0.42,
+        "y": 0.22,
+        "density": 1,
+        "estimate": {
+          "x": 0.482,
+          "y": 0.084,
+          "density": 0.466
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/vira.webp",
+        "dimensions": "512×683",
+        "crop": "bust 595×793 at 501,258 → 512×683; face at 50%,30% of the window",
+        "bytes": 92956,
+        "sha256": "c5303507cec60df9319c83a1f583b503682a1ec7476ba7d48f1330ea6677bd04"
+      },
+      "splash": {
+        "path": "/img/splash/vira.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1716×2088 at 92,83 → 515×626 at x2279 y34 on a transparent 2880×680 canvas",
+        "bytes": 71492,
+        "sha256": "fd429611376216fca5ac93c6b593434ddcd8a4214c3af672ffc88d4ae1be6bc3"
+      }
+    },
+    {
+      "id": "beelzebub",
+      "name": "Beelzebub",
+      "cmsId": "4j34infvr",
+      "title": {
+        "en": "Beelzebub",
+        "ja": "ベルゼバブ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/1ce367dc278a408d8248759340fe9294/22_GBVSR_Beelzebub.png",
+      "sourceSha256": "55bff9b37a22cd0be6fff7aca1734fbb936a1782659056d2e059b7a81e647973",
+      "sourceBytes": 3105890,
+      "sourceDimensions": "1900×2149",
+      "head": {
+        "x": 0.54,
+        "y": 0.22,
+        "density": 1,
+        "estimate": {
+          "x": 0.483,
+          "y": 0.084,
+          "density": 0.49
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/beelzebub.webp",
+        "dimensions": "512×683",
+        "crop": "bust 567×756 at 743,246 → 512×683; face at 50%,30% of the window",
+        "bytes": 74844,
+        "sha256": "c51701dc123e5a3afa9ed57469a302d3c2acb0141ca767edc2daff2ef1d683d2"
+      },
+      "splash": {
+        "path": "/img/splash/beelzebub.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1663×1991 at 119,79 → 523×627 at x2271 y33 on a transparent 2880×680 canvas",
+        "bytes": 89706,
+        "sha256": "4a05c5624e0627b2644d68cd54e03be13266011023c59f388d5adefdd9393389"
+      }
+    },
+    {
+      "id": "belial",
+      "name": "Belial",
+      "cmsId": "cv95ro7jx1f",
+      "title": {
+        "en": "Belial",
+        "ja": "ベリアル"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/0543dd5cf7b749569497dcef9bb7bbc9/23_GBVSR_Belial.png",
+      "sourceSha256": "32cecb1589aa20f3c4c274863a6c6061748db8698b829843038429fe2e2de18f",
+      "sourceBytes": 3483943,
+      "sourceDimensions": "1900×2707",
+      "head": {
+        "x": 0.57,
+        "y": 0.2,
+        "density": 1,
+        "estimate": {
+          "x": 0.502,
+          "y": 0.094,
+          "density": 0.004
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/belial.webp",
+        "dimensions": "512×683",
+        "crop": "bust 696×928 at 735,263 → 512×683; face at 50%,30% of the window",
+        "bytes": 65442,
+        "sha256": "30e820cec45de76019452cb3d861ed28dc85c581f5aef7b8c72307a184eba336"
+      },
+      "splash": {
+        "path": "/img/splash/belial.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1615×2445 at 143,131 → 414×626 at x2380 y34 on a transparent 2880×680 canvas",
+        "bytes": 69018,
+        "sha256": "137caa5e8002f43f1eabff0bf86855f091b6b4c2f00447fa011acc906a03449a"
+      }
+    },
+    {
+      "id": "avatar-belial",
+      "name": "Avatar Belial",
+      "cmsId": "v19x8lcjlctn",
+      "title": {
+        "en": "Avatar Belial",
+        "ja": "アバタール・ベリアル"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/a44e1873cd5c4cedb4b01c961365537c/24_GBVSR_Avatar-Belial.png",
+      "sourceSha256": "0e91c7df61f36f5b7b43a2fb82569b7e061551f19c969b01a4452858973b3416",
+      "sourceBytes": 1856870,
+      "sourceDimensions": "1900×1920",
+      "head": {
+        "x": 0.53,
+        "y": 0.23,
+        "density": 0.838,
+        "estimate": {
+          "x": 0.578,
+          "y": 0.176,
+          "density": 0.612
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/avatar-belial.webp",
+        "dimensions": "512×683",
+        "crop": "bust 456×608 at 779,259 → 512×683; face at 50%,30% of the window",
+        "bytes": 71780,
+        "sha256": "2aef7b3516a6b3b80351f93e95058cec2cc462dffdff15eb3a39c583e5d780b6"
+      },
+      "splash": {
+        "path": "/img/splash/avatar-belial.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1501×1606 at 163,252 → 587×628 at x2207 y32 on a transparent 2880×680 canvas",
+        "bytes": 95024,
+        "sha256": "e21271d4bf2f34d5bf822709f74d550e4cad984cc7039cffede60fb0b17ff8be"
+      }
+    },
+    {
+      "id": "anila",
+      "name": "Anila",
+      "cmsId": "r1l7ajxom0bx",
+      "title": {
+        "en": "Anila",
+        "ja": "アニラ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/b3e1942d3c8844cd974ee8051e9d8566/25_GBVSR_Anila.png",
+      "sourceSha256": "2690736a3bf926db467b56803c7d0c4375ef57dd1376c54b6d001e5abc0d008d",
+      "sourceBytes": 3302184,
+      "sourceDimensions": "1900×2324",
+      "head": {
+        "x": 0.515,
+        "y": 0.33,
+        "density": 1,
+        "estimate": {
+          "x": 0.343,
+          "y": 0.117,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/anila.webp",
+        "dimensions": "512×683",
+        "crop": "bust 565×753 at 696,541 → 512×683; face at 50%,30% of the window",
+        "bytes": 70852,
+        "sha256": "a0940aac822ec38852d7be5bd9799b94c08595f966a1beaaf8be80942c77a0f6"
+      },
+      "splash": {
+        "path": "/img/splash/anila.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1650×1984 at 125,170 → 521×627 at x2273 y33 on a transparent 2880×680 canvas",
+        "bytes": 87072,
+        "sha256": "3fbccb0cc72b0fa00df3c9a9dbd08b04d9e2c23da18912b09d10e7dcb5751dfb"
+      }
+    },
+    {
+      "id": "siegfried",
+      "name": "Siegfried",
+      "cmsId": "hq8sqkzkgcv",
+      "title": {
+        "en": "Siegfried",
+        "ja": "ジークフリート"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/50ff1ef432824838ba8f4c341c5dd35c/26_GBVSR_Siegfried.png",
+      "sourceSha256": "f2ac4fcb5b0651d9a65df8c07ed19280a49b272751da4518355572e8eec7c1e1",
+      "sourceBytes": 3148182,
+      "sourceDimensions": "1900×2571",
+      "head": {
+        "x": 0.51,
+        "y": 0.29,
+        "density": 1,
+        "estimate": {
+          "x": 0.454,
+          "y": 0.097,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/siegfried.webp",
+        "dimensions": "512×683",
+        "crop": "bust 656×875 at 641,483 → 512×683; face at 50%,30% of the window",
+        "bytes": 84632,
+        "sha256": "46102f2343de9cec71309359dc417df4f0fa60b6c9a85199599d8de7db845fec"
+      },
+      "splash": {
+        "path": "/img/splash/siegfried.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1736×2303 at 82,134 → 472×626 at x2322 y34 on a transparent 2880×680 canvas",
+        "bytes": 64732,
+        "sha256": "6fd44dc7512a61c72169d025aa83b787d0812783467603e0ac6fb1ba40a0cb75"
+      }
+    },
+    {
+      "id": "grimnir",
+      "name": "Grimnir",
+      "cmsId": "4bt985sgrq2",
+      "title": {
+        "en": "Grimnir",
+        "ja": "グリームニル"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/17135f4584bb4545bd55f1a2b83791cf/27_GBVSR_Grimnir.png",
+      "sourceSha256": "572b886bb854582921fe280c6f233f4021ef7879f2be2096ea972db064ff7a28",
+      "sourceBytes": 1897406,
+      "sourceDimensions": "1900×1992",
+      "head": {
+        "x": 0.485,
+        "y": 0.29,
+        "density": 0.96,
+        "estimate": {
+          "x": 0.502,
+          "y": 0.14,
+          "density": 1
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/grimnir.webp",
+        "dimensions": "512×683",
+        "crop": "bust 460×613 at 692,394 → 512×683; face at 50%,30% of the window",
+        "bytes": 76322,
+        "sha256": "351aa5a822893e04208a8ac5d57438f15381053a6bc2b5a84f4368c232811bfc"
+      },
+      "splash": {
+        "path": "/img/splash/grimnir.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1898×1793 at 1,199 → 699×660 at x2095 y0 on a transparent 2880×680 canvas",
+        "bytes": 67454,
+        "sha256": "94767470838037a483b6207ba67cb254cf9a9109e1efae612e3e29528904437b"
+      }
+    },
+    {
+      "id": "nier",
+      "name": "Nier",
+      "cmsId": "w5ffz6cqyqm",
+      "title": {
+        "en": "Nier",
+        "ja": "ニーア"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/6d8f9c83da484077887f8cb50c6c7e29/28_GBVSR_Nier.png",
+      "sourceSha256": "27f32345e9b3e49d28d940ede7311a6293ee995245c9c258c339f8f15e7684f2",
+      "sourceBytes": 3543630,
+      "sourceDimensions": "1900×1774",
+      "head": {
+        "x": 0.46,
+        "y": 0.26,
+        "density": 1,
+        "estimate": {
+          "x": 0.5,
+          "y": 0.067,
+          "density": 0.625
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/nier.webp",
+        "dimensions": "512×683",
+        "crop": "bust 485×647 at 632,267 → 512×683; face at 50%,30% of the window",
+        "bytes": 56384,
+        "sha256": "7f668ea1be79618102775436ca032eb3b80751abb47f66a5c5c06053e2250418"
+      },
+      "splash": {
+        "path": "/img/splash/nier.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1900×1774 at 0,0 → 698×652 at x2096 y8 on a transparent 2880×680 canvas",
+        "bytes": 94526,
+        "sha256": "a57d9bacfab37ebd943cd578ad830a759bfeeef80b1d06fbe14748b9f92d6b57"
+      }
+    },
+    {
+      "id": "lucilius",
+      "name": "Lucilius",
+      "cmsId": "2dxwtnke3",
+      "title": {
+        "en": "Lucilius",
+        "ja": "ルシファー"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/cb8b6e374f24457ca833425be42d4055/30_GBVSR_Lucilius.png",
+      "sourceSha256": "664d4839bcc290b6f3126a925dba2ca014235c4c5d3ec6337ed5ea0b43116838",
+      "sourceBytes": 3545913,
+      "sourceDimensions": "1900×2441",
+      "head": {
+        "x": 0.47,
+        "y": 0.24,
+        "density": 0.986,
+        "estimate": {
+          "x": 0.579,
+          "y": 0.129,
+          "density": 0.098
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/lucilius.webp",
+        "dimensions": "512×683",
+        "crop": "bust 608×811 at 589,343 → 512×683; face at 50%,30% of the window",
+        "bytes": 78056,
+        "sha256": "65efd91132be7d19d0f4776577c02fb51c66adff03d7d54d9542c132749e68dc"
+      },
+      "splash": {
+        "path": "/img/splash/lucilius.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1763×2136 at 64,206 → 517×626 at x2277 y34 on a transparent 2880×680 canvas",
+        "bytes": 78354,
+        "sha256": "63de804bdb495b2ba2ab564dbffc7d8f89cd1fbde000dcab7be864151cebd479"
+      }
+    },
+    {
+      "id": "2b",
+      "name": "2B",
+      "cmsId": "ee-bodkc5sfy",
+      "title": {
+        "en": "2B",
+        "ja": "2B"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/1e5f0462b5c74599ae2ad1ff9775c0bb/31_GBVSR_2B.png",
+      "sourceSha256": "3bc46695c4c5b18d1e0c1da6f23eb47f82d85ad78cfea1c550e4fd810e0e2efd",
+      "sourceBytes": 2230763,
+      "sourceDimensions": "1900×2599",
+      "head": {
+        "x": 0.485,
+        "y": 0.275,
+        "density": 1,
+        "estimate": {
+          "x": 0.52,
+          "y": 0.071,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/2b.webp",
+        "dimensions": "512×683",
+        "crop": "bust 707×943 at 568,432 → 512×683; face at 50%,30% of the window",
+        "bytes": 105316,
+        "sha256": "4c87e2c06078b90564a5e92ba32639bcea5c6fb4ac5d28d21532b9f7c6659f21"
+      },
+      "splash": {
+        "path": "/img/splash/2b.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1228×2483 at 364,60 → 310×626 at x2484 y34 on a transparent 2880×680 canvas",
+        "bytes": 44292,
+        "sha256": "5d0aef52818d3793c1449905081d05cfad88dabd54ce916de666d3315b34c283"
+      }
+    },
+    {
+      "id": "vane",
+      "name": "Vane",
+      "cmsId": "yz3d3cpzsq",
+      "title": {
+        "en": "Vane",
+        "ja": "ヴェイン"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/3dcf2f85db2d471b862a7958724c5c27/32_GBVSR_Vane.png",
+      "sourceSha256": "2c857ad15457135af06165dc409789c41184422ba8c49b987b17b48827b440be",
+      "sourceBytes": 2893300,
+      "sourceDimensions": "1900×2350",
+      "head": {
+        "x": 0.56,
+        "y": 0.385,
+        "density": 0.994,
+        "estimate": {
+          "x": 0.359,
+          "y": 0.075,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/vane.webp",
+        "dimensions": "512×683",
+        "crop": "bust 635×847 at 747,651 → 512×683; face at 50%,30% of the window",
+        "bytes": 90828,
+        "sha256": "e242285d222489de03ffa11c3808c7981a5aa4814e8f33b1bd6a5735c28c695b"
+      },
+      "splash": {
+        "path": "/img/splash/vane.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1726×2230 at 66,63 → 485×626 at x2309 y34 on a transparent 2880×680 canvas",
+        "bytes": 69698,
+        "sha256": "a63a6f67899530b2b4ed204f24366f6783d63bf1ae74ce83818348c29fbeb1f3"
+      }
+    },
+    {
+      "id": "beatrix",
+      "name": "Beatrix",
+      "cmsId": "uvjisx12lnmu",
+      "title": {
+        "en": "Beatrix",
+        "ja": "ベアトリクス"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/8a8a8df2e4fb44eeac6becc398e020d9/33_GBVSR_Beatrix.png",
+      "sourceSha256": "74ffd95a8cfd322316058182e3a1d3392714349159902e4c7635763b6bfa9f89",
+      "sourceBytes": 3022203,
+      "sourceDimensions": "1900×2145",
+      "head": {
+        "x": 0.48,
+        "y": 0.29,
+        "density": 0.976,
+        "estimate": {
+          "x": 0.539,
+          "y": 0.084,
+          "density": 0.185
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/beatrix.webp",
+        "dimensions": "512×683",
+        "crop": "bust 574×765 at 625,393 → 512×683; face at 50%,30% of the window",
+        "bytes": 90454,
+        "sha256": "5f3f55716e6bcd5b23d44e5ccf9ac42f0920689ea6249febaf24f7f986aa4ed9"
+      },
+      "splash": {
+        "path": "/img/splash/beatrix.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1718×2017 at 51,78 → 534×627 at x2260 y33 on a transparent 2880×680 canvas",
+        "bytes": 77764,
+        "sha256": "cd05af59e8f9c5a1d53519ad0e0b2f4ca195f8d57aaf5786c053024341434415"
+      }
+    },
+    {
+      "id": "versusia",
+      "name": "Versusia",
+      "cmsId": "vzookrctm",
+      "title": {
+        "en": "Versusia",
+        "ja": "ヴェルサシア"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/70722832e55149f2875cf5a8595366cd/34_GBVSR_Versusia.png",
+      "sourceSha256": "0a0e12cd77babd1cda16984ea8a4f042d8bc8818979e43414dcd3cd8e8f5d9f1",
+      "sourceBytes": 4920314,
+      "sourceDimensions": "1900×2440",
+      "head": {
+        "x": 0.5,
+        "y": 0.28,
+        "density": 1,
+        "estimate": {
+          "x": 0.509,
+          "y": 0.085,
+          "density": 0.342
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/versusia.webp",
+        "dimensions": "512×683",
+        "crop": "bust 653×871 at 624,422 → 512×683; face at 50%,30% of the window",
+        "bytes": 71130,
+        "sha256": "6d49cdcee3c15621ae65993d9081cffe985636b8686ad4122556b3f28beb77ae"
+      },
+      "splash": {
+        "path": "/img/splash/versusia.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1867×2293 at 33,91 → 510×626 at x2284 y34 on a transparent 2880×680 canvas",
+        "bytes": 100554,
+        "sha256": "15d1df00794f83c4895e727780dd6d0b018d3a4b7995a74c7a93527be1cdc629"
+      }
+    },
+    {
+      "id": "vikala",
+      "name": "Vikala",
+      "cmsId": "m4rv4zt2gt",
+      "title": {
+        "en": "Vikala",
+        "ja": "ビカラ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/cc7ffb08314046de87ccb9ca2fb57549/35_GBVSR_Vikala.png",
+      "sourceSha256": "e10291f383082fa3706080f27d5602557e02d5129d42625c96624f7a57fca821",
+      "sourceBytes": 4552325,
+      "sourceDimensions": "1900×2400",
+      "head": {
+        "x": 0.555,
+        "y": 0.36,
+        "density": 1,
+        "estimate": {
+          "x": 0.365,
+          "y": 0.084,
+          "density": 0.041
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/vikala.webp",
+        "dimensions": "512×683",
+        "crop": "bust 635×847 at 737,610 → 512×683; face at 50%,30% of the window",
+        "bytes": 81140,
+        "sha256": "806818112a5484fbb368a6436a6a869c219ea046b633bbf3d56d52a6fc73cde1"
+      },
+      "splash": {
+        "path": "/img/splash/vikala.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1718×2232 at 96,88 → 482×627 at x2312 y33 on a transparent 2880×680 canvas",
+        "bytes": 89174,
+        "sha256": "fd0eccce9938731bf74a1de4d0f5036a02c75ec3d96154025d4f7c2c825baebc"
+      }
+    },
+    {
+      "id": "sandalphon",
+      "name": "Sandalphon",
+      "cmsId": "592l0xz5n6",
+      "title": {
+        "en": "Sandalphon",
+        "ja": "サンダルフォン"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/55d5bcbd3b9e40219193c7b4e2470977/36_GBVSR_Sandalphon.png",
+      "sourceSha256": "f1e7c6ee0548c60701539d4c9360223ee8e1839678510289f01e7597a1b254a9",
+      "sourceBytes": 3929726,
+      "sourceDimensions": "1900×2400",
+      "head": {
+        "x": 0.39,
+        "y": 0.24,
+        "density": 1,
+        "estimate": {
+          "x": 0.515,
+          "y": 0.079,
+          "density": 0
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/sandalphon.webp",
+        "dimensions": "512×683",
+        "crop": "bust 640×853 at 421,320 → 512×683; face at 50%,30% of the window",
+        "bytes": 82448,
+        "sha256": "2a659917fe0f072a94bb0a481ee6056accbba4ef8b99c1853a3452ab5d00248d"
+      },
+      "splash": {
+        "path": "/img/splash/sandalphon.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1759×2246 at 79,77 → 490×626 at x2304 y34 on a transparent 2880×680 canvas",
+        "bytes": 66894,
+        "sha256": "b45ccee6e747fadc85846f63f7b9652479ec6375fc0b7565bc9428c697d1070c"
+      }
+    },
+    {
+      "id": "galleon",
+      "name": "Galleon",
+      "cmsId": "ft7sukg1chq0",
+      "title": {
+        "en": "Galleon",
+        "ja": "ガレヲン"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/f71ec8fbb28141859ab9a56c9990b446/37_GBVSR_Galleon.png",
+      "sourceSha256": "5ebbdcb78b1f0ad4aac4129753149431e380952b70c915258f76151684bd104a",
+      "sourceBytes": 4146199,
+      "sourceDimensions": "1900×2200",
+      "head": {
+        "x": 0.52,
+        "y": 0.38,
+        "density": 1,
+        "estimate": {
+          "x": 0.509,
+          "y": 0.068,
+          "density": 0.113
+        }
+      },
+      "noticeCluster": 4,
+      "portrait": {
+        "path": "/img/char/galleon.webp",
+        "dimensions": "512×683",
+        "crop": "bust 599×799 at 689,596 → 512×683; face at 50%,30% of the window",
+        "bytes": 102664,
+        "sha256": "4f27f89531b2afd04b442d41d124f0c7c059127f769b9106ae3933d044988eb2"
+      },
+      "splash": {
+        "path": "/img/splash/galleon.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1763×2102 at 64,44 → 525×626 at x2269 y34 on a transparent 2880×680 canvas",
+        "bytes": 114254,
+        "sha256": "b262c4ebd0ec4e5ecd23ad2df2c77cc385ea21c1e504363cbbcd88d74057c3b2"
+      }
+    },
+    {
+      "id": "wilnas",
+      "name": "Wilnas",
+      "cmsId": "8-7qqshypw",
+      "title": {
+        "en": "Wilnas",
+        "ja": "ウィルナス"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/4da7c0765fb64679a6fac0351d393812/38_GBVSR_Wilnas.png",
+      "sourceSha256": "11d3175f3a2f2d0c782e88cd018933758b6a77ce09708fd69fdbccab8d8dcd3a",
+      "sourceBytes": 3512789,
+      "sourceDimensions": "1900×1900",
+      "head": {
+        "x": 0.52,
+        "y": 0.262,
+        "density": 0.959,
+        "estimate": {
+          "x": 0.547,
+          "y": 0.066,
+          "density": 0.111
+        }
+      },
+      "noticeCluster": 1,
+      "portrait": {
+        "path": "/img/char/wilnas.webp",
+        "dimensions": "512×683",
+        "crop": "bust 522×696 at 727,289 → 512×683; face at 50%,30% of the window",
+        "bytes": 106230,
+        "sha256": "8f8072c549c7140d4f90544581570f3d37405d1e7d9bebbac2b7a20350c5d7e1"
+      },
+      "splash": {
+        "path": "/img/splash/wilnas.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1794×1847 at 50,28 → 613×631 at x2181 y29 on a transparent 2880×680 canvas",
+        "bytes": 148478,
+        "sha256": "1ca894129b4015c868c9d0562afe364aaf8a4c3b67b7e19dd11266d68d8a319c"
+      }
+    },
+    {
+      "id": "meg",
+      "name": "Meg",
+      "cmsId": "7ixqphe4ls6",
+      "title": {
+        "en": "Meg",
+        "ja": "メグ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/4a16d51f6eed4e799d3bb6f8b00af8b6/39_GBVSR_Meg.png",
+      "sourceSha256": "7e7ffc7215f921a8da59f0d770929c702f383395d312a04c75cf3730991b04a3",
+      "sourceBytes": 3446338,
+      "sourceDimensions": "1900×2221",
+      "head": {
+        "x": 0.59,
+        "y": 0.145,
+        "density": 0.989,
+        "estimate": {
+          "x": 0.534,
+          "y": 0.086,
+          "density": 0.916
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/meg.webp",
+        "dimensions": "512×683",
+        "crop": "bust 588×784 at 827,87 → 512×683; face at 50%,30% of the window",
+        "bytes": 81152,
+        "sha256": "a7c7ab1ef3ec308fa555af66b4fe8445f43aa1357878a16bbd0567900af78aba"
+      },
+      "splash": {
+        "path": "/img/splash/meg.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1754×2065 at 73,86 → 532×626 at x2262 y34 on a transparent 2880×680 canvas",
+        "bytes": 80374,
+        "sha256": "0b86860d417d118d77351300f1dd5718b615dd60ed9c2822e73f005a99380b69"
+      }
+    },
+    {
+      "id": "ilsa",
+      "name": "Ilsa",
+      "cmsId": "6aa8kb1teo",
+      "title": {
+        "en": "Ilsa",
+        "ja": "イルザ"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/ca36069b35974f1dbbe1b93cb232a584/40_GBVSR_Ilsa.png",
+      "sourceSha256": "3da4b6d00e8f2cd86300fc896f17c5bb577bfe2af85d207dc420671de0861b90",
+      "sourceBytes": 2069421,
+      "sourceDimensions": "1900×1900",
+      "head": {
+        "x": 0.42,
+        "y": 0.378,
+        "density": 0.83,
+        "estimate": {
+          "x": 0.395,
+          "y": 0.069,
+          "density": 0
+        }
+      },
+      "noticeCluster": 1,
+      "portrait": {
+        "path": "/img/char/ilsa.webp",
+        "dimensions": "512×683",
+        "crop": "bust 519×692 at 539,511 → 512×683; face at 50%,30% of the window",
+        "bytes": 75846,
+        "sha256": "16f215180199a0594ba9a0c625d6af76af6a33313f5ae0e65530bde79b93dabe"
+      },
+      "splash": {
+        "path": "/img/splash/ilsa.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1306×1822 at 297,39 → 449×626 at x2345 y34 on a transparent 2880×680 canvas",
+        "bytes": 74444,
+        "sha256": "49a2457320a5ed3e6f4d1c254c6866a1d75601b8843e8d9672bc95b9d0280838"
+      }
+    },
+    {
+      "id": "id",
+      "name": "Id",
+      "cmsId": "bw1s98f6228",
+      "title": {
+        "en": "Id",
+        "ja": "イド"
+      },
+      "sourceUrl": "https://files.microcms-assets.io/assets/09e6e1695320425c9b881971b3c7174d/166c4fb99d484d9b889466f9f9a2fd8f/41_GBVSR_Id.png",
+      "sourceSha256": "51245e990666dc38fa3f0ab791d57ea17fdfbb781b5a193ba05560f1eeb48a53",
+      "sourceBytes": 3417532,
+      "sourceDimensions": "1900×1900",
+      "head": {
+        "x": 0.43,
+        "y": 0.36,
+        "density": 1,
+        "estimate": {
+          "x": 0.599,
+          "y": 0.098,
+          "density": 0.36
+        }
+      },
+      "noticeCluster": 0,
+      "portrait": {
+        "path": "/img/char/id.webp",
+        "dimensions": "512×683",
+        "crop": "bust 489×652 at 573,488 → 512×683; face at 50%,30% of the window",
+        "bytes": 65784,
+        "sha256": "8c5d50a48ce3d33ac60b35da2e5f71d88ff4ed19bec838d65c8b0ed678186d58"
+      },
+      "splash": {
+        "path": "/img/splash/id.webp",
+        "dimensions": "2880×680",
+        "crop": "visible 1797×1718 at 54,100 → 655×626 at x2139 y34 on a transparent 2880×680 canvas",
+        "bytes": 128168,
+        "sha256": "bca22e9b951d333de86a9359bc2da77e8653ac27b81fbbe1cf06ba44ebc55315"
+      }
+    }
+  ]
+}

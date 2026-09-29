@@ -36,6 +36,11 @@ export default defineAppConfig({
     siteUrl: 'https://replaydatabase.com',
     observability: { insights: '/gbvsr-insights' },
     charactersPerSide: 1,
+    // The splash stands the whole figure flush right on a 2880×680 canvas
+    // (scripts/art.ts), so the hero window aligns right. Under the engine
+    // default '70% 25%' a 360-wide phone hero shows none of the figure —
+    // simulated by the art track, asserted by scripts/e2e.ts.
+    heroFocus: '100% 50%',
     filters: {
       coOccurrence: false,
       // No live intake carries a per-side ladder tier (checklist 8c):
