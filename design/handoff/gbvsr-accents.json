@@ -1,0 +1,541 @@
+{
+  "game": "gbvsr",
+  "surface": "#171933",
+  "method": "anchor hue → element family band → Δ10° within band at one lightness tier, else ΔL ≥ .12 or chroma split → AA ≥ 4.5:1 on --color-surface",
+  "families": {
+    "fire": "15–55°",
+    "light": "72–108°",
+    "earth": "122–165°",
+    "wind": "190–200°",
+    "water": "212–258°",
+    "dark": "272–352°"
+  },
+  "characters": [
+    {
+      "id": "wilnas",
+      "name": "Wilnas",
+      "element": "fire",
+      "hex": "#FFA9AF",
+      "oklch": {
+        "l": 0.82,
+        "c": 0.13,
+        "h": 15
+      },
+      "anchor": "Wilnas red dragon scale, ember mane",
+      "contrastOnSurface": 9.44
+    },
+    {
+      "id": "percival",
+      "name": "Percival",
+      "element": "fire",
+      "hex": "#EF656B",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.17,
+        "h": 20
+      },
+      "anchor": "Lord of Flames crimson coat, Lohengrin blade fire",
+      "contrastOnSurface": 5.51
+    },
+    {
+      "id": "gran",
+      "name": "Gran",
+      "element": "fire",
+      "hex": "#FFB5AB",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.12,
+        "h": 28
+      },
+      "anchor": "red scarf and Reginleiv flame trim over white-blue skyfarer coat",
+      "contrastOnSurface": 10.18
+    },
+    {
+      "id": "zeta",
+      "name": "Zeta",
+      "element": "fire",
+      "hex": "#EE6951",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.17,
+        "h": 32
+      },
+      "anchor": "Arvess spear scarlet, red-and-black Society uniform",
+      "contrastOnSurface": 5.54
+    },
+    {
+      "id": "lowain",
+      "name": "Lowain",
+      "element": "fire",
+      "hex": "#FEB79E",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.11,
+        "h": 40
+      },
+      "anchor": "tan apron and kitchen-fire orange",
+      "contrastOnSurface": 10.2
+    },
+    {
+      "id": "yuel",
+      "name": "Yuel",
+      "element": "fire",
+      "hex": "#EE7942",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.16,
+        "h": 44
+      },
+      "anchor": "vermilion fox-fire, orange hair ribbon",
+      "contrastOnSurface": 6.09
+    },
+    {
+      "id": "anila",
+      "name": "Anila",
+      "element": "fire",
+      "hex": "#FEB98F",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.13,
+        "h": 52
+      },
+      "anchor": "sunlit ram-horn orange, saffron sash",
+      "contrastOnSurface": 10.26
+    },
+    {
+      "id": "vane",
+      "name": "Vane",
+      "element": "water",
+      "hex": "#61D7ED",
+      "oklch": {
+        "l": 0.82,
+        "c": 0.11,
+        "h": 212
+      },
+      "anchor": "Vane sky-teal tabard, halberd sheen",
+      "contrastOnSurface": 10.18
+    },
+    {
+      "id": "lancelot",
+      "name": "Lancelot",
+      "element": "water",
+      "hex": "#05AEDC",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.14,
+        "h": 225
+      },
+      "anchor": "White Dragon twin-blade ice blue",
+      "contrastOnSurface": 6.62
+    },
+    {
+      "id": "meg",
+      "name": "Meg",
+      "element": "water",
+      "hex": "#77D9FF",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.11,
+        "h": 225
+      },
+      "anchor": "Meg — Water SSR: ice-lilac blue, wind-cutter blades",
+      "contrastOnSurface": 10.75
+    },
+    {
+      "id": "djeeta",
+      "name": "Djeeta",
+      "element": "water",
+      "hex": "#91D4FE",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.1,
+        "h": 237
+      },
+      "anchor": "pale sky-blue skyfarer uniform, white cape",
+      "contrastOnSurface": 10.67
+    },
+    {
+      "id": "katalina",
+      "name": "Katalina",
+      "element": "water",
+      "hex": "#4BA5F0",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.14,
+        "h": 247
+      },
+      "anchor": "Lumiel knight steel-blue armor, Ares aura",
+      "contrastOnSurface": 6.49
+    },
+    {
+      "id": "anre",
+      "name": "Anre",
+      "element": "water",
+      "hex": "#ABCDFE",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.09,
+        "h": 258
+      },
+      "anchor": "Eternals lavender-blue robe, spear-tip ice",
+      "contrastOnSurface": 10.54
+    },
+    {
+      "id": "soriz",
+      "name": "Soriz",
+      "element": "earth",
+      "hex": "#B1CA70",
+      "oklch": {
+        "l": 0.8,
+        "c": 0.12,
+        "h": 122
+      },
+      "anchor": "ochre gi, sun-bronzed brawler",
+      "contrastOnSurface": 9.44
+    },
+    {
+      "id": "siegfried",
+      "name": "Siegfried",
+      "element": "earth",
+      "hex": "#73AB4C",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.14,
+        "h": 134
+      },
+      "anchor": "Dragonslayer moss-green cloak",
+      "contrastOnSurface": 6.26
+    },
+    {
+      "id": "ladiva",
+      "name": "Ladiva",
+      "element": "earth",
+      "hex": "#8ADB90",
+      "oklch": {
+        "l": 0.82,
+        "c": 0.13,
+        "h": 146
+      },
+      "anchor": "jade-green leotard, love-wrestler pink trim",
+      "contrastOnSurface": 10.31
+    },
+    {
+      "id": "cagliostro",
+      "name": "Cagliostro",
+      "element": "earth",
+      "hex": "#3DB87C",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.14,
+        "h": 158
+      },
+      "anchor": "alchemist emerald and gold, Ouroboros green",
+      "contrastOnSurface": 6.82
+    },
+    {
+      "id": "galleon",
+      "name": "Galleon",
+      "element": "earth",
+      "hex": "#79DBB2",
+      "oklch": {
+        "l": 0.82,
+        "c": 0.11,
+        "h": 165
+      },
+      "anchor": "Galleon earth-dragon sea-green scale",
+      "contrastOnSurface": 10.29
+    },
+    {
+      "id": "grimnir",
+      "name": "Grimnir",
+      "element": "wind",
+      "hex": "#67E2DA",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.11,
+        "h": 190
+      },
+      "anchor": "Grimnir mint-white storm robe",
+      "contrastOnSurface": 11.01
+    },
+    {
+      "id": "metera",
+      "name": "Metera",
+      "element": "wind",
+      "hex": "#14BBC2",
+      "oklch": {
+        "l": 0.72,
+        "c": 0.12,
+        "h": 200
+      },
+      "anchor": "Erune archer teal-green bow",
+      "contrastOnSurface": 7.29
+    },
+    {
+      "id": "versusia",
+      "name": "Versusia",
+      "element": "light",
+      "hex": "#FFD6A5",
+      "oklch": {
+        "l": 0.9,
+        "c": 0.09,
+        "h": 72
+      },
+      "anchor": "champagne-white primal armour, red seams",
+      "contrastOnSurface": 12.6
+    },
+    {
+      "id": "ferry",
+      "name": "Ferry",
+      "element": "light",
+      "hex": "#F4DBA9",
+      "oklch": {
+        "l": 0.9,
+        "c": 0.07,
+        "h": 84
+      },
+      "anchor": "ghostly lantern pale, spectral whip",
+      "contrastOnSurface": 12.71
+    },
+    {
+      "id": "zooey",
+      "name": "Zooey",
+      "element": "light",
+      "hex": "#F6DE7D",
+      "oklch": {
+        "l": 0.9,
+        "c": 0.12,
+        "h": 96
+      },
+      "anchor": "Arbitrator white-gold armour, Grand light",
+      "contrastOnSurface": 12.8
+    },
+    {
+      "id": "charlotta",
+      "name": "Charlotta",
+      "element": "light",
+      "hex": "#E5E483",
+      "oklch": {
+        "l": 0.9,
+        "c": 0.12,
+        "h": 108
+      },
+      "anchor": "Lumiel Holy Knight white-gold plate, Claiomh Solais",
+      "contrastOnSurface": 12.88
+    },
+    {
+      "id": "vira",
+      "name": "Vira",
+      "element": "dark",
+      "hex": "#8097F5",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.14,
+        "h": 272
+      },
+      "anchor": "Vira Lillie — Albion knight, Dark SSR: plum-violet cape over cream armour",
+      "contrastOnSurface": 6.26
+    },
+    {
+      "id": "eustace",
+      "name": "Eustace",
+      "element": "dark",
+      "hex": "#C0C5FF",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.09,
+        "h": 280
+      },
+      "anchor": "Flamek Thunder gunmetal-lavender coat",
+      "contrastOnSurface": 10.36
+    },
+    {
+      "id": "vaseraga",
+      "name": "Vaseraga",
+      "element": "dark",
+      "hex": "#8B8AF1",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.15,
+        "h": 282
+      },
+      "anchor": "Great Scythe Grynoth violet-black plate",
+      "contrastOnSurface": 5.73
+    },
+    {
+      "id": "narmaya",
+      "name": "Narmaya",
+      "element": "dark",
+      "hex": "#C9C2FE",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.12,
+        "h": 290
+      },
+      "anchor": "butterfly katana lilac, plum hair",
+      "contrastOnSurface": 10.33
+    },
+    {
+      "id": "belial",
+      "name": "Belial",
+      "element": "dark",
+      "hex": "#A287FE",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.17,
+        "h": 292
+      },
+      "anchor": "Fallen Angel violet, Anagenesis wing",
+      "contrastOnSurface": 6.08
+    },
+    {
+      "id": "2b",
+      "name": "2B",
+      "element": "dark",
+      "hex": "#D0C2ED",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.06,
+        "h": 300
+      },
+      "anchor": "YoRHa monochrome blindfold silver-lilac (guest, Square Enix)",
+      "contrastOnSurface": 10.32
+    },
+    {
+      "id": "seox",
+      "name": "Seox",
+      "element": "dark",
+      "hex": "#A981E0",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.14,
+        "h": 302
+      },
+      "anchor": "Eternals mask indigo-violet, Kaguya claws",
+      "contrastOnSurface": 5.64
+    },
+    {
+      "id": "lucilius",
+      "name": "Lucilius",
+      "element": "dark",
+      "hex": "#DFB9FC",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.1,
+        "h": 310
+      },
+      "anchor": "Speaker pale-violet robe, wing sheen",
+      "contrastOnSurface": 10.2
+    },
+    {
+      "id": "nier",
+      "name": "Nier",
+      "element": "dark",
+      "hex": "#BD81E1",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.15,
+        "h": 312
+      },
+      "anchor": "Death primal purple-magenta, card motif",
+      "contrastOnSurface": 6.04
+    },
+    {
+      "id": "sandalphon",
+      "name": "Sandalphon",
+      "element": "dark",
+      "hex": "#E5B8EF",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.09,
+        "h": 320
+      },
+      "anchor": "archangel dusk-rose, coffee-cream mantle",
+      "contrastOnSurface": 10.16
+    },
+    {
+      "id": "beatrix",
+      "name": "Beatrix",
+      "element": "dark",
+      "hex": "#CE76DC",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.17,
+        "h": 322
+      },
+      "anchor": "Embrasque orchid-magenta, Society coat",
+      "contrastOnSurface": 5.93
+    },
+    {
+      "id": "vikala",
+      "name": "Vikala",
+      "element": "dark",
+      "hex": "#D378C7",
+      "oklch": {
+        "l": 0.7,
+        "c": 0.15,
+        "h": 332
+      },
+      "anchor": "Divine General rat-year pink-purple, Shamikala",
+      "contrastOnSurface": 5.95
+    },
+    {
+      "id": "avatar-belial",
+      "name": "Avatar Belial",
+      "element": "dark",
+      "hex": "#FFAAEC",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.13,
+        "h": 335
+      },
+      "anchor": "Avatar body pink-magenta glow",
+      "contrastOnSurface": 9.98
+    },
+    {
+      "id": "beelzebub",
+      "name": "Beelzebub",
+      "element": "dark",
+      "hex": "#D96CB4",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.16,
+        "h": 342
+      },
+      "anchor": "Chaos Matter magenta-crimson, Langmesser wings",
+      "contrastOnSurface": 5.52
+    },
+    {
+      "id": "id",
+      "name": "Id",
+      "element": "dark",
+      "hex": "#FFAED7",
+      "oklch": {
+        "l": 0.84,
+        "c": 0.12,
+        "h": 348
+      },
+      "anchor": "Relink Id dragon-form rose-red on black (announced 2026-09-17)",
+      "contrastOnSurface": 10.04
+    },
+    {
+      "id": "ilsa",
+      "name": "Ilsa",
+      "element": "dark",
+      "hex": "#DC6DA2",
+      "oklch": {
+        "l": 0.68,
+        "c": 0.15,
+        "h": 352
+      },
+      "anchor": "Society drill-sergeant crimson-black, gun barrel",
+      "contrastOnSurface": 5.52
+    }
+  ],
+  "notes": [
+    "Elements follow each fighter's base GBF SSR element; Gran/Djeeta (element-agnostic) are placed by costume: Gran fire (red scarf), Djeeta water (sky-blue uniform).",
+    "Sandalphon placed in dark (original Dark SSR; Rising costume dusk-rose). 2B (guest) placed in dark by monochrome YoRHa costume.",
+    "Id — Ver. 2.60 DLC, releases 2026-09-17 — tokenized as announced-with-date.",
+    "Two lightness tiers per family: L≈.68–.72 (saturated) and L≈.82–.90 (pale). Same-tier neighbours are ≥10° apart; cross-tier neighbours split by ΔL ≥ .12."
+  ]
+}

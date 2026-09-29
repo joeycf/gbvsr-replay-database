@@ -1,0 +1,83 @@
+/* ============================================================
+   replaydatabase.com/gbvsr — Granblue Fantasy Versus: Rising skin
+   Game #8. Tokens only. Cygames × Arc System Works (fan project).
+   Primary/secondary follow the game's own identity (color policy
+   rev. 2026-09-15). All text tokens AA-checked on --color-surface.
+   ============================================================ */
+:root[data-game="gbvsr"] {
+  --color-bg: #0E0F1F; /* sky-dusk ink — deepest step; cool violet cast (hue ~280) distinct from Tekken carbon / Tōkon blue ink / Strive gunmetal */
+  --color-surface: #171933; /* card surface — sampled from the key visual's twilight horizon, darkened */
+  --color-surface-2: #20234A; /* raised panel / table header */
+  --color-surface-3: #2A2E5C; /* hover / active row */
+  --color-border: #363B72; /* hairline — violet-dusk */
+  --color-border-strong: #4A50A0; /* focused / gilded-edge substitute at 1px */
+  --color-primary: #4DA6FF; /* SKY BLUE — sampled from kv_logo "RISING" fill (#2F8BFF core, lifted to L.71 for AA). Neighbour for the record: Tōkon #03A5FE. On surface 6.71:1 */
+  --color-primary-contrast: #0B1024; /* ink on primary — 7.37:1 on primary, 9.88:1 on secondary */
+  --color-secondary: #E0B65A; /* GILT — sampled from kv_logo metallic bevel (#C9A24A mid-tone, lifted). Neighbour for the record: Strive #D9A53A. On surface 9.00:1 */
+  --color-text: #F2F3FF; /* panel white — the in-game UI's crisp panel, cooled. 15.56:1 */
+  --color-text-muted: #AEB2DC; /* 8.34:1 on surface, 6.21:1 on surface-3 */
+  --color-success: #4FD18B; /* win / ok — hue 155°, ΔH 100° from primary. 8.85:1 */
+  --color-warning: #FF8A2E; /* warning is ORANGE, not gold — hue 55° vs secondary 85° (ΔH 30°, |ΔL| .03 → passes on hue). 7.30:1 */
+  --color-danger: #FF5A6E; /* loss / error — hue 20°, ΔH 35° from warning. 5.67:1 */
+  --color-info: #B39DFF; /* twilight violet from the key visual (#5B3FB8 lifted) — ΔH 40° from primary. 7.51:1 */
+  --font-display: "Cinzel Decorative", serif; /* @fontsource/cinzel-decorative 700, 900 */
+  --font-ui: "Figtree", system-ui, sans-serif; /* @fontsource-variable/figtree 400–700 */
+  --font-mono: "JetBrains Mono", monospace; /* @fontsource-variable/jetbrains-mono 400, 600 */
+
+  /* ---- per-character accents — one per roster fighter ----
+     method: anchor hue → element family band → Δ10° within a
+     lightness tier, else ΔL ≥ .12 / chroma split → AA ≥ 4.5:1 on
+     --color-surface. Families: fire 15–55°, light 72–108°, earth 122–165°, wind 190–200°, water 212–258°, dark 272–352°. */
+
+  /* FIRE 15–55° */
+  --char-wilnas: #FFA9AF; /* Wilnas — Wilnas red dragon scale, ember mane; oklch(0.82 0.13 15); 9.44:1 */
+  --char-percival: #EF656B; /* Percival — Lord of Flames crimson coat, Lohengrin blade fire; oklch(0.68 0.17 20); 5.51:1 */
+  --char-gran: #FFB5AB; /* Gran — red scarf and Reginleiv flame trim over white-blue skyfarer coat; oklch(0.84 0.12 28); 10.18:1 */
+  --char-zeta: #EE6951; /* Zeta — Arvess spear scarlet, red-and-black Society uniform; oklch(0.68 0.17 32); 5.54:1 */
+  --char-lowain: #FEB79E; /* Lowain — tan apron and kitchen-fire orange; oklch(0.84 0.11 40); 10.2:1 */
+  --char-yuel: #EE7942; /* Yuel — vermilion fox-fire, orange hair ribbon; oklch(0.7 0.16 44); 6.09:1 */
+  --char-anila: #FEB98F; /* Anila — sunlit ram-horn orange, saffron sash; oklch(0.84 0.13 52); 10.26:1 */
+
+  /* WATER 212–258° */
+  --char-vane: #61D7ED; /* Vane — Vane sky-teal tabard, halberd sheen; oklch(0.82 0.11 212); 10.18:1 */
+  --char-lancelot: #05AEDC; /* Lancelot — White Dragon twin-blade ice blue; oklch(0.7 0.14 225); 6.62:1 */
+  --char-meg: #77D9FF; /* Meg — Meg — Water SSR: ice-lilac blue, wind-cutter blades; oklch(0.84 0.11 225); 10.75:1 */
+  --char-djeeta: #91D4FE; /* Djeeta — pale sky-blue skyfarer uniform, white cape; oklch(0.84 0.1 237); 10.67:1 */
+  --char-katalina: #4BA5F0; /* Katalina — Lumiel knight steel-blue armor, Ares aura; oklch(0.7 0.14 247); 6.49:1 */
+  --char-anre: #ABCDFE; /* Anre — Eternals lavender-blue robe, spear-tip ice; oklch(0.84 0.09 258); 10.54:1 */
+
+  /* EARTH 122–165° */
+  --char-soriz: #B1CA70; /* Soriz — ochre gi, sun-bronzed brawler; oklch(0.8 0.12 122); 9.44:1 */
+  --char-siegfried: #73AB4C; /* Siegfried — Dragonslayer moss-green cloak; oklch(0.68 0.14 134); 6.26:1 */
+  --char-ladiva: #8ADB90; /* Ladiva — jade-green leotard, love-wrestler pink trim; oklch(0.82 0.13 146); 10.31:1 */
+  --char-cagliostro: #3DB87C; /* Cagliostro — alchemist emerald and gold, Ouroboros green; oklch(0.7 0.14 158); 6.82:1 */
+  --char-galleon: #79DBB2; /* Galleon — Galleon earth-dragon sea-green scale; oklch(0.82 0.11 165); 10.29:1 */
+
+  /* WIND 190–200° */
+  --char-grimnir: #67E2DA; /* Grimnir — Grimnir mint-white storm robe; oklch(0.84 0.11 190); 11.01:1 */
+  --char-metera: #14BBC2; /* Metera — Erune archer teal-green bow; oklch(0.72 0.12 200); 7.29:1 */
+
+  /* LIGHT 72–108° */
+  --char-versusia: #FFD6A5; /* Versusia — champagne-white primal armour, red seams; oklch(0.9 0.09 72); 12.6:1 */
+  --char-ferry: #F4DBA9; /* Ferry — ghostly lantern pale, spectral whip; oklch(0.9 0.07 84); 12.71:1 */
+  --char-zooey: #F6DE7D; /* Zooey — Arbitrator white-gold armour, Grand light; oklch(0.9 0.12 96); 12.8:1 */
+  --char-charlotta: #E5E483; /* Charlotta — Lumiel Holy Knight white-gold plate, Claiomh Solais; oklch(0.9 0.12 108); 12.88:1 */
+
+  /* DARK 272–352° */
+  --char-vira: #8097F5; /* Vira — Vira Lillie — Albion knight, Dark SSR: plum-violet cape over cream armour; oklch(0.7 0.14 272); 6.26:1 */
+  --char-eustace: #C0C5FF; /* Eustace — Flamek Thunder gunmetal-lavender coat; oklch(0.84 0.09 280); 10.36:1 */
+  --char-vaseraga: #8B8AF1; /* Vaseraga — Great Scythe Grynoth violet-black plate; oklch(0.68 0.15 282); 5.73:1 */
+  --char-narmaya: #C9C2FE; /* Narmaya — butterfly katana lilac, plum hair; oklch(0.84 0.12 290); 10.33:1 */
+  --char-belial: #A287FE; /* Belial — Fallen Angel violet, Anagenesis wing; oklch(0.7 0.17 292); 6.08:1 */
+  --char-2b: #D0C2ED; /* 2B — YoRHa monochrome blindfold silver-lilac (guest, Square Enix); oklch(0.84 0.06 300); 10.32:1 */
+  --char-seox: #A981E0; /* Seox — Eternals mask indigo-violet, Kaguya claws; oklch(0.68 0.14 302); 5.64:1 */
+  --char-lucilius: #DFB9FC; /* Lucilius — Speaker pale-violet robe, wing sheen; oklch(0.84 0.1 310); 10.2:1 */
+  --char-nier: #BD81E1; /* Nier — Death primal purple-magenta, card motif; oklch(0.7 0.15 312); 6.04:1 */
+  --char-sandalphon: #E5B8EF; /* Sandalphon — archangel dusk-rose, coffee-cream mantle; oklch(0.84 0.09 320); 10.16:1 */
+  --char-beatrix: #CE76DC; /* Beatrix — Embrasque orchid-magenta, Society coat; oklch(0.7 0.17 322); 5.93:1 */
+  --char-vikala: #D378C7; /* Vikala — Divine General rat-year pink-purple, Shamikala; oklch(0.7 0.15 332); 5.95:1 */
+  --char-avatar-belial: #FFAAEC; /* Avatar Belial — Avatar body pink-magenta glow; oklch(0.84 0.13 335); 9.98:1 */
+  --char-beelzebub: #D96CB4; /* Beelzebub — Chaos Matter magenta-crimson, Langmesser wings; oklch(0.68 0.16 342); 5.52:1 */
+  --char-id: #FFAED7; /* Id — Relink Id dragon-form rose-red on black (announced 2026-09-17); oklch(0.84 0.12 348); 10.04:1 */
+  --char-ilsa: #DC6DA2; /* Ilsa — Society drill-sergeant crimson-black, gun barrel; oklch(0.68 0.15 352); 5.52:1 */
+}
