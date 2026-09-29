@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Granblue Fantasy Versus: Rising — the skin.
+
+   Transcribed from design/handoff/tokens.css, which is the design system's
+   source of truth. Only the ENGINE'S semantic tokens live here; the 40
+   --char-* accents are NOT in this file — they go to app.config.ts `accents`,
+   which the engine compiles into the entry stylesheet as --accent-<id>, and
+   scripts/characters.ts reads the same handoff block so the two cannot drift.
+
+   THE CONTRACT (STACK §5.13, engine README "Theme override contract"): this
+   MUST be a plain, UNLAYERED :root block — never @theme. An app stylesheet
+   does not pass through the engine's Tailwind root compile, so an @theme
+   block ships raw, the browser drops it as an unknown at-rule, and production
+   silently wears the umbrella defaults. `nuxt dev` masks it exactly.
+
+   The handoff scopes its block to :root[data-game="gbvsr"]; nothing sets that
+   attribute, so the selector here is the bare :root every sibling uses.
+
+   @fontsource specifiers are EXTENSIONLESS on purpose: the packages are not
+   uniform about their ./*.css exports, and the extension form is what broke
+   SF6's display face.
+
+   ── TRANSCRIPTION (checklist 14), reconciled 2026-09-29 by measurement ────
+   The handoff declares FIFTEEN --color-* names, not the sixteen its brief
+   was told to expect; the engine shadows 18.
+   · 11 map 1:1 and are VERBATIM.
+   · 1 RENAME: the handoff's --color-surface-2 is the engine's
+     --color-surface-raised.
+   · 6 the engine wants are ABSENT from the handoff and are DERIVED below:
+     surface-sunken, border-subtle, text-secondary, text-faint,
+     primary-hover, focus. One more than Avatar's five: this handoff has no
+     text-faint either. primary-hover and focus are the two that matter most
+     — when they are missing the engine falls back to the UMBRELLA TEAL in
+     silence, on a skin with no teal in it anywhere.
+   · 3 the handoff declares have NO engine consumer (surface-3, border-strong,
+     info). They sit at the bottom as comments so the design intent survives
+     without shipping dead custom properties.
+
+   ── WHAT WAS RE-MEASURED, AND WHAT WAS WRONG ──────────────────────────────
+   All 11 semantic contrast claims and all 40 accent contrast claims in the
+   handoff re-measured correct to ±0.01. Four documentation errors, none of
+   them a value that ships; all four are corrected here rather than in the
+   handoff, which stays as delivered:
+   1. THE GILT'S PROVENANCE IS WRONG — the third handoff running to carry a
+      sampled-hex claim that does not reproduce. tokens.css:16 says #E0B65A
+      was sampled from the "kv_logo metallic bevel (#C9A24A mid-tone,
+      lifted)". #C9A24A has ZERO pixels within ΔE(OKLab) .02 in
+      kv_logo.9880ca03.png, header_logo, product_logo or the handoff's own
+      webp: the logo's bevel is SILVER (nearest #A8A8A8; zero pixels in the
+      gold hue band at all). The gold exists only in the painted key visual,
+      kv.f015d749.jpg (nearest #C6A153, ΔE .010). The colour is right for the
+      game and is kept; the citation is the key visual, not the logo.
+   2. FIVE OKLCH ANNOTATIONS RECORD THE PRE-CLIP TARGET, not the shipped hex
+      (the method says "chroma clipped to sRGB"; the annotations kept the
+      value before the clip): wilnas C .13 → .102, gran .12 → .088, lowain
+      .11 → .090, anila .13 → .098, narmaya .12 → .083. Hue and lightness
+      are right; only the chroma label is not the colour on screen.
+   3. ID IS RELEASED, NOT "ANNOUNCED-WITH-DATE". gbvsr-accents.json's note
+      tokenizes Id as announced; Ver 2.60 shipped her on 2026-09-15 and the
+      vendor's roster page lists her among the 40. The UNRELEASED gate ships
+      empty.
+   4. THE PRIMARY'S "#2F8BFF CORE" DOES REPRODUCE (within ΔE .02 in both
+      logos, 0.24%/0.25% of opaque pixels), as do the violet #5B3FB8 (exact
+      in the key visual) and the surface #171933 (0.4–0.9% of the key
+      visual). Recorded because the gilt's did not, and a reader should know
+      which citations were checked rather than assume all or none.
+   ========================================================================== */
+
+@import '@fontsource/cinzel-decorative/700';
+@import '@fontsource/cinzel-decorative/900';
+@import '@fontsource/figtree/400';
+@import '@fontsource/figtree/500';
+@import '@fontsource/figtree/600';
+@import '@fontsource/figtree/700';
+@import '@fontsource/jetbrains-mono/400';
+@import '@fontsource/jetbrains-mono/500';
+
+:root {
+  /* ── surfaces: sky-dusk ink, violet cast (hue ~280) ─────────────────────
+     The ramp the derivations below stand on, in 8-bit sRGB per channel:
+       bg #0E0F1F → surface #171933 → surface-2 #20234A → surface-3 #2A2E5C
+     Steps of +9/+9/+10 on R, +10/+10/+11 on G, +20/+23/+18 on B — about
+     TWICE the siblings' step, which is why border-subtle below cannot copy a
+     sibling's number and has to copy a sibling's relationship instead. */
+  --color-bg: #0e0f1f; /* sky-dusk ink */
+  --color-surface: #171933; /* the key visual's twilight horizon, darkened */
+  --color-surface-raised: #20234a; /* handoff --color-surface-2, RENAMED */
+  /* DERIVED (absent from the handoff). The platform's two precedents agree
+     to three decimals — Tōkon took sunken = bg × 0.720, Strive × 0.722 — and
+     Avatar took 0.720. Here:
+       R 14 × 0.720 = 10.08 → 10 (0x0A)
+       G 15 × 0.720 = 10.80 → 11 (0x0B)
+       B 31 × 0.720 = 22.32 → 22 (0x16)
+     Text on it 17.75:1. */
+  --color-surface-sunken: #0a0b16;
+  --color-border: #363b72; /* hairline — violet-dusk */
+  /* DERIVED (absent from the handoff), and by the one sibling relationship
+     that survives a steeper ramp. Measured across all seven sibling skins, a
+     subtle border sits 1.136–1.165 against surface AND 1.041–1.074 against
+     raised (median 1.058). Both cannot hold here: this raised panel is
+     ALREADY 1.145 against surface, above every sibling's 1.074–1.100, so a
+     subtle border at the siblings' surface contrast lands at 1.005 against
+     raised — invisible on every raised panel. Avatar's positional rule (0.262
+     of raised→border) gives #262954, 1.093 against raised: visible, but a
+     third heavier than any sibling's hairline.
+     So the value matches the siblings' median against RAISED — the panel a
+     subtle divider most often sits on — and states what that costs on
+     surface: #242750 → 1.057 vs raised, 1.211 vs surface, 1.338 vs bg. */
+  --color-border-subtle: #242750;
+
+  /* ── text (AA on --color-bg, --color-surface and --color-surface-raised) ── */
+  --color-text: #f2f3ff; /* panel white · 15.56:1 on surface */
+  /* DERIVED (absent from the handoff). The engine, CotW, Strive and Avatar
+     all place text-secondary at 78.87% of the relative-luminance span from
+     text to text-muted. Y(text) = 0.9020, Y(muted) = 0.4601 → target
+     0.5534 on the text→muted line → #BFC2E5: 9.86:1 on surface, 10.90:1 on
+     bg. */
+  --color-text-secondary: #bfc2e5;
+  --color-text-muted: #aeb2dc; /* 8.34:1 on surface, 7.28:1 on raised */
+  /* DERIVED (absent from the handoff — Avatar's handoff at least supplied
+     one). The muted hue in OKLCH, lightness lowered until the pairing the
+     engine uses most for faint text — faint on surface-RAISED, 35 utility
+     sites — sits just above 4.5: #888CB4 → 4.61:1 on raised, 5.28:1 on
+     surface, 5.83:1 on bg. Avatar's faint missed AA on raised (4.34:1); this
+     one is derived against raised on purpose so it cannot. It is 3.93:1 on
+     the parked surface-3, which has no engine consumer. */
+  --color-text-faint: #888cb4;
+
+  /* ── semantic ─────────────────────────────────────────────────────────── */
+  /* SKY BLUE. The kv_logo "RISING" fill (#2F8BFF core, re-measured within ΔE
+     .02 in both official logos) lifted to L .71 for AA. oklch(0.711 0.156
+     251) · 6.71:1 on surface. Neighbour, for the record under the 2026-09-15
+     colour policy (cross-game collisions accepted): Tōkon's #03A5FE. */
+  --color-primary: #4da6ff;
+  /* DERIVED (absent from the handoff). The median sibling hover lift in OKLCH
+     is dL +.0432, dC −.0189, dH +0.7 → target oklch(0.754 0.137 251.7) →
+     #6AB4FF, which measures oklch(0.753 0.132 250.3) after 8-bit rounding:
+     7.84:1 on surface, and primary-contrast on it 8.61:1. */
+  --color-primary-hover: #6ab4ff;
+  --color-primary-contrast: #0b1024; /* ink on primary 7.37:1, on secondary 9.88:1 */
+  /* GILT. PROVENANCE CORRECTED (note 1): from the key visual's gold, not the
+     logo's bevel, which is silver. oklch(0.796 0.120 84.8) · 9.00:1 on
+     surface, ΔH 166 from the primary. Neighbour for the record: Strive's
+     #D9A53A. */
+  --color-secondary: #e0b65a;
+  /* DERIVED (absent from the handoff). Same-hue lift above the hover — the
+     ordering the engine's own default uses (primary → hover → focus):
+     target oklch(0.834 0.097 251.7) → #9BCDFF (measures 0.831 0.088 248.9), 10.28:1 on surface and 11.36:1 on
+     bg, far past the 3:1 non-text floor a focus ring has to clear. */
+  --color-focus: #9bcdff;
+
+  /* ── status ───────────────────────────────────────────────────────────── */
+  --color-success: #4fd18b; /* win / ok · hue 156 · 8.85:1 */
+  --color-warning: #ff8a2e; /* ORANGE, not gold — hue 53 vs the gilt's 85 · 7.30:1 */
+  --color-danger: #ff5a6e; /* loss / error · hue 17 · 5.67:1 */
+
+  /* ── fonts ────────────────────────────────────────────────────────────── */
+  /* Cinzel Decorative carries all ten digits and every roster glyph in its
+     LATIN subset at 700 and 900 — checked against the cmap (211 codepoints),
+     not an ASCII proxy, so "2B" draws in the display face. Its latin-ext
+     subset carries none of them (Ō only). Cinzel's lowercase is SMALL CAPS,
+     which is why the OG probe string includes lowercase (checklist 5d). */
+  --font-display: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  --font-ui: 'Figtree', 'Helvetica Neue', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* ── PARKED: declared by the handoff, no engine consumer ────────────────
+     --color-surface-3:     #2a2e5c;   hover / active row
+     --color-border-strong: #4a50a0;   focused / gilded-edge substitute at 1px
+     --color-info:          #b39dff;   twilight violet from the key visual
+                                       (#5B3FB8 lifted); the engine has no
+                                       info token at all. */
+}
