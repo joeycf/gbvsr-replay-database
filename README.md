@@ -142,5 +142,6 @@ refuse redirect drift → commit by name → smoke check → expiries → patch 
 
 Project `gbvsr-replay-database`. Env set fresh, never copied from a sibling:
 `NUXT_APP_BASE_URL=/gbvsr/` and `NUXT_PUBLIC_SITE_URL` on Production AND
-Preview. Before the shell flip, `SMOKE_HOST` points at the game's own
-`*.vercel.app` host.
+Preview. The cron's smoke check reads the apex: the shell's `/gbvsr/*` rewrite
+shipped on 2026-10-01 (it pointed at the game's own `*.vercel.app` host until
+then).

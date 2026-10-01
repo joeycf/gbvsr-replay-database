@@ -245,8 +245,9 @@ if (last === null) {
   console.error(
     `\n✖ Never got a readable payload from ${replaysUrl} in ${TIMEOUT_SEC}s.\n` +
       '  That is not a slow deploy — the file is missing, unparseable, or the\n' +
-      '  route is broken. Check the deployment and the shell rewrite; before the\n' +
-      '  shell flip, SMOKE_HOST must be https://gbvsr-replay-database.vercel.app.',
+      '  route is broken. Check the deployment and the shell rewrite (shell\n' +
+      '  vercel.json /gbvsr/*); SMOKE_HOST=https://gbvsr-replay-database.vercel.app\n' +
+      '  reads the game host directly and tells the two apart.',
   );
   process.exit(1);
 }

@@ -174,16 +174,16 @@ jobs:
       # a FAILURE; a summary.json whose `game` is not ours fails immediately
       # (checklist 10h — the copied-env incident).
       #
-      # SMOKE_HOST POINTS AT THE GAME'S OWN HOST UNTIL THE SHELL FLIP. Before the
-      # apex rewrite of /gbvsr/* exists, the default (https://replaydatabase.com)
-      # reads the shell's 404 and times out as "never readable". Delete this
-      # `env:` block on the day the rewrite ships, and not before.
+      # IT READS THE APEX (the default, https://replaydatabase.com) — what
+      # visitors are served, through the shell's /gbvsr/* rewrite. Until that
+      # rewrite shipped (shell 0b727f6, 2026-10-01) an `env: SMOKE_HOST` here
+      # pointed at the game's own host, because the apex answered the shell's
+      # 404; it was removed the day the rewrite went live, after verify-deployed
+      # passed against the apex.
       #
       # Deliberately BEFORE the two checks below: those are designed to go red,
       # and a red step stops the ones after it.
       - name: Post-deploy smoke check
-        env:
-          SMOKE_HOST: https://gbvsr-replay-database.vercel.app
         run: npm run verify:deployed
 
       - name: Flag due expiries
