@@ -1220,6 +1220,9 @@ async function generated(characters: CharacterRecord[]): Promise<void> {
         : `\n\n  STILL TO DO BY HAND (a revocation is more than this directory):\n` +
           `    · app/app.config.ts artCredit — drop the "Character art" clause\n` +
           `    · replay-database-shell's selector card is a byte-copy of public/og-default.png — re-copy it\n` +
+          `    · replay-database-shell's hover loop is a Cygames trailer clip, hosted as an Article 1\n` +
+          `      exception (2026-10-01): delete gbvsr's \`video\` line in lib/games.ts AND the blob\n` +
+          `      (\`vercel blob del video/games/gbvsr.mp4\`, run from the shell checkout)\n` +
           `    · git history and earlier Vercel deployments still hold the kit derivatives; Article 3\n` +
           `      asks for "all copies" — decide on a history rewrite and deleting old deployments\n` +
           `    · data/art-provenance.json no longer carries licenceVerified, so expiries.ts's\n` +

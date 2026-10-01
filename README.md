@@ -99,6 +99,12 @@ replaces every kit derivative with generated tiles in one command, and
 `verify:gates` builds that path every run. Credit: "Character art © Cygames,
 Inc. · 2B © SQUARE ENIX" in the footer at every width and baked into the OG card.
 
+One deliberate exception sits outside this repo: the shell's hover loop for the
+GBVSR card is 18 s of Cygames' own EVO Japan 2023 trailer, re-hosted on the
+platform's Blob store — which Article 1 does not permit. The owner chose it on
+2026-10-01 with that conflict put to them first. A revocation therefore also
+means deleting that clip; `data:art:revoked` prints the step.
+
 ## Departures — reported, never blocking
 
 `data/report.md` lists, per intake, every record id that left the corpus since
