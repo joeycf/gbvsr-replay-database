@@ -367,7 +367,7 @@ export function playerId(handle: string): string {
  * titles, handle-outside grammar, so the handle is the text OUTSIDE the paren):
  *   · `UNO` — six titles. "Uno" is Anre's Japanese romanisation (ウーノ), so
  *     it is an alias, and this is a real player.
- *   · `Yuel` — one title, a player named after the fighter.
+ *   (A second seed, `Yuel`, was a misread — see the note where it stood.)
  * The first parse adds the rest, each with its own evidence.
  */
 export interface ConfirmedFighterNamedPlayer {
@@ -386,12 +386,11 @@ export const CONFIRMED_FIGHTER_NAMED_PLAYERS: ConfirmedFighterNamedPlayer[] = [
     video: 'M7edShNVFY8',
     note: 'highLevelReplays, 6 titles at recon, handle-outside. Resolves to anre via the JP romanisation "Uno" (ウーノ).',
   },
-  {
-    id: 'yuel',
-    handle: 'Yuel',
-    video: 'J95ykXUEg1A',
-    note: 'highLevelReplays, 1 title at recon, handle-outside — a player named after the fighter.',
-  },
+  // NOT `yuel`. The recon read J95ykXUEg1A ("Roki (Beelzebub) Vs Yuel
+  // (Yuutyaso)") as a player named Yuel; the catalogue's own row for that video
+  // is "Yuutyaso (Yuel)" — side 2 is written fighter-first, the player is
+  // Yuutyaso. Removed 2026-10-01 when the first real parse reported the row
+  // stale. That title stays a no-char reject.
   // Adjudicated 2026-09-29 from the first (rehearsal) parse's registry
   // invariant, each from its own title: the handle sits in the PLAYER slot of
   // that intake's grammar and plays a DIFFERENT fighter where that is what
@@ -425,6 +424,27 @@ export const CONFIRMED_FIGHTER_NAMED_PLAYERS: ConfirmedFighterNamedPlayer[] = [
     handle: 'Belial Whatsapp',
     video: '41yPUN46DJg@486',
     note: 'Replay Theater — "Belial Whatsapp (Belial)" beside Professor Nekotech; a tournament handle.',
+  },
+  // From the backfill walk (2026-10-01): fgHighLevel's full playlist, of which
+  // the recon had sampled 25 titles. Handle-outside grammar, the fighter in
+  // the paren — each handle is a person who NAMES a fighter.
+  {
+    id: 'no1-ilsa-simp',
+    handle: '№1 ILSA SIMP',
+    video: 'wjYjYxOmJus',
+    note: 'fgHighLevel "ZenciAdam321 (Katalina) Vs №1 ILSA SIMP (Beatrix)" — a player, on Beatrix.',
+  },
+  {
+    id: 'cat-ferry',
+    handle: 'Cat&Ferry',
+    video: '9jtnwMN2z84',
+    note: 'fgHighLevel "Cat&Ferry (Katalina) Vs Nilma (Ladiva)" — a player, on Katalina.',
+  },
+  {
+    id: 'ferry-slil-tier3',
+    handle: "Ferry'sLil'Tier3",
+    video: 'n8W1z9CDFVc',
+    note: 'fgHighLevel "Aww Yeee (Versusia) Vs Ferry\'sLil\'Tier3 (Ferry)" — a player, on Ferry (2 sides).',
   },
 ];
 

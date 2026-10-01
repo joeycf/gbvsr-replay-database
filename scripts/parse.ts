@@ -172,6 +172,11 @@ const DECOR_SUFFIX = new RegExp(
     // Level". THE TAIL MAY NOT CROSS A `vs` (Strive's lesson: the leftmost match
     // otherwise eats the second side and strip() refuses the edit).
     String.raw`\s*[${DECOR}.!]*\s*(?:Granblue\s*Fantasy\s*Versus\s*:?\s*Rising\s*)?High\s*Level\b(?:(?!(?<![\p{L}\p{N}])(?:vs\.?|×)(?![\p{L}\p{N}]))[\s\S])*$`,
+    // fgHighLevel's OTHER tails, with no "High Level": "| Granblue Fantasy
+    // Versus: Rising", "… Rising Replay", "… Rising Grand Master", "… Rising
+    // Versusia showcase" (55 titles on the backfill walk, none in the recon's
+    // 25-title sample). Same no-`vs`-crossing rule as the tail above.
+    String.raw`\s*[${DECOR}.!]*\s*Granblue\s*Fantasy\s*Versus\s*:?\s*Rising\b(?:(?!(?<![\p{L}\p{N}])(?:vs\.?|×)(?![\p{L}\p{N}]))[\s\S])*$`,
     // risingReplays "⭐Masters Ranked Matches⭐(1440p)".
     String.raw`\s*⭐?\s*Masters?\s*Ranked\s*Match(?:es)?\s*⭐?\s*(?:\(\s*\d+p\s*\))?\s*$`,
     // gbvsReplayChannel "… VS Owachan Vira Grand Master Battle".

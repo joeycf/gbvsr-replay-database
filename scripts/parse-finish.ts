@@ -1042,7 +1042,7 @@ export async function writeReportAndData(input: FinishInput): Promise<void> {
   lines.push(
     '## EX marks, skins, and the release floor',
     '',
-    `- EX mode (Ver 2.20; Gran, Djeeta, Narmaya): **${exTotal}** channel record(s) and ` +
+    `- EX mode (Ver 2.20; Gran, Djeeta, Narmaya): **${exTotal}** channel side(s) and ` +
       `${theater?.exMarked ?? 0} catalogue side(s) carry a valid mark; ${exBad + (theater?.exInvalid ?? 0)} ` +
       'mark(s) refused (wrong fighter or before 2.20 — listed in the residue). The mark is POSITIVE',
     '  evidence only: an unmarked record is unknown, never base.',

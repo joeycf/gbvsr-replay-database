@@ -45,8 +45,9 @@
  * typos Cgliostro, Lucillius, Meterra, Zoeey, and those the rehearsal parse's
  * rejects surfaced — Metara, Beelezebub, Sandalphone, Chartotta, and on
  * gbvsReplayChannel Isla (Ilsa, ~12 titles, always the fighter slot), Zoey,
- * Caglisotro, Anilla. Korean spellings (가레온,
- * 비카라, …) appear in ~9 titles from one uploader and the vendor publishes no
+ * Caglisotro, Anilla; and from the backfill walk, Farry (fgHighLevel). NOT
+ * Anilia (fgHighLevel, 1 title): its one use is inside that player's own
+ * handle, "Anilia's №1 Sheep (Anilia)". Korean spellings (가레온, 비카라, …) appear in ~9 titles from one uploader and the vendor publishes no
  * Korean roster to anchor them, so they are left to the residue report.
  * Community abbreviations (Kat, Lance, Char, Grim, Sandy, …) are NOT here: none
  * was measured, several are English words, and the reject printer is how one
@@ -117,7 +118,7 @@ export const ROSTER: RosterRow[] = [
   base('ladiva', 'Ladiva', 'ファスティバ', ['Fastiva']),
   base('metera', 'Metera', 'メーテラ', ['Meterra', 'Metara']),
   base('lowain', 'Lowain', 'ローアイン', ['Lowian']),
-  base('ferry', 'Ferry', 'フェリ'),
+  base('ferry', 'Ferry', 'フェリ', ['Farry']),
   base('zeta', 'Zeta', 'ゼタ'),
   base('vaseraga', 'Vaseraga', 'バザラガ'),
   { ...base('narmaya', 'Narmaya', 'ナルメア'), exSince: EX_PATCH },
