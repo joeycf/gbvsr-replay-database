@@ -1,0 +1,396 @@
+{
+  "measured": {
+    "atEntryId": 499735,
+    "compared": 10886,
+    "unmatched": 1033,
+    "segmented": 1,
+    "players": {
+      "both": 10711,
+      "one": 169,
+      "neither": 6,
+      "flipped": 5,
+      "placeholder": 0,
+      "handleAffix": {
+        "ours": 4,
+        "theirs": 94,
+        "unrelated": 83
+      }
+    },
+    "characters": {
+      "sides": 21772,
+      "agree": 21749,
+      "subset": 0,
+      "disagree": 23,
+      "cannotWitness": 0,
+      "blindSpot": 0,
+      "unreadable": 0,
+      "overCap": 0
+    },
+    "independence": {
+      "sameDay": 10872,
+      "withinOneDay": 10886,
+      "unmatchedTagged": 1659,
+      "unmatchedUntagged": 874,
+      "unmatchedHydrated": 1852,
+      "offIntakeTagged": 1655,
+      "offIntakeUntagged": 190
+    }
+  },
+  "blindSpots": [],
+  "disagreements": [
+    {
+      "videoId": "Xkq7P5LB-mc",
+      "field": "players",
+      "ours": [
+        "sorix",
+        "nathan"
+      ],
+      "theirs": [
+        "tier-sorix",
+        "nathan-br"
+      ],
+      "title": "GBVSR: [TIER] Sorix (Soriz) Vs UA|Nathan (BR) (Djeeta) | High Level Gameplay."
+    },
+    {
+      "videoId": "657QoAvIUEY",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "avatar-belial"
+      ],
+      "theirs": [
+        "lancelot"
+      ],
+      "title": "GBVSR:🔥MASA (Avatar Belial) Vs Alkazi (Avatar Belial)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "bRFiYAcA4pE",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "katalina"
+      ],
+      "theirs": [
+        "djeeta"
+      ],
+      "title": "GBVSR:🔥Framework (Katalina) Vs Barutorec (Siegfried)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "uvNoSA0WJuU",
+      "field": "players",
+      "ours": [
+        "raelu",
+        "teahothy"
+      ],
+      "theirs": [
+        "sea-raelu",
+        "sea-teahothy"
+      ],
+      "title": "GBVSR:🔥[SEA] raelu (Zooey) Vs [SEA] Teahothy (Summer Belial)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "gPbT3YyWK7Q",
+      "field": "players",
+      "ours": [
+        "alma-negra",
+        "jf"
+      ],
+      "theirs": [
+        "tier-alma-negra",
+        "jf-ms"
+      ],
+      "title": "GBVSR:🔥[TIER] Alma Negra (Lucilius) Vs JF(MS) (Vaseraga)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "z8lLTk4tx-8",
+      "field": "players",
+      "ours": [
+        "koyao",
+        "kikushl"
+      ],
+      "theirs": [
+        "miraias",
+        "yamana"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Koyao (Narmaya) vs KikuShl (Zooey)"
+    },
+    {
+      "videoId": "z8lLTk4tx-8",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "narmaya"
+      ],
+      "theirs": [
+        "seox"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Koyao (Narmaya) vs KikuShl (Zooey)"
+    },
+    {
+      "videoId": "z8lLTk4tx-8",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "zooey"
+      ],
+      "theirs": [
+        "gran"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Koyao (Narmaya) vs KikuShl (Zooey)"
+    },
+    {
+      "videoId": "Qjy3v3oEUXc",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "siegfried"
+      ],
+      "theirs": [
+        "lucilius"
+      ],
+      "title": "GBVSR:🔥MBK (Beatrix) Vs Tav102 (Siegfried)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "UiD55zi7ohg",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "katalina"
+      ],
+      "theirs": [
+        "siegfried"
+      ],
+      "title": "GBVSR:🔥SenpaiSpyder (Anre) Vs Artorias (Katalina)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "6e5mby_kHdI",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "beatrix"
+      ],
+      "theirs": [
+        "vira"
+      ],
+      "title": "GBVSR:🔥destin (Nier) Vs CanOfSprite (Beatrix)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "bNNahqckjg4",
+      "field": "players",
+      "ours": [
+        "tororo",
+        "buchinuki"
+      ],
+      "theirs": [
+        "jfk",
+        "waffle"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Tororo (Percival) vs Buchinuki (Soriz)"
+    },
+    {
+      "videoId": "bNNahqckjg4",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "percival"
+      ],
+      "theirs": [
+        "lancelot"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Tororo (Percival) vs Buchinuki (Soriz)"
+    },
+    {
+      "videoId": "bNNahqckjg4",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "soriz"
+      ],
+      "theirs": [
+        "charlotta"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Tororo (Percival) vs Buchinuki (Soriz)"
+    },
+    {
+      "videoId": "Qt19_7hjiBY",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "belial"
+      ],
+      "theirs": [
+        "avatar-belial"
+      ],
+      "title": "GBVSR:🔥furufuru (Belial) Vs Goenitz (Gran)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "TRSd5nFqnDM",
+      "field": "players",
+      "ours": [
+        "gamera",
+        "shiraishi"
+      ],
+      "theirs": [
+        "waffle",
+        "laphroaig"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Gamera (Beatrix) vs Shiraishi (Metera)"
+    },
+    {
+      "videoId": "TRSd5nFqnDM",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "beatrix"
+      ],
+      "theirs": [
+        "charlotta"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Gamera (Beatrix) vs Shiraishi (Metera)"
+    },
+    {
+      "videoId": "TRSd5nFqnDM",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "metera"
+      ],
+      "theirs": [
+        "eustace"
+      ],
+      "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Gamera (Beatrix) vs Shiraishi (Metera)"
+    },
+    {
+      "videoId": "DXs9aQC9Q8E",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "belial"
+      ],
+      "theirs": [
+        "avatar-belial"
+      ],
+      "title": "GBVSR High Level Gameplay TAKU Belial VS Gamera Versusia"
+    },
+    {
+      "videoId": "8bbtBCMMtPk",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "galleon"
+      ],
+      "theirs": [
+        "nier"
+      ],
+      "title": "GBVSR:🔥LazyRuin (Galleon) Vs RetroRedux (Vane)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "371cIjGCBME",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "djeeta"
+      ],
+      "theirs": [
+        "yuel"
+      ],
+      "title": "GBVSR:🔥Glue (Vane) Vs DokiDoki (EX Djeeta)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "r5zNQV0Rv8c",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "lucilius"
+      ],
+      "theirs": [
+        "galleon"
+      ],
+      "title": "GBVSR:🔥kCe (Wilnas) Vs Diegsternator (Lucilius)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "tbNN8NWwE6c",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "percival"
+      ],
+      "theirs": [
+        "wilnas"
+      ],
+      "title": "GBVSR:🔥Koyao (Narmaya) Vs Ret (Percival)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "Ten_6QeKdJQ",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "siegfried"
+      ],
+      "theirs": [
+        "belial"
+      ],
+      "title": "GBVSR:🔥JFK (Lancelot) Vs Tako (Siegfried)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "gZa1GRJGsTA",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "sandalphon"
+      ],
+      "theirs": [
+        "belial"
+      ],
+      "title": "GBVSR:🔥Shosan (Zeta) Vs Tako (Sandalphon)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "mWKS6udnwbw",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "eustace"
+      ],
+      "theirs": [
+        "vaseraga"
+      ],
+      "title": "GBVSR:🔥debagame (Eustace) Vs Sakusaku (Soriz)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "2JKfrEK4JVY",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "vikala"
+      ],
+      "theirs": [
+        "nier"
+      ],
+      "title": "GBVSR:🔥kzkrII (Vira) Vs hinokino (Vikala)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "N9cdXS-dI4k",
+      "field": "characters",
+      "side": 0,
+      "ours": [
+        "nier"
+      ],
+      "theirs": [
+        "galleon"
+      ],
+      "title": "GBVSR:🔥Grisk (Nier) Vs LazyRuin (Galleon)🔥| High Level Gameplay."
+    },
+    {
+      "videoId": "N9cdXS-dI4k",
+      "field": "characters",
+      "side": 1,
+      "ours": [
+        "galleon"
+      ],
+      "theirs": [
+        "nier"
+      ],
+      "title": "GBVSR:🔥Grisk (Nier) Vs LazyRuin (Galleon)🔥| High Level Gameplay."
+    }
+  ]
+}

@@ -132,7 +132,7 @@ export const CHANNELS: ChannelConfig[] = [
     frozen: {
       since: '2024-07-14',
       reason: 'No match uploads since 2024-07-14 (only trailers after); 599 matches at recon.',
-      records: -1,
+      records: 654, // seeded 2026-10-01 from the backfill walk
       reviewedAt: '2026-09-29',
     },
   },
@@ -151,7 +151,7 @@ export const CHANNELS: ChannelConfig[] = [
     frozen: {
       since: '2024-10-07',
       reason: 'No uploads since 2024-10-07; 596 matches at recon.',
-      records: -1,
+      records: 598, // seeded 2026-10-01 from the backfill walk
       reviewedAt: '2026-09-29',
     },
   },
@@ -170,7 +170,7 @@ export const CHANNELS: ChannelConfig[] = [
     frozen: {
       since: '2024-04-05',
       reason: 'Last Rising upload 2024-04-05; the channel now uploads Tekken 8.',
-      records: -1,
+      records: 123, // seeded 2026-10-01 from the backfill walk
       reviewedAt: '2026-09-29',
     },
   },
@@ -187,8 +187,9 @@ export const CHANNELS: ChannelConfig[] = [
     fetchFrom: PRE_RELEASE,
     frozen: {
       since: '2025-04-14',
-      reason: 'No uploads since 2025-04-14 (multi-game; ~22 GBVSR sets visible in the catalogue).',
-      records: -1,
+      reason:
+        'No uploads since 2025-04-14 (multi-game: 218 GBVSR-marked of 371 uploads on the backfill walk).',
+      records: 186, // seeded 2026-10-01 from the backfill walk
       reviewedAt: '2026-09-29',
     },
   },
