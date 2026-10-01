@@ -1,0 +1,204 @@
+name: Daily data refresh
+
+on:
+  schedule:
+    # 09:47 UTC daily (odd minute to dodge cron rush; the EIGHTH stagger slot on
+    # the platform, after 2XKO's 06:17, Tekken's 06:47, SF6's 07:17, Tōkon's
+    # 07:47, CotW's 08:17, Strive's 08:47 and Avatar's 09:17).
+    #
+    # This slot was reserved for us by name: Strive's and Avatar's workflows both
+    # say "NOTE FOR WHOEVER ADDS GAME EIGHT … the next free slot is 09:47 and the
+    # window becomes 06:00–10:00". Taking it does exactly that. (Measured
+    # 2026-09-29: GitHub's scheduler lands the platform's crons ~11:30–16:00 UTC
+    # in practice, so check the Actions tab before any push, whatever the slot.)
+    #
+    # NOTE FOR WHOEVER ADDS GAME NINE: the pattern is +30 minutes alternating
+    # :17/:47, so the next free slot is 10:17 and the window becomes 06:00–10:30.
+    - cron: '47 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # matches engines.node (the platform's Node policy — STACK.md §1)
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      # ── THE ORDER IS scripts/catchup.ts's ORDER, AND IT IS LOAD-BEARING ────
+      # fetch → index pull → parse → emit (checklist 9c): parse MERGES the index
+      # dump, so a pull that has not happened yet is a pull whose rows are
+      # missing from this morning's records. Written as separate steps because
+      # the index pull has to be `continue-on-error`.
+      #
+      # NOT HERE: the roster, the art and the OG card (manual, only when the
+      # roster or the brand changes); patch-check and roster-check (manual by
+      # design — they read the vendor, and a vendor outage is not ours to go red
+      # on; ../check-patches.sh and ../check-rosters.sh read their trailers).
+      #
+      # QUOTA. The key is SHARED with seven other games' crons (platform total
+      # estimated at ~5,000 units/day on 2026-09-29). This fetch walks every live
+      # uploads playlist in full each morning — the departures report in
+      # data/report.md depends on seeing the whole playlist — at ~550 units/day,
+      # hydrating only uploads whose title carries the GBVSR marker. Nothing in
+      # this repo calls search.list. scripts/fetch.ts prints what it spent.
+      - name: Fetch channel uploads
+        run: npm run data:fetch
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+
+      # THE INDEX PULL, AND IT IS ALLOWED TO FAIL. continue-on-error marks the
+      # run yellow and moves on; parse then finds no dump, carries the committed
+      # records against the pin in data/source-pins.json, and the day proceeds
+      # (checklist 12d). LAST of the fetches, so its failure cannot cost the
+      # channel dumps already in hand. YT_API_KEY is repeated because `env:` is
+      # per step (the liveness join hydrates new rows).
+      - name: Fetch the tournament index (Replay Theater)
+        continue-on-error: true
+        run: npm run data:theater
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+
+      - name: Parse
+        run: npm run data:parse
+
+      - name: Emit
+        run: npm run data:emit
+
+      # THE ROUTING IS REGENERATED HERE, SO IT LANDS IN THE SAME COMMIT AS THE
+      # LEDGER IT IS DERIVED FROM. data/player-redirects.json is hand-authored
+      # (parse never writes it); regenerating makes vercel.json follow the ledger
+      # whoever last touched it. With no change it is a byte-identical no-op and
+      # stays out of the commit. GBVSR ships this from its first commit — the
+      # structural fix for the stale-redirect 404s Tōkon and Tekken shipped.
+      - name: Regenerate player redirects
+        run: npm run data:redirects
+
+      # AND NOTHING IS COMMITTED WHEN A ROW CANNOT SHIP. The ledger does not
+      # drift; the corpus under it does — players.json was rewritten above, so a
+      # redirect's target can stop being a player, or a retired id come back as
+      # one, with nobody touching the ledger. This is the one gate here that goes
+      # red BEFORE the commit, so a failure holds the day's data; every refusal
+      # names the row and its fix, and a held day loses nothing because every run
+      # re-fetches every upload.
+      - name: Refuse redirect drift
+        run: npx tsx scripts/redirects.ts --drift
+
+      - name: Commit if changed
+        run: |
+          git config user.name "gbvsr-data-refresh[bot]"
+          git config user.email "data-refresh@users.noreply.github.com"
+          # THE FILE LIST IS BY NAME, NEVER `git add data/` (checklist 9b). A
+          # blanket add would stage whatever else is in data/ — a hand-edited
+          # overrides.json mid-review, a scratch file — and commit it as part of
+          # an unattended refresh. data/overrides.json is the one file a human
+          # owns outright and is deliberately absent. Every file below is
+          # pipeline-owned:
+          #
+          #   videos.json          the parse substrate
+          #   replays.json         the emitted public contract
+          #   stats.json players.json
+          #                        the emitted registries
+          #   characters.json      the provided roster — not rebuilt daily, staged
+          #                        so a hand-committed roster change is never
+          #                        left half-pushed by a refresh
+          #   patchGroups.json patchBoundaries.json seasonBoundaries.json
+          #                        derived from scripts/seasons.ts by emit
+          #   summary.json         the apex selector's card payload, and the file
+          #                        that carries the deployed ENGINE TAG for the
+          #                        smoke check below (checklist 10i)
+          #   review-queue.json    parse-regenerated derived state
+          #   player-redirects.json vercel.json
+          #                        the redirect ledger and the routing derived from
+          #                        it — regenerated and drift-checked above, so the
+          #                        two land in ONE commit
+          #   source-pins.json     the index intake's carry pin (most runs rewrite
+          #                        it; an unstaged file that DOES change is a
+          #                        change discarded in silence)
+          #   theater-cursor.json  where the index pull remembers how far it read
+          #                        (raw/ is gitignored, so uncommitted it resets to
+          #                        0 every morning)
+          #   theater-disagreements.json
+          #                        the witness artifact parse writes (a full
+          #                        sweep rewrites it; a cursor morning writes it
+          #                        only when absent). Strive's list omits it —
+          #                        Tekken's cron guard found the same hole — so
+          #                        it is staged by name and scripts/e2e.ts
+          #                        asserts that it is.
+          #   report.md            the run report, incl. the departures line
+          git add \
+            data/videos.json data/replays.json data/stats.json data/players.json \
+            data/characters.json data/patchGroups.json data/patchBoundaries.json \
+            data/seasonBoundaries.json data/summary.json data/review-queue.json \
+            data/player-redirects.json data/source-pins.json data/theater-cursor.json \
+            data/theater-disagreements.json data/report.md vercel.json
+          # report.md's "_Generated <timestamp>_" line changes every run; a diff
+          # that is ONLY that line is not a data change — drop it so a no-change
+          # day produces no commit (and no deploy).
+          REAL=$(git diff --cached -- data/report.md | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' | { grep -vc '^[+-]_Generated ' || true; })
+          if [ "$REAL" -eq 0 ]; then
+            git restore --staged --worktree data/report.md
+          fi
+          # AND THE SAME FOR THE CURSOR: it rises on days nothing of ours changed.
+          # Written as an emptiness test on the remaining staged NAMES — with the
+          # cursor filtered out the path list can be EMPTY, and an empty pathspec
+          # means "everything", which would silently invert the check.
+          OTHERS=$(git diff --cached --name-only | grep -v '^data/theater-cursor.json$' || true)
+          if [ -z "$OTHERS" ]; then
+            git restore --staged --worktree data/theater-cursor.json
+          fi
+          if git diff --cached --quiet; then
+            echo "No data changes — skipping commit."
+            exit 0
+          fi
+          N=$(node -p "require('./data/replays.json').length")
+          git commit -m "data: refresh $(date -u +%F) — ${N} replays"
+          git push
+
+      # Deploy is Vercel's git integration off the push above, so this polls until
+      # production serves the digest AND the engine tag just committed. A build
+      # still in flight is a WARNING; a served count outside the collapse band is
+      # a FAILURE; a summary.json whose `game` is not ours fails immediately
+      # (checklist 10h — the copied-env incident).
+      #
+      # SMOKE_HOST POINTS AT THE GAME'S OWN HOST UNTIL THE SHELL FLIP. Before the
+      # apex rewrite of /gbvsr/* exists, the default (https://replaydatabase.com)
+      # reads the shell's 404 and times out as "never readable". Delete this
+      # `env:` block on the day the rewrite ships, and not before.
+      #
+      # Deliberately BEFORE the two checks below: those are designed to go red,
+      # and a red step stops the ones after it.
+      - name: Post-deploy smoke check
+        env:
+          SMOKE_HOST: https://gbvsr-replay-database.vercel.app
+        run: npm run verify:deployed
+
+      - name: Flag due expiries
+        # Deliberately failing (scripts/expiries.ts): the dominant channel's
+        # 7-day silence alarm (measured from its own 4.42-day longest silence),
+        # the frozen channels' quarterly look, the Fan Kit licence re-read and
+        # the stale patch table. The data is already committed and pushed, so a
+        # red run never costs a refresh. Clear it by doing the work, NOT by
+        # deleting this step.
+        run: npx tsx scripts/expiries.ts --check
+
+      - name: Validate the patch table
+        # `if: always()` because the step above is DESIGNED to go red. OFFLINE and
+        # CLOCK-DEPENDENT — a row dated in the future or an era left closed can go
+        # from valid to invalid on a day nobody touched the repo. The content
+        # check against the vendor feed is scripts/patch-check.ts, manual.
+        if: always()
+        run: npm run data:seasons

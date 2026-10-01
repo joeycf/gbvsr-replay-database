@@ -158,7 +158,9 @@ export function dueExpiries(
   for (const c of CHANNELS) {
     if (!c.frozen) continue;
     const reviewed = c.frozen.reviewedAt ?? c.frozen.since;
-    if (daysBetween(reviewed, asOf) > FROZEN_REVIEW_DAYS) {
+    // `>=`: a review is DUE on the day it names. (The silence alarm is the
+    // other convention on purpose — "more than 7 silent days" fires on day 8.)
+    if (daysBetween(reviewed, asOf) >= FROZEN_REVIEW_DAYS) {
       due.push({
         kind: 'frozen-watch',
         id: c.id,
@@ -173,7 +175,7 @@ export function dueExpiries(
     }
   }
 
-  if (licenceVerified && daysBetween(licenceVerified, asOf) > LICENCE_REVIEW_DAYS) {
+  if (licenceVerified && daysBetween(licenceVerified, asOf) >= LICENCE_REVIEW_DAYS) {
     due.push({
       kind: 'art-licence',
       id: 'fan-kit',
