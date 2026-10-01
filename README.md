@@ -121,22 +121,49 @@ is the deep dive).
 
 ## Scripts
 
-| command                                                 | what                                                                              |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `npm run data:fetch`                                    | walk every live uploads playlist, hydrate GBVSR-marked uploads (prints its quota) |
-| `npm run data:theater`                                  | the Replay Theater pull (cursor daily, `-- --full` sweeps)                        |
-| `npm run data:parse`                                    | raw → `data/videos.json`, players, review queue, `report.md`                      |
-| `npm run data:emit`                                     | the public contract, stats, `summary.json` (with the engine tag)                  |
-| `npm run data:catchup`                                  | fetch → theater → parse → emit, in the only safe order                            |
-| `npm run data:characters`                               | build `data/characters.json` from the roster table                                |
-| `npm run data:art` / `data:art:revoked` / `data:og`     | Fan Kit art, the licence fallback, the OG card                                    |
-| `npm run data:seasons`                                  | validate the patch table (also in `typecheck`)                                    |
-| `npm run data:patch-check` / `data:roster-check`        | compare with the vendor (manual; trailers for `../check-*.sh`)                    |
-| `npm run data:expiries`                                 | the self-expiring gates                                                           |
-| `npm run data:redirects`                                | write `vercel.json` from `data/player-redirects.json`                             |
-| `npm run data:dupes`                                    | the match-identity deep dive (read-only)                                          |
-| `npm run verify:gates` / `test:e2e` / `verify:deployed` | the control suite, the build contract, the post-deploy digest + engine check      |
-| `npm run typecheck`                                     | both tracks — never raw `tsc`                                                     |
+| command                                                 | what                                                                                             |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `npm run data:fetch`                                    | walk every live uploads playlist, hydrate GBVSR-marked uploads (prints its quota)                |
+| `npm run data:theater`                                  | the Replay Theater pull (cursor daily, `-- --full` sweeps)                                       |
+| `npm run data:parse`                                    | raw → `data/videos.json`, players, review queue, `report.md`                                     |
+| `npm run data:emit`                                     | the public contract, stats, `summary.json` (with the engine tag)                                 |
+| `npm run data:catchup`                                  | fetch → theater → parse → emit, in the only safe order                                           |
+| `npm run data:characters`                               | build `data/characters.json` from the roster table                                               |
+| `npm run data:art` / `data:art:revoked` / `data:og`     | Fan Kit art, the licence fallback, the OG card                                                   |
+| `npm run data:seasons`                                  | validate the patch table (also in `typecheck`)                                                   |
+| `npm run data:patch-check` / `data:roster-check`        | compare with the vendor (manual; trailers for `../check-*.sh`)                                   |
+| `npm run data:tournaments`                              | Liquipedia's Tier 1–2 winners/runners-up → `data/tournaments.json`. Manual; `--match`, `--check` |
+| `npm run data:expiries`                                 | the self-expiring gates                                                                          |
+| `npm run data:redirects`                                | write `vercel.json` from `data/player-redirects.json`                                            |
+| `npm run data:dupes`                                    | the match-identity deep dive (read-only)                                                         |
+| `npm run verify:gates` / `test:e2e` / `verify:deployed` | the control suite, the build contract, the post-deploy digest + engine check                     |
+| `npm run typecheck`                                     | both tracks — never raw `tsc`                                                                    |
+
+## Featured players come from tournament results
+
+A player is **featured** when they won or placed second at a Liquipedia Tier 1 or
+Tier 2 event, or when they rank in the top 2% of the unflagged players by
+appearances (engine v0.17.0; the old rule, "25+ replays", made 281 people
+"featured" here). The placements are `data/tournaments.json`, pulled by
+`npm run data:tournaments` — **manual, network, never in the cron** — through
+Liquipedia's MediaWiki API (its HTML pages are bot-walled and off limits by its
+terms; the API wants gzip, a contact User-Agent and one `parse` call per 30 s,
+which is why two tiers take 35 s). The daily parse re-matches the file against
+the registry it just built and stamps `featured: true` + `extra.titles` on every
+hit, so a champion with no replay yet costs nothing today and is featured the
+morning their first video is ingested.
+
+The matcher never guesses between people. A name that is also a fighter
+(`UNO`, Anre's Japanese alias), has under three alphanumerics (`TY`), or
+resolves to two registry ids is reported in `data/report.md` and
+`npm run data:tournaments -- --match`, and a human closes it in
+`data/tournament-aliases.json` (an id, or `null` to ignore).
+`tsx scripts/tournaments.ts --check` validates both files inside
+`npm run typecheck`.
+
+Liquipedia's content is **CC BY-SA 3.0**: the credit is in the file's `source`
+block and the engine renders it beside every title on the player page.
+Pacing across all eight games is `../sync-tournaments.sh`.
 
 ## Daily data refresh
 

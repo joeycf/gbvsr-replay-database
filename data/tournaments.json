@@ -1,0 +1,2350 @@
+{
+  "source": {
+    "name": "Liquipedia Fighting Games Wiki",
+    "url": "https://liquipedia.net/fighters/Granblue_Fantasy_Versus:_Rising/Tournaments",
+    "licence": "CC BY-SA 3.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "game": "gbvsr",
+    "tiers": [
+      1,
+      2
+    ]
+  },
+  "generatedAt": "2026-10-01",
+  "events": [
+    {
+      "name": "Cygames Cup 2027",
+      "page": "Cygames_Cup/2027",
+      "url": "https://liquipedia.net/fighters/Cygames_Cup/2027",
+      "date": "2027-01-27",
+      "tier": 1,
+      "entrants": 24,
+      "prize": null,
+      "location": "Tokyo",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Battle Coliseum 2026",
+      "page": "Battle_Coliseum/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Coliseum/2026/GBVSR",
+      "date": "2026-11-26",
+      "tier": 1,
+      "entrants": null,
+      "prize": null,
+      "location": "São Paulo, SP",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "CROSSOVER 2026",
+      "page": "CROSSOVER/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/CROSSOVER/2026/GBVSR",
+      "date": "2026-11-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "Germany",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "FightClub Championship 7",
+      "page": "FightClub_Championship/7/GBVSR",
+      "url": "https://liquipedia.net/fighters/FightClub_Championship/7/GBVSR",
+      "date": "2026-11-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "China",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Headstomper 2026",
+      "page": "Headstomper/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Headstomper/2026/GBVSR",
+      "date": "2026-11-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "Malmö",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "MINDSET 2026",
+      "page": "MINDSET/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/MINDSET/2026/GBVSR",
+      "date": "2026-11-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "France",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Thaiger Uppercut 2026",
+      "page": "Thaiger_Uppercut/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2026/GBVSR",
+      "date": "2026-11-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "Thailand",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "BeePro Taiwan Qualifier 2026",
+      "page": "BeePro_Cup/Taiwan_Qualifier/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/BeePro_Cup/Taiwan_Qualifier/2026/GBVSR",
+      "date": "2026-10-26",
+      "tier": 2,
+      "entrants": null,
+      "prize": null,
+      "location": "Taipei City",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Clash of the Olympians 2026",
+      "page": "Clash_of_the_Olympians/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2026/GBVSR",
+      "date": "2026-10-26",
+      "tier": 2,
+      "entrants": 14,
+      "prize": null,
+      "location": "Athens",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Evolution Championship Series: France 2026",
+      "page": "Evolution_Championship_Series/2026/France/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/France/GBVSR",
+      "date": "2026-10-26",
+      "tier": 1,
+      "entrants": 200,
+      "prize": "$15,298.51",
+      "location": "Nice",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "First Attack 2026",
+      "page": "First_Attack/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/First_Attack/2026/GBVSR",
+      "date": "2026-10-26",
+      "tier": 2,
+      "entrants": 17,
+      "prize": "$170",
+      "location": "San Juan",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "SQXL: The Promised Day",
+      "page": "SQ_XL/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/SQ_XL/2026/GBVSR",
+      "date": "2026-10-26",
+      "tier": 2,
+      "entrants": 91,
+      "prize": "$910",
+      "location": "Durham, NC",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "OzHadou Nationals 20",
+      "page": "OzHadou_Nationals/20/GBVSR",
+      "url": "https://liquipedia.net/fighters/OzHadou_Nationals/20/GBVSR",
+      "date": "2026-09-26",
+      "tier": 2,
+      "entrants": 58,
+      "prize": "$416.09",
+      "location": "Sydney",
+      "winner": {
+        "name": "Goenitz",
+        "page": "Goenitz",
+        "flag": "Japan",
+        "character": "Gran"
+      },
+      "runnerUp": {
+        "name": "sho-san",
+        "page": "Sho-san",
+        "flag": "Japan",
+        "character": "Zeta"
+      }
+    },
+    {
+      "name": "Ultimate Fighting Arena 2026",
+      "page": "Ultimate_Fighting_Arena/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2026/GBVSR",
+      "date": "2026-09-26",
+      "tier": 2,
+      "entrants": 77,
+      "prize": "$1,740.53",
+      "location": "Paris",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "Haiti",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "CEO 2026",
+      "page": "Community_Effort_Orlando/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2026/GBVSR",
+      "date": "2026-08-26",
+      "tier": 1,
+      "entrants": 310,
+      "prize": "$3,100",
+      "location": "Orlando, FL",
+      "winner": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "Haiti",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "Nyantic",
+        "page": "Nyantic",
+        "flag": "United States",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "Komitê Arena 2026",
+      "page": "Komitê_Arena/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Komit%C3%AA_Arena/2026/GBVSR",
+      "date": "2026-08-26",
+      "tier": 2,
+      "entrants": 39,
+      "prize": null,
+      "location": "São Paulo, SP",
+      "winner": {
+        "name": "JF",
+        "page": "JF",
+        "flag": "Brazil",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "shinchire",
+        "page": null,
+        "flag": "Brazil",
+        "character": "Belial"
+      }
+    },
+    {
+      "name": "Open The Gate #2",
+      "page": "Open_The_Gate/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Open_The_Gate/2026/GBVSR",
+      "date": "2026-08-26",
+      "tier": 2,
+      "entrants": 40,
+      "prize": "$131.39",
+      "location": "Santiago",
+      "winner": {
+        "name": "Ryazo",
+        "page": "Ryazo",
+        "flag": "United States",
+        "character": "Seox"
+      },
+      "runnerUp": {
+        "name": "Cals",
+        "page": null,
+        "flag": "Chile",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "RAGNAROK 2026",
+      "page": "Ragnarok/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Ragnarok/2026/GBVSR",
+      "date": "2026-08-26",
+      "tier": 2,
+      "entrants": 36,
+      "prize": "$1,405.81",
+      "location": "Buenos Aires",
+      "winner": {
+        "name": "JF",
+        "page": "JF",
+        "flag": "Brazil",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "Raz",
+        "page": "Raz",
+        "flag": "Peru",
+        "character": "Ferry"
+      }
+    },
+    {
+      "name": "Battle Arena Melbourne 16",
+      "page": "Battle_Arena_Melbourne/16/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/16/GBVSR",
+      "date": "2026-07-26",
+      "tier": 2,
+      "entrants": 14,
+      "prize": "$97.51",
+      "location": "Melbourne",
+      "winner": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Ilsa"
+      },
+      "runnerUp": {
+        "name": "Ti",
+        "page": "Ti",
+        "flag": "Germany",
+        "character": "Ferry"
+      }
+    },
+    {
+      "name": "Boston Blue Beat: Beach Episode 2026",
+      "page": "Boston_Blue_Beat/Beach_Episode/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2026/GBVSR",
+      "date": "2026-07-26",
+      "tier": 2,
+      "entrants": 73,
+      "prize": "$730",
+      "location": "Waltham, MA",
+      "winner": {
+        "name": "Monarch",
+        "page": "Monarch",
+        "flag": "United States",
+        "character": "Metera"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "United States",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "IGM Summer Showdown 2026",
+      "page": "Irish_Gaming_Market/2026/Summer_Showdown/GBVSR",
+      "url": "https://liquipedia.net/fighters/Irish_Gaming_Market/2026/Summer_Showdown/GBVSR",
+      "date": "2026-07-26",
+      "tier": 2,
+      "entrants": 20,
+      "prize": "$742.18",
+      "location": "Dublin",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "Kansai Gaming Party 2026",
+      "page": "Kansai_Gaming_Party/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2026/GBVSR",
+      "date": "2026-07-26",
+      "tier": 2,
+      "entrants": 124,
+      "prize": null,
+      "location": "Osaka",
+      "winner": {
+        "name": "ZanDori",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "komorikiri",
+        "page": null,
+        "flag": "Japan",
+        "character": "Wilnas"
+      }
+    },
+    {
+      "name": "Only The Best 2026",
+      "page": "Only_The_Best/8/GBVSR",
+      "url": "https://liquipedia.net/fighters/Only_The_Best/8/GBVSR",
+      "date": "2026-07-26",
+      "tier": 2,
+      "entrants": 24,
+      "prize": "$742.18",
+      "location": "Naples",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Dudeakoff",
+        "page": "Dudeakoff",
+        "flag": "United Kingdom",
+        "character": "Metera"
+      }
+    },
+    {
+      "name": "VSFighting XIV",
+      "page": "VSFighting/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/VSFighting/2026/GBVSR",
+      "date": "2026-07-26",
+      "tier": 1,
+      "entrants": 108,
+      "prize": "$1,438.67",
+      "location": "Birmingham",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Pixi",
+        "page": "Pixi",
+        "flag": "Italy",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "CHAIN SHIFT 2026",
+      "page": "Chain_Shift/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Chain_Shift/2026/GBVSR",
+      "date": "2026-06-26",
+      "tier": 2,
+      "entrants": 37,
+      "prize": "$370",
+      "location": "La Mirada, CA",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "Evolution Championship Series 2026",
+      "page": "Evolution_Championship_Series/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/GBVSR",
+      "date": "2026-06-26",
+      "tier": 1,
+      "entrants": 466,
+      "prize": "$40,000",
+      "location": "Las Vegas, NV",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Shio",
+        "page": "Shio",
+        "flag": "Japan",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "Hessen Crash XXIII",
+      "page": "Hessen_Crash/23/GBVSR",
+      "url": "https://liquipedia.net/fighters/Hessen_Crash/23/GBVSR",
+      "date": "2026-06-26",
+      "tier": 2,
+      "entrants": 42,
+      "prize": "$483.98",
+      "location": "Frankfurt",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "-Bonsai-",
+        "page": null,
+        "flag": "Germany",
+        "character": "Metera"
+      }
+    },
+    {
+      "name": "SOOP Super Tournament 2026",
+      "page": "Super_Tournament/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Super_Tournament/2026/GBVSR",
+      "date": "2026-06-26",
+      "tier": 1,
+      "entrants": 34,
+      "prize": "$3,206.44",
+      "location": "Seoul",
+      "winner": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Ilsa"
+      },
+      "runnerUp": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "The MIXUP 2026",
+      "page": "The_MIXUP/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/The_MIXUP/2026/GBVSR",
+      "date": "2026-06-26",
+      "tier": 2,
+      "entrants": 46,
+      "prize": "$532.47",
+      "location": "Lyon",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Ti",
+        "page": "Ti",
+        "flag": "Germany",
+        "character": "Ferry"
+      }
+    },
+    {
+      "name": "Combo Breaker 2026",
+      "page": "Combo_Breaker/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Combo_Breaker/2026/GBVSR",
+      "date": "2026-05-26",
+      "tier": 1,
+      "entrants": 414,
+      "prize": "$4,140",
+      "location": "Schaumburg, IL",
+      "winner": {
+        "name": "Insurgent",
+        "page": "Insurgent",
+        "flag": "United States",
+        "character": "Eustace"
+      },
+      "runnerUp": {
+        "name": "Havaniceday",
+        "page": "Havaniceday",
+        "flag": "Canada",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "Evolution Championship Series: Japan 2026",
+      "page": "Evolution_Championship_Series/2026/Japan/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/Japan/GBVSR",
+      "date": "2026-05-26",
+      "tier": 1,
+      "entrants": 556,
+      "prize": "$19,099.39",
+      "location": "Tokyo",
+      "winner": {
+        "name": "Kasausagi",
+        "page": "Kasausagi",
+        "flag": "Japan",
+        "character": "Ferry"
+      },
+      "runnerUp": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "Slashback 2026",
+      "page": "Slashback/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Slashback/2026/GBVSR",
+      "date": "2026-04-26",
+      "tier": 2,
+      "entrants": 129,
+      "prize": "$1,290",
+      "location": "San Jose, CA",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Belial"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "Haiti",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "ARC World Tour 2025-2026 Finals",
+      "page": "ARC_World_Tour/2025-26/Finals/GBVSR",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR",
+      "date": "2026-03-26",
+      "tier": 1,
+      "entrants": 16,
+      "prize": "$100,000",
+      "location": "Goyang",
+      "winner": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Belial"
+      }
+    },
+    {
+      "name": "ARC World Tour 2025-2026 Finals Last Chance Qualifier",
+      "page": "ARC_World_Tour/2025-26/Finals/GBVSR/Last_Chance_Qualifier",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR/Last_Chance_Qualifier",
+      "date": "2026-03-26",
+      "tier": 1,
+      "entrants": 89,
+      "prize": null,
+      "location": "Goyang",
+      "winner": {
+        "name": "Pixi",
+        "page": "Pixi",
+        "flag": "Italy",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "Shio",
+        "page": "Shio",
+        "flag": "Japan",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "Frosty Faustings XVIII",
+      "page": "Frosty_Faustings/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/Frosty_Faustings/2026/GBVSR",
+      "date": "2026-02-26",
+      "tier": 1,
+      "entrants": 411,
+      "prize": "$4,145",
+      "location": "Lombard, IL",
+      "winner": {
+        "name": "Monarch",
+        "page": "Monarch",
+        "flag": "United States",
+        "character": "Metera"
+      },
+      "runnerUp": {
+        "name": "satoshiixrd",
+        "page": "Satoshiixrd",
+        "flag": "United States",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "AUTplayed 2026",
+      "page": "AUTplayed/2026/GBVSR",
+      "url": "https://liquipedia.net/fighters/AUTplayed/2026/GBVSR",
+      "date": "2026-01-26",
+      "tier": 2,
+      "entrants": 93,
+      "prize": "$1,082.02",
+      "location": "Vienna",
+      "winner": {
+        "name": "Monarch",
+        "page": "Monarch",
+        "flag": "United States",
+        "character": "Metera"
+      },
+      "runnerUp": {
+        "name": "Vivi",
+        "page": "Vivi",
+        "flag": "France",
+        "character": "Ferry"
+      }
+    },
+    {
+      "name": "Cygames Cup 2026",
+      "page": "Cygames_Cup/2026",
+      "url": "https://liquipedia.net/fighters/Cygames_Cup/2026",
+      "date": "2026-01-26",
+      "tier": 1,
+      "entrants": 361,
+      "prize": "$10,114.10",
+      "location": "Tokyo",
+      "winner": {
+        "name": "debagame",
+        "page": "Debagame",
+        "flag": "Japan",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "A.C.E 2025",
+      "page": "ACE/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/ACE/2025/GBVSR",
+      "date": "2025-12-25",
+      "tier": 2,
+      "entrants": 18,
+      "prize": "$678.18",
+      "location": "Seoul",
+      "winner": {
+        "name": "Kosame",
+        "page": "Kosame",
+        "flag": "Japan",
+        "character": "Lancelot"
+      },
+      "runnerUp": {
+        "name": "Framework",
+        "page": "Framework",
+        "flag": "South Korea",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "FightClub Championship VI Nansha",
+      "page": "FightClub_Championship/6/Nansha/GBVSR",
+      "url": "https://liquipedia.net/fighters/FightClub_Championship/6/Nansha/GBVSR",
+      "date": "2025-12-25",
+      "tier": 2,
+      "entrants": 63,
+      "prize": "$2,201.41",
+      "location": "Guangzhou",
+      "winner": {
+        "name": "Vi",
+        "page": null,
+        "flag": "China",
+        "character": "Lancelot"
+      },
+      "runnerUp": {
+        "name": "Minatocco",
+        "page": null,
+        "flag": "China",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "LAGLESS CUP 2025 in KYOTO",
+      "page": "LAGLESS_CUP/2025",
+      "url": "https://liquipedia.net/fighters/LAGLESS_CUP/2025",
+      "date": "2025-12-25",
+      "tier": 2,
+      "entrants": 118,
+      "prize": "$8,988.42",
+      "location": "Kyoto",
+      "winner": {
+        "name": "Shio",
+        "page": "Shio",
+        "flag": "Japan",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Meg"
+      }
+    },
+    {
+      "name": "Astral Finish 2025",
+      "page": "Astral_Finish/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Astral_Finish/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 70,
+      "prize": "$846.13",
+      "location": "Zapopan",
+      "winner": {
+        "name": "ScavengerZ",
+        "page": null,
+        "flag": "Mexico",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Arkangel",
+        "page": null,
+        "flag": "Mexico",
+        "character": "Zeta"
+      }
+    },
+    {
+      "name": "Battle Coliseum 2025",
+      "page": "Battle_Coliseum/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Coliseum/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 62,
+      "prize": "$351.14",
+      "location": "São Paulo, SP",
+      "winner": {
+        "name": "JF",
+        "page": "JF",
+        "flag": "Brazil",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "AmmySensei",
+        "page": "AmmySensei",
+        "flag": "Brazil",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "BeePro Cup 2025",
+      "page": "BeePro_Cup/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/BeePro_Cup/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 54,
+      "prize": "$956.72",
+      "location": "Taipei City",
+      "winner": {
+        "name": "Shio",
+        "page": "Shio",
+        "flag": "Japan",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "Goenitz",
+        "page": "Goenitz",
+        "flag": "Japan",
+        "character": "Gran"
+      }
+    },
+    {
+      "name": "Clash of the Olympians 2025",
+      "page": "Clash_of_the_Olympians/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 54,
+      "prize": "$581.36",
+      "location": "Athens",
+      "winner": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Katalina"
+      },
+      "runnerUp": {
+        "name": "MFH",
+        "page": "MFH",
+        "flag": "Netherlands",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "MINDSET 2025",
+      "page": "MINDSET/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/MINDSET/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 35,
+      "prize": "$1,391.46",
+      "location": "Paris",
+      "winner": {
+        "name": "Vivi",
+        "page": "Vivi",
+        "flag": "France",
+        "character": "Ferry"
+      },
+      "runnerUp": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      }
+    },
+    {
+      "name": "R.I.S.C. 2025",
+      "page": "Rumble_In_SoCal/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 42,
+      "prize": "$420",
+      "location": "Los Angeles, CA",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Zooey"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "SOOP Super Tournament 2025",
+      "page": "Super_Tournament/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Super_Tournament/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 1,
+      "entrants": 41,
+      "prize": "$3,499.51",
+      "location": "Seoul",
+      "winner": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Meg"
+      }
+    },
+    {
+      "name": "Thaiger Uppercut 2025",
+      "page": "Thaiger_Uppercut/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2025/GBVSR",
+      "date": "2025-11-25",
+      "tier": 2,
+      "entrants": 46,
+      "prize": "$545",
+      "location": "Pak Kret",
+      "winner": {
+        "name": "Shio",
+        "page": "Shio",
+        "flag": "Japan",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "WHH",
+        "page": "WHH",
+        "flag": "Singapore",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "Evolution Championship Series: France 2025",
+      "page": "Evolution_Championship_Series/2025/France/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/France/GBVSR",
+      "date": "2025-10-25",
+      "tier": 1,
+      "entrants": 440,
+      "prize": "$17,427.59",
+      "location": "Nice",
+      "winner": {
+        "name": "Usagi",
+        "page": "Dragoi",
+        "flag": "Spain",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "Pixi",
+        "page": "Pixi",
+        "flag": "Italy",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "First Attack 2025",
+      "page": "First_Attack/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/First_Attack/2025/GBVSR",
+      "date": "2025-10-25",
+      "tier": 2,
+      "entrants": 17,
+      "prize": "$170",
+      "location": "San Juan",
+      "winner": {
+        "name": "Monarch",
+        "page": "Monarch",
+        "flag": "United States",
+        "character": "Metera"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "United States",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "SEA Major 2025",
+      "page": "South_East_Asia_Major/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2025/GBVSR",
+      "date": "2025-10-25",
+      "tier": 2,
+      "entrants": 28,
+      "prize": "$600",
+      "location": "Singapore",
+      "winner": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "Desangel213",
+        "page": "Desangel213",
+        "flag": "Malaysia",
+        "character": "Narmaya"
+      }
+    },
+    {
+      "name": "Thunderstruck 2025",
+      "page": "Thunderstruck/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Thunderstruck/2025/GBVSR",
+      "date": "2025-10-25",
+      "tier": 2,
+      "entrants": 15,
+      "prize": "$163.05",
+      "location": "Monterrey",
+      "winner": {
+        "name": "Arkangel",
+        "page": null,
+        "flag": "Mexico",
+        "character": "Zeta"
+      },
+      "runnerUp": {
+        "name": "ScavengerZ",
+        "page": null,
+        "flag": "Mexico",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "OzHadou Nationals 19",
+      "page": "OzHadou_Nationals/19/GBVSR",
+      "url": "https://liquipedia.net/fighters/OzHadou_Nationals/19/GBVSR",
+      "date": "2025-09-25",
+      "tier": 2,
+      "entrants": 50,
+      "prize": "$327.70",
+      "location": "Sydney",
+      "winner": {
+        "name": "cibo",
+        "page": "Cibo",
+        "flag": "Australia",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "WHH",
+        "page": "WHH",
+        "flag": "Singapore",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "Ultimate Fighting Arena 2025",
+      "page": "Ultimate_Fighting_Arena/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2025/GBVSR",
+      "date": "2025-09-25",
+      "tier": 1,
+      "entrants": 78,
+      "prize": "$1,173.57",
+      "location": "Paris",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      }
+    },
+    {
+      "name": "CROSSOVER 2025",
+      "page": "CROSSOVER/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/CROSSOVER/2025/GBVSR",
+      "date": "2025-08-25",
+      "tier": 2,
+      "entrants": 62,
+      "prize": "$722.19",
+      "location": "Oberhausen",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "Fitizen",
+        "page": "Fitizen",
+        "flag": "Germany",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "Evolution Championship Series 2025",
+      "page": "Evolution_Championship_Series/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/GBVSR",
+      "date": "2025-08-25",
+      "tier": 1,
+      "entrants": 939,
+      "prize": "$30,000",
+      "location": "Las Vegas, NV",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "VSFighting XIII",
+      "page": "VSFighting/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/VSFighting/2025/GBVSR",
+      "date": "2025-08-25",
+      "tier": 2,
+      "entrants": 126,
+      "prize": "$1,708.50",
+      "location": "Birmingham",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      }
+    },
+    {
+      "name": "Boston Blue Beat: Beach Episode 2025",
+      "page": "Boston_Blue_Beat/Beach_Episode/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2025/GBVSR",
+      "date": "2025-07-25",
+      "tier": 2,
+      "entrants": 76,
+      "prize": "$763.25",
+      "location": "Waltham, MA",
+      "winner": {
+        "name": "Incendiate",
+        "page": "Incendiate",
+        "flag": "United States",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "Only The Best 2025",
+      "page": "Only_The_Best/7/GBVSR",
+      "url": "https://liquipedia.net/fighters/Only_The_Best/7/GBVSR",
+      "date": "2025-07-25",
+      "tier": 2,
+      "entrants": 26,
+      "prize": "$1,169.04",
+      "location": "Naples",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "The MIXUP 2025",
+      "page": "The_MIXUP/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/The_MIXUP/2025/GBVSR",
+      "date": "2025-07-25",
+      "tier": 2,
+      "entrants": 46,
+      "prize": "$541.85",
+      "location": "Lyon",
+      "winner": {
+        "name": "Fitizen",
+        "page": "Fitizen",
+        "flag": "Germany",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "CEO 2025",
+      "page": "Community_Effort_Orlando/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2025/GBVSR",
+      "date": "2025-06-25",
+      "tier": 2,
+      "entrants": 212,
+      "prize": "$2,120",
+      "location": "Orlando, FL",
+      "winner": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "Haiti",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "Headstomper 2025",
+      "page": "Headstomper/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Headstomper/2025/GBVSR",
+      "date": "2025-06-25",
+      "tier": 2,
+      "entrants": 81,
+      "prize": "$919.15",
+      "location": "Malmö",
+      "winner": {
+        "name": "mirri",
+        "page": "Mirri",
+        "flag": "Finland",
+        "character": "Eustace"
+      },
+      "runnerUp": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "Hessen Crash XXII",
+      "page": "Hessen_Crash/22/GBVSR",
+      "url": "https://liquipedia.net/fighters/Hessen_Crash/22/GBVSR",
+      "date": "2025-06-25",
+      "tier": 2,
+      "entrants": 56,
+      "prize": "$645.38",
+      "location": "Frankfurt",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "RAGNAROK 2025",
+      "page": "Ragnarok/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Ragnarok/2025/GBVSR",
+      "date": "2025-06-25",
+      "tier": 2,
+      "entrants": 25,
+      "prize": "$710.50",
+      "location": "Córdoba",
+      "winner": {
+        "name": "JF",
+        "page": "JF",
+        "flag": "Brazil",
+        "character": "Vaseraga"
+      },
+      "runnerUp": {
+        "name": "Shirou",
+        "page": "Shirou",
+        "flag": "Brazil",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "Battle Arena Melbourne 15",
+      "page": "Battle_Arena_Melbourne/15/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/15/GBVSR",
+      "date": "2025-05-25",
+      "tier": 2,
+      "entrants": 23,
+      "prize": "$147.91",
+      "location": "Melbourne",
+      "winner": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "NaiWang",
+        "page": "NaiWang",
+        "flag": "China",
+        "character": "Lucilius"
+      }
+    },
+    {
+      "name": "Brussels Challenge Major Edition 2025",
+      "page": "Brussels_Challenge/2025/Major_Edition/GBVSR",
+      "url": "https://liquipedia.net/fighters/Brussels_Challenge/2025/Major_Edition/GBVSR",
+      "date": "2025-05-25",
+      "tier": 2,
+      "entrants": 32,
+      "prize": "$357.22",
+      "location": "Brussels",
+      "winner": {
+        "name": "S1",
+        "page": "S1",
+        "flag": "Netherlands",
+        "character": "Percival"
+      },
+      "runnerUp": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "Combo Breaker 2025",
+      "page": "Combo_Breaker/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Combo_Breaker/2025/GBVSR",
+      "date": "2025-05-25",
+      "tier": 1,
+      "entrants": 430,
+      "prize": "$4,300",
+      "location": "Schaumburg, IL",
+      "winner": {
+        "name": "Xerom",
+        "page": "Xerom",
+        "flag": "United States",
+        "character": "Charlotta"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "Evolution Championship Series: Japan 2025",
+      "page": "Evolution_Championship_Series/2025/Japan/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/Japan/GBVSR",
+      "date": "2025-05-25",
+      "tier": 1,
+      "entrants": 481,
+      "prize": "$15,470.93",
+      "location": "Tokyo",
+      "winner": {
+        "name": "Kasausagi",
+        "page": "Kasausagi",
+        "flag": "Japan",
+        "character": "Ferry"
+      },
+      "runnerUp": {
+        "name": "Zangief_Dream",
+        "page": "Zangief_Dream",
+        "flag": "Japan",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "Kansai Gaming Party 2025",
+      "page": "Kansai_Gaming_Party/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2025/GBVSR",
+      "date": "2025-05-25",
+      "tier": 2,
+      "entrants": 48,
+      "prize": null,
+      "location": "Osaka",
+      "winner": null,
+      "runnerUp": null
+    },
+    {
+      "name": "Slashback 2025",
+      "page": "Slashback/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Slashback/2025/GBVSR",
+      "date": "2025-04-25",
+      "tier": 2,
+      "entrants": 143,
+      "prize": "$1,430",
+      "location": "San Jose, CA",
+      "winner": {
+        "name": "Usagi",
+        "page": "Dragoi",
+        "flag": "Spain",
+        "character": "Belial"
+      },
+      "runnerUp": {
+        "name": "Saltz",
+        "page": "Saltz",
+        "flag": "United States",
+        "character": "Djeeta"
+      }
+    },
+    {
+      "name": "ARC World Tour 2024 Finals",
+      "page": "ARC_World_Tour/2024/Finals/GBVSR",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR",
+      "date": "2025-03-25",
+      "tier": 1,
+      "entrants": 16,
+      "prize": "$100,000",
+      "location": "Los Angeles, CA",
+      "winner": {
+        "name": "Tororo",
+        "page": "Tororo",
+        "flag": "Japan",
+        "character": "Percival"
+      },
+      "runnerUp": {
+        "name": "Gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Versusia"
+      }
+    },
+    {
+      "name": "ARC World Tour 2024 Finals Last Chance Qualifier",
+      "page": "ARC_World_Tour/2024/Finals/GBVSR/Last_Chance_Qualifier",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR/Last_Chance_Qualifier",
+      "date": "2025-03-25",
+      "tier": 1,
+      "entrants": 88,
+      "prize": null,
+      "location": "Los Angeles, CA",
+      "winner": {
+        "name": "BEPaw",
+        "page": "BEPaw",
+        "flag": "United States",
+        "character": "Ferry"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "United States",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "AUTplayed 2025",
+      "page": "AUTplayed/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/AUTplayed/2025/GBVSR",
+      "date": "2025-02-25",
+      "tier": 2,
+      "entrants": 97,
+      "prize": "$1,002.22",
+      "location": "Vienna",
+      "winner": {
+        "name": "releasebogus",
+        "page": "Releasebogus",
+        "flag": "United Kingdom",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "Default",
+        "page": "Default",
+        "flag": "United Kingdom",
+        "character": "Narmaya"
+      }
+    },
+    {
+      "name": "Kayane Cup 2025",
+      "page": "Kayane_Cup/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Kayane_Cup/2025/GBVSR",
+      "date": "2025-02-25",
+      "tier": 1,
+      "entrants": 142,
+      "prize": "$1,554.32",
+      "location": "Paris",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Soriz"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "Cygames Cup Special 2025",
+      "page": "Cygames_Cup/2025/Special/GBVSR",
+      "url": "https://liquipedia.net/fighters/Cygames_Cup/2025/Special/GBVSR",
+      "date": "2025-01-25",
+      "tier": 1,
+      "entrants": 225,
+      "prize": null,
+      "location": "Yokohama",
+      "winner": {
+        "name": "Gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Osakana-san",
+        "page": "Osakana-san",
+        "flag": "Japan",
+        "character": "Anre"
+      }
+    },
+    {
+      "name": "Frosty Faustings XVII",
+      "page": "Frosty_Faustings/2025/GBVSR",
+      "url": "https://liquipedia.net/fighters/Frosty_Faustings/2025/GBVSR",
+      "date": "2025-01-25",
+      "tier": 1,
+      "entrants": 381,
+      "prize": "$3,810",
+      "location": "Lombard, IL",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Belial"
+      },
+      "runnerUp": {
+        "name": "Monarch",
+        "page": "Monarch",
+        "flag": "United States",
+        "character": "Metera"
+      }
+    },
+    {
+      "name": "CEOtaku 2024",
+      "page": "CEOtaku/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/CEOtaku/2024/GBVSR",
+      "date": "2024-12-24",
+      "tier": 1,
+      "entrants": 170,
+      "prize": "$1,700",
+      "location": "Orlando, FL",
+      "winner": {
+        "name": "Xerom",
+        "page": "Xerom",
+        "flag": "United States",
+        "character": "Charlotta"
+      },
+      "runnerUp": {
+        "name": "Elsa",
+        "page": "Elsa",
+        "flag": "United States",
+        "character": "Katalina"
+      }
+    },
+    {
+      "name": "Astral Finish 2024",
+      "page": "Astral_Finish/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Astral_Finish/2024/GBVSR",
+      "date": "2024-11-24",
+      "tier": 2,
+      "entrants": 62,
+      "prize": "$702.54",
+      "location": "Zapopan",
+      "winner": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "Nyan-derthal",
+        "page": "Nyan-derthal",
+        "flag": "United States",
+        "character": "Versusia"
+      }
+    },
+    {
+      "name": "Battle Coliseum 2024",
+      "page": "Battle_Coliseum/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Coliseum/2024/GBVSR",
+      "date": "2024-11-24",
+      "tier": 1,
+      "entrants": 61,
+      "prize": "$315.68",
+      "location": "São Paulo, SP",
+      "winner": {
+        "name": "Ryazo",
+        "page": "Ryazo",
+        "flag": "United States",
+        "character": "Seox"
+      },
+      "runnerUp": {
+        "name": "JF",
+        "page": "JF",
+        "flag": "Brazil",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "Rumble In SoCal",
+      "page": "Rumble_In_SoCal/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2024/GBVSR",
+      "date": "2024-11-24",
+      "tier": 2,
+      "entrants": 46,
+      "prize": "$1,060",
+      "location": "Riverside, CA",
+      "winner": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "Zippy",
+        "page": "Zippy",
+        "flag": "United States",
+        "character": "Lucilius"
+      }
+    },
+    {
+      "name": "SEA Major 2024",
+      "page": "South_East_Asia_Major/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2024/GBVSR",
+      "date": "2024-11-24",
+      "tier": 2,
+      "entrants": 35,
+      "prize": "$500",
+      "location": "Singapore",
+      "winner": {
+        "name": "Tororo",
+        "page": "Tororo",
+        "flag": "Japan",
+        "character": "Percival"
+      },
+      "runnerUp": {
+        "name": "Gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "DreamHack Atlanta 2024",
+      "page": "DreamHack/2024/Atlanta/GBVSR",
+      "url": "https://liquipedia.net/fighters/DreamHack/2024/Atlanta/GBVSR",
+      "date": "2024-10-24",
+      "tier": 2,
+      "entrants": 41,
+      "prize": "$1,500",
+      "location": "Atlanta, GA",
+      "winner": {
+        "name": "Ladewaybac",
+        "page": null,
+        "flag": "United States",
+        "character": "2B"
+      },
+      "runnerUp": {
+        "name": "Teiga",
+        "page": "Teiga",
+        "flag": "Trinidad and Tobago",
+        "character": "Lancelot"
+      }
+    },
+    {
+      "name": "East Coast Throwdown 2024",
+      "page": "East_Coast_Throwdown/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/East_Coast_Throwdown/2024/GBVSR",
+      "date": "2024-10-24",
+      "tier": 2,
+      "entrants": 134,
+      "prize": "$1,340",
+      "location": "Hartford, CT",
+      "winner": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "Xerom",
+        "page": "Xerom",
+        "flag": "United States",
+        "character": "Charlotta"
+      }
+    },
+    {
+      "name": "First Attack 2024",
+      "page": "First_Attack/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/First_Attack/2024/GBVSR",
+      "date": "2024-10-24",
+      "tier": 2,
+      "entrants": 19,
+      "prize": null,
+      "location": "San Juan",
+      "winner": {
+        "name": "Zippy",
+        "page": "Zippy",
+        "flag": "United States",
+        "character": "Lucilius"
+      },
+      "runnerUp": {
+        "name": "BlueSkyGuyBSG",
+        "page": "BlueSkyGuyBSG",
+        "flag": "United States",
+        "character": "Vaseraga"
+      }
+    },
+    {
+      "name": "Thaiger Uppercut 2024",
+      "page": "Thaiger_Uppercut/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2024/GBVSR",
+      "date": "2024-10-24",
+      "tier": 2,
+      "entrants": 55,
+      "prize": "$901.50",
+      "location": "Bangkok",
+      "winner": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Zenith",
+        "page": "Zenith_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "ARCREVO in SENZAN 2024",
+      "page": "ARCREVO/Japan/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/ARCREVO/Japan/2024/GBVSR",
+      "date": "2024-09-24",
+      "tier": 1,
+      "entrants": 128,
+      "prize": "$13,662.46",
+      "location": "Yokohama",
+      "winner": {
+        "name": "Osakana-san",
+        "page": "Osakana-san",
+        "flag": "Japan",
+        "character": "Anre"
+      },
+      "runnerUp": {
+        "name": "Miraias",
+        "page": "Miraias",
+        "flag": "Japan",
+        "character": "Seox"
+      }
+    },
+    {
+      "name": "Clash of the Olympians 2K24",
+      "page": "Clash_of_the_Olympians/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2024/GBVSR",
+      "date": "2024-09-24",
+      "tier": 2,
+      "entrants": 47,
+      "prize": "$1,117.44",
+      "location": "Athens",
+      "winner": {
+        "name": "Skyll",
+        "page": "Skyll",
+        "flag": "France",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      }
+    },
+    {
+      "name": "Thunderstruck 2024",
+      "page": "Thunderstruck/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Thunderstruck/2024/GBVSR",
+      "date": "2024-09-24",
+      "tier": 2,
+      "entrants": 28,
+      "prize": "$218.70",
+      "location": "Monterrey",
+      "winner": {
+        "name": "Elsa",
+        "page": "Elsa",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Lucar",
+        "page": "Lucar",
+        "flag": "United States",
+        "character": "Charlotta"
+      }
+    },
+    {
+      "name": "Ultimate Fighting Arena 2024",
+      "page": "Ultimate_Fighting_Arena/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2024/GBVSR",
+      "date": "2024-09-24",
+      "tier": 1,
+      "entrants": 138,
+      "prize": "$1,662.69",
+      "location": "Aubervilliers",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Belial"
+      },
+      "runnerUp": {
+        "name": "Zane",
+        "page": "Zane",
+        "flag": "United States",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "VSFighting XII",
+      "page": "VSFighting/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/VSFighting/2024/GBVSR",
+      "date": "2024-08-24",
+      "tier": 1,
+      "entrants": 119,
+      "prize": "$1,540.46",
+      "location": "Birmingham",
+      "winner": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "Evolution Championship Series 2024",
+      "page": "Evolution_Championship_Series/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/GBVSR",
+      "date": "2024-07-24",
+      "tier": 1,
+      "entrants": 1381,
+      "prize": "$30,000",
+      "location": "Las Vegas, NV",
+      "winner": {
+        "name": "Aarondamac",
+        "page": "Aarondamac",
+        "flag": "United States",
+        "character": "Belial"
+      },
+      "runnerUp": {
+        "name": "Tororo",
+        "page": "Tororo",
+        "flag": "Japan",
+        "character": "Percival"
+      }
+    },
+    {
+      "name": "FV Major 2024",
+      "page": "FV_Major/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/FV_Major/2024/GBVSR",
+      "date": "2024-07-24",
+      "tier": 2,
+      "entrants": 86,
+      "prize": "$1,000",
+      "location": "Kuala Lumpur",
+      "winner": {
+        "name": "Zenith",
+        "page": "Zenith_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Grimnir"
+      },
+      "runnerUp": {
+        "name": "Tyurara",
+        "page": "Tyurara",
+        "flag": "Japan",
+        "character": "Lowain"
+      }
+    },
+    {
+      "name": "The MIXUP 2024",
+      "page": "The_MIXUP/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/The_MIXUP/2024/GBVSR",
+      "date": "2024-07-24",
+      "tier": 2,
+      "entrants": 45,
+      "prize": "$489.84",
+      "location": "Lyon",
+      "winner": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "Battle Arena Melbourne 14",
+      "page": "Battle_Arena_Melbourne/14/GBVSR",
+      "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/14/GBVSR",
+      "date": "2024-06-24",
+      "tier": 2,
+      "entrants": 48,
+      "prize": "$320.30",
+      "location": "Melbourne",
+      "winner": {
+        "name": "Tyurara",
+        "page": "Tyurara",
+        "flag": "Japan",
+        "character": "Lowain"
+      },
+      "runnerUp": {
+        "name": "cibo",
+        "page": "Cibo",
+        "flag": "Australia",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "CEO 2024",
+      "page": "Community_Effort_Orlando/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2024/GBVSR",
+      "date": "2024-06-24",
+      "tier": 1,
+      "entrants": 182,
+      "prize": "$1,820",
+      "location": "Daytona Beach, FL",
+      "winner": {
+        "name": "Elsa",
+        "page": "Elsa",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Zippy",
+        "page": "Zippy",
+        "flag": "United States",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "DreamHack Dallas 2024",
+      "page": "DreamHack/2024/Dallas/GBVSR",
+      "url": "https://liquipedia.net/fighters/DreamHack/2024/Dallas/GBVSR",
+      "date": "2024-06-24",
+      "tier": 2,
+      "entrants": 70,
+      "prize": "$2,500",
+      "location": "Dallas, TX",
+      "winner": {
+        "name": "Shinku",
+        "page": "Shinku",
+        "flag": "United States",
+        "character": "Beatrix"
+      },
+      "runnerUp": {
+        "name": "Elsa",
+        "page": "Elsa",
+        "flag": "United States",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "Only The Best 2024",
+      "page": "Only_The_Best/6/GBVSR",
+      "url": "https://liquipedia.net/fighters/Only_The_Best/6/GBVSR",
+      "date": "2024-06-24",
+      "tier": 2,
+      "entrants": 23,
+      "prize": "$1,070.38",
+      "location": "Turin",
+      "winner": {
+        "name": "Socky",
+        "page": "Socky",
+        "flag": "Germany",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Fitizen",
+        "page": "Fitizen",
+        "flag": "Germany",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "Super Tournament 2024",
+      "page": "Super_Tournament/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Super_Tournament/2024/GBVSR",
+      "date": "2024-06-24",
+      "tier": 1,
+      "entrants": 41,
+      "prize": "$3,623.08",
+      "location": "Seoul",
+      "winner": {
+        "name": "Tororo",
+        "page": "Tororo",
+        "flag": "Japan",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Zenith",
+        "page": "Zenith_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Grimnir"
+      }
+    },
+    {
+      "name": "Brussels Challenge Major Edition 2024",
+      "page": "Brussels_Challenge/2024/Major_Edition/GBVSR",
+      "url": "https://liquipedia.net/fighters/Brussels_Challenge/2024/Major_Edition/GBVSR",
+      "date": "2024-05-24",
+      "tier": 2,
+      "entrants": 46,
+      "prize": "$496.20",
+      "location": "Brussels",
+      "winner": {
+        "name": "Fitizen",
+        "page": "Fitizen",
+        "flag": "Germany",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Space",
+        "page": "Space",
+        "flag": "Netherlands",
+        "character": "Charlotta"
+      }
+    },
+    {
+      "name": "Combo Breaker 2024",
+      "page": "Combo_Breaker/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Combo_Breaker/2024/GBVSR",
+      "date": "2024-05-24",
+      "tier": 1,
+      "entrants": 675,
+      "prize": "$6,750",
+      "location": "Schaumburg, IL",
+      "winner": {
+        "name": "Zippy",
+        "page": "Zippy",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "BEPaw",
+        "page": "BEPaw",
+        "flag": "United States",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "Kansai Gaming Party 2024",
+      "page": "Kansai_Gaming_Party/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2024/GBVSR",
+      "date": "2024-05-24",
+      "tier": 2,
+      "entrants": 47,
+      "prize": null,
+      "location": "Osaka",
+      "winner": {
+        "name": "Rookies",
+        "page": "Rookies",
+        "flag": "Japan",
+        "character": "Seox"
+      },
+      "runnerUp": {
+        "name": "Ren",
+        "page": "Ren_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Seox"
+      }
+    },
+    {
+      "name": "Evolution Championship Series: Japan 2024",
+      "page": "Evolution_Championship_Series/2024/Japan/GBVSR",
+      "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/Japan/GBVSR",
+      "date": "2024-04-24",
+      "tier": 1,
+      "entrants": 750,
+      "prize": "$12,650.62",
+      "location": "Tokyo",
+      "winner": {
+        "name": "Rookies",
+        "page": "Rookies",
+        "flag": "Japan",
+        "character": "Seox"
+      },
+      "runnerUp": {
+        "name": "gamera",
+        "page": "Gamera",
+        "flag": "Japan",
+        "character": "Djeeta"
+      }
+    },
+    {
+      "name": "Slashback 2024",
+      "page": "Slashback/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Slashback/2024/GBVSR",
+      "date": "2024-04-24",
+      "tier": 2,
+      "entrants": 192,
+      "prize": "$1,920",
+      "location": "San Jose, CA",
+      "winner": {
+        "name": "Elsa",
+        "page": "Elsa",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Ren",
+        "page": "Ren_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Seox"
+      }
+    },
+    {
+      "name": "Texas Showdown 2024",
+      "page": "Texas_Showdown/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Texas_Showdown/2024/GBVSR",
+      "date": "2024-04-24",
+      "tier": 2,
+      "entrants": 127,
+      "prize": "$1,905",
+      "location": "Houston, TX",
+      "winner": {
+        "name": "Xerom",
+        "page": "Xerom",
+        "flag": "United States",
+        "character": "Charlotta"
+      },
+      "runnerUp": {
+        "name": "tenuredmule",
+        "page": "Tenuredmule",
+        "flag": "United States",
+        "character": "Seox"
+      }
+    },
+    {
+      "name": "ARC World Tour 2023 Finals",
+      "page": "ARC_World_Tour/2023/Finals/GBVSR",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR",
+      "date": "2024-03-24",
+      "tier": 1,
+      "entrants": 8,
+      "prize": "$30,000",
+      "location": "Long Beach, CA",
+      "winner": {
+        "name": "Fukunaga",
+        "page": "Fukunaga",
+        "flag": "Japan",
+        "character": "Lancelot"
+      },
+      "runnerUp": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Nier"
+      }
+    },
+    {
+      "name": "ARC World Tour 2023 Finals Last Chance Qualifier",
+      "page": "ARC_World_Tour/2023/Finals/GBVSR/Last_Chance_Qualifier",
+      "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR/Last_Chance_Qualifier",
+      "date": "2024-03-24",
+      "tier": 1,
+      "entrants": 64,
+      "prize": null,
+      "location": "Long Beach, CA",
+      "winner": {
+        "name": "Kojicoco",
+        "page": "Kojicoco",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "GOBOU",
+        "page": "GOBOU",
+        "flag": "Japan",
+        "character": "Ladiva"
+      }
+    },
+    {
+      "name": "Crossover Arc 2024",
+      "page": "Crossover_Arc/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Crossover_Arc/2024/GBVSR",
+      "date": "2024-03-24",
+      "tier": 2,
+      "entrants": 69,
+      "prize": "$3,702.50",
+      "location": "New York City, NY",
+      "winner": {
+        "name": "Artorias",
+        "page": "Artorias",
+        "flag": "United States",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Wavie",
+        "page": "Wavie",
+        "flag": "United States",
+        "character": "Cagliostro"
+      }
+    },
+    {
+      "name": "TNS 9: CEO Never Sleeps",
+      "page": "Tampa_Never_Sleeps/9/GBVSR",
+      "url": "https://liquipedia.net/fighters/Tampa_Never_Sleeps/9/GBVSR",
+      "date": "2024-03-24",
+      "tier": 2,
+      "entrants": 117,
+      "prize": "$1,170",
+      "location": "Orlando, FL",
+      "winner": {
+        "name": "Wavie",
+        "page": "Wavie",
+        "flag": "United States",
+        "character": "Cagliostro"
+      },
+      "runnerUp": {
+        "name": "Coach Steve",
+        "page": "Coach_Steve",
+        "flag": "United States",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "Cygames Cup Special 2024",
+      "page": "Cygames_Cup/2024/Special",
+      "url": "https://liquipedia.net/fighters/Cygames_Cup/2024/Special",
+      "date": "2024-01-24",
+      "tier": 1,
+      "entrants": 185,
+      "prize": "$30,000",
+      "location": "Japan",
+      "winner": {
+        "name": "Tako",
+        "page": "Tako_(Japanese_Player)",
+        "flag": "Japan",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Fukunaga",
+        "page": "Fukunaga",
+        "flag": "Japan",
+        "character": "Lancelot"
+      }
+    },
+    {
+      "name": "Frosty Faustings XVI",
+      "page": "Frosty_Faustings/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Frosty_Faustings/2024/GBVSR",
+      "date": "2024-01-24",
+      "tier": 1,
+      "entrants": 641,
+      "prize": "$6,474.22",
+      "location": "Chicago, IL",
+      "winner": {
+        "name": "Zippy",
+        "page": "Zippy",
+        "flag": "United States",
+        "character": "Nier"
+      },
+      "runnerUp": {
+        "name": "Xerom",
+        "page": "Xerom",
+        "flag": "United States",
+        "character": "Charlotta"
+      }
+    },
+    {
+      "name": "Kayane Cup",
+      "page": "Kayane_Cup/2024/GBVSR",
+      "url": "https://liquipedia.net/fighters/Kayane_Cup/2024/GBVSR",
+      "date": "2024-01-24",
+      "tier": 1,
+      "entrants": 256,
+      "prize": null,
+      "location": "Paris",
+      "winner": {
+        "name": "Fitizen",
+        "page": "Fitizen",
+        "flag": "Germany",
+        "character": "Siegfried"
+      },
+      "runnerUp": {
+        "name": "Sonic-san",
+        "page": "Sonic-san",
+        "flag": "France",
+        "character": "Siegfried"
+      }
+    },
+    {
+      "name": "DreamHack Atlanta 2023",
+      "page": "DreamHack/2023/Atlanta/GBVSR",
+      "url": "https://liquipedia.net/fighters/DreamHack/2023/Atlanta/GBVSR",
+      "date": "2023-12-23",
+      "tier": 2,
+      "entrants": 85,
+      "prize": "$1,500",
+      "location": "Atlanta, GA",
+      "winner": {
+        "name": "SenpaiSpyder",
+        "page": null,
+        "flag": "United States",
+        "character": "Metera"
+      },
+      "runnerUp": {
+        "name": "Real Ice",
+        "page": "Real_Ice",
+        "flag": "United States",
+        "character": "Zeta"
+      }
+    }
+  ]
+}

@@ -97,7 +97,18 @@
   },
   {
     "id": "aarondamac",
-    "handle": "Aarondamac"
+    "handle": "Aarondamac",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Evolution Championship Series 2024",
+          "place": 1,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "abbysairaf",
@@ -432,8 +443,17 @@
     "extra": {
       "aliases": [
         "Ammysensei"
+      ],
+      "titles": [
+        {
+          "event": "Battle Coliseum 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Battle_Coliseum/2025/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "amp",
@@ -632,7 +652,24 @@
   },
   {
     "id": "arkangel",
-    "handle": "Arkangel"
+    "handle": "Arkangel",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Astral Finish 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Astral_Finish/2025/GBVSR"
+        },
+        {
+          "event": "Thunderstruck 2025",
+          "place": 1,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/Thunderstruck/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "arkiro",
@@ -648,7 +685,18 @@
   },
   {
     "id": "artorias",
-    "handle": "Artorias"
+    "handle": "Artorias",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Crossover Arc 2024",
+          "place": 1,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/Crossover_Arc/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "arubireo",
@@ -1064,8 +1112,23 @@
       "aliases": [
         "BEPaw",
         "BEpaw"
+      ],
+      "titles": [
+        {
+          "event": "ARC World Tour 2024 Finals Last Chance Qualifier",
+          "place": 1,
+          "date": "2025-03-25",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR/Last_Chance_Qualifier"
+        },
+        {
+          "event": "Combo Breaker 2024",
+          "place": 2,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2024/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "bepaws",
@@ -1219,7 +1282,60 @@
   },
   {
     "id": "blueskyguybsg",
-    "handle": "BlueSkyGuyBSG"
+    "handle": "BlueSkyGuyBSG",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Ultimate Fighting Arena 2026",
+          "place": 2,
+          "date": "2026-09-26",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2026/GBVSR"
+        },
+        {
+          "event": "CEO 2026",
+          "place": 1,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2026/GBVSR"
+        },
+        {
+          "event": "Boston Blue Beat: Beach Episode 2026",
+          "place": 2,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2026/GBVSR"
+        },
+        {
+          "event": "Slashback 2026",
+          "place": 2,
+          "date": "2026-04-26",
+          "url": "https://liquipedia.net/fighters/Slashback/2026/GBVSR"
+        },
+        {
+          "event": "First Attack 2025",
+          "place": 2,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/First_Attack/2025/GBVSR"
+        },
+        {
+          "event": "CEO 2025",
+          "place": 2,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2025/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2024 Finals Last Chance Qualifier",
+          "place": 2,
+          "date": "2025-03-25",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR/Last_Chance_Qualifier"
+        },
+        {
+          "event": "First Attack 2024",
+          "place": 2,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/First_Attack/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "bluezz",
@@ -1255,7 +1371,18 @@
   },
   {
     "id": "bonsai",
-    "handle": "Bonsai"
+    "handle": "Bonsai",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Hessen Crash XXIII",
+          "place": 2,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Hessen_Crash/23/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "boombak",
@@ -1466,7 +1593,18 @@
   },
   {
     "id": "cals",
-    "handle": "Cals"
+    "handle": "Cals",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Open The Gate #2",
+          "place": 2,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Open_The_Gate/2026/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "calvaryman",
@@ -1825,7 +1963,18 @@
   },
   {
     "id": "coach-steve",
-    "handle": "Coach Steve"
+    "handle": "Coach Steve",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "TNS 9: CEO Never Sleeps",
+          "place": 2,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/Tampa_Never_Sleeps/9/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "coco",
@@ -2156,8 +2305,17 @@
     "extra": {
       "aliases": [
         "debagame"
+      ],
+      "titles": [
+        {
+          "event": "Cygames Cup 2026",
+          "place": 1,
+          "date": "2026-01-26",
+          "url": "https://liquipedia.net/fighters/Cygames_Cup/2026"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "debagme",
@@ -2187,8 +2345,17 @@
     "extra": {
       "aliases": [
         "default"
+      ],
+      "titles": [
+        {
+          "event": "AUTplayed 2025",
+          "place": 2,
+          "date": "2025-02-25",
+          "url": "https://liquipedia.net/fighters/AUTplayed/2025/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "defiant",
@@ -2233,7 +2400,18 @@
   },
   {
     "id": "desangel213",
-    "handle": "Desangel213"
+    "handle": "Desangel213",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "SEA Major 2025",
+          "place": 2,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "desc",
@@ -2456,7 +2634,24 @@
   },
   {
     "id": "dragoi",
-    "handle": "Dragoi"
+    "handle": "Dragoi",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Evolution Championship Series: France 2025",
+          "place": 1,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/France/GBVSR"
+        },
+        {
+          "event": "Slashback 2025",
+          "place": 1,
+          "date": "2025-04-25",
+          "url": "https://liquipedia.net/fighters/Slashback/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "dragon-of-mtl",
@@ -2539,7 +2734,18 @@
   },
   {
     "id": "dudeakoff",
-    "handle": "Dudeakoff"
+    "handle": "Dudeakoff",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Only The Best 2026",
+          "place": 2,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/8/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "dug",
@@ -2652,7 +2858,42 @@
   },
   {
     "id": "elsa",
-    "handle": "Elsa"
+    "handle": "Elsa",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "CEOtaku 2024",
+          "place": 2,
+          "date": "2024-12-24",
+          "url": "https://liquipedia.net/fighters/CEOtaku/2024/GBVSR"
+        },
+        {
+          "event": "Thunderstruck 2024",
+          "place": 1,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Thunderstruck/2024/GBVSR"
+        },
+        {
+          "event": "CEO 2024",
+          "place": 1,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2024/GBVSR"
+        },
+        {
+          "event": "DreamHack Dallas 2024",
+          "place": 2,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/DreamHack/2024/Dallas/GBVSR"
+        },
+        {
+          "event": "Slashback 2024",
+          "place": 1,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Slashback/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "elsid",
@@ -2865,7 +3106,42 @@
   },
   {
     "id": "fitizen",
-    "handle": "Fitizen"
+    "handle": "Fitizen",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "CROSSOVER 2025",
+          "place": 2,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/CROSSOVER/2025/GBVSR"
+        },
+        {
+          "event": "The MIXUP 2025",
+          "place": 1,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/The_MIXUP/2025/GBVSR"
+        },
+        {
+          "event": "Only The Best 2024",
+          "place": 2,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/6/GBVSR"
+        },
+        {
+          "event": "Brussels Challenge Major Edition 2024",
+          "place": 1,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Brussels_Challenge/2024/Major_Edition/GBVSR"
+        },
+        {
+          "event": "Kayane Cup",
+          "place": 1,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Kayane_Cup/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "fjord",
@@ -2926,8 +3202,17 @@
       "aliases": [
         "fRaMeWoRk",
         "FrameWork"
+      ],
+      "titles": [
+        {
+          "event": "A.C.E 2025",
+          "place": 2,
+          "date": "2025-12-25",
+          "url": "https://liquipedia.net/fighters/ACE/2025/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "francis",
@@ -3018,7 +3303,24 @@
   },
   {
     "id": "fukunaga",
-    "handle": "Fukunaga"
+    "handle": "Fukunaga",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "ARC World Tour 2023 Finals",
+          "place": 1,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR"
+        },
+        {
+          "event": "Cygames Cup Special 2024",
+          "place": 2,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Cygames_Cup/2024/Special"
+        }
+      ]
+    }
   },
   {
     "id": "fukunaga-toki",
@@ -3168,8 +3470,71 @@
       "aliases": [
         "gamera",
         "GAMERA"
+      ],
+      "titles": [
+        {
+          "event": "Battle Arena Melbourne 16",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/16/GBVSR"
+        },
+        {
+          "event": "SOOP Super Tournament 2026",
+          "place": 1,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2026/GBVSR"
+        },
+        {
+          "event": "LAGLESS CUP 2025 in KYOTO",
+          "place": 2,
+          "date": "2025-12-25",
+          "url": "https://liquipedia.net/fighters/LAGLESS_CUP/2025"
+        },
+        {
+          "event": "SOOP Super Tournament 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2025/GBVSR"
+        },
+        {
+          "event": "Battle Arena Melbourne 15",
+          "place": 1,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/15/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2024 Finals",
+          "place": 2,
+          "date": "2025-03-25",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR"
+        },
+        {
+          "event": "Cygames Cup Special 2025",
+          "place": 1,
+          "date": "2025-01-25",
+          "url": "https://liquipedia.net/fighters/Cygames_Cup/2025/Special/GBVSR"
+        },
+        {
+          "event": "SEA Major 2024",
+          "place": 2,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2024/GBVSR"
+        },
+        {
+          "event": "Thaiger Uppercut 2024",
+          "place": 1,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2024/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series: Japan 2024",
+          "place": 2,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/Japan/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "gamewei",
@@ -3343,6 +3708,10 @@
     }
   },
   {
+    "id": "go1",
+    "handle": "GO1"
+  },
+  {
     "id": "goalous",
     "handle": "Goalous"
   },
@@ -3352,8 +3721,17 @@
     "extra": {
       "aliases": [
         "GOBOU"
+      ],
+      "titles": [
+        {
+          "event": "ARC World Tour 2023 Finals Last Chance Qualifier",
+          "place": 2,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR/Last_Chance_Qualifier"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "goemon",
@@ -3365,7 +3743,24 @@
   },
   {
     "id": "goenitz",
-    "handle": "Goenitz"
+    "handle": "Goenitz",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "OzHadou Nationals 20",
+          "place": 1,
+          "date": "2026-09-26",
+          "url": "https://liquipedia.net/fighters/OzHadou_Nationals/20/GBVSR"
+        },
+        {
+          "event": "BeePro Cup 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/BeePro_Cup/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "goenitz-insane-set",
@@ -3722,7 +4117,18 @@
   },
   {
     "id": "havaniceday",
-    "handle": "Havaniceday"
+    "handle": "Havaniceday",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Combo Breaker 2026",
+          "place": 2,
+          "date": "2026-05-26",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2026/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "haveaniceday",
@@ -4313,7 +4719,18 @@
   },
   {
     "id": "incendiate",
-    "handle": "Incendiate"
+    "handle": "Incendiate",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Boston Blue Beat: Beach Episode 2025",
+          "place": 1,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "incinerai",
@@ -4335,6 +4752,10 @@
         "Indefinetez"
       ]
     }
+  },
+  {
+    "id": "index",
+    "handle": "Index"
   },
   {
     "id": "inf20",
@@ -4370,7 +4791,18 @@
   },
   {
     "id": "insurgent",
-    "handle": "Insurgent"
+    "handle": "Insurgent",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Combo Breaker 2026",
+          "place": 1,
+          "date": "2026-05-26",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2026/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "inwu",
@@ -5008,8 +5440,23 @@
       "aliases": [
         "Kasausagi 傘兎",
         "KASAUSAGI"
+      ],
+      "titles": [
+        {
+          "event": "Evolution Championship Series: Japan 2026",
+          "place": 1,
+          "date": "2026-05-26",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/Japan/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series: Japan 2025",
+          "place": 1,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/Japan/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "kashiyuka",
@@ -5457,8 +5904,77 @@
     "extra": {
       "aliases": [
         "KojiCoco"
+      ],
+      "titles": [
+        {
+          "event": "CHAIN SHIFT 2026",
+          "place": 1,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Chain_Shift/2026/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series 2026",
+          "place": 1,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/GBVSR"
+        },
+        {
+          "event": "Slashback 2026",
+          "place": 1,
+          "date": "2026-04-26",
+          "url": "https://liquipedia.net/fighters/Slashback/2026/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2025-2026 Finals",
+          "place": 2,
+          "date": "2026-03-26",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR"
+        },
+        {
+          "event": "R.I.S.C. 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2025/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series 2025",
+          "place": 1,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/GBVSR"
+        },
+        {
+          "event": "Frosty Faustings XVII",
+          "place": 1,
+          "date": "2025-01-25",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2025/GBVSR"
+        },
+        {
+          "event": "Ultimate Fighting Arena 2024",
+          "place": 1,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2024/GBVSR"
+        },
+        {
+          "event": "VSFighting XII",
+          "place": 2,
+          "date": "2024-08-24",
+          "url": "https://liquipedia.net/fighters/VSFighting/2024/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2023 Finals Last Chance Qualifier",
+          "place": 1,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR/Last_Chance_Qualifier"
+        },
+        {
+          "event": "ARC World Tour 2023 Finals",
+          "place": 2,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2023/Finals/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "kokama",
@@ -5523,8 +6039,17 @@
       "aliases": [
         "KOSAME",
         "Kosame 小雨"
+      ],
+      "titles": [
+        {
+          "event": "A.C.E 2025",
+          "place": 1,
+          "date": "2025-12-25",
+          "url": "https://liquipedia.net/fighters/ACE/2025/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "kosei",
@@ -5761,7 +6286,18 @@
   },
   {
     "id": "ladewaybac",
-    "handle": "Ladewaybac"
+    "handle": "Ladewaybac",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "DreamHack Atlanta 2024",
+          "place": 1,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/DreamHack/2024/Atlanta/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "ladewaybac-ttv",
@@ -6093,7 +6629,18 @@
   },
   {
     "id": "lucar",
-    "handle": "Lucar"
+    "handle": "Lucar",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Thunderstruck 2024",
+          "place": 2,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Thunderstruck/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "luchan",
@@ -6439,7 +6986,12 @@
   },
   {
     "id": "matyou",
-    "handle": "MatYou"
+    "handle": "MatYou",
+    "extra": {
+      "aliases": [
+        "Matyou"
+      ]
+    }
   },
   {
     "id": "matzel",
@@ -6635,7 +7187,18 @@
   },
   {
     "id": "mfh",
-    "handle": "MFH"
+    "handle": "MFH",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Clash of the Olympians 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "miato-una",
@@ -6747,7 +7310,18 @@
   },
   {
     "id": "minatocco",
-    "handle": "Minatocco"
+    "handle": "Minatocco",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "FightClub Championship VI Nansha",
+          "place": 2,
+          "date": "2025-12-25",
+          "url": "https://liquipedia.net/fighters/FightClub_Championship/6/Nansha/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "minazuki",
@@ -6803,7 +7377,18 @@
   },
   {
     "id": "miraias",
-    "handle": "Miraias"
+    "handle": "Miraias",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "ARCREVO in SENZAN 2024",
+          "place": 2,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/ARCREVO/Japan/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "miraipyon",
@@ -6823,8 +7408,17 @@
     "extra": {
       "aliases": [
         "mirri"
+      ],
+      "titles": [
+        {
+          "event": "Headstomper 2025",
+          "place": 1,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Headstomper/2025/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "misha-mikado",
@@ -6901,7 +7495,42 @@
   },
   {
     "id": "monarch",
-    "handle": "Monarch"
+    "handle": "Monarch",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Boston Blue Beat: Beach Episode 2026",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2026/GBVSR"
+        },
+        {
+          "event": "Frosty Faustings XVIII",
+          "place": 1,
+          "date": "2026-02-26",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2026/GBVSR"
+        },
+        {
+          "event": "AUTplayed 2026",
+          "place": 1,
+          "date": "2026-01-26",
+          "url": "https://liquipedia.net/fighters/AUTplayed/2026/GBVSR"
+        },
+        {
+          "event": "First Attack 2025",
+          "place": 1,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/First_Attack/2025/GBVSR"
+        },
+        {
+          "event": "Frosty Faustings XVII",
+          "place": 2,
+          "date": "2025-01-25",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "monga",
@@ -7136,8 +7765,17 @@
     "extra": {
       "aliases": [
         "NaiWang"
+      ],
+      "titles": [
+        {
+          "event": "Battle Arena Melbourne 15",
+          "place": 2,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/15/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "naj",
@@ -7599,8 +8237,17 @@
     "extra": {
       "aliases": [
         "Nyan-Derthal"
+      ],
+      "titles": [
+        {
+          "event": "Astral Finish 2024",
+          "place": 2,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/Astral_Finish/2024/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "nyantaka",
@@ -7608,7 +8255,18 @@
   },
   {
     "id": "nyantic",
-    "handle": "Nyantic"
+    "handle": "Nyantic",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "CEO 2026",
+          "place": 2,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2026/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "nychrisg",
@@ -8140,7 +8798,30 @@
   },
   {
     "id": "pixi",
-    "handle": "Pixi"
+    "handle": "Pixi",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "VSFighting XIV",
+          "place": 2,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/VSFighting/2026/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2025-2026 Finals Last Chance Qualifier",
+          "place": 1,
+          "date": "2026-03-26",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR/Last_Chance_Qualifier"
+        },
+        {
+          "event": "Evolution Championship Series: France 2025",
+          "place": 2,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/France/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "pixilated-max",
@@ -8576,8 +9257,17 @@
     "extra": {
       "aliases": [
         "RAZ"
+      ],
+      "titles": [
+        {
+          "event": "RAGNAROK 2026",
+          "place": 2,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Ragnarok/2026/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "razor",
@@ -8593,8 +9283,17 @@
     "extra": {
       "aliases": [
         "Real_Ice"
+      ],
+      "titles": [
+        {
+          "event": "DreamHack Atlanta 2023",
+          "place": 2,
+          "date": "2023-12-23",
+          "url": "https://liquipedia.net/fighters/DreamHack/2023/Atlanta/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "reality",
@@ -8654,7 +9353,18 @@
   },
   {
     "id": "releasebogus",
-    "handle": "releasebogus"
+    "handle": "releasebogus",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "AUTplayed 2025",
+          "place": 1,
+          "date": "2025-02-25",
+          "url": "https://liquipedia.net/fighters/AUTplayed/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "rem",
@@ -8693,7 +9403,24 @@
   },
   {
     "id": "ren",
-    "handle": "Ren"
+    "handle": "Ren",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Kansai Gaming Party 2024",
+          "place": 2,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2024/GBVSR"
+        },
+        {
+          "event": "Slashback 2024",
+          "place": 2,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Slashback/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "rerere",
@@ -8897,7 +9624,24 @@
   },
   {
     "id": "rookies",
-    "handle": "Rookies"
+    "handle": "Rookies",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Kansai Gaming Party 2024",
+          "place": 1,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2024/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series: Japan 2024",
+          "place": 1,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/Japan/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "rookiespotato",
@@ -8999,7 +9743,24 @@
   },
   {
     "id": "ryazo",
-    "handle": "Ryazo"
+    "handle": "Ryazo",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Open The Gate #2",
+          "place": 1,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Open_The_Gate/2026/GBVSR"
+        },
+        {
+          "event": "Battle Coliseum 2024",
+          "place": 1,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/Battle_Coliseum/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "ryazou",
@@ -9201,7 +9962,18 @@
   },
   {
     "id": "saltz",
-    "handle": "Saltz"
+    "handle": "Saltz",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Slashback 2025",
+          "place": 2,
+          "date": "2025-04-25",
+          "url": "https://liquipedia.net/fighters/Slashback/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "salzor",
@@ -9291,8 +10063,17 @@
     "extra": {
       "aliases": [
         "SatoshiiXrd"
+      ],
+      "titles": [
+        {
+          "event": "Frosty Faustings XVIII",
+          "place": 2,
+          "date": "2026-02-26",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2026/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "satou",
@@ -9320,7 +10101,24 @@
   },
   {
     "id": "scavengerz",
-    "handle": "ScavengerZ"
+    "handle": "ScavengerZ",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Astral Finish 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Astral_Finish/2025/GBVSR"
+        },
+        {
+          "event": "Thunderstruck 2025",
+          "place": 2,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/Thunderstruck/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "scharl",
@@ -9468,8 +10266,17 @@
     "extra": {
       "aliases": [
         "Senpaispyder"
+      ],
+      "titles": [
+        {
+          "event": "DreamHack Atlanta 2023",
+          "place": 1,
+          "date": "2023-12-23",
+          "url": "https://liquipedia.net/fighters/DreamHack/2023/Atlanta/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "senpapi",
@@ -9636,8 +10443,17 @@
     "extra": {
       "aliases": [
         "shinchire"
+      ],
+      "titles": [
+        {
+          "event": "Komitê Arena 2026",
+          "place": 2,
+          "date": "2026-08-26",
+          "url": "https://liquipedia.net/fighters/Komit%C3%AA_Arena/2026/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "shing",
@@ -9657,8 +10473,17 @@
     "extra": {
       "aliases": [
         "SHINKU"
+      ],
+      "titles": [
+        {
+          "event": "DreamHack Dallas 2024",
+          "place": 1,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/DreamHack/2024/Dallas/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "shino",
@@ -9670,7 +10495,42 @@
   },
   {
     "id": "shio",
-    "handle": "Shio"
+    "handle": "Shio",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Evolution Championship Series 2026",
+          "place": 2,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2025-2026 Finals Last Chance Qualifier",
+          "place": 2,
+          "date": "2026-03-26",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR/Last_Chance_Qualifier"
+        },
+        {
+          "event": "LAGLESS CUP 2025 in KYOTO",
+          "place": 1,
+          "date": "2025-12-25",
+          "url": "https://liquipedia.net/fighters/LAGLESS_CUP/2025"
+        },
+        {
+          "event": "BeePro Cup 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/BeePro_Cup/2025/GBVSR"
+        },
+        {
+          "event": "Thaiger Uppercut 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "shion",
@@ -9699,7 +10559,18 @@
   },
   {
     "id": "shirou",
-    "handle": "Shirou"
+    "handle": "Shirou",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "RAGNAROK 2025",
+          "place": 2,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Ragnarok/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "shiru",
@@ -9729,8 +10600,17 @@
       "aliases": [
         "SHO-SAN",
         "Sho-san"
+      ],
+      "titles": [
+        {
+          "event": "OzHadou Nationals 20",
+          "place": 2,
+          "date": "2026-09-26",
+          "url": "https://liquipedia.net/fighters/OzHadou_Nationals/20/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "shonuff-kay",
@@ -9899,7 +10779,78 @@
   },
   {
     "id": "skyll",
-    "handle": "Skyll"
+    "handle": "Skyll",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Only The Best 2026",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/8/GBVSR"
+        },
+        {
+          "event": "VSFighting XIV",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/VSFighting/2026/GBVSR"
+        },
+        {
+          "event": "The MIXUP 2026",
+          "place": 1,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/The_MIXUP/2026/GBVSR"
+        },
+        {
+          "event": "MINDSET 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/MINDSET/2025/GBVSR"
+        },
+        {
+          "event": "Ultimate Fighting Arena 2025",
+          "place": 2,
+          "date": "2025-09-25",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2025/GBVSR"
+        },
+        {
+          "event": "VSFighting XIII",
+          "place": 2,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/VSFighting/2025/GBVSR"
+        },
+        {
+          "event": "Only The Best 2025",
+          "place": 1,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/7/GBVSR"
+        },
+        {
+          "event": "Hessen Crash XXII",
+          "place": 1,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Hessen_Crash/22/GBVSR"
+        },
+        {
+          "event": "Headstomper 2025",
+          "place": 2,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Headstomper/2025/GBVSR"
+        },
+        {
+          "event": "Kayane Cup 2025",
+          "place": 1,
+          "date": "2025-02-25",
+          "url": "https://liquipedia.net/fighters/Kayane_Cup/2025/GBVSR"
+        },
+        {
+          "event": "Clash of the Olympians 2K24",
+          "place": 1,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "skyrider",
@@ -9956,7 +10907,66 @@
   },
   {
     "id": "socky",
-    "handle": "Socky"
+    "handle": "Socky",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "IGM Summer Showdown 2026",
+          "place": 2,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Irish_Gaming_Market/2026/Summer_Showdown/GBVSR"
+        },
+        {
+          "event": "Clash of the Olympians 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2025/GBVSR"
+        },
+        {
+          "event": "Only The Best 2025",
+          "place": 2,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/7/GBVSR"
+        },
+        {
+          "event": "The MIXUP 2025",
+          "place": 2,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/The_MIXUP/2025/GBVSR"
+        },
+        {
+          "event": "Hessen Crash XXII",
+          "place": 2,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Hessen_Crash/22/GBVSR"
+        },
+        {
+          "event": "Kayane Cup 2025",
+          "place": 2,
+          "date": "2025-02-25",
+          "url": "https://liquipedia.net/fighters/Kayane_Cup/2025/GBVSR"
+        },
+        {
+          "event": "VSFighting XII",
+          "place": 1,
+          "date": "2024-08-24",
+          "url": "https://liquipedia.net/fighters/VSFighting/2024/GBVSR"
+        },
+        {
+          "event": "The MIXUP 2024",
+          "place": 2,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/The_MIXUP/2024/GBVSR"
+        },
+        {
+          "event": "Only The Best 2024",
+          "place": 1,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Only_The_Best/6/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "socuteboss",
@@ -10035,8 +11045,17 @@
       "aliases": [
         "Sonic-San",
         "Sonic San"
+      ],
+      "titles": [
+        {
+          "event": "Kayane Cup",
+          "place": 2,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Kayane_Cup/2024/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "sonic-son",
@@ -10101,7 +11120,72 @@
   },
   {
     "id": "space",
-    "handle": "Space"
+    "handle": "Space",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Ultimate Fighting Arena 2026",
+          "place": 1,
+          "date": "2026-09-26",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2026/GBVSR"
+        },
+        {
+          "event": "IGM Summer Showdown 2026",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Irish_Gaming_Market/2026/Summer_Showdown/GBVSR"
+        },
+        {
+          "event": "Hessen Crash XXIII",
+          "place": 1,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Hessen_Crash/23/GBVSR"
+        },
+        {
+          "event": "Ultimate Fighting Arena 2025",
+          "place": 1,
+          "date": "2025-09-25",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2025/GBVSR"
+        },
+        {
+          "event": "CROSSOVER 2025",
+          "place": 1,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/CROSSOVER/2025/GBVSR"
+        },
+        {
+          "event": "VSFighting XIII",
+          "place": 1,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/VSFighting/2025/GBVSR"
+        },
+        {
+          "event": "Brussels Challenge Major Edition 2025",
+          "place": 2,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Brussels_Challenge/2025/Major_Edition/GBVSR"
+        },
+        {
+          "event": "Clash of the Olympians 2K24",
+          "place": 2,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Clash_of_the_Olympians/2024/GBVSR"
+        },
+        {
+          "event": "The MIXUP 2024",
+          "place": 1,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/The_MIXUP/2024/GBVSR"
+        },
+        {
+          "event": "Brussels Challenge Major Edition 2024",
+          "place": 2,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Brussels_Challenge/2024/Major_Edition/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "space-aegis",
@@ -10536,7 +11620,18 @@
   },
   {
     "id": "tako",
-    "handle": "Tako"
+    "handle": "Tako",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Cygames Cup Special 2024",
+          "place": 1,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Cygames_Cup/2024/Special"
+        }
+      ]
+    }
   },
   {
     "id": "tako-rice",
@@ -10679,8 +11774,17 @@
     "extra": {
       "aliases": [
         "TEIGA"
+      ],
+      "titles": [
+        {
+          "event": "DreamHack Atlanta 2024",
+          "place": 2,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/DreamHack/2024/Atlanta/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "teloloid",
@@ -10713,7 +11817,18 @@
   },
   {
     "id": "tenuredmule",
-    "handle": "Tenuredmule"
+    "handle": "Tenuredmule",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Texas Showdown 2024",
+          "place": 2,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Texas_Showdown/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "terra-ultimus",
@@ -10935,6 +12050,10 @@
     "handle": "Tintan100"
   },
   {
+    "id": "tipu",
+    "handle": "Tipu"
+  },
+  {
     "id": "tkjuni",
     "handle": "TKjuni"
   },
@@ -11071,7 +12190,36 @@
   },
   {
     "id": "tororo",
-    "handle": "Tororo"
+    "handle": "Tororo",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "ARC World Tour 2024 Finals",
+          "place": 1,
+          "date": "2025-03-25",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2024/Finals/GBVSR"
+        },
+        {
+          "event": "SEA Major 2024",
+          "place": 1,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2024/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series 2024",
+          "place": 2,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2024/GBVSR"
+        },
+        {
+          "event": "Super Tournament 2024",
+          "place": 1,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "toshvert",
@@ -11124,6 +12272,10 @@
   {
     "id": "trytocomplete",
     "handle": "TryToComplete"
+  },
+  {
+    "id": "tsugaru",
+    "handle": "Tsugaru"
   },
   {
     "id": "tsukkun",
@@ -11229,7 +12381,24 @@
   },
   {
     "id": "tyurara",
-    "handle": "Tyurara"
+    "handle": "Tyurara",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "FV Major 2024",
+          "place": 2,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/FV_Major/2024/GBVSR"
+        },
+        {
+          "event": "Battle Arena Melbourne 14",
+          "place": 1,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Battle_Arena_Melbourne/14/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "tyurara-gbvsr",
@@ -11470,7 +12639,24 @@
   },
   {
     "id": "vivi",
-    "handle": "Vivi"
+    "handle": "Vivi",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "AUTplayed 2026",
+          "place": 2,
+          "date": "2026-01-26",
+          "url": "https://liquipedia.net/fighters/AUTplayed/2026/GBVSR"
+        },
+        {
+          "event": "MINDSET 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/MINDSET/2025/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "vivr",
@@ -11536,7 +12722,24 @@
   },
   {
     "id": "wavie",
-    "handle": "Wavie"
+    "handle": "Wavie",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "TNS 9: CEO Never Sleeps",
+          "place": 1,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/Tampa_Never_Sleeps/9/GBVSR"
+        },
+        {
+          "event": "Crossover Arc 2024",
+          "place": 2,
+          "date": "2024-03-24",
+          "url": "https://liquipedia.net/fighters/Crossover_Arc/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "wavy",
@@ -11573,7 +12776,24 @@
   },
   {
     "id": "whh",
-    "handle": "WHH"
+    "handle": "WHH",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Thaiger Uppercut 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2025/GBVSR"
+        },
+        {
+          "event": "OzHadou Nationals 19",
+          "place": 2,
+          "date": "2025-09-25",
+          "url": "https://liquipedia.net/fighters/OzHadou_Nationals/19/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "whimsythestar",
@@ -11706,7 +12926,42 @@
   },
   {
     "id": "xerom",
-    "handle": "Xerom"
+    "handle": "Xerom",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Combo Breaker 2025",
+          "place": 1,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2025/GBVSR"
+        },
+        {
+          "event": "CEOtaku 2024",
+          "place": 1,
+          "date": "2024-12-24",
+          "url": "https://liquipedia.net/fighters/CEOtaku/2024/GBVSR"
+        },
+        {
+          "event": "East Coast Throwdown 2024",
+          "place": 2,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/East_Coast_Throwdown/2024/GBVSR"
+        },
+        {
+          "event": "Texas Showdown 2024",
+          "place": 1,
+          "date": "2024-04-24",
+          "url": "https://liquipedia.net/fighters/Texas_Showdown/2024/GBVSR"
+        },
+        {
+          "event": "Frosty Faustings XVI",
+          "place": 2,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "xi",
@@ -12041,7 +13296,72 @@
   },
   {
     "id": "zane",
-    "handle": "Zane"
+    "handle": "Zane",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "CHAIN SHIFT 2026",
+          "place": 2,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Chain_Shift/2026/GBVSR"
+        },
+        {
+          "event": "R.I.S.C. 2025",
+          "place": 2,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2025/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series 2025",
+          "place": 2,
+          "date": "2025-08-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/GBVSR"
+        },
+        {
+          "event": "Boston Blue Beat: Beach Episode 2025",
+          "place": 2,
+          "date": "2025-07-25",
+          "url": "https://liquipedia.net/fighters/Boston_Blue_Beat/Beach_Episode/2025/GBVSR"
+        },
+        {
+          "event": "CEO 2025",
+          "place": 1,
+          "date": "2025-06-25",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2025/GBVSR"
+        },
+        {
+          "event": "Combo Breaker 2025",
+          "place": 2,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2025/GBVSR"
+        },
+        {
+          "event": "Astral Finish 2024",
+          "place": 1,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/Astral_Finish/2024/GBVSR"
+        },
+        {
+          "event": "Rumble In SoCal",
+          "place": 1,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2024/GBVSR"
+        },
+        {
+          "event": "East Coast Throwdown 2024",
+          "place": 1,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/East_Coast_Throwdown/2024/GBVSR"
+        },
+        {
+          "event": "Ultimate Fighting Arena 2024",
+          "place": 2,
+          "date": "2024-09-24",
+          "url": "https://liquipedia.net/fighters/Ultimate_Fighting_Arena/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "zanefgc",
@@ -12053,8 +13373,59 @@
     "extra": {
       "aliases": [
         "Zangief_Dream"
+      ],
+      "titles": [
+        {
+          "event": "Kansai Gaming Party 2026",
+          "place": 1,
+          "date": "2026-07-26",
+          "url": "https://liquipedia.net/fighters/Kansai_Gaming_Party/2026/GBVSR"
+        },
+        {
+          "event": "SOOP Super Tournament 2026",
+          "place": 2,
+          "date": "2026-06-26",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2026/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series: Japan 2026",
+          "place": 2,
+          "date": "2026-05-26",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2026/Japan/GBVSR"
+        },
+        {
+          "event": "ARC World Tour 2025-2026 Finals",
+          "place": 1,
+          "date": "2026-03-26",
+          "url": "https://liquipedia.net/fighters/ARC_World_Tour/2025-26/Finals/GBVSR"
+        },
+        {
+          "event": "Cygames Cup 2026",
+          "place": 2,
+          "date": "2026-01-26",
+          "url": "https://liquipedia.net/fighters/Cygames_Cup/2026"
+        },
+        {
+          "event": "SOOP Super Tournament 2025",
+          "place": 1,
+          "date": "2025-11-25",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2025/GBVSR"
+        },
+        {
+          "event": "SEA Major 2025",
+          "place": 1,
+          "date": "2025-10-25",
+          "url": "https://liquipedia.net/fighters/South_East_Asia_Major/2025/GBVSR"
+        },
+        {
+          "event": "Evolution Championship Series: Japan 2025",
+          "place": 2,
+          "date": "2025-05-25",
+          "url": "https://liquipedia.net/fighters/Evolution_Championship_Series/2025/Japan/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "zangiefdream",
@@ -12090,7 +13461,30 @@
   },
   {
     "id": "zenith",
-    "handle": "Zenith"
+    "handle": "Zenith",
+    "featured": true,
+    "extra": {
+      "titles": [
+        {
+          "event": "Thaiger Uppercut 2024",
+          "place": 2,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/Thaiger_Uppercut/2024/GBVSR"
+        },
+        {
+          "event": "FV Major 2024",
+          "place": 1,
+          "date": "2024-07-24",
+          "url": "https://liquipedia.net/fighters/FV_Major/2024/GBVSR"
+        },
+        {
+          "event": "Super Tournament 2024",
+          "place": 2,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Super_Tournament/2024/GBVSR"
+        }
+      ]
+    }
   },
   {
     "id": "zenkos",
@@ -12154,8 +13548,41 @@
     "extra": {
       "aliases": [
         "ZIPPY"
+      ],
+      "titles": [
+        {
+          "event": "Rumble In SoCal",
+          "place": 2,
+          "date": "2024-11-24",
+          "url": "https://liquipedia.net/fighters/Rumble_In_SoCal/2024/GBVSR"
+        },
+        {
+          "event": "First Attack 2024",
+          "place": 1,
+          "date": "2024-10-24",
+          "url": "https://liquipedia.net/fighters/First_Attack/2024/GBVSR"
+        },
+        {
+          "event": "CEO 2024",
+          "place": 2,
+          "date": "2024-06-24",
+          "url": "https://liquipedia.net/fighters/Community_Effort_Orlando/2024/GBVSR"
+        },
+        {
+          "event": "Combo Breaker 2024",
+          "place": 1,
+          "date": "2024-05-24",
+          "url": "https://liquipedia.net/fighters/Combo_Breaker/2024/GBVSR"
+        },
+        {
+          "event": "Frosty Faustings XVI",
+          "place": 1,
+          "date": "2024-01-24",
+          "url": "https://liquipedia.net/fighters/Frosty_Faustings/2024/GBVSR"
+        }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "zira",

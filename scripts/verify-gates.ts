@@ -68,7 +68,11 @@
  * Controls marked `network: true` read Cygames' own site (no quota): the Fan
  * Kit terms page (the licence-changed control) and the two drift checkers'
  * clean runs. `--offline` skips each of them BY NAME. A vendor outage turns a
- * network control into a named skip, never a pass.
+ * network control into a named skip, never a pass. One control is marked
+ * `localFetch: true` instead: the tournaments unreachable-upstream control
+ * needs `fetch` unblocked, but the only address it dials is 127.0.0.1:9 (a
+ * closed local port), so it is not a network control, runs under --offline,
+ * and is not counted in the vendor-site tally.
  *
  * ── THE PROBE: THIS GAME'S OWN RULES, LIVE WITH NO CORPUS ────────────────
  * scripts/parse.ts exports parseSide/parseTitle; parse-finish.ts
@@ -229,6 +233,9 @@ interface RunOpts {
   cwd?: string;
   /** A vendor-site control: no fetch-blocking preload. Never YouTube. */
   network?: boolean;
+  /** No fetch-blocking preload either, but the only address dialled is a
+   *  closed LOCAL port (127.0.0.1) — no vendor site, nothing real. */
+  localFetch?: boolean;
   /** Drop GIT_* from the child env (the temp-repo fixture). */
   isolateGit?: boolean;
 }
@@ -246,7 +253,7 @@ const run = (args: string[], o: RunOpts = {}): Run => {
     ...o.env,
   };
   delete env.YT_API_KEY;
-  if (!o.network) {
+  if (!o.network && !o.localFetch) {
     const preload = `--import=${pathToFileURL(join(work(), 'no-network.mjs')).href}`;
     env.NODE_OPTIONS = [env.NODE_OPTIONS ?? '', preload].join(' ').trim();
   }
@@ -1447,8 +1454,17 @@ interface Control {
   precondition?: () => string | null;
   /** Reads the vendor's own site. Never YouTube. Skipped by --offline. */
   network?: boolean;
+  /** Needs `fetch` unblocked for a CLOSED LOCAL PORT only (the tournaments
+   *  unreachable-upstream control). Not a network control: it runs under
+   *  --offline and is not counted in the vendor-site tally. */
+  localFetch?: boolean;
   /** A post-condition on what the failing run left behind. */
   after?: () => string | null;
+  /** Replaces the default exit-code assertion, for a gate that is a
+   *  MEASUREMENT (the tournaments keep-the-file control: exit 0, a trailer,
+   *  and a byte-identical file). Runs BEFORE the restore, so it may read what
+   *  the command left behind. */
+  assert?: (r: Run) => Verdict;
   /** A REPORT-ONLY rule: exit 0 and the judge finds the refusal; then the
    *  disarmed twin removes the rule and the judge must notice. */
   report?: {
@@ -1482,6 +1498,77 @@ let departed = '';
 let twinOf = '';
 
 const CONTROLS: Control[] = [
+  // ── tournament placements (scripts/tournaments.ts --check) ───────────────
+  // Both offline. The file is Liquipedia's Tier 1–2 table as fetched; the
+  // validator is what keeps a hand-edit (or a half-written fetch) from
+  // reaching parse-finish.ts, which features whoever the file names.
+  {
+    name: 'tournaments: the same event page listed twice (a double-counted title)',
+    cmd: ['scripts/tournaments.ts', '--check'],
+    files: ['data/tournaments.json'],
+    names: /duplicate event page/,
+    inject: () => {
+      if (!existsSync(abs('data/tournaments.json'))) return 'no data/tournaments.json yet';
+      const f = readJson<{ events: unknown[] }>('data/tournaments.json');
+      if (!f.events.length) return 'tournaments.json carries no events';
+      f.events.push(f.events[0]);
+      write('data/tournaments.json', `${JSON.stringify(f, null, 2)}\n`);
+      return true;
+    },
+  },
+  {
+    name: 'tournaments: an alias row pointing at a player who is not in the registry',
+    cmd: ['scripts/tournaments.ts', '--check'],
+    files: ['data/tournament-aliases.json'],
+    names: /unknown player id "no-such-player"/,
+    inject: () => {
+      if (!existsSync(abs('data/tournament-aliases.json')))
+        return 'no data/tournament-aliases.json yet';
+      const f = readJson<{ aliases: Record<string, string | null> }>(
+        'data/tournament-aliases.json',
+      );
+      const k = Object.keys(f.aliases)[0];
+      if (!k) return 'the aliases file has no rows to corrupt';
+      f.aliases[k] = 'no-such-player';
+      write('data/tournament-aliases.json', `${JSON.stringify(f, null, 2)}\n`);
+      return true;
+    },
+  },
+  {
+    // THE KEEP-THE-FILE GUARANTEE. An unreachable Liquipedia must be
+    // UNVERIFIED (exit 0, yellow in ../sync-tournaments.sh) and must leave the
+    // committed table byte-identical — a fetch failure that wrote an empty file
+    // would un-feature every champion on the next parse. A measurement, not an
+    // exit code, so it brings its own assert. Needs no real network: the
+    // endpoint is pointed at a closed local port, but it is a `fetch`, so the
+    // no-network preload is lifted for it (`localFetch`). Not a vendor-site
+    // control: it runs under --offline.
+    name: 'tournaments: Liquipedia unreachable → UNVERIFIED and data/tournaments.json untouched',
+    files: ['data/tournaments.json'],
+    localFetch: true,
+    exec: () =>
+      run(['scripts/tournaments.ts'], {
+        env: { TOURNAMENTS_URL: 'http://127.0.0.1:9/api.php' },
+        localFetch: true,
+      }),
+    inject: () =>
+      existsSync(abs('data/tournaments.json')) ? true : 'no data/tournaments.json yet',
+    assert: (r) => {
+      if (r.error) return fail(`the command never ran: ${r.error.message}`);
+      if (r.status !== 0)
+        return fail(
+          `exited ${r.status}; an unreachable upstream is UNVERIFIED, never a failure. Got: ${head(r)}`,
+        );
+      if (!/tournaments: UNVERIFIED/.test(r.out))
+        return fail(`no UNVERIFIED trailer. Got: ${head(r)}`);
+      const before = snapshots.get('data/tournaments.json');
+      const after = readFileSync(abs('data/tournaments.json'));
+      if (!before || !before.equals(after))
+        return fail('data/tournaments.json changed on a failed fetch');
+      return pass('UNVERIFIED, file byte-identical');
+    },
+  },
+
   // ── the patch table (scripts/seasons.ts --check) ─────────────────────────
   {
     name: 'patches: two rows share a start date (the CMS error that mis-filed 950 records on CotW)',
@@ -2733,7 +2820,11 @@ const execute = (c: Control): Run => {
   if (c.exec) return c.exec();
   if (c.probe) return run([probePath(), c.probe], { cwd: work() });
   const cmd = typeof c.cmd === 'function' ? c.cmd() : (c.cmd ?? []);
-  return run(cmd, { ...(c.cwd ? { cwd: c.cwd() } : {}), ...(c.network ? { network: true } : {}) });
+  return run(cmd, {
+    ...(c.cwd ? { cwd: c.cwd() } : {}),
+    ...(c.network ? { network: true } : {}),
+    ...(c.localFetch ? { localFetch: true } : {}),
+  });
 };
 
 // ── list mode ───────────────────────────────────────────────────────────────
@@ -2743,7 +2834,11 @@ const selected = CONTROLS.filter((c) => wanted(c.name));
 if (LIST_ONLY) {
   console.log(`▶ ${selected.length} control(s)${OFFLINE ? ' (--offline)' : ''}\n`);
   for (const c of selected) {
-    const net = c.network ? ' [network: vendor site]' : '';
+    const net = c.network
+      ? ' [network: vendor site]'
+      : c.localFetch
+        ? ' [fetch: closed local port only]'
+        : '';
     if (c.network && OFFLINE) {
       console.log(`  OFF   ${c.name}${net}\n        skipped by --offline`);
       continue;
@@ -2866,6 +2961,9 @@ for (const c of selected) {
           v = pass(`${v.detail} · disarmed: exit 0 and the judge caught it (${twinJudged[1]})`);
         }
       }
+    } else if (c.assert) {
+      v = c.assert(r);
+      restore(files);
     } else {
       if (!names) throw new Error('a failing control must declare the rule it names');
       const post = c.after?.() ?? null;
