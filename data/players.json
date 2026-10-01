@@ -3343,10 +3343,6 @@
     }
   },
   {
-    "id": "go1",
-    "handle": "GO1"
-  },
-  {
     "id": "goalous",
     "handle": "Goalous"
   },
@@ -4339,10 +4335,6 @@
         "Indefinetez"
       ]
     }
-  },
-  {
-    "id": "index",
-    "handle": "Index"
   },
   {
     "id": "inf20",
@@ -6447,12 +6439,7 @@
   },
   {
     "id": "matyou",
-    "handle": "MatYou",
-    "extra": {
-      "aliases": [
-        "Matyou"
-      ]
-    }
+    "handle": "MatYou"
   },
   {
     "id": "matzel",
@@ -10948,10 +10935,6 @@
     "handle": "Tintan100"
   },
   {
-    "id": "tipu",
-    "handle": "Tipu"
-  },
-  {
     "id": "tkjuni",
     "handle": "TKjuni"
   },
@@ -11141,10 +11124,6 @@
   {
     "id": "trytocomplete",
     "handle": "TryToComplete"
-  },
-  {
-    "id": "tsugaru",
-    "handle": "Tsugaru"
   },
   {
     "id": "tsukkun",

@@ -4355,35 +4355,6 @@
     }
   },
   {
-    "id": "xhqJ_6PNmn0",
-    "kind": "duplicate-candidate",
-    "channel": "gbvsReplayChannel",
-    "title": "GBVSR High Level Gamera/2B VS Sushi/2B",
-    "publishedAt": "2024-02-24T22:13:31Z",
-    "durationSec": 578,
-    "handles": [
-      "Gamera",
-      "Sushi"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "gamera",
-          "sushi"
-        ],
-        "characters": [
-          "2b",
-          "2b"
-        ],
-        "playedOn": "2024-02-24"
-      },
-      "ids": [
-        "xhqJ_6PNmn0",
-        "Q7rQZAWDlzo"
-      ]
-    }
-  },
-  {
     "id": "wiKoH0M15Z0@1763",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
