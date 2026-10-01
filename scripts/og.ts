@@ -457,12 +457,17 @@ const TEXT = '#F2F3FF';
 const TEXT_MUTED = '#AEB2DC';
 const TEXT_FAINT = '#888CB4';
 
-const TITLE_1 = 'Granblue Fantasy Versus: Rising';
-const TITLE_2 = 'Replay Database';
-/** The siblings' two prose lines: "The competitive <name> replay database",
- *  then the platform tagline. The title already spells the full name, so the
- *  first line uses app.config.ts `shortName` rather than repeating it. */
-const LINE_1 = 'The competitive GBVSR replay database';
+/** The platform lockup every sibling card carries: SHORTNAME/REPLAY, the
+ *  slash in the game's secondary. Written in MIXED CASE on purpose: this face's
+ *  uppercase codepoints draw its swash capitals and its lowercase ones the plain
+ *  Roman capitals (see the gate above), so "Gbvsr" renders as GBVSR with one
+ *  swash initial. All-caps input would set every letter as a swash. */
+const WORD_A = 'Gbvsr';
+const WORD_B = 'Replay';
+/** The siblings' two prose lines: "The competitive <full name> replay
+ *  database", then the platform tagline. The wordmark carries the short name,
+ *  so the full title lives here, as Strive's and CotW's do. */
+const LINE_1 = 'The competitive Granblue Fantasy Versus: Rising replay database';
 export const TAGLINE = 'Character usage · matchups · meta over time';
 
 /**
@@ -515,19 +520,21 @@ export async function renderOgCard(
   const textLeft = BX + BADGE + 34;
   const colW = W - textLeft - BX;
 
-  // FITTED, NOT PINNED: 31 glyphs of a wide display serif. Both title lines
-  // share the badge's height: line 1's cap line on the badge top, line 2's
-  // baseline on the badge bottom.
-  const t1Size = fitSize(fonts.display, TITLE_1, colW, 60);
-  const t2Size = fitSize(fonts.displayBold, TITLE_2, colW, Math.round(t1Size * 1.15));
-  const t1Base = BY + capHeight(fonts.display, t1Size);
-  const t2Base = BY + BADGE;
+  // FITTED, NOT PINNED, as Strive's: the largest size at which the whole
+  // wordmark ends inside the right margin, capped at 104 (CotW's pinned size)
+  // so a short mark never balloons. Cap line badge-centred, as every sibling's.
+  const wordmark = `${WORD_A}/${WORD_B}`;
+  const wordSize = fitSize(fonts.display, wordmark, colW, 104);
+  const aW = widthOf(fonts.display, WORD_A, wordSize);
+  const slashW = widthOf(fonts.display, '/', wordSize);
+  const wordBase = BY + BADGE / 2 + wordSize * 0.32;
 
   const parts: string[] = [];
-  parts.push(outlines(fonts.display, TITLE_1, t1Size, TEXT, textLeft, t1Base));
-  parts.push(outlines(fonts.displayBold, TITLE_2, t2Size, GILT, textLeft, t2Base));
+  parts.push(outlines(fonts.display, WORD_A, wordSize, TEXT, textLeft, wordBase));
+  parts.push(outlines(fonts.display, '/', wordSize, GILT, textLeft + aW, wordBase));
+  parts.push(outlines(fonts.display, WORD_B, wordSize, TEXT, textLeft + aW + slashW, wordBase));
   parts.push(
-    outlines(fonts.ui, LINE_1, fitSize(fonts.ui, LINE_1, W - 2 * BX, 34), TEXT_MUTED, BX + 4, 370),
+    outlines(fonts.ui, LINE_1, fitSize(fonts.ui, LINE_1, W - 2 * BX, 34), TEXT_MUTED, BX + 4, 364),
   );
   parts.push(
     outlines(
@@ -536,7 +543,7 @@ export async function renderOgCard(
       fitSize(fonts.ui, TAGLINE, W - 2 * BX, 26),
       TEXT_FAINT,
       BX + 4,
-      416,
+      418,
     ),
   );
   // The notice: 20px in the muted text colour, the size the site footer sets
@@ -573,8 +580,6 @@ export async function renderOgCard(
     `H${BX} Z" fill="${PRIMARY}"/>` +
     `<path d="M${BX + BADGE * 0.62} ${BY + BADGE * 0.2} L${BX + BADGE * 0.34} ${BY + BADGE * 0.8} ` +
     `l14 0 L${BX + BADGE * 0.62 + 14} ${BY + BADGE * 0.2} Z" fill="${PRIMARY_CONTRAST}"/>` +
-    // a gilt rule between the title and the prose
-    `<rect x="${BX + 4}" y="${BY + BADGE + 46}" width="120" height="3" fill="${GILT}"/>` +
     stripe +
     parts.join('') +
     `</svg>`;
@@ -593,7 +598,7 @@ export async function renderOgCard(
     bytes: png.length,
     sha256: createHash('sha256').update(png).digest('hex'),
     summary:
-      `${W}×${H}, ${glyphs} glyph outline(s) (title ${t1Size}/${t2Size}px), ` +
+      `${W}×${H}, ${glyphs} glyph outline(s) (wordmark ${wordSize}px), ` +
       `${roster.length}-segment roster stripe, ` +
       (credit ? `notice ${JSON.stringify(credit)} baked in` : 'NO art credit (generated art)') +
       `, no Fan Kit art on the card\n  fonts verified: ${proof}` +
