@@ -48,7 +48,7 @@ export default defineNuxtConfig({
   // scripts/emit.ts reads THIS LINE into summary.json's `engine` field, and
   // scripts/verify-deployed.ts asserts the deployment serves the same tag —
   // so a pin-only change cannot pass the smoke check on unchanged data.
-  extends: [process.env.ENGINE_PATH || ['github:joeycf/replay-engine#v0.17.0', { install: true }]],
+  extends: [process.env.ENGINE_PATH || ['github:joeycf/replay-engine#v0.18.0', { install: true }]],
 
   compatibilityDate: '2025-07-01',
 
