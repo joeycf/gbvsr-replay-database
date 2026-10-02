@@ -1171,6 +1171,10 @@
     "handle": "Binny"
   },
   {
+    "id": "bird",
+    "handle": "Bird"
+  },
+  {
     "id": "birdland",
     "handle": "Birdland"
   },
@@ -4938,6 +4942,10 @@
   {
     "id": "jarcad",
     "handle": "Jarcad"
+  },
+  {
+    "id": "jards",
+    "handle": "Jards"
   },
   {
     "id": "jarhead",
@@ -9440,10 +9448,10 @@
   },
   {
     "id": "ret",
-    "handle": "Ret",
+    "handle": "ret",
     "extra": {
       "aliases": [
-        "ret"
+        "Ret"
       ]
     }
   },

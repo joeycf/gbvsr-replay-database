@@ -230,54 +230,6 @@
     "durationSec": 366
   },
   {
-    "id": "8QOmStZ53w4",
-    "kind": "character-completion",
-    "channel": "risingReplays",
-    "title": "GBVSR - Jin [Belial] vs. MBK/MadBestKiller⭐Masters Ranked Matches⭐(1440p)",
-    "publishedAt": "2024-06-06T16:00:10Z",
-    "durationSec": 399
-  },
-  {
-    "id": "442Mn1J4KVY",
-    "kind": "character-completion",
-    "channel": "risingReplays",
-    "title": "GBVSR - MBK/MadBestKiller [Belial] vs BlueSkyGuyBSG⭐Masters Ranked Matches⭐",
-    "publishedAt": "2024-04-06T19:00:01Z",
-    "durationSec": 392
-  },
-  {
-    "id": "XhBdJX4xjtI",
-    "kind": "character-completion",
-    "channel": "risingReplays",
-    "title": "GBVSR - Koyao [Narmaya] vs. OGA|Kosame | Masters Ranked Matches",
-    "publishedAt": "2024-03-04T19:00:13Z",
-    "durationSec": 404
-  },
-  {
-    "id": "gQblKhmKFOg",
-    "kind": "character-completion",
-    "channel": "fgHighLevel",
-    "title": "Beelzebub (Kazunkai) Vs Nier (Inochi Scarlet) | Granblue Fantasy Versus: Rising High Level Replay",
-    "publishedAt": "2024-12-17T08:00:36Z",
-    "durationSec": 581
-  },
-  {
-    "id": "_EBfLs1rFcI",
-    "kind": "character-completion",
-    "channel": "fgHighLevel",
-    "title": "Djeeta (Akame) Vs Zeta (Bread) | Granblue Fantasy Versus: Rising High Level Replay",
-    "publishedAt": "2024-12-14T08:00:32Z",
-    "durationSec": 725
-  },
-  {
-    "id": "uGF-LCODx9Q",
-    "kind": "character-completion",
-    "channel": "fgHighLevel",
-    "title": "GBVSR: Anilia's №1 Sheep (Anilia) Vs Toriku (Yuel) | Granblue Fantasy Versus: Rising High Level",
-    "publishedAt": "2024-09-22T07:00:36Z",
-    "durationSec": 194
-  },
-  {
     "id": "a1JoXbjJgow",
     "kind": "duplicate-candidate",
     "channel": "gbvsReplayChannel",
