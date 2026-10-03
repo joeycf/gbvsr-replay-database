@@ -88,6 +88,7 @@ import type { AliasMatcher } from './roster';
 import type {
   ChannelKey,
   CharProvenance,
+  DepartedEvidence,
   MatchSide,
   MatchVideo,
   RawVideoRecord,
@@ -794,14 +795,57 @@ export function parseTitle(
 // runs only over title channels. A cursor-mode index dump is a legitimately
 // thin slice of the catalogue (theater-delta.ts) and the add-only merge in
 // parse-finish.ts is what protects that intake.
-function assertRawIsFresh(id: ChannelKey, dump: RawVideoRecord[], committed: MatchVideo[]): void {
+//
+// A DEPARTED UPLOAD IS LEGAL, and data alone can only show that while something
+// newer is still in the dump. When the departed upload WAS the channel's newest
+// marked one and nothing marked has been posted since, a fresh dump fails this
+// test exactly as a stale one does. Strive's cron died here on 2026-10-02 with
+// every dump fresh. data:fetch now asks YouTube about the committed records
+// newer than each dump and writes the ones the walk can no longer reach to
+// raw/<id>.departed.json (types/index.ts DepartedEvidence). Those ids are
+// skipped below, but only while that file is bound to this exact dump.
+async function readDeparted(
+  id: ChannelKey,
+  newestInDump: string,
+): Promise<DepartedEvidence | null> {
+  const p = join(RAW, `${id}.departed.json`);
+  if (!existsSync(p)) return null;
+  try {
+    const ev = JSON.parse(await readFile(p, 'utf8')) as DepartedEvidence;
+    if (ev.channel !== id || ev.newestInDump !== newestInDump || !Array.isArray(ev.ids))
+      return null;
+    return ev;
+  } catch {
+    // Unreadable is treated as absent, which leaves the guard strict.
+    console.warn(
+      `  ⚠ raw/${id}.departed.json will not parse; ignored, so the stale-raw guard stays strict`,
+    );
+    return null;
+  }
+}
+
+async function assertRawIsFresh(
+  id: ChannelKey,
+  dump: RawVideoRecord[],
+  committed: MatchVideo[],
+): Promise<void> {
   let newestInDump = '';
   for (const r of dump) if (r.publishedAt > newestInDump) newestInDump = r.publishedAt;
   if (!newestInDump) return;
 
+  const departed = await readDeparted(id, newestInDump);
+  const gone = new Set(departed?.ids);
+  if (departed && gone.size) {
+    console.log(
+      `  ↘ raw/${id}.json: ${gone.size} committed upload(s) newer than the dump can no longer ` +
+        `reach it (confirmed by data:fetch at ${departed.checkedAt}). Pruned, not read as ` +
+        `staleness: ${[...gone].join(', ')}`,
+    );
+  }
+
   let newestCommitted: MatchVideo | undefined;
   for (const v of committed) {
-    if (v.intake !== id) continue;
+    if (v.intake !== id || gone.has(v.id)) continue;
     if (!newestCommitted || v.publishedAt > newestCommitted.publishedAt) newestCommitted = v;
   }
   if (!newestCommitted) return;
@@ -819,6 +863,10 @@ function assertRawIsFresh(id: ChannelKey, dump: RawVideoRecord[], committed: Mat
       `  treat the smaller archive as the new baseline.`,
       ``,
       `  Refresh first:  npm run data:fetch`,
+      ``,
+      `  If that upload was deleted, made private or unlisted, or retitled without`,
+      `  the GBVSR marker, the fetch confirms it with YouTube and records it in`,
+      `  raw/${id}.departed.json, and the parse then prunes it instead of stopping here.`,
     ].join('\n'),
   );
 }
@@ -946,7 +994,7 @@ async function main(): Promise<void> {
     }
     const dump = JSON.parse(await readFile(file, 'utf8')) as RawVideoRecord[];
     if (dump.length === 0) throw new Error(`raw/${ch.id}.json is empty — refusing to parse.`);
-    assertRawIsFresh(ch.id, dump, committed);
+    await assertRawIsFresh(ch.id, dump, committed);
 
     const tally = emptyTally(floorSec);
     const hist = emptyHistogram();

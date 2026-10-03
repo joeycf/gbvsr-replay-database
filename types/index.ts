@@ -186,6 +186,36 @@ export interface RawVideoRecord {
 }
 
 /**
+ * raw/<channel>.departed.json — written by scripts/fetch.ts beside every dump
+ * it writes, read by the stale-raw guard in scripts/parse.ts.
+ *
+ * The guard proves a dump stale by finding a committed record NEWER than
+ * anything in it. A record that LEFT the dump's reach looks exactly like that
+ * when it was the channel's newest marked upload and nothing marked has been
+ * posted since, and data alone cannot tell the two apart. So the fetch, which
+ * has the network, asks YouTube about every such record and writes down the
+ * ones that can no longer be in the dump.
+ *
+ * BOUND TO ITS DUMP. `newestInDump` is the newest publishedAt in the dump this
+ * file was written beside, and parse honours the file only while that still
+ * matches. A dump copied without its file, or replaced by a later fetch,
+ * leaves the guard as strict as it ever was.
+ */
+export interface DepartedEvidence {
+  channel: ChannelKey;
+  newestInDump: string;
+  /** When the fetch asked YouTube. */
+  checkedAt: string;
+  /** Committed ids newer than the dump that the walk can no longer reach:
+   *  deleted, private or unlisted (unlisted uploads leave the uploads
+   *  playlist), or retitled without the GBVSR marker (the walk's marker gate
+   *  never hydrates those). A newer record that is still public AND still
+   *  marked is never listed — a reachable upload missing from the walk is a
+   *  stale view, and the guard should fire. */
+  ids: string[];
+}
+
+/**
  * One record in raw/replayTheater.json — an index entry already joined to its
  * VOD's YouTube metadata. Nothing here is recovered by parsing a title.
  */

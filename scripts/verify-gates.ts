@@ -58,11 +58,12 @@
  * with a preload that replaces `fetch` with a function that throws, so a
  * defect that made an offline gate reach for the network fails loudly instead
  * of spending anything. scripts/fetch.ts, scripts/fetch-theater.ts and
- * scripts/catchup.ts are never run against anything real. The one control that
- * exercises fetch.ts (the dead channel, checklist 7c) runs a COPY of it in the
- * temp directory with a dummy key and a preloaded stub that serves canned API
- * JSON and THROWS for any URL it does not recognise or any key that is not
- * "dummy" — and the probe fails if the stub logged a single violation.
+ * scripts/catchup.ts are never run against anything real. The two probes that
+ * exercise fetch.ts (the dead channel, checklist 7c, and the departure check)
+ * run a COPY of it in the temp directory with a dummy key and a preloaded stub
+ * that serves canned API JSON and THROWS for any URL it does not recognise or
+ * any key that is not "dummy" — and each probe fails if the stub logged a
+ * single violation.
  *
  * ── NETWORK: THE VENDOR ONLY, AND --offline SKIPS IT VISIBLY ─────────────
  * Controls marked `network: true` read Cygames' own site (no quota): the Fan
@@ -371,6 +372,7 @@ const PROBE_CASES = [
   'slot-order',
   'skins',
   'dead-channel',
+  'departure',
   'dormancy',
   'cursor-delta',
   'og-fonts',
@@ -384,7 +386,7 @@ const probePath = (): string => join(work(), 'probe.mts');
 function probeSource(here: string): string {
   return String.raw`/* Written by scripts/verify-gates.ts into an OS temp dir; removed on exit. Never commit it. */
 import { spawnSync } from 'node:child_process';
-import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, symlinkSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
@@ -837,10 +839,11 @@ if (which === 'skins') {
   need('A PLAYER CALLED "Summer" KEEPS HIS NAME — skins are cut from brackets only', c === 'Summer=gran', c);
 }
 
-// ── a dead channel fails alone (checklist 7c), against a STUBBED API ─────
-if (which === 'dead-channel') {
-  const { ACTIVE_CHANNELS } = await mod('scripts/channels.ts');
-  const copy = join(HERE, 'fetch-copy');
+// ── fetch.ts against a STUBBED API: a COPY, a dummy key, the stub preloaded ──
+// The seed callback writes fixtures into the copy before the run (the departure probe's
+// committed corpus); the dead-channel probe's copy holds no videos.json at all.
+const stubbedFetch = (name, extraEnv, args, seed) => {
+  const copy = join(HERE, name);
   rmSync(copy, { recursive: true, force: true });
   for (const d of ['scripts', 'types', 'data']) mkdirSync(join(copy, d), { recursive: true });
   for (const f of ['fetch.ts', 'youtube.ts', 'channels.ts', 'roster.ts', 'seasons.ts'])
@@ -849,21 +852,20 @@ if (which === 'dead-channel') {
   copyFileSync(join(ROOT, 'data', 'characters.json'), join(copy, 'data', 'characters.json'));
   copyFileSync(join(ROOT, 'package.json'), join(copy, 'package.json'));
   symlinkSync(join(ROOT, 'node_modules'), join(copy, 'node_modules'));
-  const dead = ACTIVE_CHANNELS[1];
-  const others = ACTIVE_CHANNELS.filter((c) => c !== dead);
-  const logFile = join(HERE, 'youtube-stub.jsonl');
+  if (seed) seed(copy);
+  const logFile = join(HERE, name + '.jsonl');
   rmSync(logFile, { force: true });
   const env = {
     PATH: process.env.PATH ?? '',
     HOME: process.env.HOME ?? '',
     YT_API_KEY: 'dummy',
-    GATES_STUB_DEAD: dead.uploadsPlaylist,
     GATES_STUB_LOG: logFile,
+    ...extraEnv,
   };
   if (process.env.TMPDIR) env.TMPDIR = process.env.TMPDIR;
   const r = spawnSync(
     process.execPath,
-    ['--import', 'tsx', '--import', pathToFileURL(join(HERE, 'youtube-stub.mjs')).href, join(copy, 'scripts', 'fetch.ts')],
+    ['--import', 'tsx', '--import', pathToFileURL(join(HERE, 'youtube-stub.mjs')).href, join(copy, 'scripts', 'fetch.ts'), ...args],
     { cwd: copy, encoding: 'utf8', timeout: 180000, env },
   );
   const out = (r.stdout ?? '') + (r.stderr ?? '');
@@ -877,6 +879,15 @@ if (which === 'dead-channel') {
     violations.length === 0 && reqs.length > 0 && !crashed,
     violations.length + ' violation(s), ' + reqs.length + ' request(s)' + (crashed ? ', the child crashed: ' + out.slice(0, 300) : ''),
   );
+  return { copy, r, out, reqs, violations };
+};
+
+// ── a dead channel fails alone (checklist 7c), against a STUBBED API ─────
+if (which === 'dead-channel') {
+  const { ACTIVE_CHANNELS } = await mod('scripts/channels.ts');
+  const dead = ACTIVE_CHANNELS[1];
+  const others = ACTIVE_CHANNELS.filter((c) => c !== dead);
+  const { copy, r, out, reqs, violations } = stubbedFetch('fetch-copy', { GATES_STUB_DEAD: dead.uploadsPlaylist }, []);
   const written = (id) => existsSync(join(copy, 'raw', id + '.json'));
   const tail = out.split('\n').filter((l) => l.trim()).slice(-3).join(' / ').slice(0, 300);
   need(
@@ -894,6 +905,60 @@ if (which === 'dead-channel') {
     reqs.length + ' stubbed API request(s), ' + violations.length + ' violation(s); ' + dead.id +
       ' answered 404 and was named; written: ' + others.filter((c) => written(c.id)).map((c) => c.id).join(', '),
   );
+}
+
+// ── the departure check (scripts/fetch.ts confirmDepartures), STUBBED ─────
+// The stub's walk yields one page whose uploads all hydrate to
+// 2026-09-21T12:00:00Z, so that is the dump's newest. The seeded corpus puts
+// four of this intake's records AHEAD of it (one deleted, one private, one
+// retitled without the marker, one still public and marked), one behind it,
+// and one ahead of it under ANOTHER intake. Only the four may be asked about,
+// and only the first three are departures.
+if (which === 'departure') {
+  const { ACTIVE_CHANNELS } = await mod('scripts/channels.ts');
+  const ch = ACTIVE_CHANNELS[0];
+  const other = ACTIVE_CHANNELS[1];
+  const rec = (id, intake, day) => ({ id, intake, publishedAt: day + 'T12:00:00Z' });
+  const ahead = ['dep-gone', 'dep-private', 'dep-unmarked', 'dep-live'];
+  const { copy, r, out, reqs } = stubbedFetch(
+    'departure-copy',
+    { GATES_STUB_GONE: 'dep-gone', GATES_STUB_PRIVATE: 'dep-private', GATES_STUB_UNMARKED: 'dep-unmarked' },
+    ['--only=' + ch.id],
+    (dir) =>
+      writeFileSync(
+        join(dir, 'data', 'videos.json'),
+        JSON.stringify([
+          rec('dep-gone', ch.id, '2026-09-30'),
+          rec('dep-private', ch.id, '2026-09-29'),
+          rec('dep-unmarked', ch.id, '2026-09-28'),
+          rec('dep-live', ch.id, '2026-09-27'),
+          rec('dep-old', ch.id, '2026-09-01'),
+          rec('dep-elsewhere', other.id, '2026-09-30'),
+        ]),
+      ),
+  );
+  const asked = reqs
+    .filter((q) => q.endpoint === 'videos' && String(q.part).includes('status'))
+    .flatMap((q) => String(q.id).split(','));
+  need(
+    "THE DEPARTURE CHECK ASKS ONLY ABOUT THIS INTAKE'S RECORDS AHEAD OF THE DUMP (the guard's own rule)",
+    show([...asked].sort()) === show([...ahead].sort()),
+    show(asked),
+  );
+  const file = join(copy, 'raw', ch.id + '.departed.json');
+  const ev = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : null;
+  need(
+    'A DEPARTURE IS DELETED, PRIVATE OR UNMARKED — and a public, marked upload is never one',
+    ev !== null && show([...ev.ids].sort()) === show(['dep-gone', 'dep-private', 'dep-unmarked']),
+    ev ? show(ev.ids) : 'no ' + ch.id + '.departed.json; status ' + r.status + ': ' + out.slice(-300),
+  );
+  need(
+    'THE DEPARTURE FILE IS BOUND TO THE DUMP BESIDE IT (newestInDump) and named in the report',
+    ev !== null && ev.channel === ch.id && ev.newestInDump === '2026-09-21T12:00:00Z' &&
+      out.includes('↘ 3 committed upload(s)'),
+    ev ? show({ channel: ev.channel, newestInDump: ev.newestInDump }) : 'no file',
+  );
+  notes.push(asked.length + ' id(s) asked about; departed: ' + (ev ? ev.ids.join(', ') : 'none'));
 }
 
 // ── the dormancy alarms (checklist 7e) and the quarterly watches ─────────
@@ -997,6 +1062,10 @@ const YOUTUBE_STUB_SOURCE = String.raw`// Written by scripts/verify-gates.ts. A 
 import { appendFileSync } from 'node:fs';
 const LOG = process.env.GATES_STUB_LOG;
 const DEAD = process.env.GATES_STUB_DEAD;
+const list = (k) => (process.env[k] ?? '').split(',').filter(Boolean);
+const GONE = list('GATES_STUB_GONE');
+const PRIVATE = list('GATES_STUB_PRIVATE');
+const UNMARKED = list('GATES_STUB_UNMARKED');
 const log = (o) => {
   if (LOG) appendFileSync(LOG, JSON.stringify(o) + '\n');
 };
@@ -1033,10 +1102,11 @@ globalThis.fetch = async (input) => {
     return json(200, { items });
   }
   if (endpoint === 'videos') {
-    const items = String(p.id).split(',').map((id) => ({
+    const items = String(p.id).split(',').filter((id) => !GONE.includes(id)).map((id) => ({
       id,
+      status: { privacyStatus: PRIVATE.includes(id) ? 'private' : 'public' },
       snippet: {
-        title: TITLE,
+        title: UNMARKED.includes(id) ? 'Alpha (Gran) Vs Beta (Djeeta) | retitled' : TITLE,
         description: '',
         publishedAt: '2026-09-21T12:00:00Z',
         liveBroadcastContent: 'none',
@@ -1182,6 +1252,41 @@ const withRaw = (name: string, edit: (rows: RawRow[]) => RawRow[] | string): Inj
   const next = edit(rows);
   if (typeof next === 'string') return next;
   write(`raw/${name}.json`, JSON.stringify(next));
+  return true;
+};
+
+/** The departure controls' fixture: cut the newest committed highLevelReplays
+ *  record (and everything newer) out of the dump, then write a departure file
+ *  naming it. `bound` decides whether that file matches the cut dump or the
+ *  dump as it was before the cut. */
+let departedId = '';
+const departureFixture = (bound: boolean): Injected => {
+  const newest = (committed() ?? [])
+    .filter((v) => v.intake === 'highLevelReplays')
+    .reduce<Rec | undefined>((a, v) => (!a || v.publishedAt > a.publishedAt ? v : a), undefined);
+  if (!newest) return 'no committed highLevelReplays record';
+  let was = '';
+  let now = '';
+  const done = withRaw('highLevelReplays', (rows) => {
+    if (!rows.some((r) => r.id === newest.id))
+      return `raw/highLevelReplays.json does not hold the newest committed record ${newest.id} — run \`npm run data:fetch\``;
+    const kept = rows.filter((r) => r.publishedAt < newest.publishedAt);
+    if (!kept.length) return `cutting ${newest.id} would empty raw/highLevelReplays.json`;
+    was = rows.reduce((a, r) => (r.publishedAt > a ? r.publishedAt : a), '');
+    now = kept.reduce((a, r) => (r.publishedAt > a ? r.publishedAt : a), '');
+    return kept;
+  });
+  if (done !== true) return done;
+  departedId = newest.id;
+  write(
+    'raw/highLevelReplays.departed.json',
+    JSON.stringify({
+      channel: 'highLevelReplays',
+      newestInDump: bound ? now : was,
+      checkedAt: 'verify-gates',
+      ids: [newest.id],
+    }),
+  );
   return true;
 };
 
@@ -1987,6 +2092,33 @@ const CONTROLS: Control[] = [
       ),
   },
   {
+    // The marker gate is this repo's extra way out of the dump: an upload
+    // retitled without GBVSR is never hydrated. Trust privacy alone and that
+    // upload reads as "still reachable", so the guard refuses a fresh dump.
+    name: 'probe: the departure check trusts privacy alone — an upload retitled without GBVSR is read as stale',
+    files: ['scripts/fetch.ts'],
+    probe: 'departure',
+    names: /A DEPARTURE IS DELETED, PRIVATE OR UNMARKED/,
+    inject: () =>
+      sub(
+        'scripts/fetch.ts',
+        "(v) => v.status?.privacyStatus === 'public' && hasGbvsrMarker(v.snippet?.title ?? ''),",
+        "(v) => v.status?.privacyStatus === 'public',",
+      ),
+  },
+  {
+    name: 'probe: the departure check drops the intake filter — it asks (and pays) about other channels',
+    files: ['scripts/fetch.ts'],
+    probe: 'departure',
+    names: /THE DEPARTURE CHECK ASKS ONLY ABOUT THIS INTAKE'S RECORDS AHEAD OF THE DUMP/,
+    inject: () =>
+      sub(
+        'scripts/fetch.ts',
+        'committed.filter((v) => v.intake === id && v.publishedAt > newestInDump)',
+        'committed.filter((v) => v.publishedAt > newestInDump)',
+      ),
+  },
+  {
     name: 'probe: the dominant channel’s silence alarm is raised to 30 days — an 8-day silence goes unseen',
     files: ['scripts/channels.ts'],
     probe: 'dormancy',
@@ -2313,6 +2445,38 @@ const CONTROLS: Control[] = [
           publishedAt: `${Number(r.publishedAt.slice(0, 4)) - 1}${r.publishedAt.slice(4)}`,
         })),
       ),
+  },
+  // ── the departure carve-out, from both sides ─────────────────────────────
+  //
+  // The newest committed highLevelReplays record is cut from the dump along
+  // with everything newer, which is exactly what deleting a channel's newest
+  // upload does to the next fetch. With a departure file BOUND to that dump the
+  // run must complete and prune the record. With one bound to a DIFFERENT dump
+  // it must still be refused as stale, or a leftover file from an earlier fetch
+  // could launder a genuinely stale dump.
+  {
+    name: 'parse: a departure the fetch confirmed is pruned, not refused as stale',
+    files: ['raw/highLevelReplays.json', 'raw/highLevelReplays.departed.json', ...PARSE_OUTPUTS],
+    cmd: ['scripts/parse.ts'],
+    precondition: all(() => needRaw('highLevelReplays'), needCorpus, needCleanParse),
+    inject: () => departureFixture(true),
+    // The run SUCCEEDS; the assertion is on the output and data/videos.json.
+    assert: (r) => {
+      if (r.status !== 0) return fail(`parse exited ${r.status ?? `on ${r.signal}`}: ${head(r)}`);
+      if (!/can no longer reach it[\s\S]*Pruned, not read as staleness/.test(r.out))
+        return fail('parse completed without naming the departure it pruned');
+      if ((committed() ?? []).some((v) => v.id === departedId))
+        return fail(`${departedId} is still in data/videos.json`);
+      return pass(`${departedId} pruned as a departure`);
+    },
+  },
+  {
+    name: 'parse: a departure file bound to a different dump is ignored (the guard stays strict)',
+    files: ['raw/highLevelReplays.json', 'raw/highLevelReplays.departed.json', ...PARSE_OUTPUTS],
+    cmd: ['scripts/parse.ts'],
+    names: /raw\/highLevelReplays\.json is stale/,
+    precondition: all(() => needRaw('highLevelReplays'), needCorpus, needCleanParse),
+    inject: () => departureFixture(false),
   },
   {
     // Checklist 5n. The first player the registry builds is given a fighter's

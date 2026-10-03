@@ -153,7 +153,13 @@ import {
   QuotaRefusal,
   requireApiKey,
 } from './youtube';
-import type { ChannelConfig, ChannelKey, MatchVideo, RawVideoRecord } from '../types/index';
+import type {
+  ChannelConfig,
+  ChannelKey,
+  DepartedEvidence,
+  MatchVideo,
+  RawVideoRecord,
+} from '../types/index';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'raw');
@@ -363,22 +369,82 @@ interface Committed {
   newest: string;
 }
 
-/** This intake's committed records, or null when data/videos.json is absent or
- *  unreadable. Local file, no quota; read only on the failure path. */
-async function committedFor(id: ChannelKey): Promise<Committed | null> {
+/** The committed corpus, or null when data/videos.json is absent or
+ *  unreadable. Local file, no quota. Read once per run for the departure check
+ *  below, and again by the dead-channel printer on its failure path. */
+async function readCommitted(): Promise<MatchVideo[] | null> {
   const p = join(DATA_DIR, 'videos.json');
   if (!existsSync(p)) return null;
   try {
     const all = JSON.parse(await readFile(p, 'utf8')) as MatchVideo[];
-    const mine = all.filter((v) => v.intake === id);
-    return {
-      count: mine.length,
-      videoIds: new Set(mine.map((v) => v.videoId ?? v.id)).size,
-      newest: mine.reduce((a, v) => (v.publishedAt > a ? v.publishedAt : a), '').slice(0, 10),
-    };
+    return Array.isArray(all) ? all : null;
   } catch {
     return null;
   }
+}
+
+/** This intake's committed records, summarised for the dead-channel remedy. */
+async function committedFor(id: ChannelKey): Promise<Committed | null> {
+  const all = await readCommitted();
+  if (!all) return null;
+  const mine = all.filter((v) => v.intake === id);
+  return {
+    count: mine.length,
+    videoIds: new Set(mine.map((v) => v.videoId ?? v.id)).size,
+    newest: mine.reduce((a, v) => (v.publishedAt > a ? v.publishedAt : a), '').slice(0, 10),
+  };
+}
+
+// ── DEPARTURES: the one case the stale-raw guard cannot judge from data ─────
+//
+// parse.ts refuses a dump when the committed corpus holds a record for that
+// intake newer than anything in it. That proves the dump stale, EXCEPT when the
+// record can no longer reach the dump: delete a channel's newest upload, post
+// nothing after it, and a dump fetched a minute ago fails the same test a
+// month-old one does. Observed on Strive on 2026-10-02 (ggstBattleCollection,
+// 5VB5RbRr9Ck): that cron died in Parse with every dump in hand fresh.
+//
+// Here "can no longer reach" has one more way in than on Strive: the walk's
+// marker gate. An upload retitled without `GBVSR` is never hydrated, so it is
+// out of the dump exactly as a deleted one is, and parse would drop it from
+// the dump anyway (the recon line above counts the same thing between calls).
+//
+// The data cannot separate those cases from a stale dump, so this asks YouTube,
+// and only about committed records newer than the dump, selected by the
+// guard's own rule (same intake, publishedAt after the dump's newest). On an
+// ordinary morning there are none, so it makes no call and costs nothing.
+// snippet+status is still 1 unit per 50 ids, counted by QUOTA like any call.
+interface StatusResponse {
+  items: { id: string; snippet?: { title?: string }; status?: { privacyStatus?: string } }[];
+}
+
+export async function confirmDepartures(
+  id: ChannelKey,
+  dump: RawVideoRecord[],
+  committed: MatchVideo[],
+): Promise<DepartedEvidence> {
+  const newestInDump = dump.reduce((a, v) => (v.publishedAt > a ? v.publishedAt : a), '');
+  const ahead = newestInDump
+    ? committed.filter((v) => v.intake === id && v.publishedAt > newestInDump).map((v) => v.id)
+    : [];
+  const ids: string[] = [];
+  for (let i = 0; i < ahead.length; i += 50) {
+    const batch = ahead.slice(i, i + 50);
+    const res = await apiGet<StatusResponse>('videos', {
+      part: 'snippet,status',
+      id: batch.join(','),
+      maxResults: '50',
+    });
+    const reachable = new Set(
+      res.items
+        .filter(
+          (v) => v.status?.privacyStatus === 'public' && hasGbvsrMarker(v.snippet?.title ?? ''),
+        )
+        .map((v) => v.id),
+    );
+    ids.push(...batch.filter((x) => !reachable.has(x)));
+  }
+  return { channel: id, newestInDump, checkedAt: new Date().toISOString(), ids };
 }
 
 async function printDeadChannel(ch: ChannelConfig, err: unknown): Promise<void> {
@@ -590,13 +656,25 @@ async function main(): Promise<void> {
   }
   console.log('');
 
+  // Absent or unreadable is treated as empty here: no departure check runs, so
+  // no departure is recorded and the guard stays strict. parse.ts refuses an
+  // unreadable videos.json itself.
+  const committed = (await readCommitted()) ?? [];
   const written: { id: ChannelKey; out: ChannelFetch }[] = [];
   const failed: { ch: ChannelConfig; dead: boolean; message: string }[] = [];
   for (const ch of targets) {
     const before = QUOTA.units;
     let out: ChannelFetch;
+    let departed: DepartedEvidence;
     try {
       out = await fetchChannel(ch);
+      // INSIDE the channel's try, so a failed check is a failed CHANNEL: neither
+      // file is written and the previous dump keeps the departure file it was
+      // bound to. Writing the dump first and dropping the departure file on
+      // failure would leave a fresh dump with no evidence beside it, and parse
+      // would then refuse it as "stale — refresh first", which is the wrong
+      // diagnosis and the wrong remedy. A refusal still aborts the run below.
+      departed = await confirmDepartures(ch.id, out.records, committed);
     } catch (err) {
       if (err instanceof QuotaRefusal) {
         console.error(
@@ -623,6 +701,9 @@ async function main(): Promise<void> {
     }
 
     await writeFile(join(RAW_DIR, `${ch.id}.json`), JSON.stringify(out.records));
+    // Written beside EVERY dump, empty or not, so a dump never sits next to a
+    // departure file from an earlier fetch. parse.ts also checks the binding.
+    await writeFile(join(RAW_DIR, `${ch.id}.departed.json`), JSON.stringify(departed));
     written.push({ id: ch.id, out });
     const newest = out.records.reduce((a, v) => (v.publishedAt > a ? v.publishedAt : a), '');
     console.log(
@@ -643,6 +724,11 @@ async function main(): Promise<void> {
           ? `; ${out.duplicates} id(s) listed twice (an upload shifted the pages mid-walk)`
           : ''),
     );
+    if (departed.ids.length)
+      console.log(
+        `    ↘ ${departed.ids.length} committed upload(s) newer than this dump can no longer reach ` +
+          `it (deleted, private, unlisted or unmarked): ${departed.ids.join(', ')}. parse prunes them.`,
+      );
     if (out.unhydrated.length)
       console.log(
         `    ⚠ ${out.unhydrated.length} marked id(s) did not hydrate (private, deleted or region-blocked ` +
