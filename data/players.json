@@ -2733,6 +2733,10 @@
     "handle": "DrScat"
   },
   {
+    "id": "drunk-rat",
+    "handle": "Drunk Rat"
+  },
+  {
     "id": "duckator",
     "handle": "Duckator"
   },
@@ -5350,6 +5354,10 @@
   {
     "id": "kamachan",
     "handle": "Kamachan"
+  },
+  {
+    "id": "kamagarou",
+    "handle": "Kamagarou"
   },
   {
     "id": "kamagorou",
@@ -8499,6 +8507,10 @@
   {
     "id": "ororo",
     "handle": "ororo"
+  },
+  {
+    "id": "orthos-vulcan",
+    "handle": "Orthos Vulcan"
   },
   {
     "id": "oru",
