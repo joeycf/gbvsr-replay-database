@@ -230,6 +230,35 @@
     "durationSec": 366
   },
   {
+    "id": "gFJdWfIeTEE@45",
+    "kind": "duplicate-candidate",
+    "channel": "replayTheater",
+    "title": "GBVSR ▰ Monarch (Metera) vs Ryazo (Seox) ▰ SQXL The Promised Day Top 8",
+    "publishedAt": "2026-10-06T21:37:01Z",
+    "durationSec": 0,
+    "handles": [
+      "Monarch",
+      "Ryazo"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "monarch",
+          "ryazo"
+        ],
+        "characters": [
+          "metera",
+          "seox"
+        ],
+        "playedOn": "2026-10-06"
+      },
+      "ids": [
+        "gFJdWfIeTEE@45",
+        "gFJdWfIeTEE@7387"
+      ]
+    }
+  },
+  {
     "id": "a1JoXbjJgow",
     "kind": "duplicate-candidate",
     "channel": "gbvsReplayChannel",
