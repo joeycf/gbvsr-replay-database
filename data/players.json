@@ -3704,7 +3704,12 @@
   },
   {
     "id": "glue",
-    "handle": "Glue"
+    "handle": "Glue",
+    "extra": {
+      "aliases": [
+        "GLUE"
+      ]
+    }
   },
   {
     "id": "go-ns-2-erun-s",
@@ -7808,6 +7813,10 @@
   {
     "id": "name",
     "handle": "NAME"
+  },
+  {
+    "id": "nameroc",
+    "handle": "Nameroc"
   },
   {
     "id": "nanamaru",
