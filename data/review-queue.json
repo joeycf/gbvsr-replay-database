@@ -238,6 +238,64 @@
     "durationSec": 366
   },
   {
+    "id": "LDJq_OIePb4@0",
+    "kind": "duplicate-candidate",
+    "channel": "replayTheater",
+    "title": "GBVSR ▰ Monarch (Metera) vs Socky (Lowain) ▰ EVO France 2026 Top 8",
+    "publishedAt": "2026-10-09T20:13:42Z",
+    "durationSec": 0,
+    "handles": [
+      "Monarch",
+      "Socky"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "monarch",
+          "socky"
+        ],
+        "characters": [
+          "lowain",
+          "metera"
+        ],
+        "playedOn": "2026-10-09"
+      },
+      "ids": [
+        "LDJq_OIePb4@0",
+        "LDJq_OIePb4@5154"
+      ]
+    }
+  },
+  {
+    "id": "LDJq_OIePb4@26",
+    "kind": "duplicate-candidate",
+    "channel": "replayTheater",
+    "title": "GBVSR ▰ WIP | Zandori (Cagliostro) vs Monarch (Metera) ▰ EVO France 2026 Top 8",
+    "publishedAt": "2026-10-09T20:13:42Z",
+    "durationSec": 0,
+    "handles": [
+      "Zandori",
+      "Monarch"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "monarch",
+          "zandori"
+        ],
+        "characters": [
+          "cagliostro",
+          "metera"
+        ],
+        "playedOn": "2026-10-09"
+      },
+      "ids": [
+        "LDJq_OIePb4@26",
+        "LDJq_OIePb4@6628"
+      ]
+    }
+  },
+  {
     "id": "gFJdWfIeTEE@45",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
