@@ -1131,6 +1131,10 @@
     "featured": true
   },
   {
+    "id": "bepawn",
+    "handle": "Bepawn"
+  },
+  {
     "id": "bepaws",
     "handle": "Bepaws"
   },
@@ -6023,6 +6027,10 @@
     "handle": "KONATA"
   },
   {
+    "id": "kong",
+    "handle": "KONG"
+  },
+  {
     "id": "konun",
     "handle": "Konun",
     "extra": {
@@ -6840,10 +6848,6 @@
     "handle": "MadFeng"
   },
   {
-    "id": "madolche",
-    "handle": "Madolche"
-  },
-  {
     "id": "mag-netn",
     "handle": "MAG NETN"
   },
@@ -7152,6 +7156,10 @@
   {
     "id": "mekumori",
     "handle": "Mekumori"
+  },
+  {
+    "id": "melliodama",
+    "handle": "Melliodama"
   },
   {
     "id": "melon",
@@ -12465,10 +12473,6 @@
         "Ubercheesecake"
       ]
     }
-  },
-  {
-    "id": "uchiha",
-    "handle": "Uchiha"
   },
   {
     "id": "ug",

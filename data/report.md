@@ -1,8 +1,8 @@
 # GBVSR pipeline report
 
-- **15901** published records · **2890** players · **40** fighters
-- **236** mirror match(es) (1.5%) — the stat unit is side appearances, so each adds 2 to one character (scripts/emit.ts)
-- **197** pending review item(s) — absent from the site, never guessed
+- **15816** published records · **2891** players · **40** fighters
+- **233** mirror match(es) (1.5%) — the stat unit is side appearances, so each adds 2 to one character (scripts/emit.ts)
+- **192** pending review item(s) — absent from the site, never guessed
 - **0** duplicate id(s) resolved by intake precedence
 - **9** of 9 confirmed fighter-named players present in the registry; every other handle resolves to no fighter
 
@@ -15,15 +15,15 @@ counter-pick (recon 2026-09-29). `too-short` is judged against the floor in brac
 
 | intake | source | raw | GBVSR-marked | parsed | published | too-short (floor) | live | rejects naming a fighter |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays | highLevelReplays | 9045 | 9045 | 8951 | 8951 | 3 (120s) | 0 | 91 |
+| highLevelReplays | highLevelReplays | 8954 | 8954 | 8863 | 8863 | 3 (120s) | 0 | 88 |
 | kakuken | kakuken | 948 | 948 | 948 | 948 | 0 (120s) | 0 | 0 |
-| gbvsReplayChannel | gbvsReplayChannel | 1906 | 1906 | 1708 | 1708 | 126 (120s) | 0 | 50 |
+| gbvsReplayChannel | gbvsReplayChannel | 1907 | 1907 | 1709 | 1709 | 126 (120s) | 0 | 50 |
 | yumegiwa | yumegiwa | 1009 | 1009 | 888 | 888 | 8 (120s) | 0 | 4 |
 | risingReplays _(frozen)_ | risingReplays | — | — | — | 654 | — | — | — |
 | gbFightingReplays _(frozen)_ | gbFightingReplays | — | — | — | 598 | — | — | — |
 | gbvsrReplay _(frozen)_ | gbvsrReplay | — | — | — | 123 | — | — | — |
 | fgHighLevel _(frozen)_ | fgHighLevel | — | — | — | 186 | — | — | — |
-| replayTheater _(index, cursor)_ | replayTheater | — | — | — | 1845 | — | — | — |
+| replayTheater _(index, cursor)_ | replayTheater | — | — | — | 1847 | — | — | — |
 
 ### Index intake — Replay Theater
 
@@ -32,7 +32,7 @@ catalogue still lists it, so this count can only rise. The cron does not depend 
 pull succeeding — on any failure there is no dump, the committed records are carried
 against the pin, and the run stays green.
 
-Rebuilt from a **cursor delta**: 9 built this run, 1836 carried (add-only), **1845** total; pin 1845. "Not in this pull" is withheld: on a cursor morning it is every record older than the pages read and means nothing.
+Rebuilt from a **cursor delta**: 2 built this run, 1845 carried (add-only), **1847** total; pin 1847. "Not in this pull" is withheld: on a cursor morning it is every record older than the pages read and means nothing.
 
 Rows the build refused, counted never guessed: 0 placeholder handle(s) (`Unknown Player`, …), 0 before the 2023-12-11 Rising gate, 0 live, 0 whole-video row(s) under 120s, 0 excluded by hand, 0 duplicate record id(s) inside the dump, 0 naming a fighter before their release. EX labels: 0 side(s) marked, 0 refused.
 The fetch refused 0 ORIGINAL-GAME row(s) (the catalogue's one label covers both games; 43.8% of the full sweep at recon) and demoted 0 set-format tag(s) ("FT5") from events.
@@ -46,7 +46,7 @@ that name a parser problem are `no-char`, `no-handle` and `slot-ambiguous`;
 
 | intake | no-marker | before-floor | live | too-short | no-vs | vs-count | no-char | no-handle | slot-ambiguous | before-release | excluded |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays | 0 | 0 | 0 | 3 | 85 | 0 | 5 | 1 | 0 | 0 | 0 |
+| highLevelReplays | 0 | 0 | 0 | 3 | 82 | 0 | 5 | 1 | 0 | 0 | 0 |
 | kakuken | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | gbvsReplayChannel | 0 | 0 | 0 | 126 | 50 | 1 | 20 | 0 | 1 | 0 | 0 |
 | yumegiwa | 0 | 0 | 0 | 8 | 111 | 0 | 2 | 0 | 0 | 0 | 0 |
@@ -61,9 +61,9 @@ printed it.
 
 | intake | declared | handle-outside | chars-outside | handle-first-bare | tie-broken | sides |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays | handle-outside | 17900 | 0 | 2 | 6 (0.0%) | 17902 |
+| highLevelReplays | handle-outside | 17724 | 0 | 2 | 6 (0.0%) | 17726 |
 | kakuken | handle-outside | 1896 | 0 | 0 | 6 (0.3%) | 1896 |
-| gbvsReplayChannel | handle-first-bare | 415 | 1 | 3000 | 7 (0.2%) | 3416 |
+| gbvsReplayChannel | handle-first-bare | 415 | 1 | 3002 | 7 (0.2%) | 3418 |
 | yumegiwa | handle-outside | 1776 | 0 | 0 | 1 (0.1%) | 1776 |
 
 _On a `handle-first-bare` channel a `chars-outside` share means a side written
@@ -78,13 +78,13 @@ single-pairing sessions (recon 2026-09-29).
 
 | intake · population | 0 (live/unknown) | 1–29s | 30–59s | 60–119s | 120–179s | 180–299s | 300–599s | 600–1799s | 1800s+ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays · records | 0 | 0 | 0 | 0 | 0 | 213 | 6594 | 1613 | 531 |
+| highLevelReplays · records | 0 | 0 | 0 | 0 | 0 | 211 | 6517 | 1607 | 528 |
 | highLevelReplays · match-shaped misses | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| highLevelReplays · other misses | 0 | 0 | 0 | 0 | 0 | 1 | 9 | 16 | 65 |
+| highLevelReplays · other misses | 0 | 0 | 0 | 0 | 0 | 1 | 9 | 14 | 64 |
 | kakuken · records | 0 | 0 | 0 | 0 | 0 | 18 | 907 | 23 | 0 |
 | kakuken · match-shaped misses | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | kakuken · other misses | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| gbvsReplayChannel · records | 0 | 0 | 0 | 0 | 7 | 43 | 1430 | 228 | 0 |
+| gbvsReplayChannel · records | 0 | 0 | 0 | 0 | 7 | 43 | 1431 | 228 | 0 |
 | gbvsReplayChannel · match-shaped misses | 0 | 0 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
 | gbvsReplayChannel · other misses | 0 | 3 | 10 | 48 | 4 | 3 | 24 | 23 | 18 |
 | yumegiwa · records | 0 | 0 | 0 | 0 | 2 | 115 | 550 | 221 | 0 |
@@ -93,7 +93,7 @@ single-pairing sessions (recon 2026-09-29).
 
 ## Handles
 
-- word count per side: 1 → 23823 · 2 → 1077 · 3 → 90 — the cap is 5 words (parse.ts MAX_HANDLE_WORDS, Strive's measured value; a bump at 5 is where decoration leaks show first)
+- word count per side: 1 → 23657 · 2 → 1069 · 3 → 90 — the cap is 5 words (parse.ts MAX_HANDLE_WORDS, Strive's measured value; a bump at 5 is where decoration leaks show first)
 - 297 player(s) seen under more than one spelling; the display casing is the majority spelling, tie-broken toward mixed case, and the rest are kept as aliases
 - placeholder handles refused: 0 on the channels, 0 in the catalogue
 
@@ -113,15 +113,16 @@ blocking: a departure is usually real (a video deleted or made private). It exis
 the dominant channel deleted part of its own back catalogue at 2–3 videos a day for nine
 months — too slow for the collapse guard, too steady for the silence alarm.
 
-_None this run._
+**97** record(s) left:
+- **highLevelReplays** — 97: `y8R4LTUju58`, `u5EwvNBJaJk`, `SDNiF45H6Dk`, `YVZlSTBEaBo`, `wMK_-_905LI`, `8E45u_D3Vc0`, `RxFlTX_OWBU`, `fL88hPsG8AM`, `18XyAzmY2sM`, `5KeJ4Cv2NAc`, `X26N55QbarY`, `FU-Mkiw0JDY`, `xw4eqhBHOb0`, `FmzSREFFC10`, `lf5muLxRDSQ`, `_U_UD3RTpyo`, `tAF0lIYpY70`, `e4ie9w6yE9w`, `DIR72cxpbcY`, `PK68_eF4MOM`, `zNOzM6eTRSE`, `8dCqeNdxiyY`, `2vCqRrMT0MM`, `TdhWsFBhUfo`, `N2cit1rDelc` … +72 more
 
 ## Match identity — a REPORT-ONLY tier (checklist 2b)
 
 A signature is player pair × fighter pair × upload day. It is a HYPOTHESIS about footage
 identity, not a verdict: a rematch is a legitimate collision, so nothing is dropped on it.
 
-- **169** signature(s) cover more than one record, **347** record(s) in all (2.2% of the archive)
-- **44** of those span more than one intake — the case the intake key cannot see
+- **164** signature(s) cover more than one record, **337** record(s) in all (2.1% of the archive)
+- **40** of those span more than one intake — the case the intake key cannot see
 - every one is queued as `duplicate-candidate` and every one is still published
 
 - 2026-09-20 artorias / xerom (charlotta / id): `a1JoXbjJgow` gbvsReplayChannel, `MMF0ctxEXjA` highLevelReplays
@@ -137,9 +138,9 @@ identity, not a verdict: a rematch is a legitimate collision, so nothing is drop
 
 ## EX marks, skins, and the release floor
 
-- EX mode (Ver 2.20; Gran, Djeeta, Narmaya): **290** channel side(s) and 0 catalogue side(s) carry a valid mark; 0 mark(s) refused (wrong fighter or before 2.20 — listed in the residue). The mark is POSITIVE
+- EX mode (Ver 2.20; Gran, Djeeta, Narmaya): **288** channel side(s) and 0 catalogue side(s) carry a valid mark; 0 mark(s) refused (wrong fighter or before 2.20 — listed in the residue). The mark is POSITIVE
   evidence only: an unmarked record is unknown, never base.
-- skins stripped from fighter slots: B.Butterfly×552, Crimson Bomber×223, Lady Serenity×175, Sinborne Redeemer×92, Summer×79, Indigo Witch×78, M.M. L∞k Up×53, No Fear, No Gain×49, Diamond Heart×45, Knight of Passion×32, Knight's Finery×29, Arbitrator of the Shore×14, Conqueror's Carapace×8, Reverent Attire×5, Sumer×3, L.Serenity×3, INdigo Witch×2, Spooky Vicky×1
+- skins stripped from fighter slots: B.Butterfly×545, Crimson Bomber×222, Lady Serenity×172, Sinborne Redeemer×92, Summer×79, Indigo Witch×78, M.M. L∞k Up×54, No Fear, No Gain×48, Diamond Heart×46, Knight of Passion×32, Knight's Finery×29, Arbitrator of the Shore×14, Conqueror's Carapace×7, Reverent Attire×6, Sumer×3, L.Serenity×3, INdigo Witch×2, Spooky Vicky×1
 - refused by the release floor (a fighter before they shipped): 0 sampled, 0 catalogue row(s)
 
 ## Registry invariant — no player is a fighter
@@ -148,7 +149,7 @@ Every handle in players.json was resolved through the roster matcher at parse ti
 
 ## Tournament placements — Liquipedia Tier 1–2, CC BY-SA 3.0
 
-99 events with placements read; 70 of 2890 registry players carry a title (91 wins). 7 placed names are not in the registry yet — they are featured the day a replay of theirs is ingested, unless listed below as needing a human.
+99 events with placements read; 70 of 2891 registry players carry a title (91 wins). 7 placed names are not in the registry yet — they are featured the day a replay of theirs is ingested, unless listed below as needing a human.
 
 **Titled:** `kojicoco` 8W/3R · `skyll` 7W/4R · `gamera` 5W/5R · `space` 7W/3R · `zane` 4W/6R · `socky` 3W/6R · `blueskyguybsg` 1W/7R · `zangief-dream` 4W/4R · `elsa` 3W/2R · `fitizen` 3W/2R · `monarch` 4W/1R · `shio` 3W/2R · `xerom` 3W/2R · `zippy` 3W/2R · `tororo` 3W/1R · `pixi` 1W/2R · `zenith` 1W/2R · `arkangel` 1W/1R · `bepaw` 1W/1R · `dragoi` 2W/0R · `fukunaga` 1W/1R · `goenitz` 1W/1R · `kasausagi` 2W/0R · `ren` 0W/2R · `rookies` 2W/0R · `ryazo` 2W/0R · `scavengerz` 1W/1R · `tyurara` 1W/1R · `vivi` 1W/1R · `wavie` 1W/1R · `whh` 0W/2R · `aarondamac` 1W/0R · `ammysensei` 0W/1R · `artorias` 1W/0R · `bonsai` 0W/1R · `cals` 0W/1R · `coach-steve` 0W/1R · `debagame` 1W/0R · `default` 0W/1R · `desangel213` 0W/1R · `dudeakoff` 0W/1R · `framework` 0W/1R · `gobou` 0W/1R · `havaniceday` 0W/1R · `incendiate` 1W/0R · `insurgent` 1W/0R · `kosame` 1W/0R · `ladewaybac` 1W/0R · `lucar` 0W/1R · `mfh` 0W/1R · `minatocco` 0W/1R · `miraias` 0W/1R · `mirri` 1W/0R · `naiwang` 0W/1R · `nyan-derthal` 0W/1R · `nyantic` 0W/1R · `raz` 0W/1R · `real-ice` 0W/1R · `releasebogus` 1W/0R · `saltz` 0W/1R · `satoshiixrd` 0W/1R · `senpaispyder` 1W/0R · `shinchire` 0W/1R · `shinku` 1W/0R · `shirou` 0W/1R · `sho-san` 0W/1R · `sonic-san` 0W/1R · `tako` 1W/0R · `teiga` 0W/1R · `tenuredmule` 0W/1R
 
@@ -180,7 +181,7 @@ Grammar variants are found by reading REJECTS, not successes (checklist 5e). Ten
 intake; the count is the whole population. Tōkon and 2XKO print this at fetch time from an
 approximate shape; this is the precise version, straight from the parser.
 
-**highLevelReplays** — 91
+**highLevelReplays** — 88
 
 - `dQVefEXs4-k` no-vs: GBVSR:🔥Nameroc (Vira) BLaggen (Id)🔥| High Level Gameplay.
 - `wpuUCOSps-M` no-vs: GBVSR:🔥Yuzumikan (Lucilius) Albireo (Id)🔥| High Level Gameplay.
@@ -224,10 +225,10 @@ RANK_PREFIX leak (parse.ts): **0** residue line(s) over 0 miss(es) still carry a
 - 32× `Roundup`
 - 11× `RoundUp`
 - 4× `Channel Sub Like A Thon Pt Watch Like Enjoy`
-- 4× `Gamera s Day`
 - 4× `Zira s Day`
 - 3× `Diaphone s Day`
 - 3× `Framework s Day`
+- 3× `Gamera s Day`
 - 3× `Kazunoko Tries`
 - 2× `Arc World Tour LET S WATCH`
 - 2× `Character`
@@ -260,7 +261,7 @@ RANK_PREFIX leak (parse.ts): **0** residue line(s) over 0 miss(es) still carry a
 - 1× `Framework VsHinokino`
 - 1× `Gamera Finally Tries`
 - 1× `Gamera Lady Serenity`
-- … 66 more
+- … 64 more
 
 ## Replay Theater cross-check
 
@@ -340,4 +341,4 @@ guessing this module refuses.
 > gbvsrReplay: frozen since 2024-04-05, 123 record(s) carried.
 > fgHighLevel: frozen since 2025-04-14, 186 record(s) carried.
 
-_Generated 2026-10-14T14:43:30.394Z_
+_Generated 2026-10-15T14:28:39.113Z_

@@ -1663,35 +1663,6 @@
     }
   },
   {
-    "id": "8dCqeNdxiyY",
-    "kind": "duplicate-candidate",
-    "channel": "highLevelReplays",
-    "title": "GBVSR:🔥Akai Suisei (Wilnas) Vs Greg (Anila)🔥| High Level Gameplay.",
-    "publishedAt": "2025-09-26T21:00:17Z",
-    "durationSec": 349,
-    "handles": [
-      "Akai Suisei",
-      "Greg"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "akai-suisei",
-          "greg"
-        ],
-        "characters": [
-          "anila",
-          "wilnas"
-        ],
-        "playedOn": "2025-09-26"
-      },
-      "ids": [
-        "8dCqeNdxiyY",
-        "F9LIbees_7g"
-      ]
-    }
-  },
-  {
     "id": "-zGqmoeZLFk@14304",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
@@ -4450,35 +4421,6 @@
     }
   },
   {
-    "id": "xhqJ_6PNmn0",
-    "kind": "duplicate-candidate",
-    "channel": "gbvsReplayChannel",
-    "title": "GBVSR High Level Gamera/2B VS Sushi/2B",
-    "publishedAt": "2024-02-24T22:13:31Z",
-    "durationSec": 578,
-    "handles": [
-      "Gamera",
-      "Sushi"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "gamera",
-          "sushi"
-        ],
-        "characters": [
-          "2b",
-          "2b"
-        ],
-        "playedOn": "2024-02-24"
-      },
-      "ids": [
-        "xhqJ_6PNmn0",
-        "Q7rQZAWDlzo"
-      ]
-    }
-  },
-  {
     "id": "wiKoH0M15Z0@1763",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
@@ -4533,93 +4475,6 @@
       "ids": [
         "wiKoH0M15Z0@3830",
         "wiKoH0M15Z0@5706"
-      ]
-    }
-  },
-  {
-    "id": "N3hYszQgzJU",
-    "kind": "duplicate-candidate",
-    "channel": "kakuken",
-    "title": "[GBVSR] (4K) Granblue Fantasy Versus Rising Rank match Sushi (2B) vs Gamera (Djeeta)",
-    "publishedAt": "2024-02-23T13:53:40Z",
-    "durationSec": 491,
-    "handles": [
-      "Sushi",
-      "Gamera"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "gamera",
-          "sushi"
-        ],
-        "characters": [
-          "2b",
-          "djeeta"
-        ],
-        "playedOn": "2024-02-23"
-      },
-      "ids": [
-        "N3hYszQgzJU",
-        "eKk7KGtHg_4"
-      ]
-    }
-  },
-  {
-    "id": "2DNfmVqYOq8",
-    "kind": "duplicate-candidate",
-    "channel": "risingReplays",
-    "title": "GBVSR - Master Rank | Diaphone [2B] vs. GRP | Elodius [Zeta]",
-    "publishedAt": "2024-02-21T14:00:02Z",
-    "durationSec": 476,
-    "handles": [
-      "Diaphone",
-      "Elodius"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "diaphone",
-          "elodius"
-        ],
-        "characters": [
-          "2b",
-          "zeta"
-        ],
-        "playedOn": "2024-02-21"
-      },
-      "ids": [
-        "2DNfmVqYOq8",
-        "3c4rHXsav-Q"
-      ]
-    }
-  },
-  {
-    "id": "sUxRRJ9XWWg",
-    "kind": "duplicate-candidate",
-    "channel": "highLevelReplays",
-    "title": "GBVSR: 🔥Gamera (2B) Vs Koyao (Narmaya B.Butterfly)🔥 | High Level Gameplay.",
-    "publishedAt": "2024-02-21T13:00:50Z",
-    "durationSec": 495,
-    "handles": [
-      "Gamera",
-      "Koyao"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "gamera",
-          "koyao"
-        ],
-        "characters": [
-          "2b",
-          "narmaya"
-        ],
-        "playedOn": "2024-02-21"
-      },
-      "ids": [
-        "sUxRRJ9XWWg",
-        "xVqw4Sv9U5s"
       ]
     }
   },
