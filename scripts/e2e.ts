@@ -1063,8 +1063,60 @@ console.log('\n▶ cron guard — the commit step, parsed and run\n');
 const wfText = src('.github/workflows/data-refresh.yml');
 const wf = wfText.split('\n');
 check("the cron is the eighth slot, '47 9 * * *'", /cron:\s*'47 9 \* \* \*'/.test(wfText));
+// ── the two workflows agree ─────────────────────────────────────────────────
+// pending-work.yml fires on data-refresh.yml's EXACT `name:` (workflow_run
+// filters are globs over names), reads only, takes no secret, and is the only
+// home of the steps that mean "a person has work". Each line is a control:
+// rename either workflow, paste a TASK step back into the data run, or move
+// the smoke check off the end, and this goes red.
+const drText = wfText;
+const pwText = src('.github/workflows/pending-work.yml');
+const drName = /^name:[ \t]*(.+?)[ \t]*$/m.exec(drText)?.[1] ?? '';
+check(
+  'data-refresh.yml is named "Daily data refresh"',
+  drName === 'Daily data refresh',
+  `read "${drName}"`,
+);
+check(
+  'pending-work.yml fires on workflow_run of that exact name, type completed',
+  new RegExp(`^\\s*workflows:\\s*\\[\\s*["']${drName}["']\\s*\\]`, 'm').test(pwText) &&
+    /^\s*types:\s*\[\s*completed\s*\]/m.test(pwText),
+);
+check(
+  'pending-work.yml reads only and takes no secret',
+  /^permissions:\n {2}contents: read$/m.test(pwText) && !/secrets\./.test(pwText),
+);
+const TASK_STEPS = [
+  'Flag due expiries',
+  'Flag stale redirects',
+  'Flag retired ids with no redirect',
+  'Validate the patch table',
+];
+check(
+  'no "a person has work" step is left in the data run',
+  TASK_STEPS.every((s) => !drText.includes(`- name: ${s}`)),
+);
+check(
+  "pending-work.yml carries the chores and the platform check's survival",
+  pwText.includes('- name: Flag due expiries') &&
+    pwText.includes('- name: Platform freshness schedule is alive'),
+);
+const stepNames = [...drText.matchAll(/^ {6}- name: (.+)$/gm)].map((m) => m[1]!);
+check(
+  "the smoke check is the data run's last step",
+  stepNames.at(-1)?.startsWith('Post-deploy smoke check') === true,
+  stepNames.at(-1),
+);
+
 const stepAt = (name: string): number => wf.findIndex((l) => l.trim() === `- name: ${name}`);
-const order = ['Emit', 'Regenerate player redirects', 'Refuse redirect drift', 'Commit if changed'];
+// The DATA steps' names now say what their red means (one meaning per red,
+// 2026-10-17); the e2e pins them by exact text, so a rename shows up here.
+const order = [
+  'Emit — red means an invalid table or pin, nothing committed',
+  'Regenerate player redirects',
+  "Refuse redirect drift — red means today's data is held",
+  'Commit if changed — red means nothing was published',
+];
 const at = order.map(stepAt);
 check(
   `steps run in order: ${order.join(' → ')}`,

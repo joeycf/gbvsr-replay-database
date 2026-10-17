@@ -257,6 +257,23 @@ const lost = committed - last.count;
 // checkout is behind production, which is not a collapse.
 const collapsed = lost > COLLAPSE_ABS && lost / committed > COLLAPSE_PCT;
 
+// THE DEADLINE VERDICT ON THE CODE VERSION. The archive matches and the engine
+// does not: the data landed, so this is not "a deploy that has not landed" — it
+// is a deployment that is not on the pinned code (checklist 10i), or a
+// summary.json that never learned the pin. A hard failure since 2026-10-17, as in
+// every sibling; until then it was a ⚠ that exited 0, which is a success
+// gate, not an assertion.
+if (same(local, last) && lastEngine !== ENGINE_PIN) {
+  console.error(
+    `\n✖ STALE BUILD: production serves the committed archive but engine ` +
+      `${lastEngine ?? 'absent from summary.json'}, not ${ENGINE_PIN}.\n` +
+      `  The records are right and the CODE is not — a build still in flight after ${TIMEOUT_SEC}s,\n` +
+      '  or a pin that never deployed. Check the latest Vercel deployment for this project and\n' +
+      '  re-run this check once it is live.',
+  );
+  process.exit(1);
+}
+
 if (!collapsed) {
   console.warn(
     `\n⚠ Deploy has not landed within ${TIMEOUT_SEC}s.\n` +

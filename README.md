@@ -169,7 +169,9 @@ Pacing across all eight games is `../sync-tournaments.sh`.
 
 `.github/workflows/data-refresh.yml`, cron `47 9 * * *` (the eighth slot).
 fetch → theater (allowed to fail) → parse → emit → regenerate redirects →
-refuse redirect drift → commit by name → smoke check → expiries → patch table.
+refuse redirect drift → commit by name → smoke check. Expiries run in
+`pending-work.yml` ("Pending work", `workflow_run` after every completed data
+run); the patch table is validated by Emit, before the commit.
 
 ## Vercel
 

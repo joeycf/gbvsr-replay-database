@@ -1,7 +1,7 @@
 /**
  * Self-expiring gates: things the DATA can say are due, so nobody has to
- * remember them. `--check` is the cron's last-but-one step and is DESIGNED to go
- * red; it runs after the commit, so a red run never costs a refresh.
+ * remember them. `--check` runs in the "Pending work" workflow after every
+ * completed data run and is DESIGNED to go red; the data run is never held by it.
  *
  * FIVE ARMS, EACH CLOCK- OR CORPUS-DRIVEN — nothing upstream can blind them:
  *

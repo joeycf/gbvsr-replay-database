@@ -9,8 +9,8 @@ on:
     # This slot was reserved for us by name: Strive's and Avatar's workflows both
     # say "NOTE FOR WHOEVER ADDS GAME EIGHT … the next free slot is 09:47 and the
     # window becomes 06:00–10:00". Taking it does exactly that. (Measured
-    # 2026-09-29: GitHub's scheduler lands the platform's crons ~11:30–16:00 UTC
-    # in practice, so check the Actions tab before any push, whatever the slot.)
+    # 2026-09-17→10-16 over 223 scheduled runs: starts 11:00–19:21 UTC, ends by
+    # 19:25 UTC — so check the Actions tab before any push, whatever the slot.)
     #
     # NOTE FOR WHOEVER ADDS GAME NINE: the pattern is +30 minutes alternating
     # :17/:47, so the next free slot is 10:17 and the window becomes 06:00–10:30.
@@ -26,6 +26,7 @@ concurrency:
 
 jobs:
   refresh:
+    name: Refresh the archive — red means the live archive is stale or wrong
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -72,10 +73,10 @@ jobs:
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
 
-      - name: Parse
+      - name: Parse — red means a wrong archive was refused, nothing committed
         run: npm run data:parse
 
-      - name: Emit
+      - name: Emit — red means an invalid table or pin, nothing committed
         run: npm run data:emit
 
       # THE ROUTING IS REGENERATED HERE, SO IT LANDS IN THE SAME COMMIT AS THE
@@ -94,10 +95,10 @@ jobs:
       # red BEFORE the commit, so a failure holds the day's data; every refusal
       # names the row and its fix, and a held day loses nothing because every run
       # re-fetches every upload.
-      - name: Refuse redirect drift
+      - name: Refuse redirect drift — red means today's data is held
         run: npx tsx scripts/redirects.ts --drift
 
-      - name: Commit if changed
+      - name: Commit if changed — red means nothing was published
         run: |
           git config user.name "gbvsr-data-refresh[bot]"
           git config user.email "data-refresh@users.noreply.github.com"
@@ -181,24 +182,8 @@ jobs:
       # 404; it was removed the day the rewrite went live, after verify-deployed
       # passed against the apex.
       #
-      # Deliberately BEFORE the two checks below: those are designed to go red,
-      # and a red step stops the ones after it.
-      - name: Post-deploy smoke check
+      # The last step. A red anywhere in this workflow now means ONE thing: the
+      # archive is stale or wrong, or visitors are served the wrong one. Steps
+      # that mean "a person has work" live in pending-work.yml.
+      - name: Post-deploy smoke check — red means visitors get the wrong archive
         run: npm run verify:deployed
-
-      - name: Flag due expiries
-        # Deliberately failing (scripts/expiries.ts): the dominant channel's
-        # 7-day silence alarm (measured from its own 4.42-day longest silence),
-        # the frozen channels' quarterly look, the Fan Kit licence re-read and
-        # the stale patch table. The data is already committed and pushed, so a
-        # red run never costs a refresh. Clear it by doing the work, NOT by
-        # deleting this step.
-        run: npx tsx scripts/expiries.ts --check
-
-      - name: Validate the patch table
-        # `if: always()` because the step above is DESIGNED to go red. OFFLINE and
-        # CLOCK-DEPENDENT — a row dated in the future or an era left closed can go
-        # from valid to invalid on a day nobody touched the repo. The content
-        # check against the vendor feed is scripts/patch-check.ts, manual.
-        if: always()
-        run: npm run data:seasons
