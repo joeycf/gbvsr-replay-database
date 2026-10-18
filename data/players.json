@@ -2502,6 +2502,10 @@
     }
   },
   {
+    "id": "dimo",
+    "handle": "Dimo"
+  },
+  {
     "id": "dimu",
     "handle": "Dimu"
   },
@@ -3316,6 +3320,10 @@
   {
     "id": "fujimasamarch",
     "handle": "FujimasaMarch"
+  },
+  {
+    "id": "fukiage",
+    "handle": "Fukiage"
   },
   {
     "id": "fukunaga",
@@ -12841,9 +12849,11 @@
   },
   {
     "id": "whh",
-    "handle": "WHH",
-    "featured": true,
+    "handle": "whh",
     "extra": {
+      "aliases": [
+        "WHH"
+      ],
       "titles": [
         {
           "event": "Thaiger Uppercut 2025",
@@ -12858,7 +12868,8 @@
           "url": "https://liquipedia.net/fighters/OzHadou_Nationals/19/GBVSR"
         }
       ]
-    }
+    },
+    "featured": true
   },
   {
     "id": "whimsythestar",
