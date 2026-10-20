@@ -4870,12 +4870,7 @@
   },
   {
     "id": "itakegray",
-    "handle": "ITakeGray",
-    "extra": {
-      "aliases": [
-        "ItakeGray"
-      ]
-    }
+    "handle": "ITakeGray"
   },
   {
     "id": "itsonlytux",
@@ -9507,10 +9502,6 @@
         "Ret"
       ]
     }
-  },
-  {
-    "id": "retro",
-    "handle": "Retro"
   },
   {
     "id": "retroredux",
