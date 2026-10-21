@@ -3781,35 +3781,6 @@
     }
   },
   {
-    "id": "U-_hYAho5yc",
-    "kind": "duplicate-candidate",
-    "channel": "highLevelReplays",
-    "title": "GBVSR:🔥Pam (Katalina) Vs Koyao (Narmaya B.Butterfly)🔥| High Level Gameplay.",
-    "publishedAt": "2024-06-02T23:00:13Z",
-    "durationSec": 469,
-    "handles": [
-      "Pam",
-      "Koyao"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "koyao",
-          "pam"
-        ],
-        "characters": [
-          "katalina",
-          "narmaya"
-        ],
-        "playedOn": "2024-06-02"
-      },
-      "ids": [
-        "U-_hYAho5yc",
-        "I_dYK-a-MoU"
-      ]
-    }
-  },
-  {
     "id": "MmCnOehHP94",
     "kind": "duplicate-candidate",
     "channel": "highLevelReplays",

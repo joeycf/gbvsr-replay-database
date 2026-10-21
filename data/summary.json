@@ -1,9 +1,9 @@
 {
   "game": "gbvsr",
   "name": "Granblue Fantasy Versus: Rising",
-  "replays": 15870,
-  "players": 2897,
+  "replays": 15208,
+  "players": 2864,
   "characters": 40,
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "engine": "v0.18.1"
 }
