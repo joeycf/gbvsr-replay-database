@@ -65,6 +65,10 @@
     "handle": "A Schwa"
   },
   {
+    "id": "a-star",
+    "handle": "A-star"
+  },
+  {
     "id": "a1r0ke",
     "handle": "a1r0ke",
     "extra": {
@@ -1425,6 +1429,10 @@
     "handle": "BraveCreature"
   },
   {
+    "id": "brdlyy",
+    "handle": "Brdlyy"
+  },
+  {
     "id": "bread",
     "handle": "Bread"
   },
@@ -1719,6 +1727,10 @@
     "handle": "Cavalryman"
   },
   {
+    "id": "cayhane",
+    "handle": "Cayhane"
+  },
+  {
     "id": "cbada",
     "handle": "Cbada"
   },
@@ -1750,6 +1762,10 @@
   {
     "id": "chaihane",
     "handle": "Chaihane"
+  },
+  {
+    "id": "chaineru",
+    "handle": "Chaineru"
   },
   {
     "id": "chair",
@@ -2104,6 +2120,10 @@
     "handle": "Cuayo"
   },
   {
+    "id": "cunning",
+    "handle": "Cunning"
+  },
+  {
     "id": "custard",
     "handle": "Custard"
   },
@@ -2138,6 +2158,10 @@
   {
     "id": "cyber-squid447",
     "handle": "Cyber Squid447"
+  },
+  {
+    "id": "cyclone",
+    "handle": "Cyclone"
   },
   {
     "id": "cyn",
@@ -3021,6 +3045,10 @@
     "handle": "FAJITAEATAH"
   },
   {
+    "id": "fake-zane",
+    "handle": "FAKE Zane"
+  },
+  {
     "id": "falling",
     "handle": "FALLING"
   },
@@ -3713,6 +3741,10 @@
     "handle": "GO1"
   },
   {
+    "id": "goalous",
+    "handle": "Goalous"
+  },
+  {
     "id": "gobou",
     "handle": "Gobou",
     "extra": {
@@ -3733,6 +3765,10 @@
   {
     "id": "goemon",
     "handle": "Goemon"
+  },
+  {
+    "id": "goeniitz",
+    "handle": "Goeniitz"
   },
   {
     "id": "goenitz",
@@ -4193,7 +4229,12 @@
   },
   {
     "id": "hideo",
-    "handle": "hideo"
+    "handle": "hideo",
+    "extra": {
+      "aliases": [
+        "Hideo"
+      ]
+    }
   },
   {
     "id": "hideu",
@@ -4541,6 +4582,10 @@
         "HURSIX"
       ]
     }
+  },
+  {
+    "id": "huuten",
+    "handle": "Huuten"
   },
   {
     "id": "hwan-guenchul",
@@ -4896,7 +4941,12 @@
   },
   {
     "id": "jae-koo",
-    "handle": "Jae-koo"
+    "handle": "Jae-koo",
+    "extra": {
+      "aliases": [
+        "Jae-Koo"
+      ]
+    }
   },
   {
     "id": "jagalin",
@@ -4930,6 +4980,10 @@
   {
     "id": "jarhead",
     "handle": "Jarhead"
+  },
+  {
+    "id": "jarona",
+    "handle": "jarona"
   },
   {
     "id": "jase",
@@ -5517,6 +5571,10 @@
         "kayos"
       ]
     }
+  },
+  {
+    "id": "kayuma",
+    "handle": "Kayuma"
   },
   {
     "id": "kayuuma",
@@ -6210,6 +6268,10 @@
   {
     "id": "kurukulu",
     "handle": "Kurukulu"
+  },
+  {
+    "id": "kurukuru",
+    "handle": "Kurukuru"
   },
   {
     "id": "kuze",
@@ -7206,6 +7268,10 @@
     }
   },
   {
+    "id": "midarin",
+    "handle": "Midarin"
+  },
+  {
     "id": "midas",
     "handle": "Midas"
   },
@@ -7264,10 +7330,10 @@
   },
   {
     "id": "milanesa",
-    "handle": "Milanesa",
+    "handle": "milanesa",
     "extra": {
       "aliases": [
-        "milanesa",
+        "Milanesa",
         "MIlanesa"
       ]
     }
@@ -7922,6 +7988,10 @@
     "handle": "NeluVT"
   },
   {
+    "id": "nemokan",
+    "handle": "Nemokan"
+  },
+  {
     "id": "neokarsh",
     "handle": "Neokarsh"
   },
@@ -8034,6 +8104,10 @@
     }
   },
   {
+    "id": "nightshifter",
+    "handle": "Nightshifter"
+  },
+  {
     "id": "niisoks",
     "handle": "Niisoks"
   },
@@ -8088,6 +8162,10 @@
   {
     "id": "no1-ilsa-simp",
     "handle": "№1 ILSA SIMP"
+  },
+  {
+    "id": "nobi",
+    "handle": "Nobi"
   },
   {
     "id": "nobody",
@@ -8322,6 +8400,10 @@
     "handle": "OEG/RS Kemo"
   },
   {
+    "id": "oeg-tng-kemo",
+    "handle": "OEG/TNG Kemo"
+  },
+  {
     "id": "ogami",
     "handle": "Ogami"
   },
@@ -8463,6 +8545,10 @@
   {
     "id": "orizuki",
     "handle": "Orizuki"
+  },
+  {
+    "id": "ororo",
+    "handle": "ororo"
   },
   {
     "id": "orthos-vulcan",
@@ -9348,7 +9434,12 @@
   },
   {
     "id": "rem",
-    "handle": "Rem"
+    "handle": "Rem",
+    "extra": {
+      "aliases": [
+        "rem"
+      ]
+    }
   },
   {
     "id": "remade",
@@ -9415,10 +9506,10 @@
   },
   {
     "id": "ret",
-    "handle": "Ret",
+    "handle": "ret",
     "extra": {
       "aliases": [
-        "ret"
+        "Ret"
       ]
     }
   },
@@ -10323,6 +10414,10 @@
     "handle": "Sethious"
   },
   {
+    "id": "setsuna",
+    "handle": "Setsuna"
+  },
+  {
     "id": "seven",
     "handle": "Seven"
   },
@@ -10402,6 +10497,10 @@
   {
     "id": "shimisaba",
     "handle": "Shimisaba"
+  },
+  {
+    "id": "shincas",
+    "handle": "shincas"
   },
   {
     "id": "shinchas",
@@ -10701,6 +10800,10 @@
   {
     "id": "siuneko",
     "handle": "Siuneko"
+  },
+  {
+    "id": "sivergolemkhan",
+    "handle": "SivergolemKhan"
   },
   {
     "id": "sizukage",
@@ -11815,7 +11918,12 @@
   },
   {
     "id": "teru",
-    "handle": "Teru"
+    "handle": "Teru",
+    "extra": {
+      "aliases": [
+        "teru"
+      ]
+    }
   },
   {
     "id": "teruko",
@@ -12790,6 +12898,10 @@
     "handle": "WHOA!"
   },
   {
+    "id": "wibbo",
+    "handle": "wibbo"
+  },
+  {
     "id": "wibboo",
     "handle": "wibboo",
     "extra": {
@@ -12825,6 +12937,10 @@
   {
     "id": "wing-3",
     "handle": "Wing ;3"
+  },
+  {
+    "id": "wise",
+    "handle": "Wise"
   },
   {
     "id": "witchhazel",
@@ -13103,6 +13219,10 @@
     }
   },
   {
+    "id": "yorusensai",
+    "handle": "YoruSensai"
+  },
+  {
     "id": "yorusensei",
     "handle": "YoruSensei"
   },
@@ -13170,6 +13290,10 @@
   {
     "id": "yuika",
     "handle": "Yuika"
+  },
+  {
+    "id": "yuki",
+    "handle": "Yuki"
   },
   {
     "id": "yukinono",
@@ -13730,6 +13854,10 @@
     "handle": "キュー"
   },
   {
+    "id": "キンクシス男",
+    "handle": "キングシス男"
+  },
+  {
     "id": "クマ",
     "handle": "クマ"
   },
@@ -13806,6 +13934,10 @@
     "handle": "さくさく"
   },
   {
+    "id": "サルウァトーレ-カナッチ使い",
+    "handle": "サルヴァトーレ・ガナッチ使い"
+  },
+  {
     "id": "さんち",
     "handle": "さんち"
   },
@@ -13878,6 +14010,10 @@
     "handle": "ストラ斗"
   },
   {
+    "id": "すわっと",
+    "handle": "すわっと"
+  },
+  {
     "id": "セイレン",
     "handle": "セイレン"
   },
@@ -13914,6 +14050,10 @@
     "handle": "ただのもち"
   },
   {
+    "id": "タマミツネゆうさん",
+    "handle": "タマミツネゆうさん"
+  },
+  {
     "id": "ちゅんもも",
     "handle": "ちゅんもも"
   },
@@ -13946,6 +14086,10 @@
     "handle": "とぱちゃん"
   },
   {
+    "id": "トムキャットレットヒートル",
+    "handle": "トムキャットレッドビードル"
+  },
+  {
     "id": "とんかつ",
     "handle": "とんかつ"
   },
@@ -13976,6 +14120,10 @@
   {
     "id": "ニーア結婚しよう",
     "handle": "ニーア結婚しよう"
+  },
+  {
+    "id": "ねう-ぁさ",
+    "handle": "ねう゛ぁさ"
   },
   {
     "id": "ネムツナ",
@@ -14056,6 +14204,10 @@
   {
     "id": "ヘアファウスト",
     "handle": "ベアファウスト"
+  },
+  {
+    "id": "ほーちゃん伝説のはしまりてす",
+    "handle": "ほーちゃん伝説のはじまりです"
   },
   {
     "id": "ほしこ",
@@ -14284,6 +14436,10 @@
   {
     "id": "桜羽エマ",
     "handle": "桜羽エマ"
+  },
+  {
+    "id": "桜花",
+    "handle": "桜花"
   },
   {
     "id": "檜乃棒",
