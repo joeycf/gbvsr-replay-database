@@ -38,7 +38,9 @@
  *    building and claimed success. This does NOT contradict 10e: nothing is
  *    embedded that the check compares against ITSELF — the tag is read from the
  *    DEPLOYMENT and compared with the tag the REPO pins, which is exactly the
- *    comparison a build-time stamp cannot make.
+ *    comparison a build-time stamp cannot make. The COMMITTED data/summary.json
+ *    is held to the same tag before any poll, so a pin bump without emit is
+ *    refused at once instead of reading as a slow deploy after the deadline.
  *
  * IT COMPARES CONTENT, NOT ONLY THE RECORD COUNT. Counting records catches an
  * archive collapsing and is blind to a record's CHARACTERS changing while the
@@ -52,12 +54,12 @@
  * conclusion about production on this platform.
  *
  * Run: npm run verify:deployed
- *   SMOKE_HOST     default https://replaydatabase.com — the apex the shell owns.
- *                  BEFORE THE SHELL FLIP (the edge rewrite of /gbvsr/* to this
- *                  project does not exist yet) it must point at the game's own
- *                  https://gbvsr-replay-database.vercel.app, or every poll reads
- *                  the shell's 404 and the check times out as "never readable".
- *                  The workflow sets it explicitly for that reason.
+ *   SMOKE_HOST     default https://replaydatabase.com — the apex the shell owns,
+ *                  which edge-rewrites /gbvsr/* to this project (shell
+ *                  0b727f6, 2026-10-01). The workflow uses the default. Point it
+ *                  at https://gbvsr-replay-database.vercel.app to read the
+ *                  game's own host directly, which tells a broken rewrite from a
+ *                  broken deployment.
  *   SMOKE_TIMEOUT_SEC (900) · SMOKE_INTERVAL_SEC (20)
  */
 
@@ -176,6 +178,21 @@ if (!ENGINE_PIN) {
   console.error(
     '✖ nuxt.config.ts declares no pinned engine tag — the code-version half of this check ' +
       'cannot run (checklist 10i).',
+  );
+  process.exit(1);
+}
+
+// LOCAL CONSISTENCY FIRST. A pin bump that did not re-run emit leaves
+// data/summary.json saying yesterday's tag; polling production could then
+// never pass, and the failure would read as a deploy problem. In the cron emit
+// always runs first, so this fires for a human after a pin-only commit.
+const committedEngine = (
+  JSON.parse(readFileSync(join(ROOT, 'data', 'summary.json'), 'utf8')) as { engine?: string }
+).engine;
+if (committedEngine !== ENGINE_PIN) {
+  console.error(
+    `✖ data/summary.json carries engine ${committedEngine ?? '(absent)'} but nuxt.config.ts pins ` +
+      `${ENGINE_PIN} — a pin-only commit. Run \`npm run data:emit\` and commit data/summary.json.`,
   );
   process.exit(1);
 }
