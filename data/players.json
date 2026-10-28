@@ -2522,6 +2522,10 @@
     "handle": "DIO"
   },
   {
+    "id": "dire",
+    "handle": "Dire"
+  },
+  {
     "id": "dirtychai",
     "handle": "DirtyChai"
   },
@@ -3880,6 +3884,10 @@
   {
     "id": "grande",
     "handle": "Grande"
+  },
+  {
+    "id": "granite",
+    "handle": "Granite"
   },
   {
     "id": "granthonyfantano",
