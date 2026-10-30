@@ -1538,6 +1538,123 @@ const emptyDir = (dir: string): string | null => {
 
 // ── controls ────────────────────────────────────────────────────────────────
 
+// ── checklist 5n: refuse the record, not the day ────────────────────────────
+//
+// On Strive, 2026-10-25, one NEW upload carried "Plugging on ram" (a Ky player
+// whose handle resolves to Ramlethal), the registry invariant refused the whole
+// day, and nothing published for four days. Since 2026-10-30 a new record like
+// that is HELD in the review queue and the day ships. The fixture rebuilds that
+// morning here from today's data: the row comes out of roster.ts and the
+// record out of the committed videos.json, so the record is NEW again.
+interface HoldRecord {
+  id: string;
+  intake: string;
+  title: string;
+  publishedAt: string;
+  durationSec: number;
+  sides: { player: string; handle: string }[];
+}
+const HOLD = { row: 'metara', record: 'sINgpuTXwn4', fighter: 'metera' };
+/** An index record: the intake is a cursor, so a held one lives in the queue. */
+const HOLD_INDEX = { row: 'nier-gojira', record: 'UiUOrc4IF60@9315', fighter: 'nier' };
+let holdPin = 0;
+
+function holdFixture(
+  row: string,
+  recordId: string,
+  o: { keepRow?: boolean; viaQueue?: boolean; noDump?: boolean } = {},
+): Injected {
+  const videos = readJson<HoldRecord[]>('data/videos.json');
+  const rec = videos.find((v) => v.id === recordId);
+  if (!rec)
+    return `${recordId} is not in data/videos.json — the fixture re-news a published record`;
+  if (!o.viaQueue) {
+    const dump = `raw/${rec.intake}.json`;
+    if (!existsSync(join(ROOT, dump))) return `no ${dump} — run \`npm run data:fetch\``;
+    if (!readJson<{ id: string }[]>(dump).some((v) => v.id === recordId))
+      return `${dump} does not hold ${recordId} — run \`npm run data:fetch\``;
+  }
+  if (!o.keepRow) {
+    const s = read('scripts/roster.ts');
+    const m = s.match(new RegExp(`\\n  \\{\\n    id: '${row}',\\n[\\s\\S]*?\\n  \\},`));
+    if (!m) return false;
+    write('scripts/roster.ts', s.replace(m[0], ''));
+  }
+  write(
+    'data/videos.json',
+    `${JSON.stringify(
+      videos.filter((v) => v.id !== recordId),
+      null,
+      2,
+    )}\n`,
+  );
+  if (o.viaQueue) {
+    // The state a held index record is in on every morning after the first:
+    // in the committed queue, not in videos.json, and not in the pin.
+    const pins = readJson<Record<string, number>>('data/source-pins.json');
+    if (typeof pins.replayTheater !== 'number') return false;
+    holdPin = pins.replayTheater - 1;
+    write(
+      'data/source-pins.json',
+      `${JSON.stringify({ ...pins, replayTheater: holdPin }, null, 2)}\n`,
+    );
+    const queue = readJson<unknown[]>('data/review-queue.json');
+    queue.push({
+      id: rec.id,
+      kind: 'fighter-named-handle',
+      channel: rec.intake,
+      title: rec.title,
+      publishedAt: rec.publishedAt,
+      durationSec: rec.durationSec,
+      held: rec.sides.flatMap((s, i) =>
+        s.player === row ? [{ side: i, handle: s.handle, player: s.player, resolvesTo: [] }] : [],
+      ),
+      record: rec,
+    });
+    write('data/review-queue.json', `${JSON.stringify(queue, null, 2)}\n`);
+  }
+  // A failed or empty pull: the CARRY branch, which asserts the pin against
+  // the committed records — the morning a held record in the pin would break.
+  if (o.noDump) write('raw/replayTheater.json', '[]');
+  return true;
+}
+
+type QueueLite = { id: string; kind: string; held?: { player: string; resolvesTo: string[] }[] };
+
+/** The held half: exit 0, the record queued and out of videos.json and the
+ *  registry, the report naming the handle. */
+const assertHeld =
+  (row: string, recordId: string, fighter: string) =>
+  (r: Run): Verdict => {
+    if (r.status !== 0)
+      return fail(
+        `parse refused the day for one record — exit ${r.status ?? r.signal}: ${head(r)}`,
+      );
+    const item = readJson<QueueLite[]>('data/review-queue.json').find((q) => q.id === recordId);
+    if (item?.kind !== 'fighter-named-handle') return fail(`${recordId} is not held in the queue`);
+    const side = item.held?.find((h) => h.player === row);
+    if (!side) return fail(`the held item does not name ${row}`);
+    if (side.resolvesTo.length && !side.resolvesTo.includes(fighter))
+      return fail(`${row} is held as resolving to ${side.resolvesTo.join(', ')}, not ${fighter}`);
+    if (readJson<{ id: string }[]>('data/videos.json').some((v) => v.id === recordId))
+      return fail(`${recordId} was published while held`);
+    if (readJson<{ id: string }[]>('data/players.json').some((p) => p.id === row))
+      return fail(`${row} is in players.json while held — a /players page would be minted`);
+    if (!/record\(s\) held on unconfirmed fighter-named handle/.test(read('data/report.md')))
+      return fail('report.md does not name the held handle');
+    return pass(`${recordId} held, ${row} out of the registry, the day shipped`);
+  };
+
+/** The pin counts what ships: after any morning, the theater pin equals the
+ *  index records in videos.json, or the next failed pull refuses the day. */
+const pinShips = (): string | null => {
+  const pin = readJson<Record<string, number>>('data/source-pins.json').replayTheater;
+  const shipped = readJson<{ intake: string }[]>('data/videos.json').filter(
+    (v) => v.intake === 'replayTheater',
+  ).length;
+  return pin === shipped ? null : `pin ${pin} ≠ ${shipped} index record(s) in videos.json`;
+};
+
 interface Control {
   /** What the gate protects, phrased as the failure it refuses. */
   name: string;
@@ -2479,14 +2596,17 @@ const CONTROLS: Control[] = [
     inject: () => departureFixture(false),
   },
   {
-    // Checklist 5n. The first player the registry builds is given a fighter's
-    // name as its display handle: a fighter filed as a person, which is what 67
-    // titles did on Strive's recon. Data-independent: whoever sorts first.
-    name: 'parse: THE REGISTRY INVARIANT — a player handle that is a fighter, with no allow-list row',
+    // Checklist 5n — THE HARD HALF. The first player the registry builds is
+    // given a fighter's name as its display handle: a fighter filed as a
+    // person, which is what 67 titles did on Strive's recon. Data-independent:
+    // whoever sorts first. That player's records are ALREADY PUBLISHED, so
+    // since 2026-10-30 (when a NEW record began to be held instead) this must
+    // still stop the run: holding them would unpublish live pages with exit 0.
+    name: 'parse: THE REGISTRY INVARIANT — a PUBLISHED player handle that is a fighter, with no allow-list row',
     files: ['scripts/parse-finish.ts', ...PARSE_OUTPUTS],
     cmd: ['scripts/parse.ts'],
     names:
-      /REGISTRY INVARIANT: 1 player handle\(s\) resolve to a roster character[\s\S]*"Seox" → seox/,
+      /REGISTRY INVARIANT: 1 player handle\(s\) on ALREADY-PUBLISHED records[\s\S]*"Seox" → seox/,
     precondition: needCleanParse,
     inject: () =>
       steps(
@@ -2508,13 +2628,184 @@ const CONTROLS: Control[] = [
       ),
   },
   {
+    // CHECKLIST 5n — REFUSE THE RECORD, NOT THE DAY. Strive's 2026-10-25
+    // morning, rebuilt here: "Metara" (a player on Wilnas whose handle is also
+    // a measured typo for Metera) has no row and its one record is new. Before
+    // 2026-10-30 this run exited 1 and nothing shipped; now it must exit 0
+    // with that record held and everything else written.
+    name: 'parse: a NEW record with an unconfirmed fighter-named handle is held, the day ships',
+    cmd: ['scripts/parse.ts'],
+    files: ['scripts/roster.ts', ...PARSE_OUTPUTS],
+    precondition: all(() => needRaw('kakuken'), needCleanParse),
+    inject: () => holdFixture(HOLD.row, HOLD.record),
+    assert: assertHeld(HOLD.row, HOLD.record, HOLD.fighter),
+  },
+  {
+    // THE OTHER HALF OF THE SAME MORNING: the row is added, and the next parse
+    // publishes the record and clears the item. A hold that never released
+    // would pass the control above.
+    name: 'parse: the CONFIRMED row releases a held record on the next parse',
+    cmd: ['scripts/parse.ts'],
+    files: [...PARSE_OUTPUTS],
+    precondition: all(() => needRaw('kakuken'), needCleanParse),
+    inject: () => holdFixture(HOLD.row, HOLD.record, { keepRow: true }),
+    assert: (r) => {
+      if (r.status !== 0) return fail(`parse exited ${r.status ?? r.signal}: ${head(r)}`);
+      if (!readJson<{ id: string }[]>('data/videos.json').some((v) => v.id === HOLD.record))
+        return fail(`${HOLD.record} is not published with its row in place`);
+      const held = readJson<QueueLite[]>('data/review-queue.json').filter(
+        (q) => q.kind === 'fighter-named-handle',
+      );
+      if (held.length)
+        return fail(`${held.length} item(s) still held: ${held.map((q) => q.id).join(', ')}`);
+      return pass(`${HOLD.record} published, nothing held`);
+    },
+  },
+  {
+    // THE INDEX INTAKE IS A CURSOR. A held index record is in no later dump and
+    // not in videos.json, so it lives in the committed queue (`record`) and
+    // must come back from there every morning — or the hold is a deletion.
+    // And the pin must count what SHIPS, or the next failed pull (the carry
+    // branch, below) refuses the day.
+    name: 'parse: a held INDEX record is carried from the queue and kept out of the pin',
+    cmd: ['scripts/parse.ts'],
+    files: ['scripts/roster.ts', ...PARSE_OUTPUTS],
+    precondition: needCleanParse,
+    inject: () => holdFixture(HOLD_INDEX.row, HOLD_INDEX.record, { viaQueue: true }),
+    assert: (r) => {
+      const held = assertHeld(HOLD_INDEX.row, HOLD_INDEX.record, HOLD_INDEX.fighter)(r);
+      if (held.kind !== 'pass') return held;
+      if (!/1 held record\(s\) carried from the review queue/.test(read('data/report.md')))
+        return fail('the held index record was not carried from the queue');
+      const pin = pinShips();
+      return pin
+        ? fail(pin)
+        : pass(`${HOLD_INDEX.record} carried and still held; pin ${holdPin} ships`);
+    },
+  },
+  {
+    name: 'parse: a held INDEX record survives a failed pull (the carry branch keeps the pin)',
+    cmd: ['scripts/parse.ts'],
+    files: ['scripts/roster.ts', 'raw/replayTheater.json', ...PARSE_OUTPUTS],
+    precondition: needCleanParse,
+    inject: () => holdFixture(HOLD_INDEX.row, HOLD_INDEX.record, { viaQueue: true, noDump: true }),
+    assert: (r) => {
+      const held = assertHeld(HOLD_INDEX.row, HOLD_INDEX.record, HOLD_INDEX.fighter)(r);
+      if (held.kind !== 'pass') return held;
+      const pin = pinShips();
+      return pin ? fail(pin) : pass(`carried through an empty pull; pin ${holdPin} ships`);
+    },
+  },
+  {
+    name: 'parse: a CONFIRMED row releases a held INDEX record from the queue into the pin',
+    cmd: ['scripts/parse.ts'],
+    files: [...PARSE_OUTPUTS],
+    precondition: needCleanParse,
+    inject: () => holdFixture(HOLD_INDEX.row, HOLD_INDEX.record, { viaQueue: true, keepRow: true }),
+    assert: (r) => {
+      if (r.status !== 0) return fail(`parse exited ${r.status ?? r.signal}: ${head(r)}`);
+      if (!readJson<{ id: string }[]>('data/videos.json').some((v) => v.id === HOLD_INDEX.record))
+        return fail(`${HOLD_INDEX.record} did not come back from the queue with its row in place`);
+      if (
+        readJson<QueueLite[]>('data/review-queue.json').some(
+          (q) => q.kind === 'fighter-named-handle',
+        )
+      )
+        return fail('an item is still held');
+      const pin = pinShips();
+      return pin
+        ? fail(pin)
+        : pass(`${HOLD_INDEX.record} published from the queue; pin ${holdPin + 1}`);
+    },
+  },
+  {
+    // THE SAME RELEASE ON A FAILED PULL — the carry branch, which asserts the
+    // pin against the committed records. Measured 2026-10-30 on Avatar (whose
+    // local dump was `[]`): the first cut left a released record OUT of the
+    // pin, so the next failed pull would have refused the day. Forced here so
+    // it no longer depends on what the local dump happens to hold.
+    name: 'parse: a CONFIRMED row releases a held INDEX record on a failed pull, into the pin',
+    cmd: ['scripts/parse.ts'],
+    files: ['raw/replayTheater.json', ...PARSE_OUTPUTS],
+    precondition: needCleanParse,
+    inject: () =>
+      holdFixture(HOLD_INDEX.row, HOLD_INDEX.record, {
+        viaQueue: true,
+        keepRow: true,
+        noDump: true,
+      }),
+    assert: (r) => {
+      if (r.status !== 0) return fail(`parse exited ${r.status ?? r.signal}: ${head(r)}`);
+      if (!readJson<{ id: string }[]>('data/videos.json').some((v) => v.id === HOLD_INDEX.record))
+        return fail(`${HOLD_INDEX.record} did not come back from the queue with its row in place`);
+      if (
+        readJson<QueueLite[]>('data/review-queue.json').some(
+          (q) => q.kind === 'fighter-named-handle',
+        )
+      )
+        return fail('an item is still held');
+      const pin = pinShips();
+      return pin
+        ? fail(pin)
+        : pass(`${HOLD_INDEX.record} published from the queue; pin ${holdPin + 1}`);
+    },
+  },
+  {
+    // The queue now carries held index records, so it is a baseline: read as
+    // [] on a parse error, it would drop them without a word.
+    name: 'parse: an unreadable review-queue.json is a hard stop, never "treat it as empty"',
+    cmd: ['scripts/parse.ts'],
+    files: ['data/review-queue.json'],
+    names: /review-queue\.json is unreadable/,
+    inject: () => {
+      write('data/review-queue.json', '{ this is not json');
+      return true;
+    },
+  },
+  {
+    // THE TASK RED. Pending work runs `expiries.ts --check` on the committed
+    // queue; a held item must turn it red naming the handle and the count.
+    // The green twin is the CLEAN list's expiries run on the real queue.
+    name: 'expiries: a held fighter-named handle turns Pending work red, by name and count',
+    cmd: ['scripts/expiries.ts', '--check'],
+    files: ['data/review-queue.json'],
+    names:
+      /1 RECORD\(S\) HELD ON 1 UNCONFIRMED FIGHTER-NAMED HANDLE[\s\S]*1 record\(s\) held on unconfirmed fighter-named handle "Metara"/,
+    inject: () => {
+      const queue = readJson<unknown[]>('data/review-queue.json');
+      queue.push({
+        id: HOLD.record,
+        kind: 'fighter-named-handle',
+        channel: 'kakuken',
+        title: 'Metara (Wilnas) vs Miraias (Six)',
+        publishedAt: '2026-01-01T00:00:00Z',
+        durationSec: 0,
+        held: [{ side: 0, handle: 'Metara', player: HOLD.row, resolvesTo: [HOLD.fighter] }],
+      });
+      write('data/review-queue.json', `${JSON.stringify(queue, null, 2)}\n`);
+      return true;
+    },
+  },
+  {
+    name: 'expiries: an unreadable review-queue.json is red, never "nothing held"',
+    cmd: ['scripts/expiries.ts', '--check'],
+    files: ['data/review-queue.json'],
+    names: /review-queue\.json is unreadable/,
+    inject: () => {
+      write('data/review-queue.json', '{ this is not json');
+      return true;
+    },
+  },
+  {
     // Strive's orientation control, ported: when BOTH spans resolve, the
     // channel's declared order breaks the tie. Flipped, "Djeeta (Wilnas)" files
     // a fighter as the player — and the registry invariant is what catches it.
+    // It re-files ALREADY-PUBLISHED records, which is why this half stayed a
+    // hard stop when new records began to be held (2026-10-30).
     name: 'parse: THE ORIENTATION TIE-BREAK is flipped — fighter-named handles become players',
     files: ['scripts/parse.ts', ...PARSE_OUTPUTS],
     cmd: ['scripts/parse.ts'],
-    names: /REGISTRY INVARIANT: \d+ player handle/,
+    names: /REGISTRY INVARIANT: \d+ player handle\(s\) on ALREADY-PUBLISHED records/,
     precondition: all(needCorpus, needCleanParse),
     inject: () =>
       sub(

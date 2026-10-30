@@ -448,6 +448,16 @@ export const CONFIRMED_FIGHTER_NAMED_PLAYERS: ConfirmedFighterNamedPlayer[] = [
   },
 ];
 
+/**
+ * THE ONE PREDICATE FOR CHECKLIST 5n: the fighter id(s) a player's voted
+ * display handle resolves to, [] when it names no fighter. parse-finish.ts
+ * holds records on it and e2e.ts asserts the published archive with it, so
+ * the hold and the check that the hold worked cannot drift apart.
+ */
+export function fighterNamedHits(handle: string, matcher: AliasMatcher): string[] {
+  return matcher.ids(handle);
+}
+
 // ── VENDOR SCRAPE ───────────────────────────────────────────────────────────
 // Everything below talks to rising.granbluefantasy.jp and answers one
 // question: does Cygames still ship the roster data/characters.json says?

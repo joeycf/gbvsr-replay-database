@@ -173,6 +173,19 @@ refuse redirect drift → commit by name → smoke check. Expiries run in
 `pending-work.yml` ("Pending work", `workflow_run` after every completed data
 run); the patch table is validated by Emit, before the commit.
 
+Pending work is also red while a record is **held on an unconfirmed
+fighter-named handle** (checklist 5n, since 2026-10-30). A new record whose
+handle resolves to a fighter with no `CONFIRMED_FIGHTER_NAMED_PLAYERS` row goes
+to `data/review-queue.json` as `fighter-named-handle` and stays off the site;
+the rest of the day ships, and Pending work names each handle and its record
+count. Confirm with the row and its video id (or reject with a `sides` override
+in `data/overrides.json`), push, then dispatch the data run; Pending work
+follows it. It stays a hard stop in Parse when the handle is on an already
+published record: holding that would unpublish a live page, and only a roster,
+alias, allow-list or parser change gets there. Until 2026-10-30 any hit refused
+the whole day; it never fired in this repo's cron, but it held Strive's data
+for four days from 10-25.
+
 ## Vercel
 
 Project `gbvsr-replay-database`. Env set fresh, never copied from a sibling:
