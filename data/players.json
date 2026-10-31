@@ -5858,10 +5858,6 @@
     "handle": "Kita"
   },
   {
-    "id": "kitaro",
-    "handle": "Kitaro"
-  },
-  {
     "id": "kite",
     "handle": "Kite"
   },
@@ -11414,10 +11410,10 @@
   },
   {
     "id": "steelballs",
-    "handle": "SteelBalls",
+    "handle": "Steelballs",
     "extra": {
       "aliases": [
-        "Steelballs"
+        "SteelBalls"
       ]
     }
   },
