@@ -538,10 +538,6 @@
     "handle": "Anpan"
   },
   {
-    "id": "ans",
-    "handle": "Ans"
-  },
-  {
     "id": "ante",
     "handle": "Ante"
   },
@@ -5468,10 +5464,6 @@
     "handle": "Karasu"
   },
   {
-    "id": "karena",
-    "handle": "Karena"
-  },
-  {
     "id": "kari",
     "handle": "Kari"
   },
@@ -5856,6 +5848,10 @@
   {
     "id": "kita",
     "handle": "Kita"
+  },
+  {
+    "id": "kitaro",
+    "handle": "Kitaro"
   },
   {
     "id": "kite",
@@ -6556,10 +6552,6 @@
     }
   },
   {
-    "id": "linn",
-    "handle": "Linn"
-  },
-  {
     "id": "linnie",
     "handle": "Linnie"
   },
@@ -6827,10 +6819,6 @@
     "handle": "Macho"
   },
   {
-    "id": "mackrom",
-    "handle": "Mackrom"
-  },
-  {
     "id": "macmens",
     "handle": "MacMens"
   },
@@ -7032,10 +7020,6 @@
   {
     "id": "masu",
     "handle": "MASU"
-  },
-  {
-    "id": "matocon",
-    "handle": "Matocon"
   },
   {
     "id": "matthew",
@@ -7337,12 +7321,7 @@
   },
   {
     "id": "mikon",
-    "handle": "Mikon",
-    "extra": {
-      "aliases": [
-        "MIKON"
-      ]
-    }
+    "handle": "Mikon"
   },
   {
     "id": "milanesa",
@@ -7770,10 +7749,10 @@
   },
   {
     "id": "mx",
-    "handle": "Mx",
+    "handle": "mx",
     "extra": {
       "aliases": [
-        "mx"
+        "Mx"
       ]
     }
   },
@@ -8166,10 +8145,6 @@
   {
     "id": "nivera",
     "handle": "Nivera"
-  },
-  {
-    "id": "niwatori",
-    "handle": "Niwatori"
   },
   {
     "id": "no-netural",
@@ -8599,10 +8574,6 @@
     "handle": "OSHAWA"
   },
   {
-    "id": "osofe",
-    "handle": "Osofe"
-  },
-  {
     "id": "osu-player",
     "handle": "OSU!PLAYER"
   },
@@ -8617,10 +8588,6 @@
   {
     "id": "otonose",
     "handle": "Otonose"
-  },
-  {
-    "id": "ouka",
-    "handle": "Ouka"
   },
   {
     "id": "ouro",
@@ -11410,10 +11377,10 @@
   },
   {
     "id": "steelballs",
-    "handle": "Steelballs",
+    "handle": "SteelBalls",
     "extra": {
       "aliases": [
-        "SteelBalls"
+        "Steelballs"
       ]
     }
   },
@@ -11581,10 +11548,6 @@
   {
     "id": "sx",
     "handle": "SX"
-  },
-  {
-    "id": "syaro",
-    "handle": "Syaro"
   },
   {
     "id": "sylvantine",
@@ -12205,10 +12168,6 @@
     "handle": "Tokuiten"
   },
   {
-    "id": "tomeipowered",
-    "handle": "TomeiPowered"
-  },
-  {
     "id": "tomo",
     "handle": "Tomo"
   },
@@ -12452,10 +12411,6 @@
   {
     "id": "tukkun",
     "handle": "Tukkun"
-  },
-  {
-    "id": "tukkunyt",
-    "handle": "TukkunYT"
   },
   {
     "id": "tunakan",
