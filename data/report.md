@@ -1,7 +1,7 @@
 # GBVSR pipeline report
 
-- **16048** published records · **2894** players · **40** fighters
-- **235** mirror match(es) (1.5%) — the stat unit is side appearances, so each adds 2 to one character (scripts/emit.ts)
+- **16108** published records · **2905** players · **40** fighters
+- **239** mirror match(es) (1.5%) — the stat unit is side appearances, so each adds 2 to one character (scripts/emit.ts)
 - **197** pending review item(s) — absent from the site, never guessed
 - **0** duplicate id(s) resolved by intake precedence
 - **9** of 9 confirmed fighter-named players present in the registry; every other handle resolves to no fighter
@@ -16,9 +16,9 @@ counter-pick (recon 2026-09-29). `too-short` is judged against the floor in brac
 
 | intake | source | raw | GBVSR-marked | parsed | published | too-short (floor) | live | rejects naming a fighter |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays | highLevelReplays | 9207 | 9207 | 9113 | 9113 | 3 (120s) | 0 | 91 |
-| kakuken | kakuken | 908 | 908 | 908 | 908 | 0 (120s) | 0 | 0 |
-| gbvsReplayChannel | gbvsReplayChannel | 1925 | 1925 | 1727 | 1727 | 126 (120s) | 0 | 50 |
+| highLevelReplays | highLevelReplays | 9217 | 9217 | 9123 | 9123 | 3 (120s) | 0 | 91 |
+| kakuken | kakuken | 957 | 957 | 957 | 957 | 0 (120s) | 0 | 0 |
+| gbvsReplayChannel | gbvsReplayChannel | 1926 | 1926 | 1728 | 1728 | 126 (120s) | 0 | 50 |
 | yumegiwa | yumegiwa | 1010 | 1010 | 888 | 888 | 8 (120s) | 0 | 4 |
 | risingReplays _(frozen)_ | risingReplays | — | — | — | 654 | — | — | — |
 | gbFightingReplays _(frozen)_ | gbFightingReplays | — | — | — | 598 | — | — | — |
@@ -62,9 +62,9 @@ printed it.
 
 | intake | declared | handle-outside | chars-outside | handle-first-bare | tie-broken | sides |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays | handle-outside | 18224 | 0 | 2 | 6 (0.0%) | 18226 |
-| kakuken | handle-outside | 1816 | 0 | 0 | 6 (0.3%) | 1816 |
-| gbvsReplayChannel | handle-first-bare | 415 | 1 | 3038 | 8 (0.2%) | 3454 |
+| highLevelReplays | handle-outside | 18244 | 0 | 2 | 6 (0.0%) | 18246 |
+| kakuken | handle-outside | 1914 | 0 | 0 | 6 (0.3%) | 1914 |
+| gbvsReplayChannel | handle-first-bare | 415 | 1 | 3040 | 8 (0.2%) | 3456 |
 | yumegiwa | handle-outside | 1776 | 0 | 0 | 1 (0.1%) | 1776 |
 
 _On a `handle-first-bare` channel a `chars-outside` share means a side written
@@ -79,13 +79,13 @@ single-pairing sessions (recon 2026-09-29).
 
 | intake · population | 0 (live/unknown) | 1–29s | 30–59s | 60–119s | 120–179s | 180–299s | 300–599s | 600–1799s | 1800s+ |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| highLevelReplays · records | 0 | 0 | 0 | 0 | 0 | 217 | 6745 | 1620 | 531 |
+| highLevelReplays · records | 0 | 0 | 0 | 0 | 0 | 217 | 6755 | 1620 | 531 |
 | highLevelReplays · match-shaped misses | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | highLevelReplays · other misses | 0 | 0 | 0 | 0 | 0 | 1 | 9 | 16 | 65 |
-| kakuken · records | 0 | 0 | 0 | 0 | 0 | 18 | 867 | 23 | 0 |
+| kakuken · records | 0 | 0 | 0 | 0 | 0 | 18 | 916 | 23 | 0 |
 | kakuken · match-shaped misses | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | kakuken · other misses | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| gbvsReplayChannel · records | 0 | 0 | 0 | 0 | 7 | 44 | 1448 | 228 | 0 |
+| gbvsReplayChannel · records | 0 | 0 | 0 | 0 | 7 | 44 | 1449 | 228 | 0 |
 | gbvsReplayChannel · match-shaped misses | 0 | 0 | 0 | 65 | 0 | 0 | 0 | 0 | 0 |
 | gbvsReplayChannel · other misses | 0 | 3 | 10 | 48 | 4 | 3 | 24 | 23 | 18 |
 | yumegiwa · records | 0 | 0 | 0 | 0 | 2 | 115 | 550 | 221 | 0 |
@@ -94,8 +94,8 @@ single-pairing sessions (recon 2026-09-29).
 
 ## Handles
 
-- word count per side: 1 → 24093 · 2 → 1089 · 3 → 90 — the cap is 5 words (parse.ts MAX_HANDLE_WORDS, Strive's measured value; a bump at 5 is where decoration leaks show first)
-- 298 player(s) seen under more than one spelling; the display casing is the majority spelling, tie-broken toward mixed case, and the rest are kept as aliases
+- word count per side: 1 → 24209 · 2 → 1093 · 3 → 90 — the cap is 5 words (parse.ts MAX_HANDLE_WORDS, Strive's measured value; a bump at 5 is where decoration leaks show first)
+- 299 player(s) seen under more than one spelling; the display casing is the majority spelling, tie-broken toward mixed case, and the rest are kept as aliases
 - placeholder handles refused: 0 on the channels, 0 in the catalogue
 
 ## Version tokens — counted, never a patch
@@ -114,8 +114,7 @@ blocking: a departure is usually real (a video deleted or made private). It exis
 the dominant channel deleted part of its own back catalogue at 2–3 videos a day for nine
 months — too slow for the collapse guard, too steady for the silence alarm.
 
-**49** record(s) left:
-- **kakuken** — 49: `4aMJw5PYk_0`, `vFc5uKtSJRI`, `4yg4QVC_7Xo`, `w2xYN78qPsA`, `JSi9_lAROmI`, `Ktc5yFbkkVM`, `sSceWJ54H2o`, `xiaY62oGh-0`, `6ziAO1rJ-bI`, `33TikIzV7gU`, `Oq9NVZHW06g`, `2MQQJU9eFEg`, `3cwHiw8b7u0`, `ALKniDRUGIs`, `r7aBnF9zx6Q`, `PudIHb1I-D0`, `3H5qtBGLNTI`, `wLOz77V4W18`, `OXe1rlGjcu0`, `OQkaI8GkrWQ`, `s0Sl5RFX3O0`, `jiq2qLQ6i8Y`, `RtF1uX5s0RU`, `ovs-zNAwqwc`, `I_vFUgh97E0` … +24 more
+_None this run._
 
 ## Match identity — a REPORT-ONLY tier (checklist 2b)
 
@@ -141,7 +140,7 @@ identity, not a verdict: a rematch is a legitimate collision, so nothing is drop
 
 - EX mode (Ver 2.20; Gran, Djeeta, Narmaya): **295** channel side(s) and 0 catalogue side(s) carry a valid mark; 0 mark(s) refused (wrong fighter or before 2.20 — listed in the residue). The mark is POSITIVE
   evidence only: an unmarked record is unknown, never base.
-- skins stripped from fighter slots: B.Butterfly×557, Crimson Bomber×225, Lady Serenity×178, Sinborne Redeemer×93, Indigo Witch×84, Summer×79, M.M. L∞k Up×58, Diamond Heart×52, No Fear, No Gain×49, Knight of Passion×32, Knight's Finery×29, Arbitrator of the Shore×14, Conqueror's Carapace×8, Reverent Attire×6, Sumer×3, L.Serenity×3, INdigo Witch×2, Spooky Vicky×1
+- skins stripped from fighter slots: B.Butterfly×557, Crimson Bomber×225, Lady Serenity×178, Sinborne Redeemer×93, Indigo Witch×84, Summer×79, M.M. L∞k Up×58, Diamond Heart×53, No Fear, No Gain×49, Knight of Passion×32, Knight's Finery×29, Arbitrator of the Shore×14, Conqueror's Carapace×8, Reverent Attire×6, Sumer×3, L.Serenity×3, INdigo Witch×2, Spooky Vicky×1
 - refused by the release floor (a fighter before they shipped): 0 sampled, 0 catalogue row(s)
 
 ## Registry invariant — no player is a fighter
@@ -151,7 +150,7 @@ Held for review: none.
 
 ## Tournament placements — Liquipedia Tier 1–2, CC BY-SA 3.0
 
-99 events with placements read; 70 of 2894 registry players carry a title (91 wins). 7 placed names are not in the registry yet — they are featured the day a replay of theirs is ingested, unless listed below as needing a human.
+99 events with placements read; 70 of 2905 registry players carry a title (91 wins). 7 placed names are not in the registry yet — they are featured the day a replay of theirs is ingested, unless listed below as needing a human.
 
 **Titled:** `kojicoco` 8W/3R · `skyll` 7W/4R · `gamera` 5W/5R · `space` 7W/3R · `zane` 4W/6R · `socky` 3W/6R · `blueskyguybsg` 1W/7R · `zangief-dream` 4W/4R · `elsa` 3W/2R · `fitizen` 3W/2R · `monarch` 4W/1R · `shio` 3W/2R · `xerom` 3W/2R · `zippy` 3W/2R · `tororo` 3W/1R · `pixi` 1W/2R · `zenith` 1W/2R · `arkangel` 1W/1R · `bepaw` 1W/1R · `dragoi` 2W/0R · `fukunaga` 1W/1R · `goenitz` 1W/1R · `kasausagi` 2W/0R · `ren` 0W/2R · `rookies` 2W/0R · `ryazo` 2W/0R · `scavengerz` 1W/1R · `tyurara` 1W/1R · `vivi` 1W/1R · `wavie` 1W/1R · `whh` 0W/2R · `aarondamac` 1W/0R · `ammysensei` 0W/1R · `artorias` 1W/0R · `bonsai` 0W/1R · `cals` 0W/1R · `coach-steve` 0W/1R · `debagame` 1W/0R · `default` 0W/1R · `desangel213` 0W/1R · `dudeakoff` 0W/1R · `framework` 0W/1R · `gobou` 0W/1R · `havaniceday` 0W/1R · `incendiate` 1W/0R · `insurgent` 1W/0R · `kosame` 1W/0R · `ladewaybac` 1W/0R · `lucar` 0W/1R · `mfh` 0W/1R · `minatocco` 0W/1R · `miraias` 0W/1R · `mirri` 1W/0R · `naiwang` 0W/1R · `nyan-derthal` 0W/1R · `nyantic` 0W/1R · `raz` 0W/1R · `real-ice` 0W/1R · `releasebogus` 1W/0R · `saltz` 0W/1R · `satoshiixrd` 0W/1R · `senpaispyder` 1W/0R · `shinchire` 0W/1R · `shinku` 1W/0R · `shirou` 0W/1R · `sho-san` 0W/1R · `sonic-san` 0W/1R · `tako` 1W/0R · `teiga` 0W/1R · `tenuredmule` 0W/1R
 
@@ -343,4 +342,4 @@ guessing this module refuses.
 > gbvsrReplay: frozen since 2024-04-05, 123 record(s) carried.
 > fgHighLevel: frozen since 2025-04-14, 186 record(s) carried.
 
-_Generated 2026-11-01T16:27:46.294Z_
+_Generated 2026-11-02T19:51:07.437Z_

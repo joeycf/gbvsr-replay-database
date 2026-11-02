@@ -538,6 +538,10 @@
     "handle": "Anpan"
   },
   {
+    "id": "ans",
+    "handle": "Ans"
+  },
+  {
     "id": "ante",
     "handle": "Ante"
   },
@@ -5464,6 +5468,10 @@
     "handle": "Karasu"
   },
   {
+    "id": "karena",
+    "handle": "Karena"
+  },
+  {
     "id": "kari",
     "handle": "Kari"
   },
@@ -6552,6 +6560,10 @@
     }
   },
   {
+    "id": "linn",
+    "handle": "Linn"
+  },
+  {
     "id": "linnie",
     "handle": "Linnie"
   },
@@ -6819,6 +6831,10 @@
     "handle": "Macho"
   },
   {
+    "id": "mackrom",
+    "handle": "Mackrom"
+  },
+  {
     "id": "macmens",
     "handle": "MacMens"
   },
@@ -7020,6 +7036,10 @@
   {
     "id": "masu",
     "handle": "MASU"
+  },
+  {
+    "id": "matocon",
+    "handle": "Matocon"
   },
   {
     "id": "matthew",
@@ -7321,7 +7341,12 @@
   },
   {
     "id": "mikon",
-    "handle": "Mikon"
+    "handle": "Mikon",
+    "extra": {
+      "aliases": [
+        "MIKON"
+      ]
+    }
   },
   {
     "id": "milanesa",
@@ -7749,10 +7774,10 @@
   },
   {
     "id": "mx",
-    "handle": "mx",
+    "handle": "Mx",
     "extra": {
       "aliases": [
-        "Mx"
+        "mx"
       ]
     }
   },
@@ -8145,6 +8170,10 @@
   {
     "id": "nivera",
     "handle": "Nivera"
+  },
+  {
+    "id": "niwatori",
+    "handle": "Niwatori"
   },
   {
     "id": "no-netural",
@@ -8574,6 +8603,10 @@
     "handle": "OSHAWA"
   },
   {
+    "id": "osofe",
+    "handle": "Osofe"
+  },
+  {
     "id": "osu-player",
     "handle": "OSU!PLAYER"
   },
@@ -8588,6 +8621,10 @@
   {
     "id": "otonose",
     "handle": "Otonose"
+  },
+  {
+    "id": "ouka",
+    "handle": "Ouka"
   },
   {
     "id": "ouro",
@@ -11550,6 +11587,10 @@
     "handle": "SX"
   },
   {
+    "id": "syaro",
+    "handle": "Syaro"
+  },
+  {
     "id": "sylvantine",
     "handle": "Sylvantine"
   },
@@ -12168,6 +12209,10 @@
     "handle": "Tokuiten"
   },
   {
+    "id": "tomeipowered",
+    "handle": "TomeiPowered"
+  },
+  {
     "id": "tomo",
     "handle": "Tomo"
   },
@@ -12411,6 +12456,10 @@
   {
     "id": "tukkun",
     "handle": "Tukkun"
+  },
+  {
+    "id": "tukkunyt",
+    "handle": "TukkunYT"
   },
   {
     "id": "tunakan",
