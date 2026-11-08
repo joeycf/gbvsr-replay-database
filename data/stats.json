@@ -1,20 +1,20 @@
 {
   "totals": {
-    "replays": 16098,
+    "replays": 16167,
     "characters": 40,
-    "players": 2908,
+    "players": 2909,
     "byPatch": {
       "1.0": 820,
       "1.1": 778,
       "1.21": 911,
-      "1.30": 942,
+      "1.30": 990,
       "1.40": 222,
       "1.41": 320,
       "1.42": 935,
       "1.50": 371,
       "1.52": 649,
       "1.60": 448,
-      "1.62": 1369,
+      "1.62": 1380,
       "2.00": 214,
       "2.02": 184,
       "2.03": 805,
@@ -26,50 +26,50 @@
       "2.40": 824,
       "2.50": 398,
       "2.51": 2209,
-      "2.60": 660
+      "2.60": 670
     }
   },
   "characterUsage": {
-    "2b": 1023,
-    "zeta": 1027,
-    "narmaya": 1798,
-    "anila": 744,
-    "nier": 860,
-    "avatar-belial": 918,
-    "vira": 1170,
-    "yuel": 905,
-    "beatrix": 1239,
-    "galleon": 732,
-    "versusia": 792,
+    "gran": 777,
+    "djeeta": 921,
+    "cagliostro": 1191,
+    "narmaya": 1804,
+    "yuel": 909,
+    "vira": 1173,
+    "ladiva": 778,
+    "sandalphon": 524,
+    "eustace": 598,
+    "versusia": 794,
+    "galleon": 735,
+    "nier": 866,
+    "charlotta": 737,
+    "id": 162,
+    "vikala": 653,
+    "2b": 1026,
+    "zeta": 1031,
+    "anila": 745,
+    "avatar-belial": 924,
+    "beatrix": 1240,
     "katalina": 783,
-    "zooey": 779,
-    "ferry": 787,
-    "lucilius": 1171,
-    "beelzebub": 822,
-    "gran": 772,
+    "zooey": 780,
+    "ferry": 790,
+    "lucilius": 1174,
+    "beelzebub": 827,
     "wilnas": 487,
-    "lowain": 603,
+    "lowain": 604,
     "ilsa": 323,
-    "cagliostro": 1184,
-    "id": 161,
-    "soriz": 917,
-    "percival": 579,
-    "sandalphon": 523,
-    "anre": 409,
-    "belial": 1032,
-    "lancelot": 609,
-    "vikala": 652,
-    "djeeta": 915,
-    "vane": 603,
+    "soriz": 923,
+    "percival": 581,
+    "anre": 411,
+    "belial": 1037,
+    "lancelot": 610,
+    "vane": 605,
     "meg": 318,
-    "siegfried": 1052,
-    "vaseraga": 986,
-    "ladiva": 774,
-    "charlotta": 733,
-    "seox": 798,
-    "eustace": 594,
-    "metera": 1119,
-    "grimnir": 621
+    "siegfried": 1064,
+    "vaseraga": 992,
+    "seox": 806,
+    "metera": 1125,
+    "grimnir": 624
   },
   "byPatchUsage": {
     "1.0": {
@@ -166,37 +166,37 @@
       "lowain": 37
     },
     "1.30": {
-      "anila": 78,
-      "siegfried": 75,
-      "narmaya": 119,
-      "zeta": 73,
-      "percival": 71,
-      "soriz": 45,
-      "ferry": 48,
-      "ladiva": 39,
-      "beelzebub": 65,
+      "anila": 79,
+      "siegfried": 82,
+      "narmaya": 124,
+      "zeta": 77,
+      "percival": 73,
+      "soriz": 51,
+      "ferry": 51,
+      "ladiva": 42,
+      "beelzebub": 70,
       "lowain": 40,
-      "2b": 97,
-      "djeeta": 93,
-      "vane": 105,
-      "eustace": 28,
-      "lucilius": 60,
-      "grimnir": 38,
-      "nier": 63,
-      "vaseraga": 114,
+      "2b": 100,
+      "djeeta": 98,
+      "vane": 107,
+      "eustace": 31,
+      "lucilius": 63,
+      "grimnir": 39,
+      "nier": 68,
+      "vaseraga": 120,
       "katalina": 40,
-      "gran": 21,
-      "belial": 51,
-      "metera": 83,
-      "charlotta": 46,
-      "vira": 46,
-      "seox": 71,
-      "avatar-belial": 67,
-      "yuel": 43,
-      "cagliostro": 57,
-      "zooey": 44,
-      "lancelot": 41,
-      "anre": 29
+      "gran": 23,
+      "belial": 56,
+      "metera": 85,
+      "charlotta": 48,
+      "vira": 47,
+      "seox": 77,
+      "avatar-belial": 73,
+      "yuel": 45,
+      "cagliostro": 59,
+      "zooey": 45,
+      "lancelot": 42,
+      "anre": 31
     },
     "1.40": {
       "cagliostro": 18,
@@ -408,29 +408,29 @@
     },
     "1.62": {
       "katalina": 115,
-      "beatrix": 163,
+      "beatrix": 164,
       "versusia": 153,
-      "seox": 63,
+      "seox": 65,
       "ladiva": 67,
       "narmaya": 152,
-      "metera": 78,
+      "metera": 82,
       "beelzebub": 60,
       "vira": 79,
       "soriz": 91,
       "belial": 144,
       "lancelot": 44,
-      "cagliostro": 113,
-      "siegfried": 94,
+      "cagliostro": 117,
+      "siegfried": 99,
       "zooey": 53,
       "eustace": 71,
-      "grimnir": 58,
+      "grimnir": 60,
       "lucilius": 148,
-      "charlotta": 74,
+      "charlotta": 75,
       "2b": 80,
       "vikala": 168,
       "djeeta": 42,
       "vane": 35,
-      "gran": 58,
+      "gran": 60,
       "avatar-belial": 61,
       "anre": 54,
       "nier": 25,
@@ -439,7 +439,7 @@
       "zeta": 63,
       "percival": 41,
       "anila": 25,
-      "lowain": 61,
+      "lowain": 62,
       "vaseraga": 73
     },
     "2.00": {
@@ -869,44 +869,44 @@
       "anre": 31
     },
     "2.60": {
+      "gran": 29,
+      "djeeta": 52,
+      "cagliostro": 35,
+      "narmaya": 54,
+      "yuel": 28,
+      "vira": 52,
+      "ladiva": 20,
+      "sandalphon": 26,
+      "eustace": 7,
+      "versusia": 32,
+      "galleon": 70,
+      "nier": 41,
+      "charlotta": 50,
+      "id": 162,
+      "vikala": 16,
       "2b": 32,
       "zeta": 39,
-      "narmaya": 53,
       "anila": 30,
-      "nier": 40,
       "avatar-belial": 40,
-      "vira": 50,
-      "yuel": 26,
       "beatrix": 49,
-      "galleon": 67,
-      "versusia": 30,
       "katalina": 25,
       "zooey": 24,
       "ferry": 34,
       "lucilius": 27,
       "beelzebub": 20,
-      "gran": 28,
       "wilnas": 20,
       "lowain": 20,
       "ilsa": 32,
-      "cagliostro": 34,
-      "id": 161,
       "soriz": 31,
       "percival": 16,
-      "sandalphon": 25,
       "anre": 11,
       "belial": 28,
       "lancelot": 21,
-      "vikala": 15,
-      "djeeta": 51,
       "vane": 20,
       "meg": 16,
       "siegfried": 33,
       "vaseraga": 30,
-      "ladiva": 19,
-      "charlotta": 49,
       "seox": 23,
-      "eustace": 6,
       "metera": 43,
       "grimnir": 6
     }
@@ -928,12 +928,147 @@
     "8687": {
       "metera": 1
     },
+    "albi-vireo": {
+      "gran": 1
+    },
+    "goenitz": {
+      "djeeta": 101,
+      "belial": 56,
+      "gran": 139,
+      "beatrix": 1,
+      "ladiva": 1,
+      "ilsa": 3,
+      "anila": 4,
+      "sandalphon": 4,
+      "lucilius": 3,
+      "katalina": 9,
+      "percival": 2,
+      "seox": 1,
+      "beelzebub": 2,
+      "zeta": 2
+    },
+    "zandori": {
+      "cagliostro": 12,
+      "grimnir": 1
+    },
+    "koyao": {
+      "narmaya": 537,
+      "vira": 15,
+      "anila": 9,
+      "galleon": 4,
+      "grimnir": 2,
+      "metera": 1,
+      "sandalphon": 2,
+      "djeeta": 2,
+      "lucilius": 3
+    },
+    "yuutyaso": {
+      "yuel": 77,
+      "belial": 23,
+      "katalina": 1
+    },
+    "mr-victe": {
+      "vira": 17,
+      "katalina": 1,
+      "beatrix": 2
+    },
+    "nogueira": {
+      "ladiva": 67,
+      "soriz": 13,
+      "vaseraga": 18,
+      "lowain": 1,
+      "yuel": 1,
+      "wilnas": 10,
+      "galleon": 18,
+      "beatrix": 3,
+      "vane": 1
+    },
+    "hitoppi": {
+      "yuel": 18
+    },
+    "hinokino": {
+      "sandalphon": 65,
+      "nier": 69,
+      "lowain": 12,
+      "id": 10,
+      "cagliostro": 21,
+      "grimnir": 4,
+      "ilsa": 1,
+      "beatrix": 5,
+      "yuel": 1,
+      "vikala": 40,
+      "meg": 13,
+      "djeeta": 1,
+      "metera": 1,
+      "narmaya": 19,
+      "gran": 1,
+      "wilnas": 3,
+      "galleon": 1,
+      "siegfried": 2,
+      "lucilius": 3
+    },
+    "debagame": {
+      "eustace": 85,
+      "lancelot": 6,
+      "vaseraga": 280,
+      "vane": 50,
+      "ilsa": 6,
+      "wilnas": 12,
+      "sandalphon": 10,
+      "vikala": 2,
+      "beatrix": 1,
+      "avatar-belial": 2
+    },
+    "gamera": {
+      "versusia": 88,
+      "ilsa": 80,
+      "beatrix": 240,
+      "djeeta": 251,
+      "meg": 48,
+      "anila": 72,
+      "katalina": 34,
+      "zooey": 6,
+      "vira": 13,
+      "galleon": 11,
+      "yuel": 14,
+      "2b": 16
+    },
+    "sanchi": {
+      "galleon": 37,
+      "2b": 55,
+      "vikala": 1
+    },
+    "kaiyoultio": {
+      "nier": 3
+    },
+    "evil": {
+      "galleon": 14
+    },
+    "hideo": {
+      "galleon": 5
+    },
+    "tama": {
+      "charlotta": 24,
+      "ferry": 1
+    },
+    "kazusa": {
+      "id": 8,
+      "lucilius": 1,
+      "avatar-belial": 1,
+      "siegfried": 2
+    },
+    "madadamae": {
+      "vikala": 52
+    },
+    "setanta": {
+      "versusia": 43
+    },
     "age": {
       "2b": 23,
       "djeeta": 1
     },
     "shosan": {
-      "zeta": 346,
+      "zeta": 348,
       "djeeta": 1,
       "meg": 1,
       "lancelot": 3,
@@ -956,29 +1091,8 @@
       "beatrix": 6,
       "ilsa": 4
     },
-    "hinokino": {
-      "nier": 69,
-      "sandalphon": 64,
-      "lowain": 12,
-      "id": 10,
-      "cagliostro": 21,
-      "grimnir": 4,
-      "ilsa": 1,
-      "beatrix": 5,
-      "yuel": 1,
-      "vikala": 40,
-      "meg": 13,
-      "djeeta": 1,
-      "metera": 1,
-      "narmaya": 19,
-      "gran": 1,
-      "wilnas": 3,
-      "galleon": 1,
-      "siegfried": 2,
-      "lucilius": 3
-    },
     "alkazi": {
-      "avatar-belial": 181
+      "avatar-belial": 182
     },
     "charchar": {
       "vira": 171,
@@ -997,7 +1111,7 @@
       "gran": 1,
       "djeeta": 1,
       "sandalphon": 1,
-      "vane": 6,
+      "vane": 7,
       "vikala": 1
     },
     "remade": {
@@ -1005,20 +1119,6 @@
     },
     "trykeazer": {
       "galleon": 8
-    },
-    "koyao": {
-      "narmaya": 534,
-      "vira": 14,
-      "anila": 9,
-      "galleon": 4,
-      "grimnir": 2,
-      "metera": 1,
-      "sandalphon": 2,
-      "djeeta": 2,
-      "lucilius": 3
-    },
-    "setanta": {
-      "versusia": 42
     },
     "revo-jing": {
       "katalina": 4
@@ -1043,14 +1143,14 @@
       "narmaya": 43
     },
     "grande": {
-      "lucilius": 266,
+      "lucilius": 267,
       "vikala": 1,
       "sandalphon": 1,
       "beatrix": 9,
       "zeta": 4
     },
     "roki": {
-      "beelzebub": 144,
+      "beelzebub": 146,
       "avatar-belial": 4,
       "siegfried": 3,
       "vane": 5,
@@ -1084,8 +1184,8 @@
     "tororo": {
       "lowain": 13,
       "seox": 4,
-      "siegfried": 75,
-      "percival": 164,
+      "siegfried": 76,
+      "percival": 165,
       "id": 2,
       "sandalphon": 29,
       "grimnir": 3,
@@ -1117,7 +1217,7 @@
     },
     "tako": {
       "id": 32,
-      "siegfried": 35,
+      "siegfried": 36,
       "ilsa": 26,
       "katalina": 2,
       "percival": 5,
@@ -1127,10 +1227,10 @@
       "vikala": 99,
       "lucilius": 1,
       "gran": 2,
-      "nier": 68
+      "nier": 69
     },
     "shutorato": {
-      "beelzebub": 152,
+      "beelzebub": 153,
       "soriz": 2
     },
     "haroharo": {
@@ -1143,20 +1243,6 @@
       "nier": 15,
       "2b": 7
     },
-    "gamera": {
-      "versusia": 87,
-      "ilsa": 80,
-      "beatrix": 240,
-      "djeeta": 248,
-      "meg": 48,
-      "anila": 72,
-      "katalina": 34,
-      "zooey": 6,
-      "vira": 13,
-      "galleon": 11,
-      "yuel": 14,
-      "2b": 16
-    },
     "nanasha": {
       "anila": 98
     },
@@ -1166,17 +1252,6 @@
     "kaikisk": {
       "percival": 23
     },
-    "nogueira": {
-      "soriz": 13,
-      "ladiva": 66,
-      "vaseraga": 18,
-      "lowain": 1,
-      "yuel": 1,
-      "wilnas": 10,
-      "galleon": 18,
-      "beatrix": 3,
-      "vane": 1
-    },
     "navstar": {
       "sandalphon": 26,
       "lucilius": 5,
@@ -1184,7 +1259,7 @@
       "djeeta": 1
     },
     "osakanasan": {
-      "anre": 112,
+      "anre": 113,
       "beelzebub": 102,
       "belial": 51,
       "siegfried": 8,
@@ -1225,18 +1300,6 @@
       "vira": 1,
       "ilsa": 2
     },
-    "debagame": {
-      "lancelot": 6,
-      "vaseraga": 280,
-      "vane": 50,
-      "eustace": 84,
-      "ilsa": 6,
-      "wilnas": 12,
-      "sandalphon": 10,
-      "vikala": 2,
-      "beatrix": 1,
-      "avatar-belial": 2
-    },
     "moccoly": {
       "lancelot": 102,
       "djeeta": 3,
@@ -1248,16 +1311,6 @@
       "galleon": 33,
       "djeeta": 1
     },
-    "kazusa": {
-      "id": 7,
-      "lucilius": 1,
-      "avatar-belial": 1,
-      "siegfried": 2
-    },
-    "zandori": {
-      "cagliostro": 11,
-      "grimnir": 1
-    },
     "anija": {
       "vikala": 20,
       "djeeta": 6
@@ -1267,9 +1320,6 @@
     },
     "xzuanj": {
       "cagliostro": 14
-    },
-    "madadamae": {
-      "vikala": 51
     },
     "arefu": {
       "sandalphon": 21,
@@ -1324,7 +1374,7 @@
       "meg": 2
     },
     "kasausagi": {
-      "ferry": 94,
+      "ferry": 95,
       "siegfried": 2,
       "lucilius": 8,
       "2b": 11,
@@ -1360,28 +1410,12 @@
       "ladiva": 20,
       "meg": 1
     },
-    "goenitz": {
-      "belial": 56,
-      "gran": 139,
-      "djeeta": 100,
-      "beatrix": 1,
-      "ladiva": 1,
-      "ilsa": 3,
-      "anila": 4,
-      "sandalphon": 4,
-      "lucilius": 3,
-      "katalina": 9,
-      "percival": 2,
-      "seox": 1,
-      "beelzebub": 2,
-      "zeta": 2
-    },
     "okawa": {
       "vira": 55
     },
     "barutorec": {
       "charlotta": 11,
-      "siegfried": 219,
+      "siegfried": 224,
       "soriz": 21,
       "ferry": 14,
       "metera": 1,
@@ -1397,7 +1431,7 @@
       "beatrix": 1
     },
     "kain": {
-      "percival": 91,
+      "percival": 92,
       "id": 6,
       "siegfried": 15,
       "ilsa": 5,
@@ -1420,7 +1454,7 @@
     },
     "mabushin": {
       "wilnas": 30,
-      "seox": 74
+      "seox": 76
     },
     "sho-san": {
       "zeta": 88,
@@ -1439,9 +1473,6 @@
     "kawaii": {
       "meg": 36,
       "nier": 2
-    },
-    "hitoppi": {
-      "yuel": 17
     },
     "madfeng": {
       "soriz": 7
@@ -1515,7 +1546,7 @@
       "siegfried": 25
     },
     "yamana": {
-      "gran": 105,
+      "gran": 106,
       "djeeta": 11,
       "seox": 1
     },
@@ -1738,11 +1769,6 @@
       "lucilius": 77,
       "beelzebub": 1
     },
-    "sanchi": {
-      "galleon": 36,
-      "2b": 55,
-      "vikala": 1
-    },
     "shiraishi": {
       "metera": 48
     },
@@ -1760,7 +1786,7 @@
       "beatrix": 1,
       "grimnir": 1,
       "zeta": 2,
-      "nier": 14
+      "nier": 16
     },
     "korius": {
       "beatrix": 45,
@@ -1854,10 +1880,6 @@
       "soriz": 51,
       "wilnas": 5
     },
-    "tama": {
-      "charlotta": 23,
-      "ferry": 1
-    },
     "tunakan": {
       "nier": 18
     },
@@ -1913,11 +1935,6 @@
     "anotherrobin": {
       "meg": 1
     },
-    "yuutyaso": {
-      "yuel": 76,
-      "belial": 23,
-      "katalina": 1
-    },
     "koemasa": {
       "metera": 40,
       "galleon": 2
@@ -1941,12 +1958,12 @@
       "katalina": 31
     },
     "sharkmovie": {
-      "ladiva": 168,
+      "ladiva": 169,
       "meg": 5
     },
     "rookies": {
       "charlotta": 2,
-      "seox": 52,
+      "seox": 53,
       "id": 2,
       "ladiva": 1,
       "wilnas": 25,
@@ -1993,9 +2010,6 @@
     },
     "umafan": {
       "seox": 24
-    },
-    "hideo": {
-      "galleon": 4
     },
     "wibboo": {
       "avatar-belial": 17
@@ -2116,7 +2130,7 @@
       "beatrix": 1
     },
     "masa": {
-      "lowain": 34,
+      "lowain": 35,
       "avatar-belial": 34,
       "vikala": 7,
       "katalina": 1,
@@ -2158,9 +2172,6 @@
     "patapon": {
       "zooey": 139,
       "belial": 1
-    },
-    "evil": {
-      "galleon": 13
     },
     "bepawn": {
       "ferry": 1
@@ -2248,7 +2259,7 @@
     "hauko": {
       "sandalphon": 3,
       "lucilius": 8,
-      "seox": 49,
+      "seox": 50,
       "eustace": 34,
       "ilsa": 3,
       "galleon": 2,
@@ -2284,9 +2295,10 @@
       "lowain": 8,
       "seox": 4,
       "katalina": 27,
-      "charlotta": 10,
+      "charlotta": 11,
       "vikala": 1,
-      "nier": 5,
+      "nier": 6,
+      "siegfried": 1,
       "vane": 3,
       "grimnir": 3
     },
@@ -2296,7 +2308,7 @@
       "nier": 3
     },
     "hursix": {
-      "narmaya": 233,
+      "narmaya": 234,
       "sandalphon": 5,
       "zeta": 2
     },
@@ -2388,7 +2400,7 @@
       "vaseraga": 12
     },
     "kosame": {
-      "lancelot": 45,
+      "lancelot": 46,
       "siegfried": 3,
       "vane": 1
     },
@@ -2414,7 +2426,7 @@
       "ferry": 1
     },
     "garo": {
-      "siegfried": 37
+      "siegfried": 38
     },
     "tetoloid": {
       "narmaya": 28,
@@ -2455,7 +2467,7 @@
       "zeta": 3
     },
     "sorix": {
-      "soriz": 75,
+      "soriz": 79,
       "meg": 1
     },
     "d4rkfall": {
@@ -2497,7 +2509,7 @@
       "id": 1
     },
     "buchinuki": {
-      "soriz": 108,
+      "soriz": 109,
       "vira": 7,
       "siegfried": 4,
       "meg": 3,
@@ -2564,7 +2576,7 @@
       "charlotta": 16,
       "ilsa": 3,
       "anila": 9,
-      "belial": 6,
+      "belial": 7,
       "narmaya": 3,
       "wilnas": 1,
       "galleon": 1,
@@ -2626,7 +2638,7 @@
       "id": 4,
       "sandalphon": 5,
       "katalina": 16,
-      "siegfried": 43,
+      "siegfried": 44,
       "beatrix": 8
     },
     "binny": {
@@ -2658,7 +2670,7 @@
       "narmaya": 1,
       "metera": 42,
       "wilnas": 1,
-      "seox": 36,
+      "seox": 38,
       "beatrix": 3,
       "versusia": 1,
       "lucilius": 9
@@ -2894,7 +2906,7 @@
       "meg": 2
     },
     "kiwi": {
-      "yuel": 134,
+      "yuel": 135,
       "seox": 1,
       "gran": 2,
       "vira": 2
@@ -2994,17 +3006,17 @@
     },
     "alma-negra": {
       "wilnas": 4,
-      "belial": 14,
+      "belial": 15,
       "vane": 1,
       "sandalphon": 3,
-      "lucilius": 9
+      "lucilius": 10
     },
     "chip": {
       "vira": 7
     },
     "seimei": {
       "ilsa": 11,
-      "seox": 5,
+      "seox": 7,
       "meg": 1,
       "wilnas": 1
     },
@@ -3062,7 +3074,7 @@
       "versusia": 1
     },
     "fuselit": {
-      "vaseraga": 140
+      "vaseraga": 143
     },
     "bemimiya": {
       "belial": 2
@@ -3096,7 +3108,7 @@
       "2b": 3
     },
     "rickster": {
-      "soriz": 7
+      "soriz": 8
     },
     "bemimya": {
       "belial": 6
@@ -3194,13 +3206,8 @@
       "lucilius": 6
     },
     "taku": {
-      "avatar-belial": 49,
+      "avatar-belial": 51,
       "belial": 1
-    },
-    "mr-victe": {
-      "katalina": 1,
-      "vira": 15,
-      "beatrix": 2
     },
     "ppman": {
       "ferry": 37
@@ -3664,7 +3671,7 @@
       "grimnir": 20
     },
     "とはちゃん": {
-      "beatrix": 1,
+      "beatrix": 2,
       "meg": 1,
       "zooey": 3
     },
@@ -3731,7 +3738,7 @@
       "ladiva": 8
     },
     "gbx": {
-      "zooey": 50,
+      "zooey": 51,
       "2b": 4
     },
     "vi": {
@@ -3770,7 +3777,7 @@
       "zeta": 4
     },
     "zangief-dream": {
-      "cagliostro": 113,
+      "cagliostro": 117,
       "vikala": 2,
       "meg": 2,
       "beatrix": 6,
@@ -3800,7 +3807,7 @@
       "eustace": 3
     },
     "mayo": {
-      "charlotta": 35
+      "charlotta": 36
     },
     "ammy": {
       "siegfried": 37,
@@ -4037,7 +4044,7 @@
       "sandalphon": 2
     },
     "yuto": {
-      "2b": 38,
+      "2b": 40,
       "percival": 6,
       "lucilius": 9
     },
@@ -4052,7 +4059,7 @@
       "grimnir": 2
     },
     "son-o": {
-      "metera": 6
+      "metera": 7
     },
     "seiru": {
       "soriz": 1
@@ -4123,7 +4130,7 @@
       "vira": 28,
       "galleon": 1,
       "lucilius": 1,
-      "narmaya": 4,
+      "narmaya": 5,
       "djeeta": 2,
       "beatrix": 1
     },
@@ -4156,7 +4163,7 @@
       "avatar-belial": 1
     },
     "laphroaig": {
-      "eustace": 104,
+      "eustace": 105,
       "gran": 1,
       "siegfried": 2,
       "belial": 1,
@@ -4173,9 +4180,6 @@
     },
     "角をにょきっと": {
       "vane": 1
-    },
-    "kaiyoultio": {
-      "nier": 2
     },
     "rerere": {
       "wilnas": 1
@@ -4272,7 +4276,7 @@
       "gran": 1
     },
     "omitsu": {
-      "ladiva": 60,
+      "ladiva": 62,
       "eustace": 10,
       "lucilius": 2
     },
@@ -4282,7 +4286,7 @@
     "sonic-san": {
       "belial": 5,
       "gran": 14,
-      "siegfried": 19,
+      "siegfried": 20,
       "beatrix": 1,
       "katalina": 1,
       "percival": 1
@@ -4328,7 +4332,7 @@
       "yuel": 1
     },
     "くらすて": {
-      "gran": 7,
+      "gran": 9,
       "zooey": 5,
       "galleon": 2
     },
@@ -4387,7 +4391,7 @@
       "zooey": 11
     },
     "zaveid": {
-      "lucilius": 11,
+      "lucilius": 12,
       "zooey": 11
     },
     "leon": {
@@ -4585,7 +4589,7 @@
       "percival": 1
     },
     "kazunkai": {
-      "beelzebub": 12,
+      "beelzebub": 13,
       "wilnas": 2
     },
     "cmt-shirou": {
@@ -4755,7 +4759,7 @@
       "gran": 1,
       "lucilius": 36,
       "djeeta": 12,
-      "nier": 15,
+      "nier": 16,
       "siegfried": 1,
       "beatrix": 1,
       "katalina": 8,
@@ -4775,7 +4779,7 @@
       "anre": 23
     },
     "fusilero": {
-      "zeta": 16,
+      "zeta": 17,
       "siegfried": 3,
       "lowain": 1,
       "beatrix": 8,
@@ -4959,7 +4963,7 @@
       "vane": 1,
       "metera": 5,
       "sandalphon": 5,
-      "djeeta": 8,
+      "djeeta": 10,
       "katalina": 1,
       "vikala": 4,
       "beatrix": 17,
@@ -5064,7 +5068,7 @@
       "yuel": 1
     },
     "araett": {
-      "anila": 22,
+      "anila": 23,
       "vikala": 5
     },
     "jpnburguer": {
@@ -5215,7 +5219,7 @@
       "versusia": 1
     },
     "ティム": {
-      "grimnir": 34
+      "grimnir": 36
     },
     "のりたま": {
       "2b": 6
@@ -5240,7 +5244,7 @@
       "lancelot": 16,
       "siegfried": 1,
       "beatrix": 7,
-      "belial": 3,
+      "belial": 4,
       "grimnir": 5,
       "vikala": 1,
       "eustace": 3,
@@ -5299,7 +5303,7 @@
       "meg": 2
     },
     "llon-nu13": {
-      "anre": 17
+      "anre": 18
     },
     "hrain": {
       "lowain": 1
@@ -5418,7 +5422,7 @@
     "sil": {
       "vira": 20,
       "seox": 1,
-      "2b": 36,
+      "2b": 37,
       "yuel": 1
     },
     "goero-akechi": {
@@ -5448,7 +5452,7 @@
       "vane": 4
     },
     "しらいし": {
-      "metera": 8
+      "metera": 12
     },
     "ななーしゃ": {
       "seox": 2,
@@ -5621,7 +5625,7 @@
       "vikala": 1
     },
     "cakekattekoi": {
-      "beelzebub": 11
+      "beelzebub": 12
     },
     "furaibo": {
       "vaseraga": 1
@@ -5701,7 +5705,7 @@
       "charlotta": 1
     },
     "みけおし": {
-      "charlotta": 6
+      "charlotta": 7
     },
     "agai": {
       "ladiva": 1
@@ -6836,8 +6840,8 @@
     "svampen": {
       "galleon": 2,
       "beatrix": 10,
-      "zeta": 10,
-      "vane": 8,
+      "zeta": 11,
+      "vane": 9,
       "katalina": 1,
       "ladiva": 1
     },
@@ -6946,7 +6950,7 @@
       "vaseraga": 39,
       "vikala": 6,
       "vane": 2,
-      "ferry": 6,
+      "ferry": 8,
       "katalina": 5,
       "beelzebub": 4
     },
@@ -7320,7 +7324,7 @@
       "vane": 1
     },
     "lord-cruxis": {
-      "eustace": 11
+      "eustace": 12
     },
     "mldorli": {
       "katalina": 1
@@ -7525,7 +7529,7 @@
       "soriz": 1
     },
     "lupro": {
-      "yuel": 33
+      "yuel": 34
     },
     "ororo": {
       "zooey": 1
@@ -7602,7 +7606,7 @@
     },
     "autonomo-us": {
       "sandalphon": 10,
-      "avatar-belial": 31,
+      "avatar-belial": 34,
       "belial": 4
     },
     "コリウス": {
@@ -7836,10 +7840,10 @@
       "percival": 1
     },
     "coach-steve": {
-      "siegfried": 12,
+      "siegfried": 13,
       "lowain": 1,
       "soriz": 13,
-      "belial": 18,
+      "belial": 19,
       "ladiva": 1,
       "vane": 1
     },
@@ -8434,7 +8438,7 @@
     "itakegray": {
       "anre": 5,
       "gran": 7,
-      "eustace": 5,
+      "eustace": 6,
       "beatrix": 1
     },
     "amigo": {
@@ -9328,7 +9332,7 @@
       "djeeta": 1
     },
     "axenstar": {
-      "metera": 5,
+      "metera": 6,
       "gran": 1
     },
     "polly": {
@@ -9338,7 +9342,7 @@
       "belial": 2
     },
     "abbysairaf": {
-      "vaseraga": 4
+      "vaseraga": 6
     },
     "fusil-ro": {
       "beatrix": 1
@@ -9414,9 +9418,9 @@
     "dragoi": {
       "nier": 1,
       "lowain": 3,
-      "grimnir": 2,
-      "percival": 1,
-      "belial": 5
+      "grimnir": 3,
+      "belial": 6,
+      "percival": 1
     },
     "mrpow": {
       "metera": 3
@@ -9428,7 +9432,7 @@
       "ferry": 1
     },
     "comite-shirou": {
-      "cagliostro": 15
+      "cagliostro": 16
     },
     "marble": {
       "ferry": 1
@@ -9443,7 +9447,7 @@
       "2b": 5
     },
     "bacchus": {
-      "cagliostro": 9
+      "cagliostro": 10
     },
     "dotmp4": {
       "yuel": 9
@@ -9480,7 +9484,7 @@
       "djeeta": 1
     },
     "baba": {
-      "gran": 3
+      "gran": 4
     },
     "full-moon": {
       "vane": 2
@@ -9634,7 +9638,7 @@
     },
     "akisaragi": {
       "siegfried": 1,
-      "vaseraga": 2
+      "vaseraga": 3
     },
     "jibiri": {
       "lucilius": 5
@@ -9747,7 +9751,7 @@
       "grimnir": 9
     },
     "yamato": {
-      "narmaya": 40
+      "narmaya": 41
     },
     "medavid-ttv": {
       "avatar-belial": 7

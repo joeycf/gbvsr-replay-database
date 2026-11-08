@@ -3056,6 +3056,35 @@
     }
   },
   {
+    "id": "zaBE-RHi6hE",
+    "kind": "duplicate-candidate",
+    "channel": "yumegiwa",
+    "title": "【しらいし(metera メーテラ)VS barutorec(siegfried ジークフリート)】#GBVSR No.38 Grand Final🔥Ver1.62",
+    "publishedAt": "2025-01-17T10:01:12Z",
+    "durationSec": 942,
+    "handles": [
+      "しらいし",
+      "barutorec"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "barutorec",
+          "しらいし"
+        ],
+        "characters": [
+          "metera",
+          "siegfried"
+        ],
+        "playedOn": "2025-01-17"
+      },
+      "ids": [
+        "zaBE-RHi6hE",
+        "Bm5_H_SHqOE"
+      ]
+    }
+  },
+  {
     "id": "Km1zAEeuqTM@3804",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
@@ -3923,6 +3952,64 @@
       "ids": [
         "znmtKXm63Vw@2013",
         "9gnqa8WYzBU@3366"
+      ]
+    }
+  },
+  {
+    "id": "Itvovd6YJTs",
+    "kind": "duplicate-candidate",
+    "channel": "highLevelReplays",
+    "title": "GBVSR:🔥Koyao (Vira) Vs TAKU (Avatar Belial)🔥| High Level Gameplay.",
+    "publishedAt": "2024-05-03T20:00:11Z",
+    "durationSec": 347,
+    "handles": [
+      "Koyao",
+      "TAKU"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "koyao",
+          "taku"
+        ],
+        "characters": [
+          "avatar-belial",
+          "vira"
+        ],
+        "playedOn": "2024-05-03"
+      },
+      "ids": [
+        "Itvovd6YJTs",
+        "rktDQYQB5IE"
+      ]
+    }
+  },
+  {
+    "id": "9xepgbDyVfY",
+    "kind": "duplicate-candidate",
+    "channel": "highLevelReplays",
+    "title": "GBVSR:🔥Kiwi (Yuel) Vs Koyao (Narmaya B.Butterfly)🔥| High Level Gameplay.",
+    "publishedAt": "2024-05-01T21:00:03Z",
+    "durationSec": 418,
+    "handles": [
+      "Kiwi",
+      "Koyao"
+    ],
+    "duplicates": {
+      "signature": {
+        "players": [
+          "kiwi",
+          "koyao"
+        ],
+        "characters": [
+          "narmaya",
+          "yuel"
+        ],
+        "playedOn": "2024-05-01"
+      },
+      "ids": [
+        "9xepgbDyVfY",
+        "F3ZYTRtObiU"
       ]
     }
   },
