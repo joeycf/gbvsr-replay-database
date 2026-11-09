@@ -1551,10 +1551,6 @@
     "handle": "Burgeritto"
   },
   {
-    "id": "buzz-korius",
-    "handle": "BUZZ Korius"
-  },
-  {
     "id": "c",
     "handle": "たまc",
     "extra": {
@@ -2946,6 +2942,10 @@
   {
     "id": "emerald",
     "handle": "Emerald"
+  },
+  {
+    "id": "emilia",
+    "handle": "Emilia"
   },
   {
     "id": "enigmatic265",
@@ -12193,12 +12193,7 @@
   },
   {
     "id": "tobachan",
-    "handle": "Tobachan",
-    "extra": {
-      "aliases": [
-        "tobachan"
-      ]
-    }
+    "handle": "Tobachan"
   },
   {
     "id": "tobunny",
