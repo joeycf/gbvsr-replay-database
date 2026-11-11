@@ -12968,7 +12968,12 @@
   },
   {
     "id": "wight-burns",
-    "handle": "Wight Burns"
+    "handle": "Wight burns",
+    "extra": {
+      "aliases": [
+        "Wight Burns"
+      ]
+    }
   },
   {
     "id": "wightburns",
