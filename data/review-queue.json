@@ -4014,35 +4014,6 @@
     }
   },
   {
-    "id": "DAnVhOhCMY8",
-    "kind": "duplicate-candidate",
-    "channel": "highLevelReplays",
-    "title": "GBVSR:🔥Beesu (Siegfried) Vs Proteus (Vane)🔥| High Level Gameplay.",
-    "publishedAt": "2024-04-24T12:00:10Z",
-    "durationSec": 543,
-    "handles": [
-      "Beesu",
-      "Proteus"
-    ],
-    "duplicates": {
-      "signature": {
-        "players": [
-          "beesu",
-          "proteus"
-        ],
-        "characters": [
-          "siegfried",
-          "vane"
-        ],
-        "playedOn": "2024-04-24"
-      },
-      "ids": [
-        "DAnVhOhCMY8",
-        "DqzntP41gHw"
-      ]
-    }
-  },
-  {
     "id": "lyWXH2upY1E@1192",
     "kind": "duplicate-candidate",
     "channel": "replayTheater",
