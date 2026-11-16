@@ -178,6 +178,10 @@
     }
   },
   {
+    "id": "adzoe",
+    "handle": "ADZoe"
+  },
+  {
     "id": "aeolic-guardian",
     "handle": "Aeolic Guardian"
   },
@@ -624,10 +628,10 @@
   },
   {
     "id": "arefu",
-    "handle": "AREFU",
+    "handle": "Arefu",
     "extra": {
       "aliases": [
-        "Arefu"
+        "AREFU"
       ]
     }
   },
@@ -2163,6 +2167,10 @@
   {
     "id": "cy-idk",
     "handle": "Cy_Idk"
+  },
+  {
+    "id": "cyase",
+    "handle": "Cyase"
   },
   {
     "id": "cyber-squid",
@@ -7431,6 +7439,10 @@
     "handle": "Miniyona"
   },
   {
+    "id": "minizilla",
+    "handle": "Minizilla"
+  },
+  {
     "id": "mintia",
     "handle": "Mintia"
   },
@@ -9499,6 +9511,10 @@
   {
     "id": "remosuka",
     "handle": "Remosuka"
+  },
+  {
+    "id": "remy",
+    "handle": "Remy"
   },
   {
     "id": "ren",
@@ -12836,7 +12852,12 @@
   },
   {
     "id": "watori",
-    "handle": "watori"
+    "handle": "watori",
+    "extra": {
+      "aliases": [
+        "Watori"
+      ]
+    }
   },
   {
     "id": "watto",
