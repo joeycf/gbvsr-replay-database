@@ -1363,10 +1363,6 @@
     "handle": "Blusper"
   },
   {
-    "id": "boche",
-    "handle": "Boche"
-  },
-  {
     "id": "boche11",
     "handle": "BOCHE11"
   },
@@ -7172,10 +7168,6 @@
     "handle": "MeDavid_TTV"
   },
   {
-    "id": "medavidttv",
-    "handle": "MeDavidTTV"
-  },
-  {
     "id": "medusa",
     "handle": "Medusa"
   },
@@ -8895,6 +8887,10 @@
   {
     "id": "pineapples",
     "handle": "Pineapples"
+  },
+  {
+    "id": "pino",
+    "handle": "Pino"
   },
   {
     "id": "pipipi",
@@ -12722,10 +12718,6 @@
   {
     "id": "vermicl",
     "handle": "VermiCL"
-  },
-  {
-    "id": "vermilion",
-    "handle": "Vermilion"
   },
   {
     "id": "vermillilon",
