@@ -990,6 +990,10 @@
     "handle": "Baocaiming"
   },
   {
+    "id": "barnet",
+    "handle": "Barnet"
+  },
+  {
     "id": "barutec",
     "handle": "Barutec"
   },
@@ -1361,6 +1365,10 @@
   {
     "id": "blusper",
     "handle": "Blusper"
+  },
+  {
+    "id": "boche",
+    "handle": "Boche"
   },
   {
     "id": "boche11",
@@ -2349,10 +2357,6 @@
       ]
     },
     "featured": true
-  },
-  {
-    "id": "debagme",
-    "handle": "Debagme"
   },
   {
     "id": "debu",
@@ -4083,10 +4087,6 @@
     "handle": "Haku"
   },
   {
-    "id": "hakurei",
-    "handle": "Hakurei"
-  },
-  {
     "id": "halcione",
     "handle": "Halcione"
   },
@@ -5809,10 +5809,6 @@
     "handle": "Kinari"
   },
   {
-    "id": "king-halo",
-    "handle": "King Halo"
-  },
-  {
     "id": "king-kyouma",
     "handle": "King Kyouma"
   },
@@ -7168,6 +7164,10 @@
     "handle": "MeDavid_TTV"
   },
   {
+    "id": "medavidttv",
+    "handle": "MeDavidTTV"
+  },
+  {
     "id": "medusa",
     "handle": "Medusa"
   },
@@ -7903,10 +7903,6 @@
   {
     "id": "naosalad",
     "handle": "Naosalad"
-  },
-  {
-    "id": "napebugman",
-    "handle": "NapeBugMan"
   },
   {
     "id": "narita-taishin",
@@ -8833,10 +8829,6 @@
   {
     "id": "phatcat",
     "handle": "Phatcat"
-  },
-  {
-    "id": "phoenix-guy",
-    "handle": "Phoenix Guy"
   },
   {
     "id": "phonics",
@@ -11529,10 +11521,6 @@
     "handle": "Sunia"
   },
   {
-    "id": "sunlight",
-    "handle": "Sunlight"
-  },
-  {
     "id": "supahrob",
     "handle": "Supahrob"
   },
@@ -12718,6 +12706,10 @@
   {
     "id": "vermicl",
     "handle": "VermiCL"
+  },
+  {
+    "id": "vermilion",
+    "handle": "Vermilion"
   },
   {
     "id": "vermillilon",
