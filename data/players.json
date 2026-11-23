@@ -2359,6 +2359,10 @@
     "featured": true
   },
   {
+    "id": "debagme",
+    "handle": "Debagme"
+  },
+  {
     "id": "debu",
     "handle": "Debu",
     "extra": {
@@ -4087,6 +4091,10 @@
     "handle": "Haku"
   },
   {
+    "id": "hakurei",
+    "handle": "Hakurei"
+  },
+  {
     "id": "halcione",
     "handle": "Halcione"
   },
@@ -5807,6 +5815,10 @@
   {
     "id": "kinari",
     "handle": "Kinari"
+  },
+  {
+    "id": "king-halo",
+    "handle": "King Halo"
   },
   {
     "id": "king-kyouma",
@@ -7808,7 +7820,12 @@
   },
   {
     "id": "mythie",
-    "handle": "Mythie"
+    "handle": "Mythie",
+    "extra": {
+      "aliases": [
+        "mythie"
+      ]
+    }
   },
   {
     "id": "myzisco",
@@ -7903,6 +7920,10 @@
   {
     "id": "naosalad",
     "handle": "Naosalad"
+  },
+  {
+    "id": "napebugman",
+    "handle": "NapeBugMan"
   },
   {
     "id": "narita-taishin",
@@ -8829,6 +8850,10 @@
   {
     "id": "phatcat",
     "handle": "Phatcat"
+  },
+  {
+    "id": "phoenix-guy",
+    "handle": "Phoenix Guy"
   },
   {
     "id": "phonics",
@@ -11519,6 +11544,10 @@
   {
     "id": "sunia",
     "handle": "Sunia"
+  },
+  {
+    "id": "sunlight",
+    "handle": "Sunlight"
   },
   {
     "id": "supahrob",
